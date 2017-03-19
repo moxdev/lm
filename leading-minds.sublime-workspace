@@ -1,0 +1,414 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"include",
+				"include\t@include"
+			],
+			[
+				"fon",
+				"font-family"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"features",
+				"features-amenities"
+			],
+			[
+				"padding",
+				"padding-bottom"
+			],
+			[
+				"re",
+				"res\trespond-to"
+			],
+			[
+				"font",
+				"font__bold"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"color",
+				"color__brand-brown"
+			],
+			[
+				"Color",
+				"color__brand-pink"
+			],
+			[
+				"masthead",
+				"masthead-phone"
+			],
+			[
+				"le",
+				"letter-spacing"
+			],
+			[
+				"list-sty",
+				"list-style-type"
+			],
+			[
+				"inlin",
+				"inline-flex"
+			],
+			[
+				"menu",
+				"menu-menu-container"
+			],
+			[
+				"font__",
+				"font__light"
+			],
+			[
+				"color__",
+				"color__brand-red"
+			],
+			[
+				"flex",
+				"flex-direction"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"logo",
+				"logo-wrapper"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"text",
+				"text-transform"
+			],
+			[
+				"end",
+				"endif"
+			],
+			[
+				"background",
+				"background-color"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 354.0,
+		"last_filter": "html",
+		"selected_items":
+		[
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"sftp",
+				"SFTP: Setup Server…"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 575.0
+	},
+	"console":
+	{
+		"height": 173.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/mox/Sites/htdocs/leading-minds/wp-content/themes/leading_minds"
+	],
+	"file_history":
+	[
+		"/Users/mox/Sites/htdocs/stern/wp-content/themes/stern_thomasson/stern.sublime-project",
+		"/Users/mox/Sites/htdocs/pomeroy/wp-content/themes/residential-one-properties/sass/masthead/_masthead.scss",
+		"/Users/mox/Sites/htdocs/pomeroy/wp-content/themes/residential-one-properties/*notes.md",
+		"/Users/mox/Sites/htdocs/pomeroy/wp-content/themes/residential-one-properties/sass/colophon/_colophon.scss",
+		"/Users/mox/Sites/htdocs/pomeroy/wp-content/themes/residential-one-properties/sass/variables-site/_colors.scss",
+		"/Users/mox/Sites/htdocs/pomeroy/wp-content/*project/columbialandingapartments.wordpress.2017-03-14.xml",
+		"/private/var/folders/80/_ps8_2m95p753zszywpq5v6c0000gn/T/f1f57888-6683-45bc-a55c-f85e0ce9068e/home/cidermillapts/www/wp-content/themes/cider_mill/footer.php",
+		"/private/var/folders/80/_ps8_2m95p753zszywpq5v6c0000gn/T/f1f57888-6683-45bc-a55c-f85e0ce9068e/home/cidermillapts/www/wp-content/themes/cider_mill/inc/features-amenities.php",
+		"/private/var/folders/80/_ps8_2m95p753zszywpq5v6c0000gn/T/f1f57888-6683-45bc-a55c-f85e0ce9068e/home/cidermillapts/www/wp-content/themes/cider_mill/inc/content-tagline.php",
+		"/private/var/folders/80/_ps8_2m95p753zszywpq5v6c0000gn/T/f1f57888-6683-45bc-a55c-f85e0ce9068e/home/cidermillapts/www/wp-content/themes/cider_mill/inc/contact-page-content.php",
+		"/private/var/folders/80/_ps8_2m95p753zszywpq5v6c0000gn/T/f1f57888-6683-45bc-a55c-f85e0ce9068e/home/cidermillapts/www/wp-content/themes/cider_mill/inc/community-page-list.php",
+		"/private/var/folders/80/_ps8_2m95p753zszywpq5v6c0000gn/T/f1f57888-6683-45bc-a55c-f85e0ce9068e/home/cidermillapts/www/wp-content/themes/cider_mill/inc/community-page-map.php",
+		"/private/var/folders/80/_ps8_2m95p753zszywpq5v6c0000gn/T/f1f57888-6683-45bc-a55c-f85e0ce9068e/home/cidermillapts/www/wp-content/themes/cider_mill/inc/featured-image.php",
+		"/private/var/folders/80/_ps8_2m95p753zszywpq5v6c0000gn/T/f1f57888-6683-45bc-a55c-f85e0ce9068e/home/cidermillapts/www/wp-content/themes/cider_mill/inc/specials-sidebar.php",
+		"/private/var/folders/80/_ps8_2m95p753zszywpq5v6c0000gn/T/f1f57888-6683-45bc-a55c-f85e0ce9068e/home/cidermillapts/www/wp-content/themes/cider_mill/inc/photo-gallery.php",
+		"/private/var/folders/80/_ps8_2m95p753zszywpq5v6c0000gn/T/f1f57888-6683-45bc-a55c-f85e0ce9068e/home/cidermillapts/www/wp-content/themes/cider_mill/inc/homepage-sidebar.php",
+		"/private/var/folders/80/_ps8_2m95p753zszywpq5v6c0000gn/T/f1f57888-6683-45bc-a55c-f85e0ce9068e/home/cidermillapts/www/wp-content/themes/cider_mill/inc/floorplans.php",
+		"/Users/mox/Sites/desktopserver/www.cidermill.dev/wp-content/themes/cider_mill/*project-notes/notes.md",
+		"/Users/mox/Sites/desktopserver/www.cidermill.dev/wp-content/themes/cider_mill/functions.php",
+		"/Users/mox/Sites/desktopserver/www.cidermill.dev/wp-content/project/Creation Files/squares.html",
+		"/Users/mox/Sites/desktopserver/www.cidermill.dev/wp-content/themes/cider_mill/sass/site/structure/_structure.scss",
+		"/Users/mox/Sites/desktopserver/www.cidermill.dev/wp-content/themes/cider_mill/sass/pages/_page-amenities.scss",
+		"/Users/mox/Sites/desktopserver/www.cidermill.dev/wp-content/themes/cider_mill/inc/features-amenities.php",
+		"/Users/mox/Sites/desktopserver/www.cidermill.dev/wp-content/themes/cider_mill/page-amenities.php",
+		"/Users/mox/Sites/desktopserver/www.cidermill.dev/wp-content/themes/cider_mill/footer.php",
+		"/Users/mox/Sites/desktopserver/www.cidermill.dev/wp-content/themes/cider_mill/js/features-amenities.js",
+		"/Users/mox/Sites/desktopserver/www.cidermill.dev/wp-content/themes/cider_mill/sass/pages/_page-floorplans.scss",
+		"/Users/mox/Sites/desktopserver/www.cidermill.dev/wp-content/themes/cider_mill/inc/floorplans.php",
+		"/Users/mox/Sites/desktopserver/www.cidermill.dev/wp-content/themes/cider_mill/sass/typography/_headings.scss",
+		"/Users/mox/Sites/desktopserver/www.cidermill.dev/wp-content/themes/cider_mill/sass/navigation/_masthead.scss",
+		"/Users/mox/Sites/desktopserver/www.cidermill.dev/wp-content/themes/cider_mill/sass/pages/_page-contact.scss",
+		"/Users/mox/Sites/desktopserver/www.cidermill.dev/wp-content/themes/cider_mill/sass/footer/_footer.scss",
+		"/Users/mox/Sites/desktopserver/www.cidermill.dev/wp-content/themes/cider_mill/inc/contact-page-content.php",
+		"/Users/mox/Sites/desktopserver/www.cidermill.dev/wp-content/themes/cider_mill/sass/site/secondary/_widgets.scss",
+		"/Users/mox/Sites/desktopserver/www.cidermill.dev/wp-content/themes/cider_mill/sidebar-contact.php",
+		"/Users/mox/Sites/desktopserver/www.cidermill.dev/wp-content/themes/cider_mill/sass/pages/_page-gaithersburg.scss",
+		"/Users/mox/Sites/desktopserver/www.cidermill.dev/wp-content/themes/cider_mill/page-contact.php",
+		"/Users/mox/Sites/desktopserver/www.cidermill.dev/wp-content/themes/cider_mill/template-parts/content-contact.php",
+		"/Users/mox/Sites/desktopserver/www.cidermill.dev/wp-content/themes/cider_mill/plugins/mm4-directions-map/index.php",
+		"/Users/mox/Sites/desktopserver/www.cidermill.dev/wp-content/themes/cider_mill/plugins/mm4-directions-map/map-directions.js",
+		"/Users/mox/Sites/desktopserver/www.cidermill.dev/wp-content/themes/cider_mill/plugins/mm4-you-contact-form/mm4-you-cf.php",
+		"/Users/mox/Sites/desktopserver/www.cidermill.dev/wp-content/themes/cider_mill/plugins/mm4-you-contact-form/inc/contact.php",
+		"/Users/mox/Sites/desktopserver/www.cidermill.dev/wp-content/themes/cider_mill/sass/pages/_pages.scss",
+		"/Users/mox/Sites/desktopserver/www.cidermill.dev/wp-content/themes/cider_mill/*project-notes/old-nav.scss",
+		"/Users/mox/Sites/desktopserver/www.cidermill.dev/wp-content/themes/cider_mill/header.php",
+		"/Users/mox/Sites/desktopserver/www.cidermill.dev/wp-content/themes/cider_mill/sass/navigation/_menus.scss",
+		"/Users/mox/Sites/desktopserver/www.cidermill.dev/wp-content/themes/cider_mill/sass/elements/_elements.scss",
+		"/Users/mox/Sites/desktopserver/www.cidermill.dev/wp-content/themes/cider_mill/gulp/config.js",
+		"/Users/mox/Sites/portabello/inc/contact-page-content.php",
+		"/Users/mox/Sites/desktopserver/www.cidermill.dev/wp-content/themes/cider_mill/page-floorplans.php",
+		"/Users/mox/Sites/desktopserver/www.cidermill.dev/wp-content/themes/cider_mill/inc/specials-sidebar.php",
+		"/Users/mox/Sites/desktopserver/www.cidermill.dev/wp-content/themes/cider_mill/sidebar.php",
+		"/Users/mox/Sites/desktopserver/www.cidermill.dev/wp-content/themes/cider_mill/sidebar-home.php",
+		"/Users/mox/Sites/desktopserver/www.cidermill.dev/wp-content/themes/cider_mill/frontpage.php",
+		"/Users/mox/Sites/desktopserver/www.cidermill.dev/wp-content/themes/cider_mill/inc/homepage-sidebar.php",
+		"/Users/mox/Sites/desktopserver/www.cidermill.dev/wp-content/themes/cider_mill/inc/sidebar-content.php",
+		"/Users/mox/Sites/desktopserver/www.cidermill.dev/wp-content/themes/cider_mill/sass/site/primary/_posts-and-pages.scss",
+		"/Users/mox/Sites/desktopserver/www.cidermill.dev/wp-content/themes/cider_mill/sass/mixins/_mixins-master.scss",
+		"/Users/mox/Sites/desktopserver/www.cidermill.dev/wp-content/themes/cider_mill/gulpfile.js",
+		"/Users/Shared/.com.serverpress.desktopserver.json",
+		"/Users/mox/Dropbox/Sync/Sublime/User/php-snippets/if-end.sublime-snippet",
+		"/Users/mox/Sites/desktopserver/www.cidermill.dev/wp-content/themes/cider_mill/cider-mill.sublime-project",
+		"/Users/mox/.gitignore_global",
+		"/Users/mox/.zshrc",
+		"/Users/mox/Sites/htdocs/stern/wp-content/themes/stern_thomasson/inc/carousel.php",
+		"/Users/mox/Sites/htdocs/stern/wp-content/themes/stern_thomasson/functions.php",
+		"/Users/mox/Sites/htdocs/stern/wp-content/themes/stern_thomasson/sass/_grid-settings.scss",
+		"/Users/mox/Sites/htdocs/stern/wp-content/themes/stern_thomasson/template-parts/content-page.php",
+		"/Users/mox/Sites/htdocs/stern/wp-content/themes/stern_thomasson/header.php",
+		"/Users/mox/Sites/htdocs/stern/wp-content/themes/stern_thomasson/sass/navigation/_menus.scss",
+		"/Users/mox/Sites/htdocs/stern/wp-content/themes/stern_thomasson/sass/mixins/_mixins-master.scss",
+		"/Users/mox/Sites/htdocs/stern/wp-content/themes/stern_thomasson/sass/variables-site/_structure.scss",
+		"/private/var/folders/80/_ps8_2m95p753zszywpq5v6c0000gn/T/1d76962c-c8a8-46fe-9da6-6ba623d6a3c2/home/portapts/www/wp-content/themes/mm4/template-parts/content-page.php",
+		"/Users/mox/Sites/htdocs/islandit/wp-content/themes/mm4-you/*project-files/colors.css",
+		"/Users/mox/Sites/htdocs/islandit/wp-content/themes/mm4-you/functions.php",
+		"/Users/mox/Sites/htdocs/islandit/wp-content/themes/mm4-you/style.css",
+		"/Users/mox/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/mox/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/mox/Library/Application Support/Sublime Text 3/Packages/User/SFTP.sublime-settings",
+		"/Users/mox/Sites/portabello/portabello.sublime-project"
+	],
+	"find":
+	{
+		"height": 32.0
+	},
+	"find_in_files":
+	{
+		"height": 164.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"menu",
+			"nav",
+			"255",
+			"square",
+			"div",
+			"@include max-width(1500px);",
+			"<span class=\"asterisk\">*</span>",
+			"<span class=\"asterisk\">*",
+			"width",
+			"leasing",
+			"block",
+			"between",
+			"span",
+			"between",
+			"cider_mill_floorplan_listing",
+			"one",
+			"One",
+			"one",
+			"repeater_field_name",
+			"homepage_sidebar",
+			"homepage-sidebar",
+			"sidebar_content",
+			"cider_mill",
+			"sidebar_content",
+			"layout",
+			"h1",
+			"#page",
+			"l1",
+			"h1",
+			"aside",
+			"directions",
+			"mm4_you_contact_page_form",
+			"h1",
+			"links"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"homepage_sidebar",
+			"homepage-sidebar"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 32.0
+	},
+	"input":
+	{
+		"height": 72.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "leading-minds.sublime-project",
+	"replace":
+	{
+		"height": 60.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"heade",
+				"header.php"
+			],
+			[
+				"func",
+				"functions.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 251.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
