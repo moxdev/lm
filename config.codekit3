@@ -9,6 +9,24 @@
 	],
 "creatorBuild": "25704",
 "files": {
+	"\/*notes\/*notes.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 1,
+		"oAP": "\/*notes\/*notes.html",
+		"oF": 0,
+		"oFM": 9,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
 	"\/.gitignore": {
 		"ft": 8192,
 		"oA": 2,
@@ -49,6 +67,12 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/footer.php",
+		"oF": 0
+		},
+	"\/frontpage.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/frontpage.php",
 		"oF": 0
 		},
 	"\/functions.php": {
@@ -304,7 +328,7 @@
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/README.html",
 		"oF": 0,
 		"oFM": 0,
@@ -323,6 +347,186 @@
 		"oAP": "\/rtl-min.css",
 		"oF": 0,
 		"oS": 0
+		},
+	"\/sass\/.sass-cache\/0094c59289b823a84395b28faf559c41dc1615c7\/_normalize.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/0094c59289b823a84395b28faf559c41dc1615c7\/_normalize.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/0094c59289b823a84395b28faf559c41dc1615c7\/style.scssc": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/sass\/.sass-cache\/0094c59289b823a84395b28faf559c41dc1615c7\/style.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/1fb591e83e4bb44cb7440cf3c088ca6f359a276b\/_links.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/1fb591e83e4bb44cb7440cf3c088ca6f359a276b\/_links.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/1fb591e83e4bb44cb7440cf3c088ca6f359a276b\/_menus.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/1fb591e83e4bb44cb7440cf3c088ca6f359a276b\/_menus.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/1fb591e83e4bb44cb7440cf3c088ca6f359a276b\/_navigation.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/1fb591e83e4bb44cb7440cf3c088ca6f359a276b\/_navigation.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/40a8e930d2c467943f757add12871257b4a85fef\/_colors.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/40a8e930d2c467943f757add12871257b4a85fef\/_colors.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/40a8e930d2c467943f757add12871257b4a85fef\/_structure.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/40a8e930d2c467943f757add12871257b4a85fef\/_structure.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/40a8e930d2c467943f757add12871257b4a85fef\/_typography.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/40a8e930d2c467943f757add12871257b4a85fef\/_typography.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/40a8e930d2c467943f757add12871257b4a85fef\/_variables-site.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/40a8e930d2c467943f757add12871257b4a85fef\/_variables-site.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/47d882ed8f04d917519d134b7609410d3ac89368\/_widgets.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/47d882ed8f04d917519d134b7609410d3ac89368\/_widgets.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/497d0b49e077bac08088facd43b48b7422404df3\/_buttons.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/497d0b49e077bac08088facd43b48b7422404df3\/_buttons.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/497d0b49e077bac08088facd43b48b7422404df3\/_fields.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/497d0b49e077bac08088facd43b48b7422404df3\/_fields.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/497d0b49e077bac08088facd43b48b7422404df3\/_forms.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/497d0b49e077bac08088facd43b48b7422404df3\/_forms.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/4fca3ddc257755ae347d250166bfdafd71264618\/_elements.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/4fca3ddc257755ae347d250166bfdafd71264618\/_elements.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/4fca3ddc257755ae347d250166bfdafd71264618\/_lists.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/4fca3ddc257755ae347d250166bfdafd71264618\/_lists.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/4fca3ddc257755ae347d250166bfdafd71264618\/_tables.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/4fca3ddc257755ae347d250166bfdafd71264618\/_tables.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/574975726577ece36e05e2729d148415a8b8f2ba\/_site.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/574975726577ece36e05e2729d148415a8b8f2ba\/_site.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/963225be365b5650b71b47e79072a91ff250af16\/_accessibility.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/963225be365b5650b71b47e79072a91ff250af16\/_accessibility.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/963225be365b5650b71b47e79072a91ff250af16\/_alignments.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/963225be365b5650b71b47e79072a91ff250af16\/_alignments.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/963225be365b5650b71b47e79072a91ff250af16\/_clearings.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/963225be365b5650b71b47e79072a91ff250af16\/_clearings.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/963225be365b5650b71b47e79072a91ff250af16\/_infinite-scroll.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/963225be365b5650b71b47e79072a91ff250af16\/_infinite-scroll.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/c06abfa7dd22345aeb970d7af91a7d7077203b5d\/_mixins-master.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/c06abfa7dd22345aeb970d7af91a7d7077203b5d\/_mixins-master.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/d5df55472ff2a571d44c0ae85a2b00f1c5a5d7dd\/_captions.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/d5df55472ff2a571d44c0ae85a2b00f1c5a5d7dd\/_captions.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/d5df55472ff2a571d44c0ae85a2b00f1c5a5d7dd\/_galleries.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/d5df55472ff2a571d44c0ae85a2b00f1c5a5d7dd\/_galleries.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/d5df55472ff2a571d44c0ae85a2b00f1c5a5d7dd\/_media.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/d5df55472ff2a571d44c0ae85a2b00f1c5a5d7dd\/_media.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/e3d13e55e8ddc5318bbbfb7171153050459940df\/_copy.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/e3d13e55e8ddc5318bbbfb7171153050459940df\/_copy.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/e3d13e55e8ddc5318bbbfb7171153050459940df\/_headings.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/e3d13e55e8ddc5318bbbfb7171153050459940df\/_headings.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/e3d13e55e8ddc5318bbbfb7171153050459940df\/_typography.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/e3d13e55e8ddc5318bbbfb7171153050459940df\/_typography.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/fb66b6af827c8779282a5c03df85df7dcc656a5a\/_comments.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/fb66b6af827c8779282a5c03df85df7dcc656a5a\/_comments.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/fb66b6af827c8779282a5c03df85df7dcc656a5a\/_posts-and-pages.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/fb66b6af827c8779282a5c03df85df7dcc656a5a\/_posts-and-pages.scssc",
+		"oF": 0
 		},
 	"\/sass\/_normalize.scss": {
 		"aP": 0,
@@ -597,6 +801,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/sass\/site\/_structure.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/site\/_structure.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/sass\/site\/primary\/_comments.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -777,6 +994,12 @@
 		"oAP": "\/style-min.css",
 		"oF": 0,
 		"oS": 0
+		},
+	"\/style.css.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/style.css.map",
+		"oF": 0
 		},
 	"\/template-parts\/content-none.php": {
 		"ft": 8192,
@@ -2631,7 +2854,7 @@
 		"strictUnits": 0
 		},
 	"languageDefaultsMARKDOWN": {
-		"autoOutputAction": 0,
+		"autoOutputAction": 1,
 		"autoOutputPathFilenamePattern": "*.html",
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "",

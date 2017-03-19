@@ -44,7 +44,7 @@ function leading_minds_setup() {
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
-		'menu-1' => esc_html__( 'Primary', 'leading_minds' ),
+		'desktop-nav' => esc_html__( 'Primary', 'leading_minds' ),
 	) );
 
 	/*
@@ -116,6 +116,78 @@ function leading_minds_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'leading_minds_scripts' );
+
+/**
+ * Custom ACF Options
+ */
+if( function_exists('acf_add_options_page') ) {
+	// Company Information Section
+    acf_add_options_page(array(
+        'page_title'    => 'Contact Information',
+        'menu_title'    => 'Contact Information',
+        'menu_slug'     => 'contact-info',
+        'icon_url'   	=> 'dashicons-phone',
+        'capability'    => 'edit_posts',
+        'redirect'      => true
+    ));
+
+    	// acf_add_options_sub_page(array(
+    	//     'page_title'    => 'Contact',
+    	//     'menu_title'    => 'Contact Info',
+    	//     'menu_slug'     => 'contact-info',
+    	//     'parent_slug'   => 'global-info',
+    	// ));
+
+//     // Specials Section
+//     acf_add_options_page(array(
+//         'page_title'    => 'Specials Settings',
+//         'menu_title'    => 'Specials',
+//         'menu_slug'     => 'specials',
+//         'icon_url'      => 'dashicons-tag',
+//         'capability'    => 'edit_posts',
+//         'redirect'      => true,
+//         'position'      => 20
+//     ));
+
+//     	acf_add_options_sub_page(array(
+//     	    'page_title'    => 'Sidebar Information',
+//     	    'menu_title'    => 'Sidebar',
+//     	    'menu_slug'     => 'sidebar',
+//     	    'parent_slug'   => 'specials'
+//     	));
+
+//     // Floorplan Section
+//     acf_add_options_page(array(
+//         'page_title'    => 'Floorplans Settings',
+//         'menu_title'    => 'Floorplans',
+//         'menu_slug'     => 'floorplans',
+//         'icon_url'      => 'dashicons-building',
+//         'capability'    => 'edit_posts',
+//         'redirect'      => true,
+//         'position'      => 21
+//     ));
+
+//     	acf_add_options_sub_page(array(
+//     	    'page_title'    => 'One Bedroom Floorplans Section',
+//     	    'menu_title'    => 'One Bedroom',
+//     	    'menu_slug'     => 'one_bedroom_floorplan',
+//     	    'parent_slug'   => 'floorplans'
+//     	));
+
+//     	acf_add_options_sub_page(array(
+//     	    'page_title'    => 'Two Bedroom Floorplans Section',
+//     	    'menu_title'    => 'Two Bedroom',
+//     	    'menu_slug'     => 'two_bedroom_floorplan',
+//     	    'parent_slug'   => 'floorplans'
+//     	));
+
+//     	acf_add_options_sub_page(array(
+//     	    'page_title'    => 'Three Bedroom Floorplans Section',
+//     	    'menu_title'    => 'Three Bedroom',
+//     	    'menu_slug'     => 'three_bedroom_floorplan',
+//     	    'parent_slug'   => 'floorplans'
+//     	));
+}
 
 /**
  * Implement the Custom Header feature.

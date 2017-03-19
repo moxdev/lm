@@ -37,11 +37,11 @@
 }
 
 // Fonts
-$font__bold: font-family: 'SourceSansPro-Bold', sans-serif;
-$font__semibold: font-family: 'SourceSansPro-Semibold', sans-serif;
-$font__black: font-family: 'SourceSansPro-Black', sans-serif;
-$font__alt-semibold: font-family: 'ACaslonPro-Semibold', sans-serif;
-$font__alt-bold: font-family: 'ACaslonPro-Bold', sans-serif;
+$font__bold: 'SourceSansPro-Bold', sans-serif;
+$font__semibold: 'SourceSansPro-Semibold', sans-serif;
+$font__black: 'SourceSansPro-Black', sans-serif;
+$font__alt-semibold: 'ACaslonPro-Semibold', sans-serif;
+$font__alt-bold: 'ACaslonPro-Bold', sans-serif;
 
 $font__main: $font__alt-semibold;
 $font__code: $font__semibold;
