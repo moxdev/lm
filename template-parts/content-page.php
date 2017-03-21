@@ -11,7 +11,11 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		    <?php if ( get_field( 'on_page_title' )){
+		            echo '<h1 class="entry-title">' . get_field( 'on_page_title' ) . '</h1>';
+		        } else {
+		            the_title( '<h1 class="entry-title">', '</h1>' );
+		        } ?>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">

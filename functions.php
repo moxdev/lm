@@ -138,34 +138,27 @@ if( function_exists('acf_add_options_page') ) {
     	//     'parent_slug'   => 'global-info',
     	// ));
 
-//     // Specials Section
-//     acf_add_options_page(array(
-//         'page_title'    => 'Specials Settings',
-//         'menu_title'    => 'Specials',
-//         'menu_slug'     => 'specials',
-//         'icon_url'      => 'dashicons-tag',
-//         'capability'    => 'edit_posts',
-//         'redirect'      => true,
-//         'position'      => 20
-//     ));
+    // Testimonial Section
+    acf_add_options_page(array(
+        'page_title'    => 'Testimonial Settings',
+        'menu_title'    => 'Testimonials',
+        'menu_slug'     => 'testimonials',
+        'icon_url'      => 'dashicons-testimonial',
+        'capability'    => 'edit_posts',
+        'redirect'      => true,
+        'position'      => 20
+    ));
 
-//     	acf_add_options_sub_page(array(
-//     	    'page_title'    => 'Sidebar Information',
-//     	    'menu_title'    => 'Sidebar',
-//     	    'menu_slug'     => 'sidebar',
-//     	    'parent_slug'   => 'specials'
-//     	));
-
-//     // Floorplan Section
-//     acf_add_options_page(array(
-//         'page_title'    => 'Floorplans Settings',
-//         'menu_title'    => 'Floorplans',
-//         'menu_slug'     => 'floorplans',
-//         'icon_url'      => 'dashicons-building',
-//         'capability'    => 'edit_posts',
-//         'redirect'      => true,
-//         'position'      => 21
-//     ));
+    // Associates Section
+    acf_add_options_page(array(
+        'page_title'    => 'Associates Settings',
+        'menu_title'    => 'Associates',
+        'menu_slug'     => 'associates',
+        'icon_url'      => 'dashicons-id-alt',
+        'capability'    => 'edit_posts',
+        'redirect'      => true,
+        'position'      => 21
+    ));
 
 //     	acf_add_options_sub_page(array(
 //     	    'page_title'    => 'One Bedroom Floorplans Section',
