@@ -60,10 +60,10 @@ function leading_minds_setup() {
 	) );
 
 	// Set up the WordPress core custom background feature.
-	add_theme_support( 'custom-background', apply_filters( 'leading_minds_custom_background_args', array(
-		'default-color' => 'ffffff',
-		'default-image' => '',
-	) ) );
+	// add_theme_support( 'custom-background', apply_filters( 'leading_minds_custom_background_args', array(
+	// 	'default-color' => 'ffffff',
+	// 	'default-image' => '',
+	// ) ) );
 
 	// Add theme support for selective refresh for widgets.
 	add_theme_support( 'customize-selective-refresh-widgets' );
@@ -102,9 +102,25 @@ function leading_minds_widgets_init() {
 add_action( 'widgets_init', 'leading_minds_widgets_init' );
 
 /**
+ * Register scripts for later use.
+ */
+function leading_minds_register_scripts()  {
+	if (!is_admin()) {
+		wp_deregister_script('jquery');
+		// Load the copy of jQuery that comes with WordPress
+		// The last parameter set to TRUE states that it should be loaded in the footer.
+		wp_register_script('jquery', '/wp-includes/js/jquery/jquery.js', FALSE, FALSE, TRUE);
+	}
+
+	wp_register_script( 'flickity-library', get_template_directory_uri() . '/js/min/flickity-min.js', array(), NULL, true );
+}
+add_action('init', 'leading_minds_register_scripts');
+
+/**
  * Enqueue scripts and styles.
  */
 function leading_minds_scripts() {
+
 	wp_enqueue_style( 'leading_minds-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'leading_minds-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
@@ -206,3 +222,71 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+/**
+ * Displays the ACF flexible content.
+ */
+
+function leading_minds_flexible_content() {
+
+    if( have_rows('acf_page_content') ):
+
+         // loop through the rows of data
+        while ( have_rows('acf_page_content') ) : the_row();
+
+            if( get_row_layout() == 'content_section' ):
+
+                $editor = get_sub_field('editor');
+
+                ?>
+                <section id="content-section">
+                </section>
+                <?php
+
+            elseif( get_row_layout() == 'two_column_content_section' ):
+
+                $img = get_sub_field('image');
+                $header = get_sub_field('header');
+                $sub_header = get_sub_field('sub_header');
+                $editor = get_sub_field('editor');
+                $left_column = get_sub_field('left_column_text');
+                $right_column = get_sub_field('right_column_text');
+                $footer_image = get_sub_field('footer_image');
+
+                ?>
+                <section id="two-column-section">
+                </section>
+                <?php
+
+            elseif( get_row_layout() == 'green_brain_section' ):
+
+                $header = get_sub_field('header');
+                $sub_header = get_sub_field('sub_header');
+                $editor = get_sub_field('editor');
+
+                ?>
+                <section id="green-brain-section">
+                </section>
+                <?php
+
+            elseif( get_row_layout() == 'green_left_image_section' ):
+
+                $img = get_sub_field('image');
+                $editor = get_sub_field('editor');
+
+                ?>
+                <section id="green-left-image-section">
+                </section>
+                <?php
+
+            endif;
+
+        endwhile;
+
+    else :
+
+        // no layouts found
+
+    endif;
+
+}
