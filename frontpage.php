@@ -9,27 +9,20 @@
  * @package Leading_Minds
  */
 
-get_header(); ?>
+get_header();
+
+    if ( function_exists( 'leading_minds_homepage_header' ) ) {
+        leading_minds_homepage_header();
+    } ?>
 
 	<div id="primary" class="content-area">
-	    <main id="main" class="site-main" role="main">
-	        <div class="wrapper">
+		<main id="main" class="site-main" role="main">
 
-	            <?php
-	            while ( have_posts() ) : the_post();
+				<?php if ( function_exists( 'leading_minds_flexible_content_module' ) ) {
+				    leading_minds_flexible_content_module();
+				} ?>
 
-	                get_template_part( 'template-parts/content', 'page' );
-
-	                // If comments are open or we have at least one comment, load up the comment template.
-	                if ( comments_open() || get_comments_number() ) :
-	                    comments_template();
-	                endif;
-
-	            endwhile; // End of the loop.
-	            ?>
-
-	        </div><!-- .wrapper -->
-	    </main><!-- #main -->
+		</main><!-- #main -->
 	</div><!-- #primary -->
 
 <?php

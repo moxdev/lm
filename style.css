@@ -1,19 +1,19 @@
 /*!
-Theme Name: Leading Minds
+Theme Name: Test Theme
 Theme URI: http://underscores.me/
-Author: Shane Biggs
-Author URI: http://www.shanebiggs.com
-Description: Leading Minds Executive Coaching
+Author: Underscores.me
+Author URI: http://underscores.me/
+Description: For TEsting
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: leading_minds
+Text Domain: test
 Tags:
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 
-Leading Minds is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+Test Theme is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 Normalizing styles have been helped along thanks to the fine work of
@@ -41,36 +41,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Captions
 	## Galleries
 --------------------------------------------------------------*/
-@font-face {
-  font-family: 'ACaslonPro-Semibold';
-  src: url("fonts/ACaslonPro-Semibold.eot?#iefix") format("embedded-opentype"), url("fonts/ACaslonPro-Semibold.otf") format("opentype"), url("fonts/ACaslonPro-Semibold.woff") format("woff"), url("fonts/ACaslonPro-Semibold.ttf") format("truetype"), url("fonts/ACaslonPro-Semibold.svg#ACaslonPro-Semibold") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'ACaslonPro-Bold';
-  src: url("fonts/ACaslonPro-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/ACaslonPro-Bold.otf") format("opentype"), url("fonts/ACaslonPro-Bold.woff") format("woff"), url("fonts/ACaslonPro-Bold.ttf") format("truetype"), url("fonts/ACaslonPro-Bold.svg#ACaslonPro-Bold") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'SourceSansPro-Bold';
-  src: url("fonts/SourceSansPro-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/SourceSansPro-Bold.woff") format("woff"), url("fonts/SourceSansPro-Bold.ttf") format("truetype"), url("fonts/SourceSansPro-Bold.svg#SourceSansPro-Bold") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'SourceSansPro-Semibold';
-  src: url("fonts/SourceSansPro-Semibold.eot?#iefix") format("embedded-opentype"), url("fonts/SourceSansPro-Semibold.woff") format("woff"), url("fonts/SourceSansPro-Semibold.ttf") format("truetype"), url("fonts/SourceSansPro-Semibold.svg#SourceSansPro-Semibold") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'SourceSansPro-Black';
-  src: url("fonts/SourceSansPro-Black.eot?#iefix") format("embedded-opentype"), url("fonts/SourceSansPro-Black.woff") format("woff"), url("fonts/SourceSansPro-Black.ttf") format("truetype"), url("fonts/SourceSansPro-Black.svg#SourceSansPro-Black") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
@@ -334,7 +304,7 @@ input,
 select,
 textarea {
   color: #656b6f;
-  font-family: "ACaslonPro-Semibold", sans-serif;
+  font-family: sans-serif;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5;
@@ -368,7 +338,7 @@ address {
 /* line 17, sass/typography/_copy.scss */
 pre {
   background: #eee;
-  font-family: "ACaslonPro-Semibold", sans-serif;
+  font-family: "Courier 10 Pitch", Courier, monospace;
   font-size: 15px;
   font-size: 0.9375rem;
   line-height: 1.6;
@@ -380,7 +350,7 @@ pre {
 
 /* line 28, sass/typography/_copy.scss */
 code, kbd, tt, var {
-  font-family: "SourceSansPro-Semibold", sans-serif;
+  font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
   font-size: 15px;
   font-size: 0.9375rem;
 }
@@ -501,32 +471,24 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  border: 1px solid;
-  border-color: #ccc #ccc #bbb;
-  border-radius: 3px;
-  background: #e6e6e6;
-  color: rgba(0, 0, 0, 0.8);
-  font-size: 12px;
-  font-size: 0.75rem;
-  line-height: 1;
-  padding: .6em 1em .4em;
+  background: #24cf5f;
+  color: #fff;
+  text-transform: uppercase;
+  -webkit-appearance: none;
+  border: none;
+  border-radius: 25px;
+  font-size: .75em;
+  letter-spacing: .125em;
+  padding: 1em 3.5em;
+  -webkit-transition: background-color .25s, box-shadow .25s;
+  transition: background-color .25s, box-shadow .25s;
 }
-/* line 14, sass/forms/_buttons.scss */
+/* line 17, sass/forms/_buttons.scss */
 button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-  border-color: #ccc #bbb #aaa;
-}
-/* line 18, sass/forms/_buttons.scss */
-button:active, button:focus,
-input[type="button"]:active,
-input[type="button"]:focus,
-input[type="reset"]:active,
-input[type="reset"]:focus,
-input[type="submit"]:active,
-input[type="submit"]:focus {
-  border-color: #aaa #bbb #bbb;
+  background-color: #47df7b;
 }
 
 /* line 1, sass/forms/_fields.scss */
@@ -617,15 +579,17 @@ a:hover, a:active {
   display: block;
   float: left;
   width: 100%;
+  height: 50px;
+  background-color: #282560;
 }
-/* line 7, sass/navigation/_menus.scss */
+/* line 9, sass/navigation/_menus.scss */
 .main-navigation ul {
   display: none;
   list-style: none;
   margin: 0;
   padding-left: 0;
 }
-/* line 13, sass/navigation/_menus.scss */
+/* line 15, sass/navigation/_menus.scss */
 .main-navigation ul ul {
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   float: left;
@@ -634,68 +598,68 @@ a:hover, a:active {
   left: -999em;
   z-index: 99999;
 }
-/* line 21, sass/navigation/_menus.scss */
+/* line 23, sass/navigation/_menus.scss */
 .main-navigation ul ul ul {
   left: -999em;
   top: 0;
 }
-/* line 27, sass/navigation/_menus.scss */
+/* line 29, sass/navigation/_menus.scss */
 .main-navigation ul ul li:hover > ul, .main-navigation ul ul li.focus > ul {
   left: 100%;
 }
-/* line 33, sass/navigation/_menus.scss */
+/* line 35, sass/navigation/_menus.scss */
 .main-navigation ul ul a {
   width: 200px;
 }
-/* line 46, sass/navigation/_menus.scss */
+/* line 48, sass/navigation/_menus.scss */
 .main-navigation ul li:hover > ul,
 .main-navigation ul li.focus > ul {
   left: auto;
 }
-/* line 52, sass/navigation/_menus.scss */
+/* line 54, sass/navigation/_menus.scss */
 .main-navigation li {
   float: left;
   position: relative;
 }
-/* line 61, sass/navigation/_menus.scss */
+/* line 63, sass/navigation/_menus.scss */
 .main-navigation a {
   display: block;
   text-decoration: none;
 }
 
 /* Small menu. */
-/* line 74, sass/navigation/_menus.scss */
+/* line 76, sass/navigation/_menus.scss */
 .menu-toggle,
 .main-navigation.toggled ul {
   display: block;
 }
 
 @media screen and (min-width: 37.5em) {
-  /* line 80, sass/navigation/_menus.scss */
+  /* line 82, sass/navigation/_menus.scss */
   .menu-toggle {
     display: none;
   }
 
-  /* line 83, sass/navigation/_menus.scss */
+  /* line 85, sass/navigation/_menus.scss */
   .main-navigation ul {
     display: block;
   }
 }
-/* line 92, sass/navigation/_menus.scss */
+/* line 94, sass/navigation/_menus.scss */
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
 .post-navigation {
   margin: 0 0 1.5em;
   overflow: hidden;
 }
-/* line 97, sass/navigation/_menus.scss */
+/* line 99, sass/navigation/_menus.scss */
 .comment-navigation .nav-previous,
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
   float: left;
   width: 50%;
 }
-/* line 102, sass/navigation/_menus.scss */
+/* line 104, sass/navigation/_menus.scss */
 .comment-navigation .nav-next,
 .posts-navigation .nav-next,
 .post-navigation .nav-next {
@@ -801,6 +765,174 @@ a:hover, a:active {
 }
 
 /*--------------------------------------------------------------
+# Flickity
+--------------------------------------------------------------*/
+/*! Flickity v2.0.5
+http://flickity.metafizzy.co
+---------------------------------------------- */
+/* line 5, sass/modules/_flickity.scss */
+.flickity-enabled {
+  position: relative;
+}
+
+/* line 9, sass/modules/_flickity.scss */
+.flickity-enabled:focus {
+  outline: none;
+}
+
+/* line 11, sass/modules/_flickity.scss */
+.flickity-viewport {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+
+/* line 17, sass/modules/_flickity.scss */
+.flickity-slider {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* draggable */
+/* line 25, sass/modules/_flickity.scss */
+.flickity-enabled.is-draggable {
+  -webkit-tap-highlight-color: transparent;
+  tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* line 34, sass/modules/_flickity.scss */
+.flickity-enabled.is-draggable .flickity-viewport {
+  cursor: move;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+/* line 40, sass/modules/_flickity.scss */
+.flickity-enabled.is-draggable .flickity-viewport.is-pointer-down {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+
+/* ---- previous/next buttons ---- */
+/* line 47, sass/modules/_flickity.scss */
+button.flickity-prev-next-button {
+  position: absolute;
+  top: 50%;
+  width: 35px;
+  height: 35px;
+  border: none;
+  border-radius: 50%;
+  background: none;
+  background-color: transparent;
+  box-shadow: none;
+  cursor: pointer;
+  /* vertically center */
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* line 65, sass/modules/_flickity.scss */
+button.flickity-prev-next-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 5px #09F;
+}
+
+/* line 70, sass/modules/_flickity.scss */
+button.flickity-prev-next-button:active {
+  opacity: 0.6;
+}
+
+/* line 74, sass/modules/_flickity.scss */
+button.flickity-prev-next-button.previous {
+  left: -10px;
+}
+
+/* line 75, sass/modules/_flickity.scss */
+button.flickity-prev-next-button.next {
+  right: -10px;
+}
+
+/* right to left */
+/* line 77, sass/modules/_flickity.scss */
+button.flickity-rtl .flickity-prev-next-button.previous {
+  left: auto;
+  right: 10px;
+}
+
+/* line 81, sass/modules/_flickity.scss */
+button.flickity-rtl .flickity-prev-next-button.next {
+  right: auto;
+  left: 10px;
+}
+
+/* line 86, sass/modules/_flickity.scss */
+button.flickity-prev-next-button:disabled {
+  opacity: 0.3;
+  cursor: auto;
+}
+
+/* line 91, sass/modules/_flickity.scss */
+button.flickity-prev-next-button svg {
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  width: 60%;
+  height: 60%;
+}
+
+/* line 99, sass/modules/_flickity.scss */
+button.flickity-prev-next-button .arrow {
+  fill: gray;
+  -webkit-transition: fill .25s;
+  transition: fill .25s;
+}
+
+/* line 104, sass/modules/_flickity.scss */
+button.flickity-prev-next-button:hover .arrow {
+  fill: gray;
+}
+
+/* ---- page dots ---- */
+/* line 110, sass/modules/_flickity.scss */
+.flickity-page-dots {
+  position: absolute;
+  width: 100%;
+  bottom: -25px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  line-height: 1;
+}
+
+/* line 121, sass/modules/_flickity.scss */
+.flickity-rtl .flickity-page-dots {
+  direction: rtl;
+}
+
+/* line 123, sass/modules/_flickity.scss */
+.flickity-page-dots .dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 8px;
+  background: #333;
+  border-radius: 50%;
+  opacity: 0.25;
+  cursor: pointer;
+}
+
+/* line 134, sass/modules/_flickity.scss */
+.flickity-page-dots .dot.is-selected {
+  opacity: 1;
+}
+
+/*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
 /* line 1, sass/site/secondary/_widgets.scss */
@@ -816,6 +948,33 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
+/* line 1, sass/site/_site.scss */
+.wrapper, .home .home-header-wrapper, .testimonial-section .content-section-wrapper {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}
+@media screen and (min-width: 750px) {
+  /* line 1, sass/site/_site.scss */
+  .wrapper, .home .home-header-wrapper, .testimonial-section .content-section-wrapper {
+    padding-left: 2.75rem;
+    padding-right: 2.75rem;
+  }
+}
+
+/* line 8, sass/site/_site.scss */
+.center {
+  text-align: center;
+}
+
+/* line 23, sass/site/_site.scss */
+.error-404 .page-content {
+  text-align: center;
+  padding-bottom: 3em;
+}
+
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
@@ -867,9 +1026,6 @@ a:hover, a:active {
   display: block;
 }
 
-/*--------------------------------------------------------------
-## Structure Layout
---------------------------------------------------------------*/
 /*--------------------------------------------------------------
 # Infinite scroll
 --------------------------------------------------------------*/
@@ -983,6 +1139,253 @@ object {
 /* line 44, sass/media/_galleries.scss */
 .gallery-caption {
   display: block;
+}
+
+/*--------------------------------------------------------------
+# Custom Page/Custom Post Templates
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Static Front Page
+--------------------------------------------------------------*/
+/* line 1, sass/page-post-templates/_front-page.scss */
+.home {
+  color: #9f9f9f;
+}
+/* line 4, sass/page-post-templates/_front-page.scss */
+.home .home-feature-img {
+  min-height: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  position: relative;
+}
+/* line 12, sass/page-post-templates/_front-page.scss */
+.home .home-feature-img:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: lightblue;
+  opacity: .5;
+  z-index: 1;
+}
+/* line 25, sass/page-post-templates/_front-page.scss */
+.home .home-header-wrapper {
+  text-align: center;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  position: relative;
+  z-index: 5;
+}
+/* line 36, sass/page-post-templates/_front-page.scss */
+.home .home-header-video-player iframe {
+  border: 10px solid #254b99;
+}
+/* line 41, sass/page-post-templates/_front-page.scss */
+.home .home-title {
+  color: #fff;
+}
+/* line 52, sass/page-post-templates/_front-page.scss */
+.home .home-header-button-wrapper a {
+  text-decoration: none;
+}
+
+/*--------------------------------------------------------------
+## Flexible Content Module Sections
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+### Simple Content Section
+--------------------------------------------------------------*/
+/* line 5, sass/page-post-templates/_flexible-content-module.scss */
+.simple-content-section {
+  color: #fff;
+}
+
+/*--------------------------------------------------------------
+### Advanced Content Section
+--------------------------------------------------------------*/
+/* line 15, sass/page-post-templates/_flexible-content-module.scss */
+.advanced-content-section {
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+/* line 19, sass/page-post-templates/_flexible-content-module.scss */
+.advanced-content-section .header-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 23, sass/page-post-templates/_flexible-content-module.scss */
+.advanced-content-section h2, .advanced-content-section h3 {
+  text-align: center;
+}
+/* line 27, sass/page-post-templates/_flexible-content-module.scss */
+.advanced-content-section .content-footer-wrapper {
+  max-width: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 31, sass/page-post-templates/_flexible-content-module.scss */
+.advanced-content-section .content-footer-wrapper a {
+  text-decoration: none;
+}
+/* line 35, sass/page-post-templates/_flexible-content-module.scss */
+.advanced-content-section .content-footer-wrapper a button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 40, sass/page-post-templates/_flexible-content-module.scss */
+.advanced-content-section .content-footer-wrapper .footer-img {
+  width: 80px;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 950px) {
+  /* line 27, sass/page-post-templates/_flexible-content-module.scss */
+  .advanced-content-section .content-footer-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+/*--------------------------------------------------------------
+### Green Brain Section
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+### Green Left Image Section
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+### Testimonial Section
+--------------------------------------------------------------*/
+/* line 71, sass/page-post-templates/_flexible-content-module.scss */
+.testimonial-section {
+  background-color: #282560;
+  min-height: 200px;
+}
+/* line 79, sass/page-post-templates/_flexible-content-module.scss */
+.testimonial-section .testimonial-carousel {
+  height: 300px;
+  width: 100%;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 86, sass/page-post-templates/_flexible-content-module.scss */
+.testimonial-section .testimonial-carousel .cell {
+  width: 100%;
+}
+/* line 89, sass/page-post-templates/_flexible-content-module.scss */
+.testimonial-section .testimonial-carousel .cell:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+/* line 95, sass/page-post-templates/_flexible-content-module.scss */
+.testimonial-section .testimonial-carousel .cell a {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  outline: none;
+  text-decoration: none;
+  -webkit-transition: box-shadow .25s ease-out;
+  transition: box-shadow .25s ease-out;
+  margin: 1em;
+}
+/* line 109, sass/page-post-templates/_flexible-content-module.scss */
+.testimonial-section .testimonial-carousel .cell a:hover {
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.35);
+}
+/* line 114, sass/page-post-templates/_flexible-content-module.scss */
+.testimonial-section .testimonial-carousel .cell img {
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: .5em;
+}
+/* line 122, sass/page-post-templates/_flexible-content-module.scss */
+.testimonial-section .testimonial-carousel .cell span {
+  display: block;
+}
+/* line 125, sass/page-post-templates/_flexible-content-module.scss */
+.testimonial-section .testimonial-carousel .cell span.comm-title {
+  text-transform: uppercase;
+}
+@media screen and (min-width: 575px) {
+  /* line 137, sass/page-post-templates/_flexible-content-module.scss */
+  .testimonial-section .testimonial-carousel button.flickity-prev-next-button.previous {
+    left: -80px;
+  }
+  /* line 138, sass/page-post-templates/_flexible-content-module.scss */
+  .testimonial-section .testimonial-carousel button.flickity-prev-next-button.next {
+    right: -80px;
+  }
+}
+@media screen and (min-width: 750px) {
+  /* line 79, sass/page-post-templates/_flexible-content-module.scss */
+  .testimonial-section .testimonial-carousel {
+    max-width: 675px;
+    height: 350px;
+  }
+  /* line 145, sass/page-post-templates/_flexible-content-module.scss */
+  .testimonial-section .testimonial-carousel .cell {
+    width: 50%;
+  }
+  /* line 149, sass/page-post-templates/_flexible-content-module.scss */
+  .testimonial-section .testimonial-carousel button.flickity-prev-next-button.previous {
+    left: -45px;
+  }
+  /* line 150, sass/page-post-templates/_flexible-content-module.scss */
+  .testimonial-section .testimonial-carousel button.flickity-prev-next-button.next {
+    right: -45px;
+  }
+}
+@media screen and (min-width: 950px) {
+  /* line 79, sass/page-post-templates/_flexible-content-module.scss */
+  .testimonial-section .testimonial-carousel {
+    max-width: 925px;
+  }
+  /* line 156, sass/page-post-templates/_flexible-content-module.scss */
+  .testimonial-section .testimonial-carousel .cell {
+    width: 33.333%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 79, sass/page-post-templates/_flexible-content-module.scss */
+  .testimonial-section .testimonial-carousel {
+    max-width: 1050px;
+  }
+  /* line 164, sass/page-post-templates/_flexible-content-module.scss */
+  .testimonial-section .testimonial-carousel .cell {
+    width: 28%;
+    margin: 3% 4%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

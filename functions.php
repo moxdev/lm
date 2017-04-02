@@ -224,69 +224,16 @@ require get_template_directory() . '/inc/customizer.php';
 require get_template_directory() . '/inc/jetpack.php';
 
 /**
+ * Displays flexible content.
+ */
+require get_template_directory() . '/inc/flexible-content-module.php';
+
+
+/**
+ * Displays homepage header.
+ */
+require get_template_directory() . '/inc/homepage-header.php';
+
+/**
  * Displays the ACF flexible content.
  */
-
-function leading_minds_flexible_content() {
-
-    if( have_rows('acf_page_content') ):
-
-         // loop through the rows of data
-        while ( have_rows('acf_page_content') ) : the_row();
-
-            if( get_row_layout() == 'content_section' ):
-
-                $editor = get_sub_field('editor');
-
-                ?>
-                <section id="content-section">
-                </section>
-                <?php
-
-            elseif( get_row_layout() == 'two_column_content_section' ):
-
-                $img = get_sub_field('image');
-                $header = get_sub_field('header');
-                $sub_header = get_sub_field('sub_header');
-                $editor = get_sub_field('editor');
-                $left_column = get_sub_field('left_column_text');
-                $right_column = get_sub_field('right_column_text');
-                $footer_image = get_sub_field('footer_image');
-
-                ?>
-                <section id="two-column-section">
-                </section>
-                <?php
-
-            elseif( get_row_layout() == 'green_brain_section' ):
-
-                $header = get_sub_field('header');
-                $sub_header = get_sub_field('sub_header');
-                $editor = get_sub_field('editor');
-
-                ?>
-                <section id="green-brain-section">
-                </section>
-                <?php
-
-            elseif( get_row_layout() == 'green_left_image_section' ):
-
-                $img = get_sub_field('image');
-                $editor = get_sub_field('editor');
-
-                ?>
-                <section id="green-left-image-section">
-                </section>
-                <?php
-
-            endif;
-
-        endwhile;
-
-    else :
-
-        // no layouts found
-
-    endif;
-
-}
