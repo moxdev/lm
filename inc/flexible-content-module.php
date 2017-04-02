@@ -1,9 +1,9 @@
 <?php
 /**
- * Homepage Header
+ * Flexible Content
  *
  *
- * @package Test_Theme
+ * @package Leading_Minds
  */
 
 function leading_minds_flexible_content_module() {
@@ -80,10 +80,14 @@ function leading_minds_flexible_content_module() {
 
                 			        if( get_row_layout() == 'standard_button_link' ):
 
-                			        	$file = get_sub_field('button_url');
-                			        	$file = get_sub_field('button_text');
+                			        	$url = get_sub_field('button_url');
+                			        	$text = get_sub_field('button_text');
 
-                			        	?><h1>standard</h1><?php
+                			        	?>
+
+                                        <a href="<?php echo esc_url( $url ); ?>"><button><?php echo esc_html( $text ); ?></button></a>
+
+                                        <?php
 
                 			        elseif( get_row_layout() == 'call_phone_button' ):
 
@@ -113,7 +117,7 @@ function leading_minds_flexible_content_module() {
 
                 			        	?>
 
-										<img class="footer-img" src="<?php echo $img['sizes']['thumbnail']; ?>" alt="<?php echo $img['alt']; ?>" description="<?php echo $img['description']; ?>">
+										<img class="footer-img" src="<?php echo $img['sizes']['flexible-content-module-footer-image']; ?>" alt="<?php echo $img['alt']; ?>" description="<?php echo $img['description']; ?>">
 
                 			        	<?php
 

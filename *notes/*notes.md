@@ -1,4 +1,19 @@
 # Colors
+$color__purple: #282560;
+$color__green: #24cf5f;
+$color__blue: #2e71f2;
+$color__orange: #f53f00;
+$color__light-gray: #e8e8e8;
+$color__dark-gray: #3b3d40;
+
+$color__overlay: #9392af;
+
+# Fonts
+$font__bold: 'SourceSansPro-Bold', sans-serif;
+$font__semibold: 'SourceSansPro-Semibold', sans-serif;
+$font__black: 'SourceSansPro-Black', sans-serif;
+$font__alt-semibold: 'ACaslonPro-Semibold', sans-serif;
+$font__alt-bold: 'ACaslonPro-Bold', sans-serif;
 
 # Section Notes
 ## Home

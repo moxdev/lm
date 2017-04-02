@@ -11,6 +11,12 @@
     margin-right: auto;
 }
 
+// Section padding
+@mixin section-padding {
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
 // Clearfix
 @mixin clearfix() {
     content: "";

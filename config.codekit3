@@ -63,6 +63,158 @@
 		"oAP": "\/comments.php",
 		"oF": 0
 		},
+	"\/fonts\/ACaslonPro-Bold.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/ACaslonPro-Bold.eot",
+		"oF": 0
+		},
+	"\/fonts\/ACaslonPro-Bold.otf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/ACaslonPro-Bold.otf",
+		"oF": 0
+		},
+	"\/fonts\/ACaslonPro-Bold.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/fonts\/ACaslonPro-Bold.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/fonts\/ACaslonPro-Bold.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/ACaslonPro-Bold.ttf",
+		"oF": 0
+		},
+	"\/fonts\/ACaslonPro-Bold.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/ACaslonPro-Bold.woff",
+		"oF": 0
+		},
+	"\/fonts\/ACaslonPro-Semibold.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/ACaslonPro-Semibold.eot",
+		"oF": 0
+		},
+	"\/fonts\/ACaslonPro-Semibold.otf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/ACaslonPro-Semibold.otf",
+		"oF": 0
+		},
+	"\/fonts\/ACaslonPro-Semibold.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/fonts\/ACaslonPro-Semibold.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/fonts\/ACaslonPro-Semibold.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/ACaslonPro-Semibold.ttf",
+		"oF": 0
+		},
+	"\/fonts\/ACaslonPro-Semibold.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/ACaslonPro-Semibold.woff",
+		"oF": 0
+		},
+	"\/fonts\/SourceSansPro-Black.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/SourceSansPro-Black.eot",
+		"oF": 0
+		},
+	"\/fonts\/SourceSansPro-Black.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/fonts\/SourceSansPro-Black.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/fonts\/SourceSansPro-Black.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/SourceSansPro-Black.ttf",
+		"oF": 0
+		},
+	"\/fonts\/SourceSansPro-Black.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/SourceSansPro-Black.woff",
+		"oF": 0
+		},
+	"\/fonts\/SourceSansPro-Bold.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/SourceSansPro-Bold.eot",
+		"oF": 0
+		},
+	"\/fonts\/SourceSansPro-Bold.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/fonts\/SourceSansPro-Bold.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/fonts\/SourceSansPro-Bold.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/SourceSansPro-Bold.ttf",
+		"oF": 0
+		},
+	"\/fonts\/SourceSansPro-Bold.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/SourceSansPro-Bold.woff",
+		"oF": 0
+		},
+	"\/fonts\/SourceSansPro-Semibold.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/SourceSansPro-Semibold.eot",
+		"oF": 0
+		},
+	"\/fonts\/SourceSansPro-Semibold.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/fonts\/SourceSansPro-Semibold.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/fonts\/SourceSansPro-Semibold.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/SourceSansPro-Semibold.ttf",
+		"oF": 0
+		},
+	"\/fonts\/SourceSansPro-Semibold.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/SourceSansPro-Semibold.woff",
+		"oF": 0
+		},
 	"\/footer.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -426,6 +578,12 @@
 		"oAP": "\/sass\/.sass-cache\/1fb591e83e4bb44cb7440cf3c088ca6f359a276b\/_navigation.scssc",
 		"oF": 0
 		},
+	"\/sass\/.sass-cache\/40a8e930d2c467943f757add12871257b4a85fef\/_breakpoints.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/40a8e930d2c467943f757add12871257b4a85fef\/_breakpoints.scssc",
+		"oF": 0
+		},
 	"\/sass\/.sass-cache\/40a8e930d2c467943f757add12871257b4a85fef\/_colors.scssc": {
 		"ft": 8192,
 		"oA": 1,
@@ -522,6 +680,12 @@
 		"oAP": "\/sass\/.sass-cache\/963225be365b5650b71b47e79072a91ff250af16\/_clearings.scssc",
 		"oF": 0
 		},
+	"\/sass\/.sass-cache\/963225be365b5650b71b47e79072a91ff250af16\/_flickity.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/963225be365b5650b71b47e79072a91ff250af16\/_flickity.scssc",
+		"oF": 0
+		},
 	"\/sass\/.sass-cache\/963225be365b5650b71b47e79072a91ff250af16\/_infinite-scroll.scssc": {
 		"ft": 8192,
 		"oA": 1,
@@ -568,6 +732,24 @@
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/sass\/.sass-cache\/e3d13e55e8ddc5318bbbfb7171153050459940df\/_typography.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/ef8cb757c84d7f9aa2f548478132cba68362dcf7\/_flexible-content-module.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/ef8cb757c84d7f9aa2f548478132cba68362dcf7\/_flexible-content-module.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/ef8cb757c84d7f9aa2f548478132cba68362dcf7\/_front-page.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/ef8cb757c84d7f9aa2f548478132cba68362dcf7\/_front-page.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/ef8cb757c84d7f9aa2f548478132cba68362dcf7\/_page-post-templates.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/ef8cb757c84d7f9aa2f548478132cba68362dcf7\/_page-post-templates.scssc",
 		"oF": 0
 		},
 	"\/sass\/.sass-cache\/fb66b6af827c8779282a5c03df85df7dcc656a5a\/_comments.scssc": {
@@ -959,28 +1141,18 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"\/sass\/style.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/sass\/style-min.css",
-		"oF": 0,
-		"oS": 0
-		},
 	"\/sass\/style.scss": {
 		"aP": 0,
-		"bl": 0,
+		"bl": 1,
 		"dP": 10,
-		"dS": 0,
+		"dS": 2,
 		"ft": 4,
-		"ma": 0,
+		"ma": 1,
 		"oA": 0,
-		"oAP": "\/sass\/style.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
+		"oAP": "\/style.css",
+		"oF": 2,
+		"oS": 1,
+		"uL": 0
 		},
 	"\/sass\/typography\/_copy.scss": {
 		"aP": 0,
@@ -1169,7 +1341,7 @@
 	"creationDate": 511634506,
 	"displayValue": "leading_minds",
 	"displayValueWasSetByUser": 0,
-	"iconImageName": "meme-hart"
+	"iconImageName": "meme-confusedBaby"
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

@@ -3,7 +3,7 @@
  * Homepage Header
  *
  *
- * @package Test_Theme
+ * @package Leading_Minds
  */
 
 function leading_minds_homepage_header() {
@@ -20,6 +20,7 @@ function leading_minds_homepage_header() {
 				$content = get_field('home_header_content_editor');
 				$add_btn = get_field('home_add_button_link');
 				$btn = get_field('home_click_through_button');
+				$btn_text = get_field('home_button_text');
 
 				?>
 
@@ -30,7 +31,7 @@ function leading_minds_homepage_header() {
 					if( $video_url) { ?>
 
 						<div class="home-header-video-player">
-							<iframe width="533" height="308" src="<?php echo esc_url( $video_url ); ?>" frameborder="0" allowfullscreen></iframe>
+							<iframe width="504" height="283" src="<?php echo esc_url( $video_url ); ?>" frameborder="0" allowfullscreen></iframe>
 						</div><!-- .video-player -->
 
 					<?php }
@@ -67,7 +68,7 @@ function leading_minds_homepage_header() {
 					if( $add_btn ) { ?>
 
 						<div class="home-header-button-wrapper">
-							<a href="<?php echo esc_url( $btn ); ?>"><button>learn more</button></a>
+							<a href="<?php echo esc_url( $btn ); ?>"><button><?php echo esc_html( $btn_text ); ?></button></a>
 						</div><!-- .home-button-wrapper -->
 
 					<?php }
