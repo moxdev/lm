@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
 Theme Name: Leading Minds
 Theme URI: http://underscores.me/
@@ -366,16 +367,11 @@ dfn, cite, em, i {
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/typography\/_copy\.scss}line{font-family:\000039}}
-blockquote {
-  margin: 0 1.5em;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/typography\/_copy\.scss}line{font-family:\0000313}}
 address {
   margin: 0 0 1.5em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/typography\/_copy\.scss}line{font-family:\0000317}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/typography\/_copy\.scss}line{font-family:\0000313}}
 pre {
   background: #eee;
   font-family: "ACaslonPro-Semibold", sans-serif;
@@ -388,26 +384,26 @@ pre {
   padding: 1.6em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/typography\/_copy\.scss}line{font-family:\0000328}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/typography\/_copy\.scss}line{font-family:\0000324}}
 code, kbd, tt, var {
   font-family: "SourceSansPro-Semibold", sans-serif;
   font-size: 15px;
   font-size: 0.9375rem;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/typography\/_copy\.scss}line{font-family:\0000333}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/typography\/_copy\.scss}line{font-family:\0000329}}
 abbr, acronym {
   border-bottom: 1px dotted #666;
   cursor: help;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/typography\/_copy\.scss}line{font-family:\0000338}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/typography\/_copy\.scss}line{font-family:\0000334}}
 mark, ins {
   background: #fff9c0;
   text-decoration: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/typography\/_copy\.scss}line{font-family:\0000343}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/typography\/_copy\.scss}line{font-family:\0000339}}
 big {
   font-size: 125%;
 }
@@ -435,15 +431,37 @@ body {
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/elements\/_elements\.scss}line{font-family:\0000315}}
-blockquote, q {
-  quotes: "" "";
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/elements\/_elements\.scss}line{font-family:\0000318}}
-blockquote:before, blockquote:after, q:before, q:after {
-  content: "";
+blockquote {
+  quotes: "“" "”" "‘" "’";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/elements\/_elements\.scss}line{font-family:\0000324}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/elements\/_elements\.scss}line{font-family:\0000319}}
+blockquote:before,
+blockquote:after {
+  color: #24cf5f;
+  font-size: 2em;
+  line-height: 0.1em;
+  vertical-align: -0.2em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/elements\/_elements\.scss}line{font-family:\0000327}}
+blockquote:before {
+  content: open-quote;
+  margin-right: 0.25em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/elements\/_elements\.scss}line{font-family:\0000332}}
+blockquote:after {
+  content: close-quote;
+  margin-left: 0.25em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/elements\/_elements\.scss}line{font-family:\0000336}}
+blockquote p {
+  display: inline;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/elements\/_elements\.scss}line{font-family:\0000340}}
 hr {
   background-color: #ccc;
   border: 0;
@@ -483,7 +501,7 @@ dd {
   margin: 0 1.5em 1.5em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/elements\/_elements\.scss}line{font-family:\0000333}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/elements\/_elements\.scss}line{font-family:\0000349}}
 img {
   height: auto;
   /* Make sure images are scaled correctly. */
@@ -491,7 +509,7 @@ img {
   /* Adhere to container width. */
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/elements\/_elements\.scss}line{font-family:\0000338}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/elements\/_elements\.scss}line{font-family:\0000354}}
 figure {
   margin: 1em 0;
   /* Extra wide images within figure tags don't overflow the content area. */
@@ -1300,106 +1318,100 @@ object {
 .testimonial-section {
   background-color: #282560;
   min-height: 200px;
-  max-height: 573px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_flexible-content-module\.scss}line{font-family:\0000384}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_flexible-content-module\.scss}line{font-family:\0000383}}
+.testimonial-section .microphone-section {
+  padding-top: 2em;
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_flexible-content-module\.scss}line{font-family:\0000387}}
+.testimonial-section .microphone-section h5 {
+  text-transform: uppercase;
+  margin-top: 1em;
+  margin-bottom: .5em;
+  color: #fff;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_flexible-content-module\.scss}line{font-family:\0000395}}
 .testimonial-section .testimonial-carousel {
-  height: 300px;
   width: 100%;
-  max-width: 300px;
-  margin-left: auto;
-  margin-right: auto;
+  height: 300px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_flexible-content-module\.scss}line{font-family:\0000391}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_flexible-content-module\.scss}line{font-family:\0000399}}
+.testimonial-section .testimonial-carousel blockquote {
+  margin: 0;
+  padding: 0;
+  margin: .5em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_flexible-content-module\.scss}line{font-family:\00003104}}
 .testimonial-section .testimonial-carousel .cell {
   width: 100%;
+  color: #fff;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_flexible-content-module\.scss}line{font-family:\0000394}}
-.testimonial-section .testimonial-carousel .cell:after {
-  content: "";
-  display: block;
-  padding-bottom: 100%;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_flexible-content-module\.scss}line{font-family:\00003108}}
+.testimonial-section .testimonial-carousel .cell h4 {
+  margin: 0;
+  color: #fff;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_flexible-content-module\.scss}line{font-family:\00003100}}
-.testimonial-section .testimonial-carousel .cell a {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  outline: none;
-  text-decoration: none;
-  transition: box-shadow .25s ease-out;
-  margin: 1em;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_flexible-content-module\.scss}line{font-family:\00003114}}
-.testimonial-section .testimonial-carousel .cell a:hover {
-  box-shadow: 0 0 7px rgba(0, 0, 0, 0.35);
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_flexible-content-module\.scss}line{font-family:\00003113}}
+.testimonial-section .testimonial-carousel .cell h5 {
+  margin: 0;
+  color: #fff;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_flexible-content-module\.scss}line{font-family:\00003119}}
-.testimonial-section .testimonial-carousel .cell img {
-  border-radius: 50%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: .5em;
+.testimonial-section .testimonial-carousel button.flickity-prev-next-button.previous {
+  display: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_flexible-content-module\.scss}line{font-family:\00003127}}
-.testimonial-section .testimonial-carousel .cell span {
-  display: block;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_flexible-content-module\.scss}line{font-family:\00003130}}
-.testimonial-section .testimonial-carousel .cell span.comm-title {
-  text-transform: uppercase;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_flexible-content-module\.scss}line{font-family:\00003122}}
+.testimonial-section .testimonial-carousel button.flickity-prev-next-button.next {
+  display: none;
 }
 @media screen and (min-width: 575px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_flexible-content-module\.scss}line{font-family:\00003142}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_flexible-content-module\.scss}line{font-family:\00003127}}
   .testimonial-section .testimonial-carousel button.flickity-prev-next-button.previous {
+    display: block;
     left: -80px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_flexible-content-module\.scss}line{font-family:\00003143}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_flexible-content-module\.scss}line{font-family:\00003131}}
   .testimonial-section .testimonial-carousel button.flickity-prev-next-button.next {
+    display: block;
     right: -80px;
   }
 }
 @media screen and (min-width: 750px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_flexible-content-module\.scss}line{font-family:\0000384}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_flexible-content-module\.scss}line{font-family:\0000395}}
   .testimonial-section .testimonial-carousel {
     max-width: 675px;
     height: 350px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_flexible-content-module\.scss}line{font-family:\00003150}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_flexible-content-module\.scss}line{font-family:\00003141}}
   .testimonial-section .testimonial-carousel .cell {
     width: 50%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_flexible-content-module\.scss}line{font-family:\00003154}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_flexible-content-module\.scss}line{font-family:\00003145}}
   .testimonial-section .testimonial-carousel button.flickity-prev-next-button.previous {
     left: -45px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_flexible-content-module\.scss}line{font-family:\00003155}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_flexible-content-module\.scss}line{font-family:\00003146}}
   .testimonial-section .testimonial-carousel button.flickity-prev-next-button.next {
     right: -45px;
   }
 }
 @media screen and (min-width: 950px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_flexible-content-module\.scss}line{font-family:\0000384}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_flexible-content-module\.scss}line{font-family:\0000395}}
   .testimonial-section .testimonial-carousel {
     max-width: 925px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_flexible-content-module\.scss}line{font-family:\00003161}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_flexible-content-module\.scss}line{font-family:\00003152}}
   .testimonial-section .testimonial-carousel .cell {
     width: 33.333%;
   }
 }
 @media screen and (min-width: 1200px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_flexible-content-module\.scss}line{font-family:\0000384}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_flexible-content-module\.scss}line{font-family:\0000395}}
   .testimonial-section .testimonial-carousel {
     max-width: 1050px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_flexible-content-module\.scss}line{font-family:\00003169}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_flexible-content-module\.scss}line{font-family:\00003160}}
   .testimonial-section .testimonial-carousel .cell {
     width: 28%;
     margin: 3% 4%;

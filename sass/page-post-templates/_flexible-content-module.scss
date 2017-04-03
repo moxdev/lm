@@ -75,72 +75,63 @@
 .testimonial-section {
     background-color: $color__purple;
     min-height: 200px;
-    max-height: 573px;
 
     .content-section-wrapper {
         @extend .wrapper;
     }
 
+    .microphone-section {
+        padding-top: 2em;
+        text-align: center;
+
+        h5 {
+            text-transform: uppercase;
+            margin-top: 1em;
+            margin-bottom: .5em;
+            color: #fff;
+        }
+    }
+
     .testimonial-carousel {
-        height: 300px;
         width: 100%;
-        max-width: 300px;
-        margin-left: auto;
-        margin-right: auto;
+        height: 300px;
+
+        blockquote {
+            @include reset;
+            margin: .5em;
+        }
 
         .cell {
             width: 100%;
+            color: #fff;
 
-            &:after {
-                 content: "";
-                 display: block;
-                 padding-bottom: 100%;
+            h4 {
+                margin:0;
+                color: #fff;
             }
 
-            a {
-                position: absolute;
-                left: 0;
-                right: 0;
-                top: 0;
-                bottom: 0;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                outline: none;
-                text-decoration: none;
-                transition:box-shadow .25s ease-out;
-                margin: 1em;
-
-                &:hover {
-                    box-shadow: 0 0 7px rgba(0, 0, 0, .35);
-                }
-            }
-
-            img {
-                border-radius: 50%;
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-                margin-bottom: .5em;
-            }
-
-            span {
-                display: block;
-
-                &.comm-title {
-                    // font-family: $font__alt-bold;
-                    text-transform: uppercase;
-                }
-
-                &.comm-location {
-                    // color: $color__text-main;
-                }
+            h5 {
+                margin: 0;
+                color: #fff;
             }
         }
 
+        button.flickity-prev-next-button.previous {
+            display: none;
+        }
+        button.flickity-prev-next-button.next {
+            display: none;
+        }
+
         @include respond-to(x-small) {
-            button.flickity-prev-next-button.previous { left: -80px; }
-            button.flickity-prev-next-button.next { right: -80px; }
+            button.flickity-prev-next-button.previous {
+                display: block;
+                left: -80px;
+            }
+            button.flickity-prev-next-button.next {
+                display: block;
+                right: -80px;
+            }
         }
 
         @include respond-to(small) {
@@ -172,5 +163,7 @@
             }
         }
     }
+
+
 }
 

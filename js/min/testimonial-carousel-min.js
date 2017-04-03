@@ -1,1 +1,1 @@
-var elem=document.querySelector(".testimonial-carousel"),flkty=new Flickity(elem,{contain:!0,pageDots:!1,setGallerySize:!1,groupCells:!0});
+var elem=document.querySelector(".testimonial-carousel"),flkty=new Flickity(elem,{contain:!0,pageDots:!1,setGallerySize:!0,groupCells:!0});

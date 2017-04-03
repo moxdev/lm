@@ -112,7 +112,7 @@ function leading_minds_register_scripts()  {
         wp_register_script('jquery', '/wp-includes/js/jquery/jquery.js', FALSE, FALSE, TRUE);
     }
 }
-add_action('init', 'test_register_scripts');
+add_action('init', 'leading_minds_register_scripts');
 
 /**
  * Enqueue scripts and styles.
@@ -200,7 +200,7 @@ if( function_exists('acf_add_options_page') ) {
 }
 
 // Register Custom Post Type
-function test_create_custom_post_type() {
+function leading_minds_create_custom_post_type() {
 
     $labels = array(
         'name'                  => 'Testimonials',
@@ -263,7 +263,7 @@ function test_create_custom_post_type() {
     register_post_type( 'testimonials', $args );
 
 }
-add_action( 'init', 'test_create_custom_post_type', 0 );
+add_action( 'init', 'leading_minds_create_custom_post_type', 0 );
 
 /**
  * Implement the Custom Header feature.
