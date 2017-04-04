@@ -15,11 +15,12 @@ function leading_minds_flexible_content_module() {
 
             if( get_row_layout() == 'simple_content_section' ):
 
+                $bg_color = get_sub_field('section_background_color');
                 $editor = get_sub_field('editor');
 
                 ?>
-                <section class="simple-content-section wrapper">
-                	<div class="content-section-wrapper">
+                <section class="simple-content-section" style="background-color:<?php echo $bg_color; ?>">
+                	<div class="content-section-wrapper wrapper">
 
                 		<?php echo $editor; ?>
 
