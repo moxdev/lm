@@ -148,12 +148,15 @@ if( function_exists('acf_add_options_page') ) {
         'redirect'      => true
     ));
 
-    	// acf_add_options_sub_page(array(
-    	//     'page_title'    => 'Contact',
-    	//     'menu_title'    => 'Contact Info',
-    	//     'menu_slug'     => 'contact-info',
-    	//     'parent_slug'   => 'global-info',
-    	// ));
+    acf_add_options_page(array(
+            'page_title'    => 'Associates Settings',
+            'menu_title'    => 'Associates Settings',
+            'menu_slug'     => 'associates-settings',
+            'capability'    => 'edit_posts',
+            'redirect'      => false,
+            'position'      => '6.2',
+            'icon_url'     => 'dashicons-universal-access-alt',
+        ));
 
     // Testimonial Section
     // acf_add_options_page(array(

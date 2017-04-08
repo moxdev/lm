@@ -1418,4 +1418,56 @@ object {
   }
 }
 
+/*--------------------------------------------------------------
+### Associates Section
+--------------------------------------------------------------*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_flexible-content-module\.scss}line{font-family:\00003174}}
+.associates-section .content-section-wrapper {
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_flexible-content-module\.scss}line{font-family:\00003178}}
+.associates-section a {
+  text-decoration: none;
+  color: #656b6f;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_flexible-content-module\.scss}line{font-family:\00003184}}
+.associates-section img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_flexible-content-module\.scss}line{font-family:\00003189}}
+.associates-section h4, .associates-section h5 {
+  margin: 0;
+  padding: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_flexible-content-module\.scss}line{font-family:\00003193}}
+.associates-section h4 {
+  margin-top: .5em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_flexible-content-module\.scss}line{font-family:\00003197}}
+.associates-section .associate-block {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  transition: box-shadow .25s ease-out;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_flexible-content-module\.scss}line{font-family:\00003202}}
+.associates-section .associate-block:hover {
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.35);
+  color: #656b6f;
+}
+@media screen and (min-width: 750px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_flexible-content-module\.scss}line{font-family:\00003210}}
+  .associates-section .flex-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_flexible-content-module\.scss}line{font-family:\00003215}}
+  .associates-section .associate-block {
+    flex: 1 0 calc(100% / 3);
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

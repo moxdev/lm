@@ -7,7 +7,7 @@
 		"uuidString": "D1B2EF3E-AE0A-4851-B901-52007D9A126A"
 		}
 	],
-"creatorBuild": "25704",
+"creatorBuild": "25813",
 "files": {
 	"\/*notes\/*notes.md": {
 		"cS": 0,
@@ -56,6 +56,15 @@
 		"oA": 2,
 		"oAP": "\/archive.php",
 		"oF": 0
+		},
+	"\/bs-config.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/bs-config-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
 		},
 	"\/comments.php": {
 		"ft": 8192,
@@ -251,6 +260,7 @@
 		"oA": 0,
 		"oAP": "\/imgs\/shutterstock_19783951.jpg",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
@@ -260,6 +270,7 @@
 		"oA": 0,
 		"oAP": "\/imgs\/shutterstock_251325649.jpg",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
@@ -269,6 +280,7 @@
 		"oA": 0,
 		"oAP": "\/imgs\/shutterstock_2967735.jpg",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
@@ -278,6 +290,7 @@
 		"oA": 0,
 		"oAP": "\/imgs\/shutterstock_413908333.jpg",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
@@ -287,6 +300,7 @@
 		"oA": 0,
 		"oAP": "\/imgs\/shutterstock_454434454.jpg",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
@@ -296,6 +310,7 @@
 		"oA": 0,
 		"oAP": "\/imgs\/shutterstock_523594639.jpg",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
@@ -305,6 +320,7 @@
 		"oA": 0,
 		"oAP": "\/imgs\/shutterstock_536769871.jpg",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
@@ -314,6 +330,7 @@
 		"oA": 0,
 		"oAP": "\/imgs\/shutterstock_5616115.jpg",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
@@ -323,6 +340,7 @@
 		"oA": 0,
 		"oAP": "\/imgs\/shutterstock_91732955.jpg",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
@@ -1261,11 +1279,12 @@
 	"\/screenshot.png": {
 		"ft": 32768,
 		"iS": 264,
-		"l": 1,
 		"oA": 0,
 		"oAP": "\/screenshot.png",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"\/search.php": {
@@ -2301,6 +2320,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"no-prototype-builtins": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-redeclare": {
 			"active": 1,
 			"optionString": "{'builtinGlobals': false}"
@@ -3125,14 +3148,6 @@
 		"orderOutput": 0,
 		"outputStyle": 1
 		},
-	"languageDefaultsJSX": {
-		"autoOutputAction": 0,
-		"autoOutputPathFilenamePattern": "*.js",
-		"autoOutputPathRelativePath": "",
-		"autoOutputPathReplace1": "jsx",
-		"autoOutputPathReplace2": "js",
-		"autoOutputPathStyle": 0
-		},
 	"languageDefaultsKIT": {
 		"autoOutputAction": 0,
 		"autoOutputPathFilenamePattern": "*.html",
@@ -3195,7 +3210,7 @@
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
-		"enableLossy": 1,
+		"optimizerType": 1,
 		"quality": 100
 		},
 	"languageDefaultsPUG": {
