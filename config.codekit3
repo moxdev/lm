@@ -248,6 +248,16 @@
 		"oAP": "\/header.php",
 		"oF": 0
 		},
+	"\/imgs\/footer-logo.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/imgs\/footer-logo.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/imgs\/ImageComps.pdf": {
 		"ft": 8192,
 		"oA": 2,
@@ -710,6 +720,12 @@
 		"oAP": "\/sass\/.sass-cache\/963225be365b5650b71b47e79072a91ff250af16\/_infinite-scroll.scssc",
 		"oF": 0
 		},
+	"\/sass\/.sass-cache\/97798e29640eff8bd8889f9d3a3c4ed3e162f440\/_footer.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/97798e29640eff8bd8889f9d3a3c4ed3e162f440\/_footer.scssc",
+		"oF": 0
+		},
 	"\/sass\/.sass-cache\/c06abfa7dd22345aeb970d7af91a7d7077203b5d\/_mixins-master.scssc": {
 		"ft": 8192,
 		"oA": 1,
@@ -1116,6 +1132,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/sass\/site\/_structure.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/sass\/site\/footer\/_footer.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/site\/footer\/_footer.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

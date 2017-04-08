@@ -1,0 +1,10 @@
+#colophon {
+    background-color: $color__bg-dkgray;
+
+    .site-info {
+        @include section-padding;
+        @include padding-left-right;
+        text-align: center;
+
+    }
+}

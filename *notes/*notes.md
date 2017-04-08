@@ -7,9 +7,10 @@ $color__light-gray: #e8e8e8;
 $color__med-gray: #656b6f;
 $color__dark-gray: #3b3d40;
 
-$color__background-gray: $color__light-gray;
-$color__background-purple: $color__purple;
-$color__background-green: $color__green;
+$color__bg-ltgray: $color__light-gray;
+$color__bg-dkgray: $color__dark-gray;
+$color__bg-purple: $color__purple;
+$color__bg-green: $color__green;
 
 $color__overlay: #9392af;
 $color__h2:$color__dark-gray;
