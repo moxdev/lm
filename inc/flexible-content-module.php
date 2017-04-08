@@ -20,16 +20,17 @@ function leading_minds_flexible_content_module() {
 
                 ?>
                 <section class="simple-content-section" style="background-color:<?php echo $bg_color; ?>">
-                	<div class="content-section-wrapper wrapper">
+                    <div class="content-section-wrapper wrapper">
 
-                		<?php echo $editor; ?>
+                        <?php echo $editor; ?>
 
-                	</div>
+                    </div>
                 </section>
                 <?php
 
             elseif( get_row_layout() == 'advanced_content_section' ):
 
+                $bg_color            = get_sub_field('section_background_color');
                 $img                 = get_sub_field('image');
                 $header              = get_sub_field('header');
                 $sub_header          = get_sub_field('sub_header');
@@ -41,102 +42,116 @@ function leading_minds_flexible_content_module() {
                 $content_footer      = get_sub_field('content_footer');
 
                 ?>
-                <section class="advanced-content-section wrapper">
-                	<div class="content-section-wrapper">
+                <section class="advanced-content-section wrapper" style="background-color:<?php echo $bg_color; ?>">
+                    <div class="content-section-wrapper">
 
-                		<?php
+                        <?php
 
-                			if ($img) { ?>
-                				<img class="header-img" src="<?php echo $img['sizes']['thumbnail']; ?>" alt="<?php echo $img['alt']; ?>" description="<?php echo $img['description']; ?>">
-                			<?php }
+                            if ($img) { ?>
+                                <img class="header-img" src="<?php echo $img['sizes']['thumbnail']; ?>" alt="<?php echo $img['alt']; ?>" description="<?php echo $img['description']; ?>">
+                            <?php }
 
-                			if ($header) { ?>
-                				<h2><?php echo esc_html( $header ); ?></h2>
-                			<?php }
+                            if ($header) { ?>
+                                <h2><?php echo esc_html( $header ); ?></h2>
+                            <?php }
 
-                			if ($sub_header) { ?>
-                				<h3><?php echo esc_html( $sub_header ); ?></h3>
-                			<?php }
+                            if ($sub_header) { ?>
+                                <h3><?php echo esc_html( $sub_header ); ?></h3>
+                            <?php }
 
-                			if ($editor) { ?>
-                				<?php echo $editor; ?>
-                			<?php }
+                            if ($editor) { ?>
+                                <?php echo $editor; ?>
+                            <?php }
 
-                			if ($add_split_column) { ?>
-                				<div class="split-column-wrapper">
-                					<div class="left-column"></div>
-                					<div class="right-column"></div>
-                				</div>
-                			<?php }
+                            if ($add_split_column) { ?>
 
-                			if( have_rows('content_footer') ):
+                                <div class="split-column-wrapper">
+                                    <div class="left-column">
+                                        <div class="column-wrapper">
 
-                			    ?>
+                                            <?php echo $left_column_text; ?>
 
-								<div class="content-footer-wrapper">
+                                        </div>
+                                    </div>
+                                    <div class="right-column">
+                                        <div class="column-wrapper">
 
-                				<?php
+                                            <?php echo $right_column_text; ?>
 
-                			    while ( have_rows('content_footer') ) : the_row();
+                                        </div>
+                                    </div>
+                                </div>
 
-                			        if( get_row_layout() == 'standard_button_link' ):
+                            <?php }
 
-                			        	$url = get_sub_field('button_url');
-                			        	$text = get_sub_field('button_text');
+                            if( have_rows('content_footer') ):
 
-                			        	?>
+                                ?>
+
+                                <div class="content-footer-wrapper">
+
+                                <?php
+
+                                while ( have_rows('content_footer') ) : the_row();
+
+                                    if( get_row_layout() == 'standard_button_link' ):
+
+                                        $url = get_sub_field('button_url');
+                                        $text = get_sub_field('button_text');
+
+                                        ?>
 
                                         <a href="<?php echo esc_url( $url ); ?>"><button><?php echo esc_html( $text ); ?></button></a>
 
                                         <?php
 
-                			        elseif( get_row_layout() == 'call_phone_button' ):
+                                    elseif( get_row_layout() == 'call_phone_button' ):
 
-                			        	$phone = get_sub_field('phone_number');
-                			        	$text = get_sub_field('button_text');
+                                        $phone = get_sub_field('phone_number');
+                                        $text = get_sub_field('button_text');
 
-                			        	?>
+                                        ?>
 
-										<a href="tel:<?php echo esc_html( $phone ); ?>"><button><?php echo esc_html( $text ); ?></button></a>
+                                        <a href="tel:<?php echo esc_html( $phone ); ?>"><button><?php echo esc_html( $text ); ?></button></a>
 
-                			        	<?php
+                                        <?php
 
-                			        elseif( get_row_layout() == 'email_button' ):
+                                    elseif( get_row_layout() == 'email_button' ):
 
-                			        	$email = get_sub_field('email_address');
-                			        	$text = get_sub_field('button_text');
+                                        $email = get_sub_field('email_address');
+                                        $text = get_sub_field('button_text');
 
-                			        	?>
+                                        ?>
 
-										<a href="mailto:<?php echo esc_html( $email ); ?>"><button><?php echo esc_html( $text ); ?></button></a>
+                                        <a href="mailto:<?php echo esc_html( $email ); ?>"><button><?php echo esc_html( $text ); ?></button></a>
 
-                			        	<?php
+                                        <?php
 
-                			        elseif( get_row_layout() == 'image' ):
+                                    elseif( get_row_layout() == 'image' ):
 
-                			        	$img = get_sub_field('image');
+                                        $img = get_sub_field('image');
 
-                			        	?>
+                                        ?>
 
-										<img class="footer-img" src="<?php echo $img['sizes']['flexible-content-module-footer-image']; ?>" alt="<?php echo $img['alt']; ?>" description="<?php echo $img['description']; ?>">
+                                        <img class="footer-img" src="<?php echo $img['sizes']['flexible-content-module-footer-image']; ?>" alt="<?php echo $img['alt']; ?>" description="<?php echo $img['description']; ?>">
 
-                			        	<?php
+                                        <?php
 
-                			        endif;
+                                    endif;
 
-                			    endwhile;
+                                endwhile;
 
-                			    ?>
+                                ?>
 
-                			    </div><!-- content-footer-wrapper -->
+                                </div><!-- content-footer-wrapper -->
 
-                			    <?php
+                                <?php
 
-                			endif;
+                            endif;
 
-                		?>
+                        ?>
 
-                	</div>
+                    </div>
                 </section>
                 <?php
 
@@ -148,8 +163,8 @@ function leading_minds_flexible_content_module() {
 
                 ?>
                 <section class="green-brain-section">
-					<div class="content-section-wrapper">
-					</div>
+                    <div class="content-section-wrapper">
+                    </div>
 
                 </section>
                 <?php
@@ -161,8 +176,8 @@ function leading_minds_flexible_content_module() {
 
                 ?>
                 <section class="green-left-image-section">
-					<div class="content-section-wrapper">
-					</div>
+                    <div class="content-section-wrapper">
+                    </div>
 
                 </section>
                 <?php

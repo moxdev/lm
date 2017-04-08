@@ -3,8 +3,25 @@
 --------------------------------------------------------------*/
 
 .simple-content-section {
+    // min-height: 400px;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    background-size: 30%; // change responsive sizes
+    background-position: 20% 50%; // change responsive sizes
 
+    h2 {
+        color: #fff;
+    }
 
+    .content-section-wrapper {
+        @include section-padding;
+    }
+
+    .editor-wrapper {
+        text-align: left;
+        width: 50%;
+        margin-left: auto;
+    }
 }
 
 
@@ -13,7 +30,7 @@
 --------------------------------------------------------------*/
 
 .advanced-content-section {
-    color: $color__dark_gray;
+    // color: $color__dark_gray;
     @include section-padding;
 
     .header-img {
