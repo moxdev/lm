@@ -248,6 +248,16 @@
 		"oAP": "\/header.php",
 		"oF": 0
 		},
+	"\/imgs\/bbb-logo.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/imgs\/bbb-logo.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/imgs\/footer-logo.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -264,95 +274,35 @@
 		"oAP": "\/imgs\/ImageComps.pdf",
 		"oF": 0
 		},
-	"\/imgs\/shutterstock_19783951.jpg": {
-		"ft": 16384,
-		"iS": 8516095,
-		"oA": 0,
-		"oAP": "\/imgs\/shutterstock_19783951.jpg",
+	"\/imgs\/linkedin-logo.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/imgs\/linkedin-logo.svg",
 		"oF": 0,
-		"oIPL": 0,
 		"opt": 0,
-		"q": 100
+		"plM": 3758088159,
+		"prP": 0
 		},
-	"\/imgs\/shutterstock_251325649.jpg": {
-		"ft": 16384,
-		"iS": 6037710,
-		"oA": 0,
-		"oAP": "\/imgs\/shutterstock_251325649.jpg",
+	"\/imgs\/pcc-logo.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/imgs\/pcc-logo.svg",
 		"oF": 0,
-		"oIPL": 0,
 		"opt": 0,
-		"q": 100
+		"plM": 3758088159,
+		"prP": 0
 		},
-	"\/imgs\/shutterstock_2967735.jpg": {
-		"ft": 16384,
-		"iS": 3256384,
-		"oA": 0,
-		"oAP": "\/imgs\/shutterstock_2967735.jpg",
+	"\/imgs\/twitter-logo.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/imgs\/twitter-logo.svg",
 		"oF": 0,
-		"oIPL": 0,
 		"opt": 0,
-		"q": 100
-		},
-	"\/imgs\/shutterstock_413908333.jpg": {
-		"ft": 16384,
-		"iS": 27540393,
-		"oA": 0,
-		"oAP": "\/imgs\/shutterstock_413908333.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/imgs\/shutterstock_454434454.jpg": {
-		"ft": 16384,
-		"iS": 8808666,
-		"oA": 0,
-		"oAP": "\/imgs\/shutterstock_454434454.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/imgs\/shutterstock_523594639.jpg": {
-		"ft": 16384,
-		"iS": 8388608,
-		"oA": 0,
-		"oAP": "\/imgs\/shutterstock_523594639.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/imgs\/shutterstock_536769871.jpg": {
-		"ft": 16384,
-		"iS": 0,
-		"oA": 0,
-		"oAP": "\/imgs\/shutterstock_536769871.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/imgs\/shutterstock_5616115.jpg": {
-		"ft": 16384,
-		"iS": 3663222,
-		"oA": 0,
-		"oAP": "\/imgs\/shutterstock_5616115.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/imgs\/shutterstock_91732955.jpg": {
-		"ft": 16384,
-		"iS": 6757201,
-		"oA": 0,
-		"oAP": "\/imgs\/shutterstock_91732955.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
+		"plM": 3758088159,
+		"prP": 0
 		},
 	"\/inc\/custom-header.php": {
 		"ft": 8192,

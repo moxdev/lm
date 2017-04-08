@@ -1107,6 +1107,21 @@ button.flickity-prev-next-button:hover .arrow {
     padding-right: 2.75rem;
   }
 }
+/* line 10, sass/site/footer/_footer.scss */
+#colophon .site-info .contact-wrapper .contact-link {
+  display: block;
+  margin: .5em 0;
+}
+/* line 16, sass/site/footer/_footer.scss */
+#colophon .site-info .privacy-wrapper {
+  margin-top: 2em;
+}
+/* line 18, sass/site/footer/_footer.scss */
+#colophon .site-info .privacy-wrapper a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
 
 /*--------------------------------------------------------------
 # Infinite scroll
