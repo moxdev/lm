@@ -1,11 +1,18 @@
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
+    font-weight: normal;
+}
+
+h1 {
+
 }
 
 h2 {
     color: $color__h2;
+    font-family: $font__semibold;
 }
 
 h3 {
     color: $color__h3;
+    font-family: $font__semibold;
 }

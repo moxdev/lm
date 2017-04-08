@@ -16,17 +16,45 @@ function leading_minds_flexible_content_module() {
             if( get_row_layout() == 'simple_content_section' ):
 
                 $bg_color = get_sub_field('section_background_color');
+                $bg_image = get_sub_field('section_background_image');
+                $title = get_sub_field('title');
                 $editor = get_sub_field('editor');
 
-                ?>
-                <section class="simple-content-section" style="background-color:<?php echo $bg_color; ?>">
-                    <div class="content-section-wrapper wrapper">
+                if ( $bg_image ) {
 
-                        <?php echo $editor; ?>
+                    ?>
 
-                    </div>
-                </section>
-                <?php
+                    <section class="simple-content-section" style="background-color:<?php echo $bg_color; ?>;background-image:url(http://localhost:8888/test-site/wp-content/themes/test/imgs/brains.svg);">
+                        <div class="content-section-wrapper wrapper">
+                            <div class="editor-wrapper">
+
+                                <h2><?php echo esc_html( $title ); ?></h2>
+
+                                <?php echo $editor; ?>
+
+                            </div>
+                        </div>
+                    </section>
+
+                    <?php
+
+                }else {
+                    ?>
+
+                    <section class="simple-content-section" style="background-color:<?php echo $bg_color; ?>">
+                        <div class="content-section-wrapper wrapper">
+                            <div class="editor-wrapper">
+
+                                <h2><?php echo esc_html( $title ); ?></h2>
+
+                                <?php echo $editor; ?>
+
+                            </div>
+                        </div>
+                    </section>
+
+                    <?php
+                }
 
             elseif( get_row_layout() == 'advanced_content_section' ):
 

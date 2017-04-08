@@ -4,16 +4,29 @@ $color__green: #24cf5f;
 $color__blue: #2e71f2;
 $color__orange: #f53f00;
 $color__light-gray: #e8e8e8;
+$color__med-gray: #656b6f;
 $color__dark-gray: #3b3d40;
 
+$color__background-gray: $color__light-gray;
+$color__background-purple: $color__purple;
+$color__background-green: $color__green;
+
 $color__overlay: #9392af;
+$color__h2:$color__dark-gray;
+$color__h3:$color__med-gray;
+
+$color__text-main: $color__med-gray;
+$color__gray-heading: #666666;
 
 # Fonts
-$font__bold: 'SourceSansPro-Bold', sans-serif;
-$font__semibold: 'SourceSansPro-Semibold', sans-serif;
+
+$font__semibold: 'ACaslonPro-Semibold', sans-serif;
+$font__bold: 'ACaslonPro-Bold', sans-serif;
+
+$font__alt-bold: 'SourceSansPro-Bold', sans-serif;
+$font__alt-semibold: 'SourceSansPro-Semibold', sans-serif;
 $font__black: 'SourceSansPro-Black', sans-serif;
-$font__alt-semibold: 'ACaslonPro-Semibold', sans-serif;
-$font__alt-bold: 'ACaslonPro-Bold', sans-serif;
+
 
 # Section Notes
 ## Home

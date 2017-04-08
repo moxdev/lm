@@ -11,17 +11,18 @@
 
     h2 {
         color: #fff;
+        text-align: center;
     }
 
     .content-section-wrapper {
         @include section-padding;
     }
 
-    .editor-wrapper {
-        text-align: left;
-        width: 50%;
-        margin-left: auto;
-    }
+    // .editor-wrapper {
+    //     text-align: left;
+    //     width: 50%;
+    //     margin-left: auto;
+    // }
 }
 
 
@@ -38,6 +39,7 @@
     }
 
     h2, h3 {
+
         text-align: center;
     }
 
@@ -208,7 +210,15 @@
     }
 
     h4 {
-        margin-top: .5em;
+        margin-top: 1em;
+        color: $color__dark_gray;
+        font-family: $font__alt-bold;
+        text-transform: uppercase;
+        letter-spacing: 1.6px;
+    }
+
+    .h5 {
+        color: $color__med_gray;
     }
 
     .associate-block {

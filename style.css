@@ -75,19 +75,19 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/_normalize\.scss}line{font-family:\000031}}
+/* line 1, sass/_normalize.scss */
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/_normalize\.scss}line{font-family:\000037}}
+/* line 7, sass/_normalize.scss */
 body {
   margin: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/_normalize\.scss}line{font-family:\0000311}}
+/* line 11, sass/_normalize.scss */
 article,
 aside,
 details,
@@ -103,7 +103,7 @@ summary {
   display: block;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/_normalize\.scss}line{font-family:\0000326}}
+/* line 26, sass/_normalize.scss */
 audio,
 canvas,
 progress,
@@ -112,63 +112,63 @@ video {
   vertical-align: baseline;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/_normalize\.scss}line{font-family:\0000334}}
+/* line 34, sass/_normalize.scss */
 audio:not([controls]) {
   display: none;
   height: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/_normalize\.scss}line{font-family:\0000339}}
+/* line 39, sass/_normalize.scss */
 [hidden],
 template {
   display: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/_normalize\.scss}line{font-family:\0000344}}
+/* line 44, sass/_normalize.scss */
 a {
   background-color: transparent;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/_normalize\.scss}line{font-family:\0000348}}
+/* line 48, sass/_normalize.scss */
 a:active,
 a:hover {
   outline: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/_normalize\.scss}line{font-family:\0000353}}
+/* line 53, sass/_normalize.scss */
 abbr[title] {
   border-bottom: 1px dotted;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/_normalize\.scss}line{font-family:\0000357}}
+/* line 57, sass/_normalize.scss */
 b,
 strong {
   font-weight: bold;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/_normalize\.scss}line{font-family:\0000362}}
+/* line 62, sass/_normalize.scss */
 dfn {
   font-style: italic;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/_normalize\.scss}line{font-family:\0000366}}
+/* line 66, sass/_normalize.scss */
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/_normalize\.scss}line{font-family:\0000371}}
+/* line 71, sass/_normalize.scss */
 mark {
   background: #ff0;
   color: #000;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/_normalize\.scss}line{font-family:\0000376}}
+/* line 76, sass/_normalize.scss */
 small {
   font-size: 80%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/_normalize\.scss}line{font-family:\0000380}}
+/* line 80, sass/_normalize.scss */
 sub,
 sup {
   font-size: 75%;
@@ -177,43 +177,43 @@ sup {
   vertical-align: baseline;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/_normalize\.scss}line{font-family:\0000388}}
+/* line 88, sass/_normalize.scss */
 sup {
   top: -0.5em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/_normalize\.scss}line{font-family:\0000392}}
+/* line 92, sass/_normalize.scss */
 sub {
   bottom: -0.25em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/_normalize\.scss}line{font-family:\0000396}}
+/* line 96, sass/_normalize.scss */
 img {
   border: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/_normalize\.scss}line{font-family:\00003100}}
+/* line 100, sass/_normalize.scss */
 svg:not(:root) {
   overflow: hidden;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/_normalize\.scss}line{font-family:\00003104}}
+/* line 104, sass/_normalize.scss */
 figure {
   margin: 1em 40px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/_normalize\.scss}line{font-family:\00003108}}
+/* line 108, sass/_normalize.scss */
 hr {
   box-sizing: content-box;
   height: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/_normalize\.scss}line{font-family:\00003113}}
+/* line 113, sass/_normalize.scss */
 pre {
   overflow: auto;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/_normalize\.scss}line{font-family:\00003117}}
+/* line 117, sass/_normalize.scss */
 code,
 kbd,
 pre,
@@ -222,7 +222,7 @@ samp {
   font-size: 1em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/_normalize\.scss}line{font-family:\00003125}}
+/* line 125, sass/_normalize.scss */
 button,
 input,
 optgroup,
@@ -233,18 +233,18 @@ textarea {
   margin: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/_normalize\.scss}line{font-family:\00003135}}
+/* line 135, sass/_normalize.scss */
 button {
   overflow: visible;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/_normalize\.scss}line{font-family:\00003139}}
+/* line 139, sass/_normalize.scss */
 button,
 select {
   text-transform: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/_normalize\.scss}line{font-family:\00003144}}
+/* line 144, sass/_normalize.scss */
 button,
 html input[type="button"],
 input[type="reset"],
@@ -253,73 +253,73 @@ input[type="submit"] {
   cursor: pointer;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/_normalize\.scss}line{font-family:\00003152}}
+/* line 152, sass/_normalize.scss */
 button[disabled],
 html input[disabled] {
   cursor: default;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/_normalize\.scss}line{font-family:\00003157}}
+/* line 157, sass/_normalize.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/_normalize\.scss}line{font-family:\00003163}}
+/* line 163, sass/_normalize.scss */
 input {
   line-height: normal;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/_normalize\.scss}line{font-family:\00003167}}
+/* line 167, sass/_normalize.scss */
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
   padding: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/_normalize\.scss}line{font-family:\00003173}}
+/* line 173, sass/_normalize.scss */
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/_normalize\.scss}line{font-family:\00003178}}
+/* line 178, sass/_normalize.scss */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/_normalize\.scss}line{font-family:\00003183}}
+/* line 183, sass/_normalize.scss */
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/_normalize\.scss}line{font-family:\00003189}}
+/* line 189, sass/_normalize.scss */
 legend {
   border: 0;
   padding: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/_normalize\.scss}line{font-family:\00003194}}
+/* line 194, sass/_normalize.scss */
 textarea {
   overflow: auto;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/_normalize\.scss}line{font-family:\00003198}}
+/* line 198, sass/_normalize.scss */
 optgroup {
   font-weight: bold;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/_normalize\.scss}line{font-family:\00003202}}
+/* line 202, sass/_normalize.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/_normalize\.scss}line{font-family:\00003207}}
+/* line 207, sass/_normalize.scss */
 td,
 th {
   padding: 0;
@@ -328,7 +328,7 @@ th {
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/typography\/_typography\.scss}line{font-family:\000031}}
+/* line 1, sass/typography/_typography.scss */
 body,
 button,
 input,
@@ -337,46 +337,49 @@ textarea {
   color: #656b6f;
   font-family: "ACaslonPro-Semibold", sans-serif;
   font-size: 15px;
-  font-size: 1rem;
+  font-size: 0.9375rem;
   line-height: 1.5;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/typography\/_headings\.scss}line{font-family:\000031}}
+/* line 1, sass/typography/_headings.scss */
 h1, h2, h3, h4, h5, h6 {
   clear: both;
+  font-weight: normal;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/typography\/_headings\.scss}line{font-family:\000035}}
+/* line 10, sass/typography/_headings.scss */
 h2 {
   color: #3b3d40;
+  font-family: "ACaslonPro-Semibold", sans-serif;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/typography\/_headings\.scss}line{font-family:\000039}}
+/* line 15, sass/typography/_headings.scss */
 h3 {
   color: #656b6f;
+  font-family: "ACaslonPro-Semibold", sans-serif;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/typography\/_copy\.scss}line{font-family:\000031}}
+/* line 1, sass/typography/_copy.scss */
 p {
   margin-bottom: 1.5em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/typography\/_copy\.scss}line{font-family:\000035}}
+/* line 5, sass/typography/_copy.scss */
 dfn, cite, em, i {
   font-style: italic;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/typography\/_copy\.scss}line{font-family:\000039}}
+/* line 9, sass/typography/_copy.scss */
 address {
   margin: 0 0 1.5em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/typography\/_copy\.scss}line{font-family:\0000313}}
+/* line 13, sass/typography/_copy.scss */
 pre {
   background: #eee;
   font-family: "ACaslonPro-Semibold", sans-serif;
   font-size: 14.0625px;
-  font-size: 0.9375rem;
+  font-size: 0.87890625rem;
   line-height: 1.6;
   margin-bottom: 1.6em;
   max-width: 100%;
@@ -384,26 +387,26 @@ pre {
   padding: 1.6em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/typography\/_copy\.scss}line{font-family:\0000324}}
+/* line 24, sass/typography/_copy.scss */
 code, kbd, tt, var {
   font-family: "SourceSansPro-Semibold", sans-serif;
   font-size: 14.0625px;
-  font-size: 0.9375rem;
+  font-size: 0.87890625rem;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/typography\/_copy\.scss}line{font-family:\0000329}}
+/* line 29, sass/typography/_copy.scss */
 abbr, acronym {
   border-bottom: 1px dotted #666;
   cursor: help;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/typography\/_copy\.scss}line{font-family:\0000334}}
+/* line 34, sass/typography/_copy.scss */
 mark, ins {
   background: #fff9c0;
   text-decoration: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/typography\/_copy\.scss}line{font-family:\0000339}}
+/* line 39, sass/typography/_copy.scss */
 big {
   font-size: 125%;
 }
@@ -411,12 +414,12 @@ big {
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/elements\/_elements\.scss}line{font-family:\000031}}
+/* line 1, sass/elements/_elements.scss */
 html {
   box-sizing: border-box;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/elements\/_elements\.scss}line{font-family:\000035}}
+/* line 5, sass/elements/_elements.scss */
 *,
 *:before,
 *:after {
@@ -424,18 +427,18 @@ html {
   box-sizing: inherit;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/elements\/_elements\.scss}line{font-family:\0000311}}
+/* line 11, sass/elements/_elements.scss */
 body {
   background: #fff;
   /* Fallback for when there is no custom background color defined. */
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/elements\/_elements\.scss}line{font-family:\0000315}}
+/* line 15, sass/elements/_elements.scss */
 blockquote {
   quotes: "“" "”" "‘" "’";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/elements\/_elements\.scss}line{font-family:\0000319}}
+/* line 19, sass/elements/_elements.scss */
 blockquote:before,
 blockquote:after {
   color: #24cf5f;
@@ -444,24 +447,24 @@ blockquote:after {
   vertical-align: -0.2em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/elements\/_elements\.scss}line{font-family:\0000327}}
+/* line 27, sass/elements/_elements.scss */
 blockquote:before {
   content: open-quote;
   margin-right: 0.25em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/elements\/_elements\.scss}line{font-family:\0000332}}
+/* line 32, sass/elements/_elements.scss */
 blockquote:after {
   content: close-quote;
   margin-left: 0.25em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/elements\/_elements\.scss}line{font-family:\0000336}}
+/* line 36, sass/elements/_elements.scss */
 blockquote p {
   display: inline;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/elements\/_elements\.scss}line{font-family:\0000340}}
+/* line 40, sass/elements/_elements.scss */
 hr {
   background-color: #ccc;
   border: 0;
@@ -469,39 +472,39 @@ hr {
   margin-bottom: 1.5em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/elements\/_lists\.scss}line{font-family:\000031}}
+/* line 1, sass/elements/_lists.scss */
 ul, ol {
   margin: 0 0 1.5em 3em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/elements\/_lists\.scss}line{font-family:\000035}}
+/* line 5, sass/elements/_lists.scss */
 ul {
   list-style: disc;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/elements\/_lists\.scss}line{font-family:\000039}}
+/* line 9, sass/elements/_lists.scss */
 ol {
   list-style: decimal;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/elements\/_lists\.scss}line{font-family:\0000313}}
+/* line 13, sass/elements/_lists.scss */
 li > ul,
 li > ol {
   margin-bottom: 0;
   margin-left: 1.5em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/elements\/_lists\.scss}line{font-family:\0000319}}
+/* line 19, sass/elements/_lists.scss */
 dt {
   font-weight: bold;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/elements\/_lists\.scss}line{font-family:\0000323}}
+/* line 23, sass/elements/_lists.scss */
 dd {
   margin: 0 1.5em 1.5em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/elements\/_elements\.scss}line{font-family:\0000349}}
+/* line 49, sass/elements/_elements.scss */
 img {
   height: auto;
   /* Make sure images are scaled correctly. */
@@ -509,13 +512,13 @@ img {
   /* Adhere to container width. */
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/elements\/_elements\.scss}line{font-family:\0000354}}
+/* line 54, sass/elements/_elements.scss */
 figure {
   margin: 1em 0;
   /* Extra wide images within figure tags don't overflow the content area. */
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/elements\/_tables\.scss}line{font-family:\000031}}
+/* line 1, sass/elements/_tables.scss */
 table {
   margin: 0 0 1.5em;
   width: 100%;
@@ -524,7 +527,7 @@ table {
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/forms\/_buttons\.scss}line{font-family:\000031}}
+/* line 1, sass/forms/_buttons.scss */
 button,
 input[type="button"],
 input[type="reset"],
@@ -540,7 +543,7 @@ input[type="submit"] {
   padding: 1em 3.5em;
   transition: background-color .25s, box-shadow .25s;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/forms\/_buttons\.scss}line{font-family:\0000317}}
+/* line 17, sass/forms/_buttons.scss */
 button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
@@ -548,7 +551,7 @@ input[type="submit"]:hover {
   background-color: #47df7b;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/forms\/_fields\.scss}line{font-family:\000031}}
+/* line 1, sass/forms/_fields.scss */
 input[type="text"],
 input[type="email"],
 input[type="url"],
@@ -570,7 +573,7 @@ textarea {
   border-radius: 3px;
   padding: 3px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/forms\/_fields\.scss}line{font-family:\0000322}}
+/* line 22, sass/forms/_fields.scss */
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="url"]:focus,
@@ -590,12 +593,12 @@ textarea:focus {
   color: #111;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/forms\/_fields\.scss}line{font-family:\0000327}}
+/* line 27, sass/forms/_fields.scss */
 select {
   border: 1px solid #ccc;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/forms\/_fields\.scss}line{font-family:\0000331}}
+/* line 31, sass/forms/_fields.scss */
 textarea {
   width: 100%;
 }
@@ -606,23 +609,23 @@ textarea {
 /*--------------------------------------------------------------
 ## Links
 --------------------------------------------------------------*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/navigation\/_links\.scss}line{font-family:\000031}}
+/* line 1, sass/navigation/_links.scss */
 a {
   color: royalblue;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/navigation\/_links\.scss}line{font-family:\000034}}
+/* line 4, sass/navigation/_links.scss */
 a:visited {
   color: purple;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/navigation\/_links\.scss}line{font-family:\000037}}
+/* line 7, sass/navigation/_links.scss */
 a:hover, a:focus, a:active {
   color: midnightblue;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/navigation\/_links\.scss}line{font-family:\0000312}}
+/* line 12, sass/navigation/_links.scss */
 a:focus {
   outline: thin dotted;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/navigation\/_links\.scss}line{font-family:\0000315}}
+/* line 15, sass/navigation/_links.scss */
 a:hover, a:active {
   outline: 0;
 }
@@ -630,7 +633,7 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/navigation\/_menus\.scss}line{font-family:\000031}}
+/* line 1, sass/navigation/_menus.scss */
 .main-navigation {
   clear: both;
   display: block;
@@ -639,14 +642,14 @@ a:hover, a:active {
   height: 50px;
   background-color: #282560;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/navigation\/_menus\.scss}line{font-family:\000039}}
+/* line 9, sass/navigation/_menus.scss */
 .main-navigation ul {
   display: none;
   list-style: none;
   margin: 0;
   padding-left: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/navigation\/_menus\.scss}line{font-family:\0000315}}
+/* line 15, sass/navigation/_menus.scss */
 .main-navigation ul ul {
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   float: left;
@@ -655,68 +658,68 @@ a:hover, a:active {
   left: -999em;
   z-index: 99999;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/navigation\/_menus\.scss}line{font-family:\0000323}}
+/* line 23, sass/navigation/_menus.scss */
 .main-navigation ul ul ul {
   left: -999em;
   top: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/navigation\/_menus\.scss}line{font-family:\0000329}}
+/* line 29, sass/navigation/_menus.scss */
 .main-navigation ul ul li:hover > ul, .main-navigation ul ul li.focus > ul {
   left: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/navigation\/_menus\.scss}line{font-family:\0000335}}
+/* line 35, sass/navigation/_menus.scss */
 .main-navigation ul ul a {
   width: 200px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/navigation\/_menus\.scss}line{font-family:\0000348}}
+/* line 48, sass/navigation/_menus.scss */
 .main-navigation ul li:hover > ul,
 .main-navigation ul li.focus > ul {
   left: auto;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/navigation\/_menus\.scss}line{font-family:\0000354}}
+/* line 54, sass/navigation/_menus.scss */
 .main-navigation li {
   float: left;
   position: relative;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/navigation\/_menus\.scss}line{font-family:\0000363}}
+/* line 63, sass/navigation/_menus.scss */
 .main-navigation a {
   display: block;
   text-decoration: none;
 }
 
 /* Small menu. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/navigation\/_menus\.scss}line{font-family:\0000376}}
+/* line 76, sass/navigation/_menus.scss */
 .menu-toggle,
 .main-navigation.toggled ul {
   display: block;
 }
 
 @media screen and (min-width: 37.5em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/navigation\/_menus\.scss}line{font-family:\0000382}}
+  /* line 82, sass/navigation/_menus.scss */
   .menu-toggle {
     display: none;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/navigation\/_menus\.scss}line{font-family:\0000385}}
+  /* line 85, sass/navigation/_menus.scss */
   .main-navigation ul {
     display: block;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/navigation\/_menus\.scss}line{font-family:\0000394}}
+/* line 94, sass/navigation/_menus.scss */
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
 .post-navigation {
   margin: 0 0 1.5em;
   overflow: hidden;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/navigation\/_menus\.scss}line{font-family:\0000399}}
+/* line 99, sass/navigation/_menus.scss */
 .comment-navigation .nav-previous,
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
   float: left;
   width: 50%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/navigation\/_menus\.scss}line{font-family:\00003104}}
+/* line 104, sass/navigation/_menus.scss */
 .comment-navigation .nav-next,
 .posts-navigation .nav-next,
 .post-navigation .nav-next {
@@ -729,7 +732,7 @@ a:hover, a:active {
 # Accessibility
 --------------------------------------------------------------*/
 /* Text meant only for screen readers. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/modules\/_accessibility\.scss}line{font-family:\000032}}
+/* line 2, sass/modules/_accessibility.scss */
 .screen-reader-text {
   clip: rect(1px, 1px, 1px, 1px);
   position: absolute !important;
@@ -737,7 +740,7 @@ a:hover, a:active {
   width: 1px;
   overflow: hidden;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/modules\/_accessibility\.scss}line{font-family:\000039}}
+/* line 9, sass/modules/_accessibility.scss */
 .screen-reader-text:focus {
   background-color: #f1f1f1;
   border-radius: 3px;
@@ -746,7 +749,7 @@ a:hover, a:active {
   color: #21759b;
   display: block;
   font-size: 13.125px;
-  font-size: 0.875rem;
+  font-size: 0.8203125rem;
   font-weight: bold;
   height: auto;
   left: 5px;
@@ -760,7 +763,7 @@ a:hover, a:active {
 }
 
 /* Do not show the outline on the skip link target. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/modules\/_accessibility\.scss}line{font-family:\0000330}}
+/* line 30, sass/modules/_accessibility.scss */
 #content[tabindex="-1"]:focus {
   outline: 0;
 }
@@ -768,21 +771,21 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 # Alignments
 --------------------------------------------------------------*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/modules\/_alignments\.scss}line{font-family:\000031}}
+/* line 1, sass/modules/_alignments.scss */
 .alignleft {
   display: inline;
   float: left;
   margin-right: 1.5em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/modules\/_alignments\.scss}line{font-family:\000037}}
+/* line 7, sass/modules/_alignments.scss */
 .alignright {
   display: inline;
   float: right;
   margin-left: 1.5em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/modules\/_alignments\.scss}line{font-family:\0000313}}
+/* line 13, sass/modules/_alignments.scss */
 .aligncenter {
   clear: both;
   display: block;
@@ -793,7 +796,7 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 # Clearings
 --------------------------------------------------------------*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/modules\/_clearings\.scss}line{font-family:\000031}}
+/* line 1, sass/modules/_clearings.scss */
 .clear:before,
 .clear:after,
 .entry-content:before,
@@ -811,7 +814,7 @@ a:hover, a:active {
   table-layout: fixed;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/modules\/_clearings\.scss}line{font-family:\0000316}}
+/* line 16, sass/modules/_clearings.scss */
 .clear:after,
 .entry-content:after,
 .comment-content:after,
@@ -827,24 +830,24 @@ a:hover, a:active {
 /*! Flickity v2.0.5
 http://flickity.metafizzy.co
 ---------------------------------------------- */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/modules\/_flickity\.scss}line{font-family:\000035}}
+/* line 5, sass/modules/_flickity.scss */
 .flickity-enabled {
   position: relative;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/modules\/_flickity\.scss}line{font-family:\000039}}
+/* line 9, sass/modules/_flickity.scss */
 .flickity-enabled:focus {
   outline: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/modules\/_flickity\.scss}line{font-family:\0000311}}
+/* line 11, sass/modules/_flickity.scss */
 .flickity-viewport {
   overflow: hidden;
   position: relative;
   height: 100%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/modules\/_flickity\.scss}line{font-family:\0000317}}
+/* line 17, sass/modules/_flickity.scss */
 .flickity-slider {
   position: absolute;
   width: 100%;
@@ -852,7 +855,7 @@ http://flickity.metafizzy.co
 }
 
 /* draggable */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/modules\/_flickity\.scss}line{font-family:\0000325}}
+/* line 25, sass/modules/_flickity.scss */
 .flickity-enabled.is-draggable {
   -webkit-tap-highlight-color: transparent;
   tap-highlight-color: transparent;
@@ -862,21 +865,21 @@ http://flickity.metafizzy.co
   user-select: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/modules\/_flickity\.scss}line{font-family:\0000334}}
+/* line 34, sass/modules/_flickity.scss */
 .flickity-enabled.is-draggable .flickity-viewport {
   cursor: move;
   cursor: -webkit-grab;
   cursor: grab;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/modules\/_flickity\.scss}line{font-family:\0000340}}
+/* line 40, sass/modules/_flickity.scss */
 .flickity-enabled.is-draggable .flickity-viewport.is-pointer-down {
   cursor: -webkit-grabbing;
   cursor: grabbing;
 }
 
 /* ---- previous/next buttons ---- */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/modules\/_flickity\.scss}line{font-family:\0000347}}
+/* line 47, sass/modules/_flickity.scss */
 button.flickity-prev-next-button {
   position: absolute;
   top: 50%;
@@ -893,47 +896,47 @@ button.flickity-prev-next-button {
   transform: translateY(-50%);
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/modules\/_flickity\.scss}line{font-family:\0000365}}
+/* line 65, sass/modules/_flickity.scss */
 button.flickity-prev-next-button:focus {
   outline: none;
   box-shadow: 0 0 0 5px #09F;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/modules\/_flickity\.scss}line{font-family:\0000370}}
+/* line 70, sass/modules/_flickity.scss */
 button.flickity-prev-next-button:active {
   opacity: 0.6;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/modules\/_flickity\.scss}line{font-family:\0000374}}
+/* line 74, sass/modules/_flickity.scss */
 button.flickity-prev-next-button.previous {
   left: -10px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/modules\/_flickity\.scss}line{font-family:\0000375}}
+/* line 75, sass/modules/_flickity.scss */
 button.flickity-prev-next-button.next {
   right: -10px;
 }
 
 /* right to left */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/modules\/_flickity\.scss}line{font-family:\0000377}}
+/* line 77, sass/modules/_flickity.scss */
 button.flickity-rtl .flickity-prev-next-button.previous {
   left: auto;
   right: 10px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/modules\/_flickity\.scss}line{font-family:\0000381}}
+/* line 81, sass/modules/_flickity.scss */
 button.flickity-rtl .flickity-prev-next-button.next {
   right: auto;
   left: 10px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/modules\/_flickity\.scss}line{font-family:\0000386}}
+/* line 86, sass/modules/_flickity.scss */
 button.flickity-prev-next-button:disabled {
   opacity: 0.3;
   cursor: auto;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/modules\/_flickity\.scss}line{font-family:\0000391}}
+/* line 91, sass/modules/_flickity.scss */
 button.flickity-prev-next-button svg {
   position: absolute;
   left: 20%;
@@ -942,19 +945,19 @@ button.flickity-prev-next-button svg {
   height: 60%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/modules\/_flickity\.scss}line{font-family:\0000399}}
+/* line 99, sass/modules/_flickity.scss */
 button.flickity-prev-next-button .arrow {
   fill: gray;
   transition: fill .25s;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/modules\/_flickity\.scss}line{font-family:\00003104}}
+/* line 104, sass/modules/_flickity.scss */
 button.flickity-prev-next-button:hover .arrow {
   fill: gray;
 }
 
 /* ---- page dots ---- */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/modules\/_flickity\.scss}line{font-family:\00003110}}
+/* line 110, sass/modules/_flickity.scss */
 .flickity-page-dots {
   position: absolute;
   width: 100%;
@@ -966,12 +969,12 @@ button.flickity-prev-next-button:hover .arrow {
   line-height: 1;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/modules\/_flickity\.scss}line{font-family:\00003121}}
+/* line 121, sass/modules/_flickity.scss */
 .flickity-rtl .flickity-page-dots {
   direction: rtl;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/modules\/_flickity\.scss}line{font-family:\00003123}}
+/* line 123, sass/modules/_flickity.scss */
 .flickity-page-dots .dot {
   display: inline-block;
   width: 10px;
@@ -983,7 +986,7 @@ button.flickity-prev-next-button:hover .arrow {
   cursor: pointer;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/modules\/_flickity\.scss}line{font-family:\00003134}}
+/* line 134, sass/modules/_flickity.scss */
 .flickity-page-dots .dot.is-selected {
   opacity: 1;
 }
@@ -991,12 +994,12 @@ button.flickity-prev-next-button:hover .arrow {
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/site\/secondary\/_widgets\.scss}line{font-family:\000031}}
+/* line 1, sass/site/secondary/_widgets.scss */
 .widget {
   margin: 0 0 1.5em;
   /* Make sure select elements fit in widgets. */
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/site\/secondary\/_widgets\.scss}line{font-family:\000035}}
+/* line 5, sass/site/secondary/_widgets.scss */
 .widget select {
   max-width: 100%;
 }
@@ -1004,7 +1007,7 @@ button.flickity-prev-next-button:hover .arrow {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/site\/_site\.scss}line{font-family:\000031}}
+/* line 1, sass/site/_site.scss */
 .wrapper, .home .home-header-wrapper, .testimonial-section .content-section-wrapper {
   max-width: 1200px;
   margin-left: auto;
@@ -1013,19 +1016,19 @@ button.flickity-prev-next-button:hover .arrow {
   padding-right: 1.75rem;
 }
 @media screen and (min-width: 750px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/site\/_site\.scss}line{font-family:\000031}}
+  /* line 1, sass/site/_site.scss */
   .wrapper, .home .home-header-wrapper, .testimonial-section .content-section-wrapper {
     padding-left: 2.75rem;
     padding-right: 2.75rem;
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/site\/_site\.scss}line{font-family:\000038}}
+/* line 8, sass/site/_site.scss */
 .center {
   text-align: center;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/site\/_site\.scss}line{font-family:\0000323}}
+/* line 23, sass/site/_site.scss */
 .error-404 .page-content {
   text-align: center;
   padding-bottom: 3em;
@@ -1034,36 +1037,36 @@ button.flickity-prev-next-button:hover .arrow {
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/site\/primary\/_posts-and-pages\.scss}line{font-family:\000031}}
+/* line 1, sass/site/primary/_posts-and-pages.scss */
 .sticky {
   display: block;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/site\/primary\/_posts-and-pages\.scss}line{font-family:\000035}}
+/* line 5, sass/site/primary/_posts-and-pages.scss */
 .hentry {
   margin: 0 0 1.5em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/site\/primary\/_posts-and-pages\.scss}line{font-family:\000039}}
+/* line 9, sass/site/primary/_posts-and-pages.scss */
 .byline,
 .updated:not(.published) {
   display: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/site\/primary\/_posts-and-pages\.scss}line{font-family:\0000314}}
+/* line 14, sass/site/primary/_posts-and-pages.scss */
 .single .byline,
 .group-blog .byline {
   display: inline;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/site\/primary\/_posts-and-pages\.scss}line{font-family:\0000319}}
+/* line 19, sass/site/primary/_posts-and-pages.scss */
 .page-content,
 .entry-content,
 .entry-summary {
   margin: 1.5em 0 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/site\/primary\/_posts-and-pages\.scss}line{font-family:\0000325}}
+/* line 25, sass/site/primary/_posts-and-pages.scss */
 .page-links {
   clear: both;
   margin: 0 0 1.5em;
@@ -1072,12 +1075,12 @@ button.flickity-prev-next-button:hover .arrow {
 /*--------------------------------------------------------------
 ## Comments
 --------------------------------------------------------------*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/site\/primary\/_comments\.scss}line{font-family:\000031}}
+/* line 1, sass/site/primary/_comments.scss */
 .comment-content a {
   word-wrap: break-word;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/site\/primary\/_comments\.scss}line{font-family:\000034}}
+/* line 4, sass/site/primary/_comments.scss */
 .bypostauthor {
   display: block;
 }
@@ -1086,7 +1089,7 @@ button.flickity-prev-next-button:hover .arrow {
 # Infinite scroll
 --------------------------------------------------------------*/
 /* Globally hidden elements when Infinite Scroll is supported and in use. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/modules\/_infinite-scroll\.scss}line{font-family:\000032}}
+/* line 2, sass/modules/_infinite-scroll.scss */
 .infinite-scroll .posts-navigation,
 .infinite-scroll.neverending .site-footer {
   /* Theme Footer (when set to scrolling) */
@@ -1094,7 +1097,7 @@ button.flickity-prev-next-button:hover .arrow {
 }
 
 /* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/modules\/_infinite-scroll\.scss}line{font-family:\000038}}
+/* line 8, sass/modules/_infinite-scroll.scss */
 .infinity-end.neverending .site-footer {
   display: block;
 }
@@ -1102,7 +1105,7 @@ button.flickity-prev-next-button:hover .arrow {
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/media\/_media\.scss}line{font-family:\000031}}
+/* line 1, sass/media/_media.scss */
 .page-content .wp-smiley,
 .entry-content .wp-smiley,
 .comment-content .wp-smiley {
@@ -1113,7 +1116,7 @@ button.flickity-prev-next-button:hover .arrow {
 }
 
 /* Make sure embeds and iframes fit their containers. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/media\/_media\.scss}line{font-family:\0000311}}
+/* line 11, sass/media/_media.scss */
 embed,
 iframe,
 object {
@@ -1123,23 +1126,23 @@ object {
 /*--------------------------------------------------------------
 ## Captions
 --------------------------------------------------------------*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/media\/_captions\.scss}line{font-family:\000031}}
+/* line 1, sass/media/_captions.scss */
 .wp-caption {
   margin-bottom: 1.5em;
   max-width: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/media\/_captions\.scss}line{font-family:\000035}}
+/* line 5, sass/media/_captions.scss */
 .wp-caption img[class*="wp-image-"] {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/media\/_captions\.scss}line{font-family:\000039}}
+/* line 9, sass/media/_captions.scss */
 .wp-caption .wp-caption-text {
   margin: 0.8075em 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/media\/_captions\.scss}line{font-family:\0000314}}
+/* line 14, sass/media/_captions.scss */
 .wp-caption-text {
   text-align: center;
 }
@@ -1147,52 +1150,52 @@ object {
 /*--------------------------------------------------------------
 ## Galleries
 --------------------------------------------------------------*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/media\/_galleries\.scss}line{font-family:\000031}}
+/* line 1, sass/media/_galleries.scss */
 .gallery {
   margin-bottom: 1.5em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/media\/_galleries\.scss}line{font-family:\000035}}
+/* line 5, sass/media/_galleries.scss */
 .gallery-item {
   display: inline-block;
   text-align: center;
   vertical-align: top;
   width: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/media\/_galleries\.scss}line{font-family:\0000311}}
+/* line 11, sass/media/_galleries.scss */
 .gallery-columns-2 .gallery-item {
   max-width: 50%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/media\/_galleries\.scss}line{font-family:\0000315}}
+/* line 15, sass/media/_galleries.scss */
 .gallery-columns-3 .gallery-item {
   max-width: 33.33%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/media\/_galleries\.scss}line{font-family:\0000319}}
+/* line 19, sass/media/_galleries.scss */
 .gallery-columns-4 .gallery-item {
   max-width: 25%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/media\/_galleries\.scss}line{font-family:\0000323}}
+/* line 23, sass/media/_galleries.scss */
 .gallery-columns-5 .gallery-item {
   max-width: 20%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/media\/_galleries\.scss}line{font-family:\0000327}}
+/* line 27, sass/media/_galleries.scss */
 .gallery-columns-6 .gallery-item {
   max-width: 16.66%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/media\/_galleries\.scss}line{font-family:\0000331}}
+/* line 31, sass/media/_galleries.scss */
 .gallery-columns-7 .gallery-item {
   max-width: 14.28%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/media\/_galleries\.scss}line{font-family:\0000335}}
+/* line 35, sass/media/_galleries.scss */
 .gallery-columns-8 .gallery-item {
   max-width: 12.5%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/media\/_galleries\.scss}line{font-family:\0000339}}
+/* line 39, sass/media/_galleries.scss */
 .gallery-columns-9 .gallery-item {
   max-width: 11.11%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/media\/_galleries\.scss}line{font-family:\0000344}}
+/* line 44, sass/media/_galleries.scss */
 .gallery-caption {
   display: block;
 }
@@ -1203,7 +1206,7 @@ object {
 /*--------------------------------------------------------------
 ## Static Front Page
 --------------------------------------------------------------*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_front-page\.scss}line{font-family:\000034}}
+/* line 4, sass/page-post-templates/_front-page.scss */
 .home .home-feature-img {
   min-height: 200px;
   max-height: 771px;
@@ -1213,7 +1216,7 @@ object {
   overflow: hidden;
   position: relative;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_front-page\.scss}line{font-family:\0000313}}
+/* line 13, sass/page-post-templates/_front-page.scss */
 .home .home-feature-img:after {
   content: '';
   position: absolute;
@@ -1225,7 +1228,7 @@ object {
   opacity: .5;
   z-index: 1;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_front-page\.scss}line{font-family:\0000326}}
+/* line 26, sass/page-post-templates/_front-page.scss */
 .home .home-header-wrapper {
   text-align: center;
   padding-top: 3em;
@@ -1233,15 +1236,15 @@ object {
   position: relative;
   z-index: 5;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_front-page\.scss}line{font-family:\0000337}}
+/* line 37, sass/page-post-templates/_front-page.scss */
 .home .home-header-video-player iframe {
   border: 10px solid #2e71f2;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_front-page\.scss}line{font-family:\0000342}}
+/* line 42, sass/page-post-templates/_front-page.scss */
 .home .home-title {
   color: #fff;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_front-page\.scss}line{font-family:\0000353}}
+/* line 53, sass/page-post-templates/_front-page.scss */
 .home .home-header-button-wrapper a {
   text-decoration: none;
 }
@@ -1252,48 +1255,43 @@ object {
 /*--------------------------------------------------------------
 ### Simple Content Section
 --------------------------------------------------------------*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_flexible-content-module\.scss}line{font-family:\000035}}
+/* line 5, sass/page-post-templates/_flexible-content-module.scss */
 .simple-content-section {
   background-repeat: no-repeat;
   vertical-align: middle;
   background-size: 30%;
   background-position: 20% 50%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_flexible-content-module\.scss}line{font-family:\0000312}}
+/* line 12, sass/page-post-templates/_flexible-content-module.scss */
 .simple-content-section h2 {
   color: #fff;
+  text-align: center;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_flexible-content-module\.scss}line{font-family:\0000316}}
+/* line 17, sass/page-post-templates/_flexible-content-module.scss */
 .simple-content-section .content-section-wrapper {
   padding-top: 3em;
   padding-bottom: 3em;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_flexible-content-module\.scss}line{font-family:\0000320}}
-.simple-content-section .editor-wrapper {
-  text-align: left;
-  width: 50%;
-  margin-left: auto;
 }
 
 /*--------------------------------------------------------------
 ### Advanced Content Section
 --------------------------------------------------------------*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_flexible-content-module\.scss}line{font-family:\0000332}}
+/* line 33, sass/page-post-templates/_flexible-content-module.scss */
 .advanced-content-section {
   padding-top: 3em;
   padding-bottom: 3em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_flexible-content-module\.scss}line{font-family:\0000336}}
+/* line 37, sass/page-post-templates/_flexible-content-module.scss */
 .advanced-content-section .header-img {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_flexible-content-module\.scss}line{font-family:\0000340}}
+/* line 41, sass/page-post-templates/_flexible-content-module.scss */
 .advanced-content-section h2, .advanced-content-section h3 {
   text-align: center;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_flexible-content-module\.scss}line{font-family:\0000344}}
+/* line 46, sass/page-post-templates/_flexible-content-module.scss */
 .advanced-content-section .content-footer-wrapper {
   max-width: 800px;
   margin-left: auto;
@@ -1304,12 +1302,12 @@ object {
   align-items: center;
   text-align: center;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_flexible-content-module\.scss}line{font-family:\0000354}}
+/* line 56, sass/page-post-templates/_flexible-content-module.scss */
 .advanced-content-section .content-footer-wrapper a {
   flex: 1;
   text-decoration: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_flexible-content-module\.scss}line{font-family:\0000364}}
+/* line 66, sass/page-post-templates/_flexible-content-module.scss */
 .advanced-content-section .content-footer-wrapper .footer-img {
   flex: 1;
   max-width: 80px;
@@ -1317,7 +1315,7 @@ object {
   margin-right: auto;
 }
 @media screen and (min-width: 950px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_flexible-content-module\.scss}line{font-family:\0000344}}
+  /* line 46, sass/page-post-templates/_flexible-content-module.scss */
   .advanced-content-section .content-footer-wrapper {
     flex-direction: row;
   }
@@ -1332,104 +1330,104 @@ object {
 /*--------------------------------------------------------------
 ### Testimonial Section
 --------------------------------------------------------------*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_flexible-content-module\.scss}line{font-family:\0000392}}
+/* line 94, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section {
   background-color: #282560;
   min-height: 200px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_flexible-content-module\.scss}line{font-family:\00003100}}
+/* line 102, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .microphone-section {
   padding-top: 2em;
   text-align: center;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_flexible-content-module\.scss}line{font-family:\00003104}}
+/* line 106, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .microphone-section h5 {
   text-transform: uppercase;
   margin-top: 1em;
   margin-bottom: .5em;
   color: #fff;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_flexible-content-module\.scss}line{font-family:\00003112}}
+/* line 114, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .testimonial-carousel {
   width: 100%;
   height: 300px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_flexible-content-module\.scss}line{font-family:\00003116}}
+/* line 118, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .testimonial-carousel blockquote {
   margin: 0;
   padding: 0;
   margin: .5em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_flexible-content-module\.scss}line{font-family:\00003121}}
+/* line 123, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .testimonial-carousel .cell {
   width: 100%;
   color: #fff;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_flexible-content-module\.scss}line{font-family:\00003125}}
+/* line 127, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .testimonial-carousel .cell h4 {
   margin: 0;
   color: #fff;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_flexible-content-module\.scss}line{font-family:\00003130}}
+/* line 132, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .testimonial-carousel .cell h5 {
   margin: 0;
   color: #fff;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_flexible-content-module\.scss}line{font-family:\00003136}}
+/* line 138, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .testimonial-carousel button.flickity-prev-next-button.previous {
   display: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_flexible-content-module\.scss}line{font-family:\00003139}}
+/* line 141, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .testimonial-carousel button.flickity-prev-next-button.next {
   display: none;
 }
 @media screen and (min-width: 575px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_flexible-content-module\.scss}line{font-family:\00003144}}
+  /* line 146, sass/page-post-templates/_flexible-content-module.scss */
   .testimonial-section .testimonial-carousel button.flickity-prev-next-button.previous {
     display: block;
     left: -80px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_flexible-content-module\.scss}line{font-family:\00003148}}
+  /* line 150, sass/page-post-templates/_flexible-content-module.scss */
   .testimonial-section .testimonial-carousel button.flickity-prev-next-button.next {
     display: block;
     right: -80px;
   }
 }
 @media screen and (min-width: 750px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_flexible-content-module\.scss}line{font-family:\00003112}}
+  /* line 114, sass/page-post-templates/_flexible-content-module.scss */
   .testimonial-section .testimonial-carousel {
     max-width: 675px;
     height: 350px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_flexible-content-module\.scss}line{font-family:\00003158}}
+  /* line 160, sass/page-post-templates/_flexible-content-module.scss */
   .testimonial-section .testimonial-carousel .cell {
     width: 50%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_flexible-content-module\.scss}line{font-family:\00003162}}
+  /* line 164, sass/page-post-templates/_flexible-content-module.scss */
   .testimonial-section .testimonial-carousel button.flickity-prev-next-button.previous {
     left: -45px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_flexible-content-module\.scss}line{font-family:\00003163}}
+  /* line 165, sass/page-post-templates/_flexible-content-module.scss */
   .testimonial-section .testimonial-carousel button.flickity-prev-next-button.next {
     right: -45px;
   }
 }
 @media screen and (min-width: 950px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_flexible-content-module\.scss}line{font-family:\00003112}}
+  /* line 114, sass/page-post-templates/_flexible-content-module.scss */
   .testimonial-section .testimonial-carousel {
     max-width: 925px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_flexible-content-module\.scss}line{font-family:\00003169}}
+  /* line 171, sass/page-post-templates/_flexible-content-module.scss */
   .testimonial-section .testimonial-carousel .cell {
     width: 33.333%;
   }
 }
 @media screen and (min-width: 1200px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_flexible-content-module\.scss}line{font-family:\00003112}}
+  /* line 114, sass/page-post-templates/_flexible-content-module.scss */
   .testimonial-section .testimonial-carousel {
     max-width: 1050px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_flexible-content-module\.scss}line{font-family:\00003177}}
+  /* line 179, sass/page-post-templates/_flexible-content-module.scss */
   .testimonial-section .testimonial-carousel .cell {
     width: 28%;
     margin: 3% 4%;
@@ -1439,50 +1437,58 @@ object {
 /*--------------------------------------------------------------
 ### Associates Section
 --------------------------------------------------------------*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_flexible-content-module\.scss}line{font-family:\00003191}}
+/* line 193, sass/page-post-templates/_flexible-content-module.scss */
 .associates-section .content-section-wrapper {
   text-align: center;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_flexible-content-module\.scss}line{font-family:\00003195}}
+/* line 197, sass/page-post-templates/_flexible-content-module.scss */
 .associates-section a {
   text-decoration: none;
   color: #656b6f;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_flexible-content-module\.scss}line{font-family:\00003201}}
+/* line 203, sass/page-post-templates/_flexible-content-module.scss */
 .associates-section img {
   display: block;
   margin-left: auto;
   margin-right: auto;
   border-radius: 50%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_flexible-content-module\.scss}line{font-family:\00003206}}
+/* line 208, sass/page-post-templates/_flexible-content-module.scss */
 .associates-section h4, .associates-section h5 {
   margin: 0;
   padding: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_flexible-content-module\.scss}line{font-family:\00003210}}
+/* line 212, sass/page-post-templates/_flexible-content-module.scss */
 .associates-section h4 {
-  margin-top: .5em;
+  margin-top: 1em;
+  color: #3b3d40;
+  font-family: "SourceSansPro-Bold", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1.6px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_flexible-content-module\.scss}line{font-family:\00003214}}
+/* line 220, sass/page-post-templates/_flexible-content-module.scss */
+.associates-section .h5 {
+  color: #656b6f;
+}
+/* line 224, sass/page-post-templates/_flexible-content-module.scss */
 .associates-section .associate-block {
   padding-top: 2em;
   padding-bottom: 2em;
   transition: box-shadow .25s ease-out;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_flexible-content-module\.scss}line{font-family:\00003219}}
+/* line 229, sass/page-post-templates/_flexible-content-module.scss */
 .associates-section .associate-block:hover {
   box-shadow: 0 0 7px rgba(0, 0, 0, 0.35);
   color: #656b6f;
 }
 @media screen and (min-width: 750px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_flexible-content-module\.scss}line{font-family:\00003227}}
+  /* line 237, sass/page-post-templates/_flexible-content-module.scss */
   .associates-section .flex-wrapper {
     display: flex;
     justify-content: space-around;
     align-content: center;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mox\/Sites\/htdocs\/leading-minds\/wp-content\/themes\/leading_minds\/sass\/page-post-templates\/_flexible-content-module\.scss}line{font-family:\00003232}}
+  /* line 242, sass/page-post-templates/_flexible-content-module.scss */
   .associates-section .associate-block {
     flex: 1 0 calc(100% / 3);
   }

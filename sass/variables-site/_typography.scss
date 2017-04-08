@@ -37,14 +37,15 @@
 }
 
 // Fonts
-$font__bold: 'SourceSansPro-Bold', sans-serif;
-$font__semibold: 'SourceSansPro-Semibold', sans-serif;
-$font__black: 'SourceSansPro-Black', sans-serif;
-$font__alt-semibold: 'ACaslonPro-Semibold', sans-serif;
-$font__alt-bold: 'ACaslonPro-Bold', sans-serif;
+$font__semibold: 'ACaslonPro-Semibold', sans-serif;
+$font__bold: 'ACaslonPro-Bold', sans-serif;
 
-$font__main: $font__alt-semibold;
-$font__code: $font__semibold;
+$font__alt-bold: 'SourceSansPro-Bold', sans-serif;
+$font__alt-semibold: 'SourceSansPro-Semibold', sans-serif;
+$font__black: 'SourceSansPro-Black', sans-serif;
+
+$font__main: $font__semibold;
+$font__code: $font__alt-semibold;
 $font__pre: $font__main;
 $font__line-height-body: 1.5;
 $font__line-height-pre: 1.6;
