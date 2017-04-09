@@ -1107,16 +1107,35 @@ button.flickity-prev-next-button:hover .arrow {
     padding-right: 2.75rem;
   }
 }
-/* line 10, sass/site/footer/_footer.scss */
-#colophon .site-info .contact-wrapper .contact-link {
+/* line 9, sass/site/footer/_footer.scss */
+#colophon .site-info .contact-wrapper {
+  margin-bottom: 2em;
+}
+/* line 11, sass/site/footer/_footer.scss */
+#colophon .site-info .contact-wrapper a {
   display: block;
   margin: .5em 0;
+  text-decoration: none;
+  color: inherit;
 }
-/* line 16, sass/site/footer/_footer.scss */
+/* line 21, sass/site/footer/_footer.scss */
+#colophon .site-info .social-wrapper svg {
+  margin: 0 5px;
+}
+/* line 26, sass/site/footer/_footer.scss */
+#colophon .site-info .social-wrapper .bbb svg {
+  width: 75px;
+  padding-top: 5px;
+}
+/* line 33, sass/site/footer/_footer.scss */
+#colophon .site-info .social-wrapper .pcc svg {
+  width: 55px;
+}
+/* line 39, sass/site/footer/_footer.scss */
 #colophon .site-info .privacy-wrapper {
-  margin-top: 2em;
+  margin-top: 3em;
 }
-/* line 18, sass/site/footer/_footer.scss */
+/* line 41, sass/site/footer/_footer.scss */
 #colophon .site-info .privacy-wrapper a {
   display: block;
   color: inherit;

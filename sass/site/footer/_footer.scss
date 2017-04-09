@@ -7,14 +7,37 @@
         text-align: center;
 
         .contact-wrapper {
-            .contact-link {
+            margin-bottom: 2em;
+            a {
                 display: block;
                 margin: .5em 0;
+                text-decoration: none;
+                color: inherit;
+            }
+        }
+
+        .social-wrapper {
+
+            svg {
+                margin: 0 5px;
+            }
+
+            .bbb {
+                svg {
+                    width: 75px;
+                    padding-top: 5px;
+                }
+            }
+
+            .pcc {
+                svg {
+                    width: 55px;
+                }
             }
         }
 
         .privacy-wrapper {
-            margin-top: 2em;
+            margin-top: 3em;
             a {
                 display: block;
                 color: inherit;
