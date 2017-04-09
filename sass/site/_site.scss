@@ -9,6 +9,21 @@
     text-align: center;
 }
 
+.feature-img {
+    min-height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    // position: relative;
+
+    .header-wrapper {
+        // position: absolute;
+        text-align: center;
+    }
+
+}
+
 // .wrapper-wide {
 //     @extend .wrapper;
 //     max-width: $width_max-content-width-lg;

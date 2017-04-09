@@ -27,6 +27,12 @@
 		"rFN": 0,
 		"uCM": 0
 		},
+	"\/*notes\/backup-code.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/*notes\/backup-code.php",
+		"oF": 0
+		},
 	"\/.gitignore": {
 		"ft": 8192,
 		"oA": 2,
@@ -328,16 +334,16 @@
 		"oAP": "\/inc\/flexible-content-module.php",
 		"oF": 0
 		},
-	"\/inc\/homepage-header.php": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/inc\/homepage-header.php",
-		"oF": 0
-		},
 	"\/inc\/jetpack.php": {
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/inc\/jetpack.php",
+		"oF": 0
+		},
+	"\/inc\/main-header.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/inc\/main-header.php",
 		"oF": 0
 		},
 	"\/inc\/template-tags.php": {
@@ -490,6 +496,12 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/LICENSE",
+		"oF": 0
+		},
+	"\/page-custom.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/page-custom.php",
 		"oF": 0
 		},
 	"\/page.php": {

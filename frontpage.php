@@ -11,8 +11,8 @@
 
 get_header();
 
-    if ( function_exists( 'leading_minds_homepage_header' ) ) {
-        leading_minds_homepage_header();
+    if ( function_exists( 'leading_minds_custom_header' ) ) {
+        leading_minds_custom_header();
     } ?>
 
 	<div id="primary" class="content-area">

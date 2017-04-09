@@ -302,7 +302,7 @@ require get_template_directory() . '/inc/flexible-content-module.php';
 /**
  * Displays homepage header.
  */
-require get_template_directory() . '/inc/homepage-header.php';
+require get_template_directory() . '/inc/main-header.php';
 
 /**
  * Displays the ACF flexible content.

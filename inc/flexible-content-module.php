@@ -17,8 +17,12 @@ function leading_minds_flexible_content_module() {
 
                 $bg_color = get_sub_field('section_background_color');
                 $bg_image = get_sub_field('section_background_image');
+
                 $title = get_sub_field('title');
                 $editor = get_sub_field('editor');
+
+                $add_skills = get_sub_field('add_skills_section');
+                $add_secondary_editor = get_sub_field( 'add_seconday_editor' );
 
                 if ( $bg_image ) {
 
@@ -28,12 +32,62 @@ function leading_minds_flexible_content_module() {
                         <div class="content-section-wrapper wrapper">
                             <div class="editor-wrapper">
 
-                                <h2><?php echo esc_html( $title ); ?></h2>
+                                <?php
 
-                                <?php echo $editor; ?>
+                                if ($title) { ?>
+                                    <h2><?php echo esc_html( $title ); ?></h2>
+                                <?php }
 
-                            </div>
-                        </div>
+                                if ($editor) { ?>
+                                    <?php echo $editor; ?>
+
+                                <?php }
+
+                                if ($add_skills) {
+
+                                    $skills = get_sub_field('skills');
+
+                                    if( have_rows('skills') ): ?>
+
+                                        <div class="skills-wrapper">
+
+                                        <?php while( have_rows('skills') ): the_row();
+
+                                            $skill = get_sub_field('skill');
+
+                                            ?>
+
+                                            <div class="skill">
+
+                                                <?php if( !empty($skill) ) : ?>
+                                                    <?php echo esc_html( $skill); ?>
+                                                <?php endif; ?>
+
+                                            </div>
+
+                                        <?php endwhile; ?>
+
+                                        </div><!-- skills-wrapper -->
+
+                                    <?php endif;
+
+                                }
+
+                                if ($add_secondary_editor) {
+
+                                    $secondary_editor = get_sub_field('secondary_editor');
+
+                                    if ($secondary_editor) { ?>
+                                        <?php echo $secondary_editor; ?>
+
+                                    <?php }
+
+                                }
+
+                                ?>
+
+                            </div><!-- editor-wrapper -->
+                        </div><!-- content-section-wrapper -->
                     </section>
 
                     <?php
@@ -45,12 +99,62 @@ function leading_minds_flexible_content_module() {
                         <div class="content-section-wrapper wrapper">
                             <div class="editor-wrapper">
 
-                                <h2><?php echo esc_html( $title ); ?></h2>
+                                <?php
 
-                                <?php echo $editor; ?>
+                                if ($title) { ?>
+                                    <h2><?php echo esc_html( $title ); ?></h2>
+                                <?php }
 
-                            </div>
-                        </div>
+                                if ($editor) { ?>
+                                    <?php echo $editor; ?>
+
+                                <?php }
+
+                                if ($add_skills) {
+
+                                    $skills = get_sub_field('skills');
+
+                                    if( have_rows('skills') ): ?>
+
+                                        <div class="skills-wrapper">
+
+                                        <?php while( have_rows('skills') ): the_row();
+
+                                            $skill = get_sub_field('skill');
+
+                                            ?>
+
+                                            <div class="skill">
+
+                                                <?php if( !empty($skill) ) : ?>
+                                                    <?php echo esc_html( $skill); ?>
+                                                <?php endif; ?>
+
+                                            </div>
+
+                                        <?php endwhile; ?>
+
+                                        </div><!-- skills-wrapper -->
+
+                                    <?php endif;
+
+                                }
+
+                                if ($add_secondary_editor) {
+
+                                    $secondary_editor = get_sub_field('secondary_editor');
+
+                                    if ($secondary_editor) { ?>
+                                        <?php echo $secondary_editor; ?>
+
+                                    <?php }
+
+                                }
+
+                                ?>
+
+                            </div><!-- editor-wrapper -->
+                        </div><!-- content-section-wrapper -->
                     </section>
 
                     <?php

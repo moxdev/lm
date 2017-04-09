@@ -10,12 +10,25 @@
     background-position: 20% 50%; // change responsive sizes
 
     h2 {
-        color: #fff;
         text-align: center;
     }
 
     .content-section-wrapper {
         @include section-padding;
+    }
+
+    .skills-wrapper {
+        display: block;
+        text-align: center;
+        font-family: $font__alt-bold;
+        color: $color__dark-gray;
+        letter-spacing: 0.3px;
+        text-transform: uppercase;
+
+        .skill {
+            margin: 1em 0;
+
+        }
     }
 
     // .editor-wrapper {
