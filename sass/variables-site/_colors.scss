@@ -15,7 +15,8 @@ $color__bg-dkgray: $color__dark-gray;
 $color__bg-purple: $color__purple;
 $color__bg-green: $color__green;
 
-$color__overlay: #9392af;
+$color__overlay: $color__purple;
+//$color__overlay: #9392af;
 
 $color__h1:#ffffff;
 $color__h2:$color__dark-gray;

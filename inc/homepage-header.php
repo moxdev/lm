@@ -30,9 +30,13 @@ function leading_minds_homepage_header() {
 
 					if( $video_url) { ?>
 
-						<div class="home-header-video-player">
-							<iframe width="504" height="283" src="<?php echo esc_url( $video_url ); ?>" frameborder="0" allowfullscreen></iframe>
-						</div><!-- .video-player -->
+						<figure>
+							<div class="home-header-video-wrapper">
+
+								<iframe width="504" height="283" src="<?php echo esc_url( $video_url ); ?>" frameborder="0" allowfullscreen></iframe>
+
+							</div>
+						</figure>
 
 					<?php }
 
