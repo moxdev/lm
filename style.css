@@ -894,64 +894,68 @@ http://flickity.metafizzy.co
 
 /* ---- previous/next buttons ---- */
 /* line 47, sass/modules/_flickity.scss */
-button.flickity-prev-next-button {
+.flickity-prev-next-button {
   position: absolute;
   top: 50%;
-  width: 35px;
-  height: 35px;
+  width: 44px;
+  height: 44px;
   border: none;
   border-radius: 50%;
-  background: none;
-  background-color: transparent;
-  box-shadow: none;
+  background: white;
+  background: rgba(255, 255, 255, 0.75);
   cursor: pointer;
   /* vertically center */
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 
-/* line 65, sass/modules/_flickity.scss */
-button.flickity-prev-next-button:focus {
+/* line 62, sass/modules/_flickity.scss */
+.flickity-prev-next-button:hover {
+  background: white;
+}
+
+/* line 64, sass/modules/_flickity.scss */
+.flickity-prev-next-button:focus {
   outline: none;
   box-shadow: 0 0 0 5px #09F;
 }
 
-/* line 70, sass/modules/_flickity.scss */
-button.flickity-prev-next-button:active {
+/* line 69, sass/modules/_flickity.scss */
+.flickity-prev-next-button:active {
   opacity: 0.6;
 }
 
-/* line 74, sass/modules/_flickity.scss */
-button.flickity-prev-next-button.previous {
-  left: -10px;
+/* line 73, sass/modules/_flickity.scss */
+.flickity-prev-next-button.previous {
+  left: 10px;
 }
 
-/* line 75, sass/modules/_flickity.scss */
-button.flickity-prev-next-button.next {
-  right: -10px;
+/* line 74, sass/modules/_flickity.scss */
+.flickity-prev-next-button.next {
+  right: 10px;
 }
 
 /* right to left */
-/* line 77, sass/modules/_flickity.scss */
-button.flickity-rtl .flickity-prev-next-button.previous {
+/* line 76, sass/modules/_flickity.scss */
+.flickity-rtl .flickity-prev-next-button.previous {
   left: auto;
   right: 10px;
 }
 
-/* line 81, sass/modules/_flickity.scss */
-button.flickity-rtl .flickity-prev-next-button.next {
+/* line 80, sass/modules/_flickity.scss */
+.flickity-rtl .flickity-prev-next-button.next {
   right: auto;
   left: 10px;
 }
 
-/* line 86, sass/modules/_flickity.scss */
-button.flickity-prev-next-button:disabled {
+/* line 85, sass/modules/_flickity.scss */
+.flickity-prev-next-button:disabled {
   opacity: 0.3;
   cursor: auto;
 }
 
-/* line 91, sass/modules/_flickity.scss */
-button.flickity-prev-next-button svg {
+/* line 90, sass/modules/_flickity.scss */
+.flickity-prev-next-button svg {
   position: absolute;
   left: 20%;
   top: 20%;
@@ -959,19 +963,13 @@ button.flickity-prev-next-button svg {
   height: 60%;
 }
 
-/* line 99, sass/modules/_flickity.scss */
-button.flickity-prev-next-button .arrow {
-  fill: gray;
-  transition: fill .25s;
-}
-
-/* line 104, sass/modules/_flickity.scss */
-button.flickity-prev-next-button:hover .arrow {
-  fill: gray;
+/* line 98, sass/modules/_flickity.scss */
+.flickity-prev-next-button .arrow {
+  fill: #333;
 }
 
 /* ---- page dots ---- */
-/* line 110, sass/modules/_flickity.scss */
+/* line 104, sass/modules/_flickity.scss */
 .flickity-page-dots {
   position: absolute;
   width: 100%;
@@ -983,12 +981,12 @@ button.flickity-prev-next-button:hover .arrow {
   line-height: 1;
 }
 
-/* line 121, sass/modules/_flickity.scss */
+/* line 115, sass/modules/_flickity.scss */
 .flickity-rtl .flickity-page-dots {
   direction: rtl;
 }
 
-/* line 123, sass/modules/_flickity.scss */
+/* line 117, sass/modules/_flickity.scss */
 .flickity-page-dots .dot {
   display: inline-block;
   width: 10px;
@@ -1000,7 +998,7 @@ button.flickity-prev-next-button:hover .arrow {
   cursor: pointer;
 }
 
-/* line 134, sass/modules/_flickity.scss */
+/* line 128, sass/modules/_flickity.scss */
 .flickity-page-dots .dot.is-selected {
   opacity: 1;
 }
@@ -1440,140 +1438,166 @@ object {
 ### Green Brain Section
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
-### Green Left Image Section
+### Mid Page Navigation Section
 --------------------------------------------------------------*/
+/* line 106, sass/page-post-templates/_flexible-content-module.scss */
+.mid-page-navigation-section .content-section-wrapper {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f53f00;
+}
+/* line 113, sass/page-post-templates/_flexible-content-module.scss */
+.mid-page-navigation-section .content-section-wrapper .margin-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -1px;
+}
+/* line 119, sass/page-post-templates/_flexible-content-module.scss */
+.mid-page-navigation-section .content-section-wrapper .nav-container {
+  background-color: #fff;
+  flex: 1 1 50%;
+}
+/* line 123, sass/page-post-templates/_flexible-content-module.scss */
+.mid-page-navigation-section .content-section-wrapper .nav-container .nav-wrapper {
+  background-color: #f53f00;
+  min-height: 100px;
+  margin-bottom: 1px;
+  margin-right: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* line 134, sass/page-post-templates/_flexible-content-module.scss */
+.mid-page-navigation-section .content-section-wrapper .nav-container .nav-content {
+  max-width: 50%;
+  text-align: center;
+  color: #fff;
+}
+/* line 140, sass/page-post-templates/_flexible-content-module.scss */
+.mid-page-navigation-section .content-section-wrapper .nav-container h3 {
+  margin: 0;
+  padding: 0;
+  display: block;
+  color: #000;
+  text-transform: uppercase;
+}
+/* line 147, sass/page-post-templates/_flexible-content-module.scss */
+.mid-page-navigation-section .content-section-wrapper .nav-container a {
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+}
+
 /*--------------------------------------------------------------
 ### Testimonial Section
 --------------------------------------------------------------*/
-/* line 109, sass/page-post-templates/_flexible-content-module.scss */
+/* line 162, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section {
   background-color: #282560;
-  min-height: 200px;
 }
-/* line 117, sass/page-post-templates/_flexible-content-module.scss */
+/* line 166, sass/page-post-templates/_flexible-content-module.scss */
+.testimonial-section .content-section-wrapper {
+  padding-top: 2em;
+  padding-bottom: 3em;
+}
+/* line 172, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .microphone-section {
   padding-top: 2em;
   text-align: center;
 }
-/* line 121, sass/page-post-templates/_flexible-content-module.scss */
+/* line 176, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .microphone-section h5 {
   text-transform: uppercase;
   margin-top: 1em;
   margin-bottom: .5em;
   color: #fff;
 }
-/* line 129, sass/page-post-templates/_flexible-content-module.scss */
+/* line 184, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .testimonial-carousel {
-  width: 100%;
-  height: 300px;
+  padding: 3em 1em;
+  /* big buttons, no circle */
+  /* arrow color */
 }
-/* line 133, sass/page-post-templates/_flexible-content-module.scss */
-.testimonial-section .testimonial-carousel blockquote {
+/* line 186, sass/page-post-templates/_flexible-content-module.scss */
+.testimonial-section .testimonial-carousel displ
+blockquote {
   margin: 0;
   padding: 0;
-  margin: .5em;
 }
-/* line 138, sass/page-post-templates/_flexible-content-module.scss */
+/* line 192, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .testimonial-carousel .cell {
   width: 100%;
+  /* full width */
+  height: auto;
+  /* height of carousel */
   color: #fff;
 }
-/* line 142, sass/page-post-templates/_flexible-content-module.scss */
+/* line 197, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .testimonial-carousel .cell h4 {
   margin: 0;
+  padding: 0;
   color: #fff;
 }
-/* line 147, sass/page-post-templates/_flexible-content-module.scss */
+/* line 202, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .testimonial-carousel .cell h5 {
   margin: 0;
+  padding: 0;
   color: #fff;
 }
-/* line 153, sass/page-post-templates/_flexible-content-module.scss */
-.testimonial-section .testimonial-carousel button.flickity-prev-next-button.previous {
-  display: none;
+/* line 211, sass/page-post-templates/_flexible-content-module.scss */
+.testimonial-section .testimonial-carousel .flickity-prev-next-button {
+  width: 13px;
+  height: 24px;
+  background: transparent;
 }
-/* line 156, sass/page-post-templates/_flexible-content-module.scss */
-.testimonial-section .testimonial-carousel button.flickity-prev-next-button.next {
-  display: none;
+/* line 216, sass/page-post-templates/_flexible-content-module.scss */
+.testimonial-section .testimonial-carousel .flickity-prev-next-button:hover {
+  background: transparent;
 }
-@media screen and (min-width: 575px) {
-  /* line 161, sass/page-post-templates/_flexible-content-module.scss */
-  .testimonial-section .testimonial-carousel button.flickity-prev-next-button.previous {
-    display: block;
-    left: -80px;
-  }
-  /* line 165, sass/page-post-templates/_flexible-content-module.scss */
-  .testimonial-section .testimonial-carousel button.flickity-prev-next-button.next {
-    display: block;
-    right: -80px;
-  }
+/* line 220, sass/page-post-templates/_flexible-content-module.scss */
+.testimonial-section .testimonial-carousel .flickity-prev-next-button .arrow {
+  fill: white;
 }
-@media screen and (min-width: 750px) {
-  /* line 129, sass/page-post-templates/_flexible-content-module.scss */
-  .testimonial-section .testimonial-carousel {
-    max-width: 675px;
-    height: 350px;
-  }
-  /* line 175, sass/page-post-templates/_flexible-content-module.scss */
-  .testimonial-section .testimonial-carousel .cell {
-    width: 50%;
-  }
-  /* line 179, sass/page-post-templates/_flexible-content-module.scss */
-  .testimonial-section .testimonial-carousel button.flickity-prev-next-button.previous {
-    left: -45px;
-  }
-  /* line 180, sass/page-post-templates/_flexible-content-module.scss */
-  .testimonial-section .testimonial-carousel button.flickity-prev-next-button.next {
-    right: -45px;
-  }
+/* line 223, sass/page-post-templates/_flexible-content-module.scss */
+.testimonial-section .testimonial-carousel .flickity-prev-next-button.no-svg {
+  color: white;
 }
-@media screen and (min-width: 950px) {
-  /* line 129, sass/page-post-templates/_flexible-content-module.scss */
-  .testimonial-section .testimonial-carousel {
-    max-width: 925px;
-  }
-  /* line 186, sass/page-post-templates/_flexible-content-module.scss */
-  .testimonial-section .testimonial-carousel .cell {
-    width: 33.333%;
-  }
+/* line 227, sass/page-post-templates/_flexible-content-module.scss */
+.testimonial-section .testimonial-carousel .flickity-prev-next-button.previous {
+  left: -50px;
 }
-@media screen and (min-width: 1200px) {
-  /* line 129, sass/page-post-templates/_flexible-content-module.scss */
-  .testimonial-section .testimonial-carousel {
-    max-width: 1050px;
-  }
-  /* line 194, sass/page-post-templates/_flexible-content-module.scss */
-  .testimonial-section .testimonial-carousel .cell {
-    width: 28%;
-    margin: 3% 4%;
-  }
+/* line 230, sass/page-post-templates/_flexible-content-module.scss */
+.testimonial-section .testimonial-carousel .flickity-prev-next-button.next {
+  right: -50px;
 }
 
 /*--------------------------------------------------------------
 ### Associates Section
 --------------------------------------------------------------*/
-/* line 208, sass/page-post-templates/_flexible-content-module.scss */
+/* line 242, sass/page-post-templates/_flexible-content-module.scss */
 .associates-section .content-section-wrapper {
   text-align: center;
 }
-/* line 212, sass/page-post-templates/_flexible-content-module.scss */
+/* line 246, sass/page-post-templates/_flexible-content-module.scss */
 .associates-section a {
   text-decoration: none;
   color: #656b6f;
 }
-/* line 218, sass/page-post-templates/_flexible-content-module.scss */
+/* line 252, sass/page-post-templates/_flexible-content-module.scss */
 .associates-section img {
   display: block;
   margin-left: auto;
   margin-right: auto;
   border-radius: 50%;
 }
-/* line 223, sass/page-post-templates/_flexible-content-module.scss */
+/* line 257, sass/page-post-templates/_flexible-content-module.scss */
 .associates-section h4, .associates-section h5 {
   margin: 0;
   padding: 0;
 }
-/* line 227, sass/page-post-templates/_flexible-content-module.scss */
+/* line 261, sass/page-post-templates/_flexible-content-module.scss */
 .associates-section h4 {
   margin-top: 1em;
   color: #3b3d40;
@@ -1581,29 +1605,29 @@ object {
   text-transform: uppercase;
   letter-spacing: 1.6px;
 }
-/* line 235, sass/page-post-templates/_flexible-content-module.scss */
+/* line 269, sass/page-post-templates/_flexible-content-module.scss */
 .associates-section .h5 {
   color: #656b6f;
 }
-/* line 239, sass/page-post-templates/_flexible-content-module.scss */
+/* line 273, sass/page-post-templates/_flexible-content-module.scss */
 .associates-section .associate-block {
   padding-top: 2em;
   padding-bottom: 2em;
   transition: box-shadow .25s ease-out;
 }
-/* line 244, sass/page-post-templates/_flexible-content-module.scss */
+/* line 278, sass/page-post-templates/_flexible-content-module.scss */
 .associates-section .associate-block:hover {
   box-shadow: 0 0 7px rgba(0, 0, 0, 0.35);
   color: #656b6f;
 }
 @media screen and (min-width: 750px) {
-  /* line 252, sass/page-post-templates/_flexible-content-module.scss */
+  /* line 286, sass/page-post-templates/_flexible-content-module.scss */
   .associates-section .flex-wrapper {
     display: flex;
     justify-content: space-around;
     align-content: center;
   }
-  /* line 257, sass/page-post-templates/_flexible-content-module.scss */
+  /* line 291, sass/page-post-templates/_flexible-content-module.scss */
   .associates-section .associate-block {
     flex: 1 0 calc(100% / 3);
   }

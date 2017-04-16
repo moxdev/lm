@@ -33,6 +33,30 @@
 		"oAP": "\/*notes\/backup-code.php",
 		"oF": 0
 		},
+	"\/*notes\/v1.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/*notes\/v1.php",
+		"oF": 0
+		},
+	"\/*notes\/v2.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/*notes\/v2.php",
+		"oF": 0
+		},
+	"\/*notes\/v3.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/*notes\/v3.php",
+		"oF": 0
+		},
+	"\/*notes\/v4.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/*notes\/v4.php",
+		"oF": 0
+		},
 	"\/.gitignore": {
 		"ft": 8192,
 		"oA": 2,
@@ -369,10 +393,10 @@
 		},
 	"\/js\/flickity.js": {
 		"ft": 64,
-		"mi": 1,
-		"oA": 0,
+		"mi": 0,
+		"oA": 1,
 		"oAP": "\/js\/min\/flickity-min.js",
-		"oF": 2,
+		"oF": 3,
 		"sC": 1,
 		"tS": 0
 		},

@@ -9,90 +9,14 @@
 function leading_minds_flexible_content_module() {
 
     if( have_rows('acf_page_content') ):
-
          // loop through the rows of data
         while ( have_rows('acf_page_content') ) : the_row();
-
-            if( get_row_layout() == 'simple_content_section' ):
-
+            if( get_row_layout()     == 'simple_content_section' ):
                 $bg_color = get_sub_field('section_background_color');
-                $bg_image = get_sub_field('section_background_image');
-
                 $title = get_sub_field('title');
                 $editor = get_sub_field('editor');
-
                 $add_skills = get_sub_field('add_skills_section');
                 $add_secondary_editor = get_sub_field( 'add_seconday_editor' );
-
-                if ( $bg_image ) {
-
-                    ?>
-
-                    <section class="simple-content-section" style="background-color:<?php echo $bg_color; ?>;background-image:url(http://localhost:8888/test-site/wp-content/themes/test/imgs/brains.svg);">
-                        <div class="content-section-wrapper wrapper">
-                            <div class="editor-wrapper">
-
-                                <?php
-
-                                if ($title) { ?>
-                                    <h2><?php echo esc_html( $title ); ?></h2>
-                                <?php }
-
-                                if ($editor) { ?>
-                                    <?php echo $editor; ?>
-
-                                <?php }
-
-                                if ($add_skills) {
-
-                                    $skills = get_sub_field('skills');
-
-                                    if( have_rows('skills') ): ?>
-
-                                        <div class="skills-wrapper">
-
-                                        <?php while( have_rows('skills') ): the_row();
-
-                                            $skill = get_sub_field('skill');
-
-                                            ?>
-
-                                            <div class="skill">
-
-                                                <?php if( !empty($skill) ) : ?>
-                                                    <?php echo esc_html( $skill); ?>
-                                                <?php endif; ?>
-
-                                            </div>
-
-                                        <?php endwhile; ?>
-
-                                        </div><!-- skills-wrapper -->
-
-                                    <?php endif;
-
-                                }
-
-                                if ($add_secondary_editor) {
-
-                                    $secondary_editor = get_sub_field('secondary_editor');
-
-                                    if ($secondary_editor) { ?>
-                                        <?php echo $secondary_editor; ?>
-
-                                    <?php }
-
-                                }
-
-                                ?>
-
-                            </div><!-- editor-wrapper -->
-                        </div><!-- content-section-wrapper -->
-                    </section>
-
-                    <?php
-
-                }else {
                     ?>
 
                     <section class="simple-content-section" style="background-color:<?php echo $bg_color; ?>">
@@ -100,28 +24,21 @@ function leading_minds_flexible_content_module() {
                             <div class="editor-wrapper">
 
                                 <?php
-
                                 if ($title) { ?>
                                     <h2><?php echo esc_html( $title ); ?></h2>
                                 <?php }
-
                                 if ($editor) { ?>
                                     <?php echo $editor; ?>
 
                                 <?php }
-
                                 if ($add_skills) {
-
                                     $skills = get_sub_field('skills');
-
                                     if( have_rows('skills') ): ?>
 
                                         <div class="skills-wrapper">
 
                                         <?php while( have_rows('skills') ): the_row();
-
                                             $skill = get_sub_field('skill');
-
                                             ?>
 
                                             <div class="skill">
@@ -137,20 +54,14 @@ function leading_minds_flexible_content_module() {
                                         </div><!-- skills-wrapper -->
 
                                     <?php endif;
-
                                 }
-
                                 if ($add_secondary_editor) {
-
                                     $secondary_editor = get_sub_field('secondary_editor');
-
                                     if ($secondary_editor) { ?>
                                         <?php echo $secondary_editor; ?>
 
                                     <?php }
-
                                 }
-
                                 ?>
 
                             </div><!-- editor-wrapper -->
@@ -158,23 +69,17 @@ function leading_minds_flexible_content_module() {
                     </section>
 
                     <?php
-                }
-
             elseif( get_row_layout() == 'advanced_content_section' ):
-
                 $bg_color             = get_sub_field('section_background_color');
                 $bg_img               = get_sub_field('section_background_color');
-
                 $img                  = get_sub_field('image');
                 $header               = get_sub_field('header');
                 $sub_header           = get_sub_field('sub_header');
                 $editor               = get_sub_field('editor');
-
                 $add_split_column     = get_sub_field('add_a_split_column_text_section');
                 $add_content_footer   = get_sub_field('add_a_content_footer_section');
                 $add_skills           = get_sub_field('add_skills_section');
                 $add_secondary_editor = get_sub_field( 'add_seconday_editor' );
-
                 if ( $bg_img ) { ?>
 
                 <section class="advanced-content-section" style="background-color:<?php echo $bg_color; ?>;background-image:url(http://localhost:8888/test-site/wp-content/themes/test/imgs/brains.svg);">
@@ -188,29 +93,23 @@ function leading_minds_flexible_content_module() {
                     <div class="content-section-wrapper wrapper">
 
                         <?php
-
                             if ($img) { ?>
                                 <img class="header-img" src="<?php echo $img['sizes']['thumbnail']; ?>" alt="<?php echo $img['alt']; ?>" description="<?php echo $img['description']; ?>">
                             <?php }
-
                             // Header
                             if ($header) { ?>
                                 <h2><?php echo esc_html( $header ); ?></h2>
                             <?php }
-
                             //Sub Header
                             if ($sub_header) { ?>
                                 <h3><?php echo esc_html( $sub_header ); ?></h3>
                             <?php }
-
                             // Editor
                             if ($editor) { ?>
                                 <?php echo $editor; ?>
                             <?php }
-
                             // Split Column
                             if ($add_split_column) {
-
                                 $left_column_text  = get_sub_field('left_column_text');
                                 $right_column_text = get_sub_field('right_column_text'); ?>
 
@@ -232,20 +131,15 @@ function leading_minds_flexible_content_module() {
                                 </div>
 
                             <?php }
-
                             // Skills
                             if ($add_skills) {
-
                                 $skills = get_sub_field('skills');
-
                                 if( have_rows('skills') ): ?>
 
                                     <div class="skills-wrapper">
 
                                     <?php while( have_rows('skills') ): the_row();
-
                                         $skill = get_sub_field('skill');
-
                                         ?>
 
                                         <div class="skill">
@@ -261,62 +155,112 @@ function leading_minds_flexible_content_module() {
                                     </div><!-- skills-wrapper -->
 
                                 <?php endif;
-
                             }
-
                             // Secondary Editor
                             if ($add_secondary_editor) {
-
                                 $secondary_editor = get_sub_field('secondary_editor');
-
                                 if ($secondary_editor) {
-
                                     echo $secondary_editor;
-
                                 }
                             }
-
                             // Content Footer
-
-
                         ?>
 
                     </div><!-- content-section-wrapper -->
 
                 </section>
                 <?php
+            elseif( get_row_layout() == 'color_content_section' ):
+                $bg_color = get_sub_field('section_background_color');
+                $bg_image = get_sub_field('section_background_image');
+                if ( $bg_image ) {
+                    $title = get_sub_field('title');
+                    $editor = get_sub_field('editor');
+                    ?>
 
-            elseif( get_row_layout() == 'green_brain_section' ):
+                    <section class="color-callout-section-img" style="">
 
-                $header     = get_sub_field('header');
-                $sub_header = get_sub_field('sub_header');
-                $editor     = get_sub_field('editor');
+                        <div class="background-img-fade wrapper" style="background-image:url(http://localhost:8888/test-site/wp-content/themes/test/imgs/brains.svg);background-color:<?php echo $bg_color; ?>;">
 
-                ?>
-                <section class="green-brain-section">
-                    <div class="content-section-wrapper">
-                    </div>
+                            <div class="content-section-wrapper">
+                                <div class="editor-wrapper">
 
-                </section>
-                <?php
+                                    <h2><?php echo esc_html( $title ); ?></h2>
 
-            elseif( get_row_layout() == 'green_left_image_section' ):
+                                    <?php echo $editor; ?>
 
-                $image = get_sub_field('image');
-                $editor = get_sub_field('editor');
+                                </div>
+                            </div>
+                        </div>
+                    </section>
 
-                ?>
-                <section class="green-left-image-section">
-                    <div class="content-section-wrapper">
-                    </div>
+                    <?php
+                }else {
+                    $title = get_sub_field('title');
+                    $editor = get_sub_field('editor');
+                    $img = get_sub_field('image');
+                    ?>
 
-                </section>
-                <?php
+                    <section class="color-callout-section-no-img">
+                        <div class="content-section-wrapper wrapper" style="background-color:<?php echo $bg_color; ?>">
 
+                            <figure class="color-callout-img">
+                                <img src="<?php echo $img['sizes']['thumbnail']; ?>" alt="<?php echo $img['alt']; ?>" description="<?php echo $img['description']; ?>">
+                            </figure>
+                            <div class="editor-wrapper">
+
+                                <h2><?php echo esc_html( $title ); ?></h2>
+
+                                <?php echo $editor; ?>
+
+                            </div>
+                        </div>
+                    </section>
+
+                    <?php
+                }
+            elseif( get_row_layout() == 'mid_page_navigation' ):
+                if( have_rows('page_link_navigation') ): ?>
+
+                    <section class="mid-page-navigation-section">
+                        <div class="content-section-wrapper">
+                            <div class="margin-wrapper">
+
+                                <?php while( have_rows('page_link_navigation') ): the_row();
+                                    $title = get_sub_field('page_title');
+                                    $text  = get_sub_field('link_text');
+                                    $link  = get_sub_field('page_link');
+                                ?>
+
+                                    <div class="nav-container">
+                                        <div class="nav-wrapper">
+                                            <div class="nav-content">
+
+                                                <?php if( $title ) : ?>
+
+                                                    <h3><?php echo esc_html( $title ); ?></h3>
+
+                                                <?php endif; ?>
+
+                                                <?php if( $link ) : ?>
+
+                                                    <a href="<?php echo esc_html( $link ); ?>"><?php echo esc_html( $text ); ?></a>
+
+                                                <?php endif; ?>
+
+                                            </div><!-- nav-content -->
+                                        </div><!-- nav-wrapper -->
+                                    </div><!-- nav-container -->
+
+                                <?php endwhile; ?>
+
+                            </div>
+                        </div>
+                    </section>
+
+                <?php endif;
             elseif( get_row_layout() == 'testimonial_section' ):
-
                 $add_testimonial = get_sub_field('add_the_testimonial_carousel');
-
                 ?>
                 <section class="testimonial-section">
                     <div class="content-section-wrapper">
@@ -327,9 +271,7 @@ function leading_minds_flexible_content_module() {
                         </div>
 
                         <?php
-
                         if ($add_testimonial) {
-
                             // WP_Query arguments
                             $args = array(
                                 'post_type'              => array( 'testimonials' ),
@@ -338,92 +280,72 @@ function leading_minds_flexible_content_module() {
                                 'order'                  => 'DESC',
                                 'orderby'                => 'date',
                             );
-
                             // The Query
                             $testimonials = new WP_Query( $args );
-
                             // The Loop
                             if ( $testimonials->have_posts() ) {
-
                                 ?>
 
                                 <div class="testimonial-carousel">
 
                                 <?php while ( $testimonials->have_posts() ) {
                                     $testimonials->the_post();
-
+                                    $job_title = get_field( 'persons_title' );
                                     ?>
 
                                     <div class="cell">
 
                                         <?php
-                                        $job_title = get_field('job_title');
-
                                         the_content('<p>' , '</p>');
                                         the_title('<h4>' , '</h4>');
-                                        echo '<h5>'. esc_html($job_title) . '</h5>';
+                                        echo '<h5>' . $job_title . '</h5>';
                                         ?>
 
                                     </div><!-- cell -->
 
                                     <?php
-
                                 } ?>
 
                                 </div><!-- testimonial-carousel -->
 
                                 <?php
-
                             } else {
-
                                 echo '<h4>There were no Testimonials found. Please add a testimonial in your Dashboard or remove the testimonial section from the page.</h4>';
                             }
-
                             // Restore original Post Data
                             wp_reset_postdata();
                         }
-
                         ?>
 
                     </div>
 
                 </section>
                 <?php
-
             elseif( get_row_layout() == 'associates_section' ):
-
                 $add_associates = get_sub_field('add_the_associates_section');
-
                 ?>
                 <section class="associates-section wrapper">
                     <div class="content-section-wrapper">
 
                         <?php
-
                         if ($add_associates) {
-
                             $title = get_field( 'associates_section_title', 'option' );
                             $blurb = get_field( 'associates_blurb', 'option' );
-
                             if ($title) {
                                 echo '<h2>' . esc_html( $title ) . '</h2>';
                             }
-
                             if ($blurb) {
                                 echo $blurb;
                             }
-
                             if( have_rows( 'associates_information', 'option' ) ): ?>
 
                                 <div class="flex-wrapper">
 
                                 <?php while( have_rows( 'associates_information', 'option' ) ): the_row();
-
                                     $img = get_sub_field('associates_img');
                                     $name  = get_sub_field('associates_name');
                                     $title = get_sub_field('associates_title');
                                     $page = get_sub_field('associates_page');
-
                                     ?>
 
                                     <div class="associate-block">
@@ -458,26 +380,19 @@ function leading_minds_flexible_content_module() {
                                 </div><!-- flex-wrapper -->
 
                             <?php endif;
-
                         }else {
                             echo '<h4>There were no Associates found. Please add an Associate in your Dashboard or remove the Associates Section from the page.</h4>';
                         }
-
                         ?>
 
                     </div>
 
                 </section><!-- associates-section wrapper -->
                 <?php
-
             endif;
-
         endwhile;
-
     else :
-
         // no layouts found
-
     endif;
 
 }

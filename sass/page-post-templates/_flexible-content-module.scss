@@ -98,8 +98,61 @@
 
 
 /*--------------------------------------------------------------
-### Green Left Image Section
+### Mid Page Navigation Section
 --------------------------------------------------------------*/
+
+.mid-page-navigation-section {
+
+    .content-section-wrapper {
+        max-width: $width_max-content-width;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: $color__orange;
+
+
+        .margin-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: -1px;
+        }
+
+        .nav-container {
+            background-color: #fff;
+            flex: 1 1 50%;
+
+            .nav-wrapper {
+                background-color: $color__orange;
+                min-height: 100px;
+                margin-bottom: 1px;
+                margin-right: 1px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+            }
+
+            .nav-content {
+                max-width: 50%;
+                text-align: center;
+                color: #fff;
+            }
+
+            h3 {
+                @include reset;
+                display: block;
+                color: #000;
+                text-transform: uppercase;
+            }
+
+            a {
+                display: block;
+                text-decoration: none;
+                text-transform: uppercase;
+                color: #fff;
+            }
+        }
+    }
+}
 
 
 /*--------------------------------------------------------------
@@ -108,10 +161,12 @@
 
 .testimonial-section {
     background-color: $color__purple;
-    min-height: 200px;
+    // min-height: 200px;
 
     .content-section-wrapper {
         @extend .wrapper;
+        padding-top: 2em;
+        padding-bottom: 3em;
     }
 
     .microphone-section {
@@ -127,74 +182,53 @@
     }
 
     .testimonial-carousel {
-        width: 100%;
-        height: 300px;
+        padding: 3em 1em;
+        displ
 
         blockquote {
             @include reset;
-            margin: .5em;
         }
 
         .cell {
-            width: 100%;
+            width: 100%; /* full width */
+            height: auto; /* height of carousel */
             color: #fff;
 
             h4 {
-                margin:0;
+                @include reset;
                 color: #fff;
             }
 
             h5 {
-                margin: 0;
+                @include reset;
                 color: #fff;
             }
         }
 
-        button.flickity-prev-next-button.previous {
-            display: none;
+        // My Styles
+
+        /* big buttons, no circle */
+        .flickity-prev-next-button {
+          width: 13px;
+          height: 24px;
+          background: transparent;
         }
-        button.flickity-prev-next-button.next {
-            display: none;
+        .flickity-prev-next-button:hover {
+          background: transparent;
         }
-
-        @include respond-to(x-small) {
-            button.flickity-prev-next-button.previous {
-                display: block;
-                left: -80px;
-            }
-            button.flickity-prev-next-button.next {
-                display: block;
-                right: -80px;
-            }
+        /* arrow color */
+        .flickity-prev-next-button .arrow {
+          fill: white;
         }
-
-        @include respond-to(small) {
-            max-width: 675px;
-            height: 350px;
-
-            .cell {
-                width: 50%;
-            }
-
-            button.flickity-prev-next-button.previous { left: -45px; }
-            button.flickity-prev-next-button.next { right: -45px; }
+        .flickity-prev-next-button.no-svg {
+          color: white;
         }
 
-        @include respond-to(medium) {
-            max-width: 925px;
-
-            .cell {
-                width: 33.333%;
-            }
+        .flickity-prev-next-button.previous {
+          left: -50px;
         }
-
-        @include respond-to(large) {
-            max-width: 1050px;
-
-            .cell {
-                width: 28%;
-                margin: 3% 4%;
-            }
+        .flickity-prev-next-button.next {
+          right: -50px;
         }
     }
 }

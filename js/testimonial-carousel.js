@@ -4,5 +4,6 @@ var flkty = new Flickity( elem, {
     contain: true,
     pageDots: false,
     setGallerySize: true,
-    groupCells: true
+    groupCells: true,
+    autoPlay: true
 });
