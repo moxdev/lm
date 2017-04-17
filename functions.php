@@ -294,16 +294,21 @@ require get_template_directory() . '/inc/customizer.php';
 require get_template_directory() . '/inc/jetpack.php';
 
 /**
- * Displays flexible content.
- */
-require get_template_directory() . '/inc/flexible-content-module.php';
-
-
-/**
  * Displays homepage header.
  */
 require get_template_directory() . '/inc/main-header.php';
 
 /**
- * Displays the ACF flexible content.
+ * Displays flexible content.
  */
+require get_template_directory() . '/inc/flexible-content-module.php';
+
+/**
+ * Section Modules.
+ */
+require get_template_directory() . '/inc/acf-color-content-section.php';
+require get_template_directory() . '/inc/acf-simple-content-section.php';
+require get_template_directory() . '/inc/acf-advanced-content-section.php';
+require get_template_directory() . '/inc/acf-mid-page-navigation-section.php';
+require get_template_directory() . '/inc/acf-testimonial-section.php';
+require get_template_directory() . '/inc/acf-associates-section.php';
