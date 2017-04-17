@@ -72,14 +72,17 @@ function leading_minds_flexible_content_module() {
             elseif( get_row_layout() == 'advanced_content_section' ):
                 $bg_color             = get_sub_field('section_background_color');
                 $bg_img               = get_sub_field('section_background_color');
+
                 $img                  = get_sub_field('image');
                 $header               = get_sub_field('header');
                 $sub_header           = get_sub_field('sub_header');
                 $editor               = get_sub_field('editor');
+
                 $add_split_column     = get_sub_field('add_a_split_column_text_section');
-                $add_content_footer   = get_sub_field('add_a_content_footer_section');
                 $add_skills           = get_sub_field('add_skills_section');
                 $add_secondary_editor = get_sub_field( 'add_seconday_editor' );
+                $add_content_footer   = get_sub_field('add_a_content_footer_section');
+
                 if ( $bg_img ) { ?>
 
                 <section class="advanced-content-section" style="background-color:<?php echo $bg_color; ?>;background-image:url(http://localhost:8888/test-site/wp-content/themes/test/imgs/brains.svg);">
@@ -164,15 +167,100 @@ function leading_minds_flexible_content_module() {
                                 }
                             }
                             // Content Footer
+                            if ($add_content_footer) {
+
+                                if( have_rows('content_footer') ):
+
+                                     // loop through the rows of data
+                                    while ( have_rows('content_footer') ) : the_row();
+
+                                        ?>
+                                        <div class="content-footer-wrapper">
+
+                                            <?php
+
+                                            if( get_row_layout() == 'footer_editor' ):
+                                                $editor = the_sub_field('editor');
+
+                                                ?>
+
+                                                <div class="editor-wrapper">
+
+                                                    <?php echo $editor; ?>
+
+                                                </div>
+
+                                                <?php
+
+                                            elseif( get_row_layout() == 'image' ):
+
+                                                $img = get_sub_field('image');
+
+                                                ?>
+
+                                                <img src="<?php echo $img['sizes']['thumbnail']; ?>" alt="<?php echo $img['alt']; ?>" description="<?php echo $img['description']; ?>">
+
+                                                <?php
+
+                                            elseif( get_row_layout() == 'standard_button_link' ):
+
+                                                $url = get_sub_field('button_url');
+                                                $text = get_sub_field('button_text');
+
+                                                ?>
+
+                                                <a href="<?php echo esc_url( $url ); ?>"><button><?php echo esc_html( $text ); ?></button></a>
+
+                                                <?php
+
+                                            elseif( get_row_layout() == 'call_phone_button' ):
+
+                                                $phone = get_sub_field('phone_number');
+                                                $text = get_sub_field('button_text');
+
+                                                ?>
+
+                                                <a href="tel:<?php echo esc_html( $phone ); ?>"><button><?php echo esc_html( $text ); ?></button></a>
+
+                                                <?php
+
+                                            elseif( get_row_layout() == 'email_button' ):
+
+                                                $email = get_sub_field('email_address');
+                                                $text = get_sub_field('button_text');
+
+                                                ?>
+
+                                                <a href="mailto:<?php echo esc_html( $email ); ?>"><button><?php echo esc_html( $text ); ?></button></a>
+
+                                                <?php
+
+                                            endif;
+
+                                            ?>
+                                        </div>
+
+                                        <?php
+
+                                    endwhile;
+
+                                else :
+
+                                    echo '<h4>There were no Content Footer Sections Found. Please add some sections to the Content Footer Section on this page.</h4>';
+
+                                endif;
+                            }
                         ?>
 
                     </div><!-- content-section-wrapper -->
 
                 </section>
                 <?php
+
             elseif( get_row_layout() == 'color_content_section' ):
                 $bg_color = get_sub_field('section_background_color');
                 $bg_image = get_sub_field('section_background_image');
+
                 if ( $bg_image ) {
                     $title = get_sub_field('title');
                     $editor = get_sub_field('editor');
@@ -180,9 +268,9 @@ function leading_minds_flexible_content_module() {
 
                     <section class="color-callout-section-img" style="">
 
-                        <div class="background-img-fade wrapper" style="background-image:url(http://localhost:8888/test-site/wp-content/themes/test/imgs/brains.svg);background-color:<?php echo $bg_color; ?>;">
+                        <div class="background-img-fade wrapper" style="background-image:url(http://localhost:8888/leading-minds/wp-content/themes/leading_minds/imgs/brains.svg);background-color:<?php echo $bg_color; ?>;">
 
-                            <div class="content-section-wrapper">
+                            <div class="content-section-wrapper wrapper">
                                 <div class="editor-wrapper">
 
                                     <h2><?php echo esc_html( $title ); ?></h2>

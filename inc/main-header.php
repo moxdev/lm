@@ -104,14 +104,14 @@ function leading_minds_custom_header() {
 
 			        ?>
 
-			        <div class="header-wrapper">
+			        <div class="section-header-wrapper">
 
 			            <?php
 
 			            if( $on_page_title ) { ?>
 
-			                <header class="home-header">
-			                    <h1 class="home-title">
+			                <header class="section-header">
+			                    <h1 class="section-title">
 
 			                    <?php echo wp_kses(
 			                        $on_page_title,
@@ -123,13 +123,13 @@ function leading_minds_custom_header() {
 			                    ); ?>
 
 			                    </h1>
-			                </header><!-- .home-header -->
+			                </header><!-- .section-header -->
 
 			            <?php }
 
 			            ?>
 
-			        </div><!-- .header-wrapper -->
+			        </div><!-- .section-header-wrapper -->
 
 			        <?php
 			    } ?>

@@ -87,6 +87,15 @@
 		"oAP": "\/archive.php",
 		"oF": 0
 		},
+	"\/bs-config-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/bs-config-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"\/bs-config.js": {
 		"ft": 64,
 		"mi": 1,
@@ -288,6 +297,47 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/imgs\/big-brain.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/imgs\/big-brain.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/imgs\/brain-logo.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/imgs\/brain-logo.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/imgs\/brain.png": {
+		"ft": 32768,
+		"iS": 1943,
+		"oA": 0,
+		"oAP": "\/imgs\/brain.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/imgs\/brains.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/imgs\/brains.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/imgs\/footer-logo.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -304,6 +354,16 @@
 		"oAP": "\/imgs\/ImageComps.pdf",
 		"oF": 0
 		},
+	"\/imgs\/Layer 3.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/imgs\/Layer 3.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/imgs\/linkedin-logo.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -314,11 +374,52 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/imgs\/Logo copy.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/imgs\/Logo copy.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/imgs\/opti-brain.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/imgs\/opti-brain.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/imgs\/pcc-logo.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
 		"oAP": "\/imgs\/pcc-logo.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/imgs\/test.png": {
+		"ft": 32768,
+		"iS": 7744,
+		"oA": 0,
+		"oAP": "\/imgs\/test.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/imgs\/test.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/imgs\/test.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,

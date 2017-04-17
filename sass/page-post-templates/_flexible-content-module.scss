@@ -154,6 +154,83 @@
     }
 }
 
+/*--------------------------------------------------------------
+### Color Callout Section
+--------------------------------------------------------------*/
+
+.color-callout-section-img {
+
+    .background-img-fade {
+        padding:0;
+        background-size: 150%;
+        background-position: -250px 50%;
+        background-repeat: no-repeat;
+    }
+
+    h2 {
+        color: #fff;
+    }
+
+    .editor-wrapper p {
+        color: $color__dark_gray;
+    }
+
+    .content-section-wrapper {
+        @include section-padding;
+        background-color: rgba(36,207,95, 0.7);
+    }
+
+    @include respond-to(mobile) {
+        .background-img-fade {
+            background-size: contain;
+            background-position: -200px 70%;
+        }
+    }
+
+    @include respond-to(small) {
+        .background-img-fade {
+            // background-size: 70%;
+            background-position: -20% 50%;
+        }
+
+        .editor-wrapper {
+            margin-left: calc(50% - 100px);
+        }
+    }
+}
+
+.color-callout-section-no-img {
+
+    .content-section-wrapper {
+        @include section-padding;
+
+        .color-callout-img {
+            display: block;
+            margin-bottom: 2em;
+            text-align: center;
+        }
+    }
+
+    @include respond-to(mobile) {
+
+    }
+
+    @include respond-to(small) {
+        .content-section-wrapper {
+            display: flex;
+
+            .color-callout-img {
+                display: inline-flex;
+                flex: 1 0 30%;
+            }
+
+            .editor-wrapper {
+                flex: 1 1 auto;
+            }
+        }
+    }
+}
+
 
 /*--------------------------------------------------------------
 ### Testimonial Section
@@ -292,4 +369,29 @@
             flex: 1 0 calc(100% / 3);
         }
     }
+}
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------
+### Custom Styles for various sections
+--------------------------------------------------------------*/
+.page-template-page-custom {
+
+    .exec-img-brendel {
+        margin-left: 0;
+    }
+
+    .exec-img-pcc {
+        padding: 1em;
+        margin-right: 1.5em;
+    }
+
 }

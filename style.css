@@ -365,6 +365,16 @@ h3 {
   font-family: "ACaslonPro-Semibold", sans-serif;
 }
 
+/* line 21, sass/typography/_headings.scss */
+h1.section-title {
+  text-align: center;
+  padding-left: .5em;
+  padding-right: .5em;
+  letter-spacing: 1.6px;
+  line-height: 1.1;
+  text-shadow: 0px 3px 4.83px rgba(0, 0, 0, 0.35);
+}
+
 /* line 1, sass/typography/_copy.scss */
 p {
   margin-bottom: 1.5em;
@@ -1491,42 +1501,111 @@ object {
 }
 
 /*--------------------------------------------------------------
+### Color Callout Section
+--------------------------------------------------------------*/
+/* line 163, sass/page-post-templates/_flexible-content-module.scss */
+.color-callout-section-img .background-img-fade {
+  padding: 0;
+  background-size: 150%;
+  background-position: -250px 50%;
+  background-repeat: no-repeat;
+}
+/* line 170, sass/page-post-templates/_flexible-content-module.scss */
+.color-callout-section-img h2 {
+  color: #fff;
+}
+/* line 174, sass/page-post-templates/_flexible-content-module.scss */
+.color-callout-section-img .editor-wrapper p {
+  color: #3b3d40;
+}
+/* line 178, sass/page-post-templates/_flexible-content-module.scss */
+.color-callout-section-img .content-section-wrapper {
+  padding-top: 3em;
+  padding-bottom: 3em;
+  background-color: rgba(36, 207, 95, 0.7);
+}
+@media screen and (min-width: 400px) {
+  /* line 184, sass/page-post-templates/_flexible-content-module.scss */
+  .color-callout-section-img .background-img-fade {
+    background-size: contain;
+    background-position: -200px 70%;
+  }
+}
+@media screen and (min-width: 750px) {
+  /* line 191, sass/page-post-templates/_flexible-content-module.scss */
+  .color-callout-section-img .background-img-fade {
+    background-position: -20% 50%;
+  }
+  /* line 196, sass/page-post-templates/_flexible-content-module.scss */
+  .color-callout-section-img .editor-wrapper {
+    margin-left: calc(50% - 100px);
+  }
+}
+
+/* line 204, sass/page-post-templates/_flexible-content-module.scss */
+.color-callout-section-no-img .content-section-wrapper {
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+/* line 207, sass/page-post-templates/_flexible-content-module.scss */
+.color-callout-section-no-img .content-section-wrapper .color-callout-img {
+  display: block;
+  margin-bottom: 2em;
+  text-align: center;
+}
+@media screen and (min-width: 750px) {
+  /* line 219, sass/page-post-templates/_flexible-content-module.scss */
+  .color-callout-section-no-img .content-section-wrapper {
+    display: flex;
+  }
+  /* line 222, sass/page-post-templates/_flexible-content-module.scss */
+  .color-callout-section-no-img .content-section-wrapper .color-callout-img {
+    display: inline-flex;
+    flex: 1 0 30%;
+  }
+  /* line 227, sass/page-post-templates/_flexible-content-module.scss */
+  .color-callout-section-no-img .content-section-wrapper .editor-wrapper {
+    flex: 1 1 auto;
+  }
+}
+
+/*--------------------------------------------------------------
 ### Testimonial Section
 --------------------------------------------------------------*/
-/* line 162, sass/page-post-templates/_flexible-content-module.scss */
+/* line 239, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section {
   background-color: #282560;
 }
-/* line 166, sass/page-post-templates/_flexible-content-module.scss */
+/* line 243, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .content-section-wrapper {
   padding-top: 2em;
   padding-bottom: 3em;
 }
-/* line 172, sass/page-post-templates/_flexible-content-module.scss */
+/* line 249, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .microphone-section {
   padding-top: 2em;
   text-align: center;
 }
-/* line 176, sass/page-post-templates/_flexible-content-module.scss */
+/* line 253, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .microphone-section h5 {
   text-transform: uppercase;
   margin-top: 1em;
   margin-bottom: .5em;
   color: #fff;
 }
-/* line 184, sass/page-post-templates/_flexible-content-module.scss */
+/* line 261, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .testimonial-carousel {
   padding: 3em 1em;
   /* big buttons, no circle */
   /* arrow color */
 }
-/* line 186, sass/page-post-templates/_flexible-content-module.scss */
+/* line 263, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .testimonial-carousel displ
 blockquote {
   margin: 0;
   padding: 0;
 }
-/* line 192, sass/page-post-templates/_flexible-content-module.scss */
+/* line 269, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .testimonial-carousel .cell {
   width: 100%;
   /* full width */
@@ -1534,41 +1613,41 @@ blockquote {
   /* height of carousel */
   color: #fff;
 }
-/* line 197, sass/page-post-templates/_flexible-content-module.scss */
+/* line 274, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .testimonial-carousel .cell h4 {
   margin: 0;
   padding: 0;
   color: #fff;
 }
-/* line 202, sass/page-post-templates/_flexible-content-module.scss */
+/* line 279, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .testimonial-carousel .cell h5 {
   margin: 0;
   padding: 0;
   color: #fff;
 }
-/* line 211, sass/page-post-templates/_flexible-content-module.scss */
+/* line 288, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .testimonial-carousel .flickity-prev-next-button {
   width: 13px;
   height: 24px;
   background: transparent;
 }
-/* line 216, sass/page-post-templates/_flexible-content-module.scss */
+/* line 293, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .testimonial-carousel .flickity-prev-next-button:hover {
   background: transparent;
 }
-/* line 220, sass/page-post-templates/_flexible-content-module.scss */
+/* line 297, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .testimonial-carousel .flickity-prev-next-button .arrow {
   fill: white;
 }
-/* line 223, sass/page-post-templates/_flexible-content-module.scss */
+/* line 300, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .testimonial-carousel .flickity-prev-next-button.no-svg {
   color: white;
 }
-/* line 227, sass/page-post-templates/_flexible-content-module.scss */
+/* line 304, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .testimonial-carousel .flickity-prev-next-button.previous {
   left: -50px;
 }
-/* line 230, sass/page-post-templates/_flexible-content-module.scss */
+/* line 307, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .testimonial-carousel .flickity-prev-next-button.next {
   right: -50px;
 }
@@ -1576,28 +1655,28 @@ blockquote {
 /*--------------------------------------------------------------
 ### Associates Section
 --------------------------------------------------------------*/
-/* line 242, sass/page-post-templates/_flexible-content-module.scss */
+/* line 319, sass/page-post-templates/_flexible-content-module.scss */
 .associates-section .content-section-wrapper {
   text-align: center;
 }
-/* line 246, sass/page-post-templates/_flexible-content-module.scss */
+/* line 323, sass/page-post-templates/_flexible-content-module.scss */
 .associates-section a {
   text-decoration: none;
   color: #656b6f;
 }
-/* line 252, sass/page-post-templates/_flexible-content-module.scss */
+/* line 329, sass/page-post-templates/_flexible-content-module.scss */
 .associates-section img {
   display: block;
   margin-left: auto;
   margin-right: auto;
   border-radius: 50%;
 }
-/* line 257, sass/page-post-templates/_flexible-content-module.scss */
+/* line 334, sass/page-post-templates/_flexible-content-module.scss */
 .associates-section h4, .associates-section h5 {
   margin: 0;
   padding: 0;
 }
-/* line 261, sass/page-post-templates/_flexible-content-module.scss */
+/* line 338, sass/page-post-templates/_flexible-content-module.scss */
 .associates-section h4 {
   margin-top: 1em;
   color: #3b3d40;
@@ -1605,32 +1684,45 @@ blockquote {
   text-transform: uppercase;
   letter-spacing: 1.6px;
 }
-/* line 269, sass/page-post-templates/_flexible-content-module.scss */
+/* line 346, sass/page-post-templates/_flexible-content-module.scss */
 .associates-section .h5 {
   color: #656b6f;
 }
-/* line 273, sass/page-post-templates/_flexible-content-module.scss */
+/* line 350, sass/page-post-templates/_flexible-content-module.scss */
 .associates-section .associate-block {
   padding-top: 2em;
   padding-bottom: 2em;
   transition: box-shadow .25s ease-out;
 }
-/* line 278, sass/page-post-templates/_flexible-content-module.scss */
+/* line 355, sass/page-post-templates/_flexible-content-module.scss */
 .associates-section .associate-block:hover {
   box-shadow: 0 0 7px rgba(0, 0, 0, 0.35);
   color: #656b6f;
 }
 @media screen and (min-width: 750px) {
-  /* line 286, sass/page-post-templates/_flexible-content-module.scss */
+  /* line 363, sass/page-post-templates/_flexible-content-module.scss */
   .associates-section .flex-wrapper {
     display: flex;
     justify-content: space-around;
     align-content: center;
   }
-  /* line 291, sass/page-post-templates/_flexible-content-module.scss */
+  /* line 368, sass/page-post-templates/_flexible-content-module.scss */
   .associates-section .associate-block {
     flex: 1 0 calc(100% / 3);
   }
+}
+
+/*--------------------------------------------------------------
+### Custom Styles for various sections
+--------------------------------------------------------------*/
+/* line 388, sass/page-post-templates/_flexible-content-module.scss */
+.page-template-page-custom .exec-img-brendel {
+  margin-left: 0;
+}
+/* line 392, sass/page-post-templates/_flexible-content-module.scss */
+.page-template-page-custom .exec-img-pcc {
+  padding: 1em;
+  margin-right: 1.5em;
 }
 
 /*# sourceMappingURL=style.css.map */
