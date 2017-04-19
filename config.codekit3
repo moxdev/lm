@@ -435,6 +435,42 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/inc\/acf-advanced-content-section.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/inc\/acf-advanced-content-section.php",
+		"oF": 0
+		},
+	"\/inc\/acf-associates-section.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/inc\/acf-associates-section.php",
+		"oF": 0
+		},
+	"\/inc\/acf-color-content-section.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/inc\/acf-color-content-section.php",
+		"oF": 0
+		},
+	"\/inc\/acf-mid-page-navigation-section.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/inc\/acf-mid-page-navigation-section.php",
+		"oF": 0
+		},
+	"\/inc\/acf-simple-content-section.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/inc\/acf-simple-content-section.php",
+		"oF": 0
+		},
+	"\/inc\/acf-testimonial-section.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/inc\/acf-testimonial-section.php",
+		"oF": 0
+		},
 	"\/inc\/custom-header.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -445,6 +481,12 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/inc\/customizer.php",
+		"oF": 0
+		},
+	"\/inc\/DNU-old-flexible-content-module.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/inc\/DNU-old-flexible-content-module.php",
 		"oF": 0
 		},
 	"\/inc\/extras.php": {
@@ -855,6 +897,12 @@
 		"oAP": "\/sass\/.sass-cache\/e3d13e55e8ddc5318bbbfb7171153050459940df\/_typography.scssc",
 		"oF": 0
 		},
+	"\/sass\/.sass-cache\/ef8cb757c84d7f9aa2f548478132cba68362dcf7\/_blog-posts.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/ef8cb757c84d7f9aa2f548478132cba68362dcf7\/_blog-posts.scssc",
+		"oF": 0
+		},
 	"\/sass\/.sass-cache\/ef8cb757c84d7f9aa2f548478132cba68362dcf7\/_flexible-content-module.scssc": {
 		"ft": 8192,
 		"oA": 1,
@@ -1158,6 +1206,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/sass\/page-post-templates\/_blog-posts.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/page-post-templates\/_blog-posts.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/sass\/page-post-templates\/_flexible-content-module.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1193,6 +1254,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/sass\/page-post-templates\/_page-post-templates.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/sass\/page-post-templates\/_sidebar-widget.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/page-post-templates\/_sidebar-widget.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

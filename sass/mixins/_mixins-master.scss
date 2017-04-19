@@ -4,6 +4,12 @@
     font-size: $sizeValue * 0.9375rem;
 }
 
+@mixin container {
+    max-width: $width_max-content-width;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 // Center block
 @mixin center-block {
     display: block;

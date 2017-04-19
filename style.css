@@ -1722,7 +1722,95 @@ blockquote {
 /* line 392, sass/page-post-templates/_flexible-content-module.scss */
 .page-template-page-custom .exec-img-pcc {
   padding: 1em;
-  margin-right: 1.5em;
+  margin-right: 1.5 em;
+}
+
+/*--------------------------------------------------------------
+## Blog Posts
+--------------------------------------------------------------*/
+/* line 1, sass/page-post-templates/_blog-posts.scss */
+.blog-post-wrapper {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  /* Pagination */
+}
+@media screen and (min-width: 750px) {
+  /* line 1, sass/page-post-templates/_blog-posts.scss */
+  .blog-post-wrapper {
+    padding-left: 2.75rem;
+    padding-right: 2.75rem;
+  }
+}
+/* line 5, sass/page-post-templates/_blog-posts.scss */
+.blog-post-wrapper .post {
+  margin-bottom: 3em;
+}
+/* line 10, sass/page-post-templates/_blog-posts.scss */
+.blog-post-wrapper .pagination {
+  clear: both;
+  position: relative;
+  font-size: 11px;
+  /* Pagination text size */
+  line-height: 13px;
+  float: left;
+  /* Pagination float direction */
+}
+/* line 17, sass/page-post-templates/_blog-posts.scss */
+.blog-post-wrapper .pagination .intro {
+  background-color: transparent;
+  color: #3b3d40;
+}
+/* line 24, sass/page-post-templates/_blog-posts.scss */
+.blog-post-wrapper .pagination span, .blog-post-wrapper .pagination a {
+  display: block;
+  float: left;
+  margin: 2px 2px 2px 0;
+  padding: 6px 9px 5px 9px;
+  text-decoration: none;
+  width: auto;
+  color: #fff;
+  /* Pagination text color */
+  background: #24cf5f;
+  /* Pagination non-active background color */
+  transition: background .15s ease-in-out;
+}
+/* line 36, sass/page-post-templates/_blog-posts.scss */
+.blog-post-wrapper .pagination a:hover {
+  color: #fff;
+  background: #282560;
+  /* Pagination background on hover */
+}
+/* line 41, sass/page-post-templates/_blog-posts.scss */
+.blog-post-wrapper .pagination .current {
+  padding: 6px 9px 5px 9px;
+  background: #282560;
+  /* Current page background */
+  color: #fff;
+}
+/* line 48, sass/page-post-templates/_blog-posts.scss */
+.blog-post-wrapper .view-full-post a {
+  text-decoration: none;
+  margin-left: .5em;
+  color: #282560;
+}
+
+/*--------------------------------------------------------------
+## Sidebar Widget
+--------------------------------------------------------------*/
+/* line 1, sass/page-post-templates/_sidebar-widget.scss */
+.widget-area {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}
+@media screen and (min-width: 750px) {
+  /* line 1, sass/page-post-templates/_sidebar-widget.scss */
+  .widget-area {
+    padding-left: 2.75rem;
+    padding-right: 2.75rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
