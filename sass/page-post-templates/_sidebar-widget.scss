@@ -2,3 +2,16 @@
 
     @include padding-left-right;
 }
+
+.widget_categories,
+.widget_archive {
+
+    li {
+
+        a {
+            color: $color__med-gray;
+            text-decoration: none;
+        }
+    }
+
+}

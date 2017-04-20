@@ -324,7 +324,7 @@ require get_template_directory() . '/inc/acf-associates-section.php';
 // }
 // add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
-function pagination($pages = '', $range = 4) {
+function leading_minds_pagination($pages = '', $range = 4) {
      $showitems = ($range * 2)+1;
 
      global $paged;
@@ -355,15 +355,15 @@ function pagination($pages = '', $range = 4) {
      }
 }
 
-function et_excerpt_length($length) {
+function leading_minds_excerpt_length($length) {
     return 50;
 }
-add_filter('excerpt_length', 'et_excerpt_length');
+add_filter('excerpt_length', 'leading_minds_excerpt_length');
 
 /* Add a link  to the end of our excerpt contained in a div for styling purposes and to break to a new line on the page.*/
 
-function et_excerpt_more($more) {
+function leading_minds_excerpt_more($more) {
     global $post;
-    return '<span class="view-full-post"><a href="'. get_permalink($post->ID) . '" class="view-full-post-btn">Read More ></a></span>';
+    return '<span class="view-full-post"><a href="'. esc_url( get_permalink($post->ID) ) . '" class="view-full-post-btn">Read More ></a></span>';
 }
-add_filter('excerpt_more', 'et_excerpt_more');
+add_filter('excerpt_more', 'leading_minds_excerpt_more');

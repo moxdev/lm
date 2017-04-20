@@ -1,30 +1,25 @@
 ul, ol {
-	@include reset;
-    margin-left: 1em;
+    margin: 0 0 1.5em 0;
 }
 
 ul {
-	list-style: disc;
+    list-style: disc;
 }
 
 ol {
-	list-style: decimal;
+    list-style: decimal;
 }
 
 li > ul,
 li > ol {
-	@include reset;
-    margin-left: 1em;
-}
-
-li {
-    margin: .5em 0;
+    margin-bottom: 0;
+    margin-left: 1.5em;
 }
 
 dt {
-	font-weight: bold;
+    font-weight: bold;
 }
 
 dd {
-	margin: 0 1.5em 1.5em;
+    margin: 0 1.5em 1.5em;
 }

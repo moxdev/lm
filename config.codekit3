@@ -307,6 +307,16 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/imgs\/blog-background-img.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/imgs\/blog-background-img.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/imgs\/brain-logo.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -921,6 +931,12 @@
 		"oAP": "\/sass\/.sass-cache\/ef8cb757c84d7f9aa2f548478132cba68362dcf7\/_page-post-templates.scssc",
 		"oF": 0
 		},
+	"\/sass\/.sass-cache\/ef8cb757c84d7f9aa2f548478132cba68362dcf7\/_sidebar-widget.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/ef8cb757c84d7f9aa2f548478132cba68362dcf7\/_sidebar-widget.scssc",
+		"oF": 0
+		},
 	"\/sass\/.sass-cache\/fb66b6af827c8779282a5c03df85df7dcc656a5a\/_comments.scssc": {
 		"ft": 8192,
 		"oA": 1,
@@ -1533,6 +1549,12 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/template-parts\/content-search.php",
+		"oF": 0
+		},
+	"\/template-parts\/content-single-post.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/template-parts\/content-single-post.php",
 		"oF": 0
 		},
 	"\/template-parts\/content.php": {

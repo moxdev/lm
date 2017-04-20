@@ -25,14 +25,14 @@ function leading_minds_posted_on() {
 	);
 
 	$posted_on = sprintf(
-		esc_html_x( 'Posted on %s', 'post date', 'test' ),
+		esc_html_x( 'Posted on %s', 'post date', 'leading_minds' ),
 		'<span' . $time_string . '</span>'
 	);
 
-	$byline = sprintf(
-		esc_html_x( 'by %s', 'post author', 'leading_minds' ),
-		'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
-	);
+	// $byline = sprintf(
+	// 	esc_html_x( 'by %s', 'post author', 'leading_minds' ),
+	// 	'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
+	// );
 
 	echo '<span class="posted-on">' . $posted_on . '</span><span class="byline"> ' . $byline . '</span>'; // WPCS: XSS OK.
 
@@ -59,12 +59,12 @@ function leading_minds_entry_footer() {
 	// 	}
 	// }
 
-	if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
-		echo '<span class="comments-link">';
-		/* translators: %s: post title */
-		comments_popup_link( sprintf( wp_kses( __( 'Leave a Comment<span class="screen-reader-text"> on %s</span>', 'leading_minds' ), array( 'span' => array( 'class' => array() ) ) ), get_the_title() ) );
-		echo '</span>';
-	}
+	// if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
+	// 	echo '<span class="comments-link">';
+	// 	/* translators: %s: post title */
+	// 	comments_popup_link( sprintf( wp_kses( __( 'Leave a Comment<span class="screen-reader-text"> on %s</span>', 'leading_minds' ), array( 'span' => array( 'class' => array() ) ) ), get_the_title() ) );
+	// 	echo '</span>';
+	// }
 
 	edit_post_link(
 		sprintf(

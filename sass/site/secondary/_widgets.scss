@@ -1,8 +1,23 @@
 .widget {
-	margin: 0 0 1.5em;
+    margin: 0 0 1.5em;
 
-	/* Make sure select elements fit in widgets. */
-	select {
-		max-width: 100%;
-	}
+    /* Make sure select elements fit in widgets. */
+    select {
+        max-width: 100%;
+    }
+
+    ul {
+        @include reset;
+
+        li {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+
+            a {
+                text-decoration: none;
+                text-transform: capitalize;
+            }
+        }
+    }
 }

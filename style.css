@@ -490,40 +490,32 @@ hr {
 
 /* line 1, sass/elements/_lists.scss */
 ul, ol {
-  margin: 0;
-  padding: 0;
-  margin-left: 1em;
+  margin: 0 0 1.5em 0;
 }
 
-/* line 6, sass/elements/_lists.scss */
+/* line 5, sass/elements/_lists.scss */
 ul {
   list-style: disc;
 }
 
-/* line 10, sass/elements/_lists.scss */
+/* line 9, sass/elements/_lists.scss */
 ol {
   list-style: decimal;
 }
 
-/* line 14, sass/elements/_lists.scss */
+/* line 13, sass/elements/_lists.scss */
 li > ul,
 li > ol {
-  margin: 0;
-  padding: 0;
-  margin-left: 1em;
+  margin-bottom: 0;
+  margin-left: 1.5em;
 }
 
-/* line 20, sass/elements/_lists.scss */
-li {
-  margin: .5em 0;
-}
-
-/* line 24, sass/elements/_lists.scss */
+/* line 19, sass/elements/_lists.scss */
 dt {
   font-weight: bold;
 }
 
-/* line 28, sass/elements/_lists.scss */
+/* line 23, sass/elements/_lists.scss */
 dd {
   margin: 0 1.5em 1.5em;
 }
@@ -1025,12 +1017,28 @@ http://flickity.metafizzy.co
 .widget select {
   max-width: 100%;
 }
+/* line 9, sass/site/secondary/_widgets.scss */
+.widget ul {
+  margin: 0;
+  padding: 0;
+}
+/* line 12, sass/site/secondary/_widgets.scss */
+.widget ul li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+/* line 17, sass/site/secondary/_widgets.scss */
+.widget ul li a {
+  text-decoration: none;
+  text-transform: capitalize;
+}
 
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
 /* line 1, sass/site/_site.scss */
-.wrapper, .home .home-header-wrapper, .testimonial-section .content-section-wrapper {
+.wrapper, .home .home-header-wrapper, .testimonial-section .content-section-wrapper, .post-template-default .site-content {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -1039,7 +1047,7 @@ http://flickity.metafizzy.co
 }
 @media screen and (min-width: 750px) {
   /* line 1, sass/site/_site.scss */
-  .wrapper, .home .home-header-wrapper, .testimonial-section .content-section-wrapper {
+  .wrapper, .home .home-header-wrapper, .testimonial-section .content-section-wrapper, .post-template-default .site-content {
     padding-left: 2.75rem;
     padding-right: 2.75rem;
   }
@@ -1105,6 +1113,11 @@ http://flickity.metafizzy.co
 .page-links {
   clear: both;
   margin: 0 0 1.5em;
+}
+
+/* line 30, sass/site/primary/_posts-and-pages.scss */
+.entry-meta {
+  margin-top: 1em;
 }
 
 /*--------------------------------------------------------------
@@ -1728,27 +1741,85 @@ blockquote {
 /*--------------------------------------------------------------
 ## Blog Posts
 --------------------------------------------------------------*/
-/* line 1, sass/page-post-templates/_blog-posts.scss */
-.blog-post-wrapper {
+/* line 3, sass/page-post-templates/_blog-posts.scss */
+.blog .featured-image-full-width {
+  width: 100%;
+  min-height: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3em;
+}
+/* line 16, sass/page-post-templates/_blog-posts.scss */
+.blog .featured-title {
+  color: #fff;
+  text-align: center;
+  margin: auto;
   padding-left: 1.75rem;
   padding-right: 1.75rem;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  /* Pagination */
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
+  text-shadow: 0px 3px 4.83px rgba(0, 0, 0, 0.75);
 }
 @media screen and (min-width: 750px) {
-  /* line 1, sass/page-post-templates/_blog-posts.scss */
-  .blog-post-wrapper {
+  /* line 16, sass/page-post-templates/_blog-posts.scss */
+  .blog .featured-title {
     padding-left: 2.75rem;
     padding-right: 2.75rem;
   }
 }
-/* line 5, sass/page-post-templates/_blog-posts.scss */
+@media screen and (min-width: 750px) {
+  /* line 16, sass/page-post-templates/_blog-posts.scss */
+  .blog .featured-title {
+    padding-top: 2.75rem;
+    padding-bottom: 2.75rem;
+  }
+}
+/* line 27, sass/page-post-templates/_blog-posts.scss */
+.blog .entry-title a {
+  text-decoration: none;
+  color: #3b3d40;
+}
+/* line 37, sass/page-post-templates/_blog-posts.scss */
+.blog #secondary {
+  margin-top: 3em;
+  clear: both;
+}
+@media screen and (min-width: 950px) {
+  /* line 44, sass/page-post-templates/_blog-posts.scss */
+  .blog .wrapper, .blog .home .home-header-wrapper, .home .blog .home-header-wrapper, .blog .testimonial-section .content-section-wrapper, .testimonial-section .blog .content-section-wrapper, .blog .post-template-default .site-content, .post-template-default .blog .site-content {
+    display: flex;
+  }
+  /* line 47, sass/page-post-templates/_blog-posts.scss */
+  .blog .wrapper #primary, .blog .home .home-header-wrapper #primary, .home .blog .home-header-wrapper #primary, .blog .testimonial-section .content-section-wrapper #primary, .testimonial-section .blog .content-section-wrapper #primary, .blog .post-template-default .site-content #primary, .post-template-default .blog .site-content #primary {
+    flex: 2;
+    order: 2;
+  }
+  /* line 53, sass/page-post-templates/_blog-posts.scss */
+  .blog .wrapper #secondary, .blog .home .home-header-wrapper #secondary, .home .blog .home-header-wrapper #secondary, .blog .testimonial-section .content-section-wrapper #secondary, .testimonial-section .blog .content-section-wrapper #secondary, .blog .post-template-default .site-content #secondary, .post-template-default .blog .site-content #secondary {
+    flex: 1;
+    order: 1;
+    display: block;
+    margin-top: 0;
+  }
+}
+
+/* line 63, sass/page-post-templates/_blog-posts.scss */
+.blog-post-wrapper {
+  background-image: url(http://localhost:8888/leading-minds/wp-content/themes/leading_minds/imgs/blog-background-img.svg);
+  background-repeat: no-repeat;
+  background-position: 110% 10%;
+  background-size: 90%;
+}
+/* line 69, sass/page-post-templates/_blog-posts.scss */
 .blog-post-wrapper .post {
   margin-bottom: 3em;
 }
-/* line 10, sass/page-post-templates/_blog-posts.scss */
+/* line 73, sass/page-post-templates/_blog-posts.scss */
 .blog-post-wrapper .pagination {
   clear: both;
   position: relative;
@@ -1757,13 +1828,14 @@ blockquote {
   line-height: 13px;
   float: left;
   /* Pagination float direction */
+  margin-bottom: 3em;
 }
-/* line 17, sass/page-post-templates/_blog-posts.scss */
+/* line 81, sass/page-post-templates/_blog-posts.scss */
 .blog-post-wrapper .pagination .intro {
   background-color: transparent;
   color: #3b3d40;
 }
-/* line 24, sass/page-post-templates/_blog-posts.scss */
+/* line 88, sass/page-post-templates/_blog-posts.scss */
 .blog-post-wrapper .pagination span, .blog-post-wrapper .pagination a {
   display: block;
   float: left;
@@ -1777,24 +1849,37 @@ blockquote {
   /* Pagination non-active background color */
   transition: background .15s ease-in-out;
 }
-/* line 36, sass/page-post-templates/_blog-posts.scss */
+/* line 100, sass/page-post-templates/_blog-posts.scss */
 .blog-post-wrapper .pagination a:hover {
   color: #fff;
   background: #282560;
   /* Pagination background on hover */
 }
-/* line 41, sass/page-post-templates/_blog-posts.scss */
+/* line 105, sass/page-post-templates/_blog-posts.scss */
 .blog-post-wrapper .pagination .current {
   padding: 6px 9px 5px 9px;
   background: #282560;
   /* Current page background */
   color: #fff;
 }
-/* line 48, sass/page-post-templates/_blog-posts.scss */
+/* line 112, sass/page-post-templates/_blog-posts.scss */
 .blog-post-wrapper .view-full-post a {
   text-decoration: none;
   margin-left: .5em;
   color: #282560;
+}
+
+/* line 122, sass/page-post-templates/_blog-posts.scss */
+.post-template-default .site-content {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}
+@media screen and (min-width: 750px) {
+  /* line 122, sass/page-post-templates/_blog-posts.scss */
+  .post-template-default .site-content {
+    padding-left: 2.75rem;
+    padding-right: 2.75rem;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1811,6 +1896,13 @@ blockquote {
     padding-left: 2.75rem;
     padding-right: 2.75rem;
   }
+}
+
+/* line 11, sass/page-post-templates/_sidebar-widget.scss */
+.widget_categories li a,
+.widget_archive li a {
+  color: #656b6f;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */
