@@ -20,7 +20,7 @@ function leading_minds_advanced_content_section() {
 
         $add_split_column     = get_sub_field('add_a_split_column_text_section');
         $add_skills           = get_sub_field('add_skills_section');
-        $add_secondary_editor = get_sub_field( 'add_seconday_editor' );
+        $add_secondary_editor = get_sub_field( 'add_secondary_editor_section' );
         $add_content_footer   = get_sub_field('add_a_content_footer_section');
 
         if ( $bg_img ) { ?>
