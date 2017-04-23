@@ -11,11 +11,9 @@ function leading_minds_advanced_content_section() {
     if ( function_exists( 'get_field' ) ) {
 
         $bg_color             = get_sub_field('section_background_color');
-        $bg_img               = get_sub_field('section_background_color');
-
         $img                  = get_sub_field('image');
-        $header               = get_sub_field('header');
-        $sub_header           = get_sub_field('sub_header');
+        $title                = get_sub_field('title');
+        $sub_title            = get_sub_field('sub_title');
         $editor               = get_sub_field('editor');
 
         $add_split_column     = get_sub_field('add_a_split_column_text_section');
@@ -23,60 +21,101 @@ function leading_minds_advanced_content_section() {
         $add_secondary_editor = get_sub_field( 'add_secondary_editor_section' );
         $add_content_footer   = get_sub_field('add_a_content_footer_section');
 
-        if ( $bg_img ) { ?>
+        if ( $bg_color ) {
 
-        <section class="advanced-content-section" style="background-color:<?php echo $bg_color; ?>;background-image:url(http://localhost:8888/test-site/wp-content/themes/test/imgs/brains.svg);">
+            ?>
+            <section class="advanced-content-section" style="background-color:<?php echo esc_html( $bg_color ); ?>">
 
-        <?php }else { ?>
+                <div class="content-section-wrapper wrapper">
 
-        <section class="advanced-content-section" style="background-color:<?php echo $bg_color; ?>">
+                    <?php
 
-        <?php } ?>
-
-            <div class="content-section-wrapper wrapper">
-
-                <?php
                     if ($img) { ?>
                         <img class="header-img" src="<?php echo $img['sizes']['thumbnail']; ?>" alt="<?php echo $img['alt']; ?>" description="<?php echo $img['description']; ?>">
                     <?php }
+
                     // Header
-                    if ($header) { ?>
-                        <h2><?php echo esc_html( $header ); ?></h2>
+                    if ($title) { ?>
+                        <h2><?php echo esc_html( $title ); ?></h2>
                     <?php }
+
                     //Sub Header
-                    if ($sub_header) { ?>
-                        <h3><?php echo esc_html( $sub_header ); ?></h3>
+                    if ($sub_title) { ?>
+                        <h3><?php echo esc_html( $sub_title ); ?></h3>
                     <?php }
+
                     // Editor
                     if ($editor) { ?>
                         <?php echo $editor; ?>
                     <?php }
+
                     // Split Column
                     if ($add_split_column) {
-                        $left_column_text  = get_sub_field('left_column_text');
-                        $right_column_text = get_sub_field('right_column_text'); ?>
+
+                        $col_number         = get_sub_field('col_number');
+                        $left_column_text   = get_sub_field('left_column_text');
+                        $middle_column_text = get_sub_field('middle_column_text');
+                        $right_column_text  = get_sub_field('right_column_text');
+
+                        ?>
 
                         <div class="split-column-wrapper">
-                            <div class="left-column">
-                                <div class="column-wrapper">
 
-                                    <?php echo $left_column_text; ?>
+                            <?php if ( $col_number == 2 || $col_number == 3 ) {
 
+                                ?>
+                                <div class="left-column">
+                                    <div class="column-wrapper">
+
+                                        <?php echo $left_column_text; ?>
+
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="right-column">
-                                <div class="column-wrapper">
 
-                                    <?php echo $right_column_text; ?>
+                                <?php
 
+                            } ?>
+
+                            <?php if ( $col_number == 3 ) {
+
+                                ?>
+
+                                <div class="middle-column">
+                                    <div class="column-wrapper">
+
+                                        <?php echo $middle_column_text; ?>
+
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
+
+                                <?php
+
+                            } ?>
+
+                            <?php if ( $col_number == 2 || $col_number == 3 ) {
+
+                                ?>
+
+                                <div class="right-column">
+                                    <div class="column-wrapper">
+
+                                        <?php echo $right_column_text; ?>
+
+                                    </div>
+                                </div>
+
+                                <?php
+
+                            } ?>
+
+                        </div><!-- split-column-wrapper -->
 
                     <?php }
+
                     // Skills
                     if ($add_skills) {
                         $skills = get_sub_field('skills');
+
                         if( have_rows('skills') ): ?>
 
                             <div class="skills-wrapper">
@@ -99,13 +138,51 @@ function leading_minds_advanced_content_section() {
 
                         <?php endif;
                     }
+
                     // Secondary Editor
                     if ($add_secondary_editor) {
-                        $secondary_editor = get_sub_field('secondary_editor');
-                        if ($secondary_editor) {
-                            echo $secondary_editor;
-                        }
+
+                        if( have_rows('secondary_content') ): ?>
+
+                            <div class="secondary-content-wrapper">
+
+                            <?php while( have_rows('secondary_content') ): the_row();
+
+                                $title = get_sub_field('title');
+                                $sub_title = get_sub_field('sub_title');
+                                $editor = get_sub_field('content');
+
+                                ?>
+
+                                <div class="secondary-content">
+
+                                    <?php if( !empty($title) ) : ?>
+
+                                        <h2><?php echo esc_html( $title); ?></h2>
+
+                                    <?php endif; ?>
+
+                                    <?php if( !empty($sub_title) ) : ?>
+
+                                        <h3><?php echo esc_html( $sub_title); ?></h3>
+
+                                    <?php endif; ?>
+
+                                    <?php if( !empty($editor) ) :
+
+                                        echo $editor;
+
+                                    endif; ?>
+
+                                </div>
+
+                            <?php endwhile; ?>
+
+                            </div><!-- secondary-content-wrapper -->
+
+                        <?php endif;
                     }
+
                     // Content Footer
                     if ($add_content_footer) {
 
@@ -190,11 +267,14 @@ function leading_minds_advanced_content_section() {
 
                         endif;
                     }
-                ?>
 
-            </div><!-- content-section-wrapper -->
+                    ?>
 
-        </section>
-        <?php
+                </div><!-- content-section-wrapper -->
+
+            </section>
+
+            <?php
+        }
     }
 }
