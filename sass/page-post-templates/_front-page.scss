@@ -3,7 +3,7 @@
 
     .home-feature-img {
         min-height: 200px;
-        max-height: 771px;
+        // max-height: 771px;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -30,21 +30,26 @@
         padding-bottom: 6em;
         position: relative;
         z-index: 5;
-    }
-
-    .home-header-video-wrapper {
-        position: relative;
-        padding-bottom: 56.25%; /* 16:9 */
-        padding-top: 25px;
-        height: 0;
 
         iframe {
             border: 10px solid $color__blue;
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
+        }
+
+        @media only screen and (max-width:400px) {
+            .home-header-video-wrapper {
+                position: relative;
+                padding-bottom: 56.25%; /* 16:9 */
+                padding-top: 25px;
+                height: 0;
+
+                iframe {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
         }
     }
 

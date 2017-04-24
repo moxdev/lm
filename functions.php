@@ -299,6 +299,11 @@ require get_template_directory() . '/inc/jetpack.php';
 require get_template_directory() . '/inc/main-header.php';
 
 /**
+ * Displays contact page content.
+ */
+require get_template_directory() . '/inc/contact-page-content.php';
+
+/**
  * Displays flexible content.
  */
 require get_template_directory() . '/inc/flexible-content-module.php';

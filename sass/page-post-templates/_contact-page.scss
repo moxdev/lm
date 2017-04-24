@@ -1,0 +1,130 @@
+.page-template-page-contact {
+
+    .content-section-wrapper {
+        // @include section-padding;
+    }
+
+    .contact-wrapper {
+        text-align: center;
+        @include section-padding;
+
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .call {
+            color: $color__dark-gray;
+        }
+
+        .social-icon-wrapper {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+
+            a {
+                display: inline-flex;
+                margin: 0 5px;
+            }
+        }
+    }
+
+    .office-location-wrapper {
+        @include section-padding;
+        background-color: $color__bg-ltgray;
+        text-align: center;
+
+        .office-location-box {
+            padding-top: 2em;
+            padding-bottom: 2em;
+
+            .location {
+                h3 {
+                    @include reset;
+                    color: $color__dark-gray;
+                    text-transform: uppercase;
+                    font-family: $font__alt-bold;
+                    margin-top: 1em;
+                    margin-bottom: .5em;
+                }
+                p {
+                    @include reset;
+                }
+            }
+
+        }
+
+        @include respond-to(medium) {
+
+            .office-location-container {
+                display: flex;
+                justify-content: center;
+                align-content: center;
+
+            }
+
+            .office-location-box {
+                flex: 1 1 calc(100% / 3);
+                padding: 2em;
+
+                .location {
+                    h3 {
+                        @include reset;
+                        color: $color__dark-gray;
+                        text-transform: uppercase;
+                        font-family: $font__alt-bold;
+                        margin-top: 1em;
+                        margin-bottom: .5em;
+                    }
+                    p {
+                        @include reset;
+                    }
+                }
+
+            }
+
+        }
+
+    }
+
+    .virtual-tour-wrapper {
+        background-color: $color__bg-green;
+        @include section-padding;
+
+        header {
+            background-color: $color__bg-green;
+            text-align: center;
+            background-repeat: no-repeat;
+            background-image:url(http://localhost:8888/leading-minds/wp-content/themes/leading_minds/imgs/small-white-brain.png);
+            background-size: contain;
+            background-position: 50%;
+
+            .title-wrapper {
+                @include padding-left-right;
+            }
+
+            h2 {
+                padding: 4em 0;
+                @include container;
+                margin-top: 0;
+                margin-bottom: 0;
+                color: #fff;
+            }
+        }
+
+        .iframe-container {
+            @include container;
+            @include section-padding;
+
+            iframe {
+                display: block;
+            }
+
+        }
+    }
+}

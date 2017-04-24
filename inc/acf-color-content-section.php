@@ -14,19 +14,20 @@ function leading_minds_color_content_section() {
 
         if ( $theme ) {
 
-            $img = get_sub_field('image');
-            $title = get_sub_field('title');
-            $editor = get_sub_field('editor');
+            $img             = get_sub_field('image');
+            $title           = get_sub_field('title');
+            $sub_title       = get_sub_field('sub_title');
+            $editor          = get_sub_field('editor');
 
-            $left_title = get_sub_field('left_section_title');
-            $left_editor = get_sub_field('left_section_editor');
-            $left_btn_label = get_sub_field('left_section_button_label');
-            $left_link = get_sub_field('left_section_button_link');
+            $left_title      = get_sub_field('left_section_title');
+            $left_editor     = get_sub_field('left_section_editor');
+            $left_btn_label  = get_sub_field('left_section_button_label');
+            $left_link       = get_sub_field('left_section_button_link');
 
-            $right_title = get_sub_field('right_section_title');
-            $right_editor = get_sub_field('right_section_editor');
+            $right_title     = get_sub_field('right_section_title');
+            $right_editor    = get_sub_field('right_section_editor');
             $right_btn_label = get_sub_field('right_section_button_label');
-            $right_link = get_sub_field('right_section_button_link');
+            $right_link      = get_sub_field('right_section_button_link');
 
             ?>
 
@@ -51,6 +52,12 @@ function leading_minds_color_content_section() {
                                 <?php if( $title ) : ?>
 
                                     <h2><?php echo esc_html( $title ); ?></h2>
+
+                                <?php endif; ?>
+
+                                <?php if( $sub_title ) : ?>
+
+                                    <h3><?php echo esc_html( $sub_title ); ?></h3>
 
                                 <?php endif; ?>
 

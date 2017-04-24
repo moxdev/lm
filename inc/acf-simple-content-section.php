@@ -10,10 +10,12 @@ function leading_minds_simple_content_section() {
 
     if ( function_exists( 'get_field' ) ) {
 
-        $bg_color = get_sub_field('section_background_color');
-        $title = get_sub_field('title');
-        $editor = get_sub_field('editor');
-        $add_skills = get_sub_field('add_skills_section');
+        $bg_color             = get_sub_field('section_background_color');
+        $title                = get_sub_field('title');
+        $sub_title            = get_sub_field('sub_title');
+        $editor               = get_sub_field('editor');
+
+        $add_skills           = get_sub_field('add_skills_section');
         $add_secondary_editor = get_sub_field( 'add_seconday_editor' );
 
         ?>
@@ -26,6 +28,10 @@ function leading_minds_simple_content_section() {
 
                 if ($title) { ?>
                     <h2><?php echo esc_html( $title ); ?></h2>
+                <?php }
+
+                if ($sub_title) { ?>
+                    <h3><?php echo esc_html( $sub_title ); ?></h3>
                 <?php }
 
                 if ($editor) { ?>
@@ -62,12 +68,48 @@ function leading_minds_simple_content_section() {
 
                 endif; }
 
+                // Secondary Editor
                 if ($add_secondary_editor) {
-                    $secondary_editor = get_sub_field('secondary_editor');
 
-                    if ($secondary_editor) { ?>
-                        <?php echo $secondary_editor; ?>
-                    <?php }
+                    if( have_rows('secondary_content') ): ?>
+
+                        <div class="secondary-content-wrapper">
+
+                        <?php while( have_rows('secondary_content') ): the_row();
+
+                            $title = get_sub_field('title');
+                            $sub_title = get_sub_field('sub_title');
+                            $editor = get_sub_field('content');
+
+                            ?>
+
+                            <div class="secondary-content">
+
+                                <?php if( !empty($title) ) : ?>
+
+                                    <h2><?php echo esc_html( $title); ?></h2>
+
+                                <?php endif; ?>
+
+                                <?php if( !empty($sub_title) ) : ?>
+
+                                    <h3><?php echo esc_html( $sub_title); ?></h3>
+
+                                <?php endif; ?>
+
+                                <?php if( !empty($editor) ) :
+
+                                    echo $editor;
+
+                                endif; ?>
+
+                            </div>
+
+                        <?php endwhile; ?>
+
+                        </div><!-- secondary-content-wrapper -->
+
+                    <?php endif;
                 }
 
                 ?>
