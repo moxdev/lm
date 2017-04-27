@@ -2,20 +2,56 @@
 ### Simple Content Section
 --------------------------------------------------------------*/
 
+// bg-white : White
+// bg-ltgray : Light Gray
+// bg-purple : Purple
+// bg-green : Green
+
 .simple-content-section {
-    // min-height: 400px;
-    background-repeat: no-repeat;
-    vertical-align: middle;
-    background-size: 30%; // change responsive sizes
-    background-position: 20% 50%; // change responsive sizes
+    // // min-height: 400px;
+    // background-repeat: no-repeat;
+    // vertical-align: middle;
+    // background-size: 30%; // change responsive sizes
+    // background-position: 20% 50%; // change responsive sizes
 
     h2 {
         text-align: center;
     }
 
     .content-section-wrapper {
+        @extend .wrapper;
         @include section-padding;
     }
+
+    .bg-white {
+        background-color: #fff;
+        color: $color__text-main;
+    }
+
+
+    .bg-ltgray {
+
+    }
+
+    .bg-purple {
+        background-color: $color__bg-purple;
+        color: rgba(255, 255, 255, 0.8);
+
+        h2 {
+            color: #fff;
+        }
+
+        p {
+            letter-spacing: .6px;
+        }
+
+    }
+
+    .bg-green {
+
+    }
+
+
 
 
 
@@ -558,8 +594,10 @@ lt-gray-green-btns
 --------------------------------------------------------------*/
 
 .associates-section {
+    @include section-padding;
 
     .content-section-wrapper {
+        @include container;
         text-align: center;
     }
 

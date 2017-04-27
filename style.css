@@ -360,14 +360,14 @@ h2 {
   margin-bottom: .5em;
 }
 
-/* line 17, sass/typography/_headings.scss */
+/* line 18, sass/typography/_headings.scss */
 h3 {
   color: #656b6f;
   font-family: "ACaslonPro-Semibold", sans-serif;
   margin-top: .5em;
 }
 
-/* line 23, sass/typography/_headings.scss */
+/* line 25, sass/typography/_headings.scss */
 h1.section-title {
   text-align: center;
   padding-left: .5em;
@@ -1182,7 +1182,7 @@ http://flickity.metafizzy.co
 # Content
 --------------------------------------------------------------*/
 /* line 1, sass/site/_site.scss */
-.wrapper, .home .home-header-wrapper, .testimonial-section .content-section-wrapper, .post-template-default .site-content {
+.wrapper, .home .home-header-wrapper, .simple-content-section .content-section-wrapper, .testimonial-section .content-section-wrapper, .post-template-default .site-content {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -1191,7 +1191,7 @@ http://flickity.metafizzy.co
 }
 @media screen and (min-width: 750px) {
   /* line 1, sass/site/_site.scss */
-  .wrapper, .home .home-header-wrapper, .testimonial-section .content-section-wrapper, .post-template-default .site-content {
+  .wrapper, .home .home-header-wrapper, .simple-content-section .content-section-wrapper, .testimonial-section .content-section-wrapper, .post-template-default .site-content {
     padding-left: 2.75rem;
     padding-right: 2.75rem;
   }
@@ -1532,43 +1532,54 @@ object {
 /*--------------------------------------------------------------
 ### Simple Content Section
 --------------------------------------------------------------*/
-/* line 5, sass/page-post-templates/_flexible-content-module.scss */
-.simple-content-section {
-  background-repeat: no-repeat;
-  vertical-align: middle;
-  background-size: 30%;
-  background-position: 20% 50%;
-}
-/* line 12, sass/page-post-templates/_flexible-content-module.scss */
+/* line 17, sass/page-post-templates/_flexible-content-module.scss */
 .simple-content-section h2 {
   text-align: center;
 }
-/* line 16, sass/page-post-templates/_flexible-content-module.scss */
+/* line 21, sass/page-post-templates/_flexible-content-module.scss */
 .simple-content-section .content-section-wrapper {
   padding-top: 3em;
   padding-bottom: 3em;
+}
+/* line 26, sass/page-post-templates/_flexible-content-module.scss */
+.simple-content-section .bg-white {
+  background-color: #fff;
+  color: #656b6f;
+}
+/* line 36, sass/page-post-templates/_flexible-content-module.scss */
+.simple-content-section .bg-purple {
+  background-color: #282560;
+  color: rgba(255, 255, 255, 0.8);
+}
+/* line 40, sass/page-post-templates/_flexible-content-module.scss */
+.simple-content-section .bg-purple h2 {
+  color: #fff;
+}
+/* line 44, sass/page-post-templates/_flexible-content-module.scss */
+.simple-content-section .bg-purple p {
+  letter-spacing: .6px;
 }
 
 /*--------------------------------------------------------------
 ### Advanced Content Section
 --------------------------------------------------------------*/
-/* line 34, sass/page-post-templates/_flexible-content-module.scss */
+/* line 70, sass/page-post-templates/_flexible-content-module.scss */
 .advanced-content-section {
   padding-top: 3em;
   padding-bottom: 3em;
 }
-/* line 37, sass/page-post-templates/_flexible-content-module.scss */
+/* line 73, sass/page-post-templates/_flexible-content-module.scss */
 .advanced-content-section .header-img {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 41, sass/page-post-templates/_flexible-content-module.scss */
+/* line 77, sass/page-post-templates/_flexible-content-module.scss */
 .advanced-content-section h2, .advanced-content-section h3 {
   text-align: center;
   line-height: 1.5;
 }
-/* line 47, sass/page-post-templates/_flexible-content-module.scss */
+/* line 83, sass/page-post-templates/_flexible-content-module.scss */
 .advanced-content-section .skills-wrapper {
   display: block;
   text-align: center;
@@ -1577,11 +1588,11 @@ object {
   letter-spacing: 0.8px;
   text-transform: uppercase;
 }
-/* line 55, sass/page-post-templates/_flexible-content-module.scss */
+/* line 91, sass/page-post-templates/_flexible-content-module.scss */
 .advanced-content-section .skills-wrapper .skill {
   margin: 1em 0;
 }
-/* line 60, sass/page-post-templates/_flexible-content-module.scss */
+/* line 96, sass/page-post-templates/_flexible-content-module.scss */
 .advanced-content-section .content-footer-wrapper {
   max-width: 800px;
   margin-left: auto;
@@ -1590,13 +1601,13 @@ object {
   flex-direction: column;
   text-align: center;
 }
-/* line 68, sass/page-post-templates/_flexible-content-module.scss */
+/* line 104, sass/page-post-templates/_flexible-content-module.scss */
 .advanced-content-section .content-footer-wrapper a {
   flex: 1;
   text-decoration: none;
   margin: 1.5em 0;
 }
-/* line 79, sass/page-post-templates/_flexible-content-module.scss */
+/* line 115, sass/page-post-templates/_flexible-content-module.scss */
 .advanced-content-section .content-footer-wrapper img {
   display: block;
   margin-left: auto;
@@ -1606,46 +1617,46 @@ object {
 /*--------------------------------------------------------------
 ### Mid Page Navigation Section
 --------------------------------------------------------------*/
-/* line 96, sass/page-post-templates/_flexible-content-module.scss */
+/* line 132, sass/page-post-templates/_flexible-content-module.scss */
 .mid-page-navigation-section {
   background-color: #f53f00;
 }
-/* line 99, sass/page-post-templates/_flexible-content-module.scss */
+/* line 135, sass/page-post-templates/_flexible-content-module.scss */
 .mid-page-navigation-section .content-section-wrapper {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 102, sass/page-post-templates/_flexible-content-module.scss */
+/* line 138, sass/page-post-templates/_flexible-content-module.scss */
 .mid-page-navigation-section .content-section-wrapper .margin-wrapper {
   display: flex;
   flex-direction: column;
   margin-right: -1px;
 }
-/* line 108, sass/page-post-templates/_flexible-content-module.scss */
+/* line 144, sass/page-post-templates/_flexible-content-module.scss */
 .mid-page-navigation-section .content-section-wrapper .nav-container {
   background-color: #fff;
 }
-/* line 111, sass/page-post-templates/_flexible-content-module.scss */
+/* line 147, sass/page-post-templates/_flexible-content-module.scss */
 .mid-page-navigation-section .content-section-wrapper .nav-container .nav-wrapper {
   background-color: #f53f00;
   margin-bottom: 1px;
   margin-right: 1px;
 }
-/* line 117, sass/page-post-templates/_flexible-content-module.scss */
+/* line 153, sass/page-post-templates/_flexible-content-module.scss */
 .mid-page-navigation-section .content-section-wrapper .nav-container .nav-content {
   text-align: center;
   color: #fff;
   padding: 2em;
 }
-/* line 123, sass/page-post-templates/_flexible-content-module.scss */
+/* line 159, sass/page-post-templates/_flexible-content-module.scss */
 .mid-page-navigation-section .content-section-wrapper .nav-container h3 {
   color: #3b3d40;
   font-family: "SourceSansPro-Bold", sans-serif;
   text-transform: uppercase;
   letter-spacing: .8px;
 }
-/* line 131, sass/page-post-templates/_flexible-content-module.scss */
+/* line 167, sass/page-post-templates/_flexible-content-module.scss */
 .mid-page-navigation-section .content-section-wrapper .nav-container a {
   text-decoration: none;
   font-family: "SourceSansPro-Bold", sans-serif;
@@ -1654,7 +1665,7 @@ object {
   letter-spacing: .8px;
 }
 @media screen and (min-width: 400px) {
-  /* line 141, sass/page-post-templates/_flexible-content-module.scss */
+  /* line 177, sass/page-post-templates/_flexible-content-module.scss */
   .mid-page-navigation-section .content-section-wrapper .margin-wrapper {
     display: flex;
     flex-direction: row;
@@ -1662,12 +1673,12 @@ object {
     justify-content: flex-start;
     margin-right: -1px;
   }
-  /* line 149, sass/page-post-templates/_flexible-content-module.scss */
+  /* line 185, sass/page-post-templates/_flexible-content-module.scss */
   .mid-page-navigation-section .content-section-wrapper .nav-container {
     flex: 1 1 50%;
     display: flex;
   }
-  /* line 154, sass/page-post-templates/_flexible-content-module.scss */
+  /* line 190, sass/page-post-templates/_flexible-content-module.scss */
   .mid-page-navigation-section .content-section-wrapper .nav-container .nav-wrapper {
     width: 100%;
     display: flex;
@@ -1694,24 +1705,24 @@ green-img-left : Green Section (Image Left)
 lt-gray-green-btns
 
 */
-/* line 277, sass/page-post-templates/_flexible-content-module.scss */
+/* line 313, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .bg-default {
   background-color: #fff;
   text-align: center;
 }
-/* line 282, sass/page-post-templates/_flexible-content-module.scss */
+/* line 318, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .bg-default .color-callout-img {
   display: none;
 }
-/* line 287, sass/page-post-templates/_flexible-content-module.scss */
+/* line 323, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .green-brain-left {
   background-color: #24cf5f;
 }
-/* line 290, sass/page-post-templates/_flexible-content-module.scss */
+/* line 326, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .green-brain-left .color-callout-img {
   display: none;
 }
-/* line 294, sass/page-post-templates/_flexible-content-module.scss */
+/* line 330, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .green-brain-left .background-image {
   padding: 0;
   background-repeat: no-repeat;
@@ -1719,38 +1730,38 @@ lt-gray-green-btns
   background-size: 50%;
   background-position: -250px 80%;
 }
-/* line 301, sass/page-post-templates/_flexible-content-module.scss */
+/* line 337, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .green-brain-left .background-image .content-section-wrapper {
   padding-top: 3em;
   padding-bottom: 3em;
   background-color: rgba(36, 207, 95, 0.7);
 }
 @media screen and (min-width: 400px) {
-  /* line 294, sass/page-post-templates/_flexible-content-module.scss */
+  /* line 330, sass/page-post-templates/_flexible-content-module.scss */
   .color-callout-section .green-brain-left .background-image {
     background-size: contain;
     background-position: -200px 70%;
   }
 }
 @media screen and (min-width: 750px) {
-  /* line 294, sass/page-post-templates/_flexible-content-module.scss */
+  /* line 330, sass/page-post-templates/_flexible-content-module.scss */
   .color-callout-section .green-brain-left .background-image {
     background-position: -20% 50%;
   }
-  /* line 314, sass/page-post-templates/_flexible-content-module.scss */
+  /* line 350, sass/page-post-templates/_flexible-content-module.scss */
   .color-callout-section .green-brain-left .background-image .editor-wrapper {
     margin-left: calc(50% - 100px);
   }
 }
-/* line 321, sass/page-post-templates/_flexible-content-module.scss */
+/* line 357, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .lt-gray-brain-left {
   background-color: #e8e8e8;
 }
-/* line 324, sass/page-post-templates/_flexible-content-module.scss */
+/* line 360, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .lt-gray-brain-left .color-callout-img {
   display: none;
 }
-/* line 328, sass/page-post-templates/_flexible-content-module.scss */
+/* line 364, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .lt-gray-brain-left .background-image {
   padding: 0;
   background-repeat: no-repeat;
@@ -1758,39 +1769,39 @@ lt-gray-green-btns
   background-size: 50%;
   background-position: -250px 80%;
 }
-/* line 335, sass/page-post-templates/_flexible-content-module.scss */
+/* line 371, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .lt-gray-brain-left .background-image .content-section-wrapper {
   padding-top: 3em;
   padding-bottom: 3em;
   background-color: rgba(232, 232, 232, 0.7);
 }
 @media screen and (min-width: 400px) {
-  /* line 328, sass/page-post-templates/_flexible-content-module.scss */
+  /* line 364, sass/page-post-templates/_flexible-content-module.scss */
   .color-callout-section .lt-gray-brain-left .background-image {
     background-size: contain;
     background-position: -200px 70%;
   }
 }
 @media screen and (min-width: 750px) {
-  /* line 328, sass/page-post-templates/_flexible-content-module.scss */
+  /* line 364, sass/page-post-templates/_flexible-content-module.scss */
   .color-callout-section .lt-gray-brain-left .background-image {
     background-position: -20% 50%;
   }
-  /* line 348, sass/page-post-templates/_flexible-content-module.scss */
+  /* line 384, sass/page-post-templates/_flexible-content-module.scss */
   .color-callout-section .lt-gray-brain-left .background-image .editor-wrapper {
     margin-left: calc(50% - 100px);
   }
 }
-/* line 355, sass/page-post-templates/_flexible-content-module.scss */
+/* line 391, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .green-brain-center {
   background-color: #24cf5f;
   text-align: center;
 }
-/* line 359, sass/page-post-templates/_flexible-content-module.scss */
+/* line 395, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .green-brain-center .color-callout-img {
   display: none;
 }
-/* line 363, sass/page-post-templates/_flexible-content-module.scss */
+/* line 399, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .green-brain-center .background-image {
   padding: 0;
   background-repeat: no-repeat;
@@ -1798,26 +1809,26 @@ lt-gray-green-btns
   background-size: 40%;
   background-position: 50%;
 }
-/* line 370, sass/page-post-templates/_flexible-content-module.scss */
+/* line 406, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .green-brain-center .background-image .content-section-wrapper {
   padding-top: 3em;
   padding-bottom: 3em;
   background-color: rgba(36, 207, 95, 0.7);
 }
-/* line 375, sass/page-post-templates/_flexible-content-module.scss */
+/* line 411, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .green-brain-center .background-image h2 {
   color: #fff;
 }
-/* line 381, sass/page-post-templates/_flexible-content-module.scss */
+/* line 417, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .lt-gray-brain-center {
   background-color: #e8e8e8;
   text-align: center;
 }
-/* line 385, sass/page-post-templates/_flexible-content-module.scss */
+/* line 421, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .lt-gray-brain-center .color-callout-img {
   display: none;
 }
-/* line 389, sass/page-post-templates/_flexible-content-module.scss */
+/* line 425, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .lt-gray-brain-center .background-image {
   padding: 0;
   background-repeat: no-repeat;
@@ -1825,60 +1836,60 @@ lt-gray-green-btns
   background-size: 40%;
   background-position: 50%;
 }
-/* line 396, sass/page-post-templates/_flexible-content-module.scss */
+/* line 432, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .lt-gray-brain-center .background-image .content-section-wrapper {
   padding-top: 3em;
   padding-bottom: 3em;
   background-color: rgba(232, 232, 232, 0.7);
 }
-/* line 401, sass/page-post-templates/_flexible-content-module.scss */
+/* line 437, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .lt-gray-brain-center .background-image h2 {
   color: #fff;
 }
-/* line 407, sass/page-post-templates/_flexible-content-module.scss */
+/* line 443, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .green-img-left {
   background-color: #24cf5f;
 }
-/* line 411, sass/page-post-templates/_flexible-content-module.scss */
+/* line 447, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .green-img-left h2 {
   color: #fff;
 }
-/* line 415, sass/page-post-templates/_flexible-content-module.scss */
+/* line 451, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .green-img-left .content-section-wrapper {
   padding-top: 3em;
   padding-bottom: 3em;
 }
-/* line 418, sass/page-post-templates/_flexible-content-module.scss */
+/* line 454, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .green-img-left .content-section-wrapper .color-callout-img {
   display: block;
   margin-bottom: 2em;
   text-align: center;
 }
 @media screen and (min-width: 750px) {
-  /* line 430, sass/page-post-templates/_flexible-content-module.scss */
+  /* line 466, sass/page-post-templates/_flexible-content-module.scss */
   .color-callout-section .green-img-left .content-section-wrapper {
     display: flex;
   }
-  /* line 433, sass/page-post-templates/_flexible-content-module.scss */
+  /* line 469, sass/page-post-templates/_flexible-content-module.scss */
   .color-callout-section .green-img-left .content-section-wrapper .color-callout-img {
     display: inline-flex;
     flex: 1 0 30%;
   }
-  /* line 438, sass/page-post-templates/_flexible-content-module.scss */
+  /* line 474, sass/page-post-templates/_flexible-content-module.scss */
   .color-callout-section .green-img-left .content-section-wrapper .editor-wrapper {
     flex: 1 1 auto;
   }
 }
-/* line 445, sass/page-post-templates/_flexible-content-module.scss */
+/* line 481, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .lt-gray-green-btns {
   background-color: #e8e8e8;
   text-align: center;
 }
-/* line 449, sass/page-post-templates/_flexible-content-module.scss */
+/* line 485, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .lt-gray-green-btns .color-callout-img {
   display: none;
 }
-/* line 453, sass/page-post-templates/_flexible-content-module.scss */
+/* line 489, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .lt-gray-green-btns .background-image {
   padding: 0;
   background-repeat: no-repeat;
@@ -1886,13 +1897,13 @@ lt-gray-green-btns
   background-size: 40%;
   background-position: 50%;
 }
-/* line 460, sass/page-post-templates/_flexible-content-module.scss */
+/* line 496, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .lt-gray-green-btns .background-image .content-section-wrapper {
   padding-top: 3em;
   padding-bottom: 3em;
   background-color: rgba(232, 232, 232, 0.7);
 }
-/* line 465, sass/page-post-templates/_flexible-content-module.scss */
+/* line 501, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .lt-gray-green-btns .background-image h2 {
   color: #fff;
 }
@@ -1900,41 +1911,41 @@ lt-gray-green-btns
 /*--------------------------------------------------------------
 ### Testimonial Section
 --------------------------------------------------------------*/
-/* line 479, sass/page-post-templates/_flexible-content-module.scss */
+/* line 515, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section {
   background-color: #282560;
 }
-/* line 483, sass/page-post-templates/_flexible-content-module.scss */
+/* line 519, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .content-section-wrapper {
   padding-top: 2em;
   padding-bottom: 1em;
 }
-/* line 489, sass/page-post-templates/_flexible-content-module.scss */
+/* line 525, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .microphone-section {
   padding-top: 2em;
   padding-bottom: 2em;
   text-align: center;
 }
-/* line 494, sass/page-post-templates/_flexible-content-module.scss */
+/* line 530, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .microphone-section h5 {
   text-transform: uppercase;
   margin-top: 1em;
   margin-bottom: .5em;
   color: #fff;
 }
-/* line 502, sass/page-post-templates/_flexible-content-module.scss */
+/* line 538, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .testimonial-carousel {
   padding-left: 1em;
   padding-right: 1em;
   /* big buttons, no circle */
   /* arrow color */
 }
-/* line 506, sass/page-post-templates/_flexible-content-module.scss */
+/* line 542, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .testimonial-carousel blockquote {
   margin: 0;
   padding: 0;
 }
-/* line 510, sass/page-post-templates/_flexible-content-module.scss */
+/* line 546, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .testimonial-carousel .cell {
   width: 100%;
   /* full width */
@@ -1942,42 +1953,42 @@ lt-gray-green-btns
   /* height of carousel */
   color: #fff;
 }
-/* line 515, sass/page-post-templates/_flexible-content-module.scss */
+/* line 551, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .testimonial-carousel .cell h4 {
   margin: 0;
   padding: 0;
   color: #fff;
 }
-/* line 520, sass/page-post-templates/_flexible-content-module.scss */
+/* line 556, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .testimonial-carousel .cell h5 {
   margin: 0;
   padding: 0;
   color: #fff;
 }
-/* line 529, sass/page-post-templates/_flexible-content-module.scss */
+/* line 565, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .testimonial-carousel .flickity-prev-next-button {
   width: 13px;
   height: 24px;
   background: transparent;
 }
-/* line 534, sass/page-post-templates/_flexible-content-module.scss */
+/* line 570, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .testimonial-carousel .flickity-prev-next-button:hover {
   background: transparent;
 }
-/* line 538, sass/page-post-templates/_flexible-content-module.scss */
+/* line 574, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .testimonial-carousel .flickity-prev-next-button .arrow {
   fill: white;
 }
-/* line 541, sass/page-post-templates/_flexible-content-module.scss */
+/* line 577, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .testimonial-carousel .flickity-prev-next-button.no-svg {
   color: white;
 }
-/* line 545, sass/page-post-templates/_flexible-content-module.scss */
+/* line 581, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .testimonial-carousel .flickity-prev-next-button.previous {
   top: 30%;
   left: -50px;
 }
-/* line 549, sass/page-post-templates/_flexible-content-module.scss */
+/* line 585, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .testimonial-carousel .flickity-prev-next-button.next {
   top: 30%;
   right: -50px;
@@ -1986,28 +1997,36 @@ lt-gray-green-btns
 /*--------------------------------------------------------------
 ### Associates Section
 --------------------------------------------------------------*/
-/* line 562, sass/page-post-templates/_flexible-content-module.scss */
+/* line 596, sass/page-post-templates/_flexible-content-module.scss */
+.associates-section {
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+/* line 599, sass/page-post-templates/_flexible-content-module.scss */
 .associates-section .content-section-wrapper {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
 }
-/* line 566, sass/page-post-templates/_flexible-content-module.scss */
+/* line 604, sass/page-post-templates/_flexible-content-module.scss */
 .associates-section a {
   text-decoration: none;
   color: #656b6f;
 }
-/* line 572, sass/page-post-templates/_flexible-content-module.scss */
+/* line 610, sass/page-post-templates/_flexible-content-module.scss */
 .associates-section img {
   display: block;
   margin-left: auto;
   margin-right: auto;
   border-radius: 50%;
 }
-/* line 577, sass/page-post-templates/_flexible-content-module.scss */
+/* line 615, sass/page-post-templates/_flexible-content-module.scss */
 .associates-section h4, .associates-section h5 {
   margin: 0;
   padding: 0;
 }
-/* line 581, sass/page-post-templates/_flexible-content-module.scss */
+/* line 619, sass/page-post-templates/_flexible-content-module.scss */
 .associates-section h4 {
   margin-top: 1em;
   color: #3b3d40;
@@ -2015,29 +2034,29 @@ lt-gray-green-btns
   text-transform: uppercase;
   letter-spacing: 1.6px;
 }
-/* line 589, sass/page-post-templates/_flexible-content-module.scss */
+/* line 627, sass/page-post-templates/_flexible-content-module.scss */
 .associates-section .h5 {
   color: #656b6f;
 }
-/* line 593, sass/page-post-templates/_flexible-content-module.scss */
+/* line 631, sass/page-post-templates/_flexible-content-module.scss */
 .associates-section .associate-block {
   padding-top: 2em;
   padding-bottom: 2em;
   transition: box-shadow .25s ease-out;
 }
-/* line 598, sass/page-post-templates/_flexible-content-module.scss */
+/* line 636, sass/page-post-templates/_flexible-content-module.scss */
 .associates-section .associate-block:hover {
   box-shadow: 0 0 7px rgba(0, 0, 0, 0.35);
   color: #656b6f;
 }
 @media screen and (min-width: 750px) {
-  /* line 606, sass/page-post-templates/_flexible-content-module.scss */
+  /* line 644, sass/page-post-templates/_flexible-content-module.scss */
   .associates-section .flex-wrapper {
     display: flex;
     justify-content: space-around;
     align-content: center;
   }
-  /* line 611, sass/page-post-templates/_flexible-content-module.scss */
+  /* line 649, sass/page-post-templates/_flexible-content-module.scss */
   .associates-section .associate-block {
     flex: 1 0 calc(100% / 3);
   }
@@ -2046,11 +2065,11 @@ lt-gray-green-btns
 /*--------------------------------------------------------------
 ### Custom Styles for various sections
 --------------------------------------------------------------*/
-/* line 623, sass/page-post-templates/_flexible-content-module.scss */
+/* line 661, sass/page-post-templates/_flexible-content-module.scss */
 .page-template-page-custom .exec-img-brendel {
   margin-left: 0;
 }
-/* line 627, sass/page-post-templates/_flexible-content-module.scss */
+/* line 665, sass/page-post-templates/_flexible-content-module.scss */
 .page-template-page-custom .exec-img-pcc {
   padding: 1em;
   margin-right: 1.5 em;
@@ -2248,16 +2267,16 @@ lt-gray-green-btns
 }
 @media screen and (min-width: 950px) {
   /* line 44, sass/page-post-templates/_blog-posts.scss */
-  .blog .wrapper, .blog .home .home-header-wrapper, .home .blog .home-header-wrapper, .blog .testimonial-section .content-section-wrapper, .testimonial-section .blog .content-section-wrapper, .blog .post-template-default .site-content, .post-template-default .blog .site-content {
+  .blog .wrapper, .blog .home .home-header-wrapper, .home .blog .home-header-wrapper, .blog .simple-content-section .content-section-wrapper, .simple-content-section .blog .content-section-wrapper, .blog .testimonial-section .content-section-wrapper, .testimonial-section .blog .content-section-wrapper, .blog .post-template-default .site-content, .post-template-default .blog .site-content {
     display: flex;
   }
   /* line 47, sass/page-post-templates/_blog-posts.scss */
-  .blog .wrapper #primary, .blog .home .home-header-wrapper #primary, .home .blog .home-header-wrapper #primary, .blog .testimonial-section .content-section-wrapper #primary, .testimonial-section .blog .content-section-wrapper #primary, .blog .post-template-default .site-content #primary, .post-template-default .blog .site-content #primary {
+  .blog .wrapper #primary, .blog .home .home-header-wrapper #primary, .home .blog .home-header-wrapper #primary, .blog .simple-content-section .content-section-wrapper #primary, .simple-content-section .blog .content-section-wrapper #primary, .blog .testimonial-section .content-section-wrapper #primary, .testimonial-section .blog .content-section-wrapper #primary, .blog .post-template-default .site-content #primary, .post-template-default .blog .site-content #primary {
     flex: 2;
     order: 2;
   }
   /* line 53, sass/page-post-templates/_blog-posts.scss */
-  .blog .wrapper #secondary, .blog .home .home-header-wrapper #secondary, .home .blog .home-header-wrapper #secondary, .blog .testimonial-section .content-section-wrapper #secondary, .testimonial-section .blog .content-section-wrapper #secondary, .blog .post-template-default .site-content #secondary, .post-template-default .blog .site-content #secondary {
+  .blog .wrapper #secondary, .blog .home .home-header-wrapper #secondary, .home .blog .home-header-wrapper #secondary, .blog .simple-content-section .content-section-wrapper #secondary, .simple-content-section .blog .content-section-wrapper #secondary, .blog .testimonial-section .content-section-wrapper #secondary, .testimonial-section .blog .content-section-wrapper #secondary, .blog .post-template-default .site-content #secondary, .post-template-default .blog .site-content #secondary {
     flex: 1;
     order: 1;
     display: block;

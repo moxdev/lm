@@ -20,102 +20,107 @@ function leading_minds_simple_content_section() {
 
         ?>
 
-        <section class="simple-content-section" style="background-color:<?php echo $bg_color; ?>">
-            <div class="content-section-wrapper wrapper">
-                <div class="editor-wrapper">
+        <section class="simple-content-section">
 
-                <?php
+            <div class="<?php echo esc_html( $bg_color ); ?>">
 
-                if ($title) { ?>
-                    <h2><?php echo esc_html( $title ); ?></h2>
-                <?php }
-
-                if ($sub_title) { ?>
-                    <h3><?php echo esc_html( $sub_title ); ?></h3>
-                <?php }
-
-                if ($editor) { ?>
-                    <?php echo $editor; ?>
-                <?php }
-
-                if ($add_skills) {
-                    $skills = get_sub_field('skills');
-                    if( have_rows('skills') ):
-
-                    ?>
-
-                    <div class="skills-wrapper">
-
-                        <?php while( have_rows('skills') ): the_row();
-                            $skill = get_sub_field('skill');
-                            ?>
-
-                            <div class="skill">
-
-                            <?php if( !empty($skill) ) : ?>
-                                <?php echo esc_html( $skill); ?>
-                            <?php endif; ?>
-
-                            </div>
-
-                        <?php endwhile;
-
-                    ?>
-
-                    </div><!-- skills-wrapper -->
+                <div class="content-section-wrapper wrapper">
+                    <div class="editor-wrapper">
 
                     <?php
 
-                endif; }
+                    if ($title) { ?>
+                        <h2><?php echo esc_html( $title ); ?></h2>
+                    <?php }
 
-                // Secondary Editor
-                if ($add_secondary_editor) {
+                    if ($sub_title) { ?>
+                        <h3><?php echo esc_html( $sub_title ); ?></h3>
+                    <?php }
 
-                    if( have_rows('secondary_content') ): ?>
+                    if ($editor) { ?>
+                        <?php echo $editor; ?>
+                    <?php }
 
-                        <div class="secondary-content-wrapper">
+                    if ($add_skills) {
+                        $skills = get_sub_field('skills');
+                        if( have_rows('skills') ):
 
-                        <?php while( have_rows('secondary_content') ): the_row();
+                        ?>
 
-                            $title = get_sub_field('title');
-                            $sub_title = get_sub_field('sub_title');
-                            $editor = get_sub_field('content');
+                        <div class="skills-wrapper">
 
-                            ?>
+                            <?php while( have_rows('skills') ): the_row();
+                                $skill = get_sub_field('skill');
+                                ?>
 
-                            <div class="secondary-content">
+                                <div class="skill">
 
-                                <?php if( !empty($title) ) : ?>
-
-                                    <h2><?php echo esc_html( $title); ?></h2>
-
+                                <?php if( !empty($skill) ) : ?>
+                                    <?php echo esc_html( $skill); ?>
                                 <?php endif; ?>
 
-                                <?php if( !empty($sub_title) ) : ?>
+                                </div>
 
-                                    <h3><?php echo esc_html( $sub_title); ?></h3>
+                            <?php endwhile;
 
-                                <?php endif; ?>
+                        ?>
 
-                                <?php if( !empty($editor) ) :
+                        </div><!-- skills-wrapper -->
 
-                                    echo $editor;
+                        <?php
 
-                                endif; ?>
+                    endif; }
 
-                            </div>
+                    // Secondary Editor
+                    if ($add_secondary_editor) {
 
-                        <?php endwhile; ?>
+                        if( have_rows('secondary_content') ): ?>
 
-                        </div><!-- secondary-content-wrapper -->
+                            <div class="secondary-content-wrapper">
 
-                    <?php endif;
-                }
+                            <?php while( have_rows('secondary_content') ): the_row();
 
-                ?>
+                                $title = get_sub_field('title');
+                                $sub_title = get_sub_field('sub_title');
+                                $editor = get_sub_field('content');
 
-                </div><!-- editor-wrapper -->
-            </div><!-- content-section-wrapper -->
+                                ?>
+
+                                <div class="secondary-content">
+
+                                    <?php if( !empty($title) ) : ?>
+
+                                        <h2><?php echo esc_html( $title); ?></h2>
+
+                                    <?php endif; ?>
+
+                                    <?php if( !empty($sub_title) ) : ?>
+
+                                        <h3><?php echo esc_html( $sub_title); ?></h3>
+
+                                    <?php endif; ?>
+
+                                    <?php if( !empty($editor) ) :
+
+                                        echo $editor;
+
+                                    endif; ?>
+
+                                </div>
+
+                            <?php endwhile; ?>
+
+                            </div><!-- secondary-content-wrapper -->
+
+                        <?php endif;
+                    }
+
+                    ?>
+
+                    </div><!-- editor-wrapper -->
+                </div><!-- content-section-wrapper -->
+            </div><!-- bg-color -->
+
         </section>
 
         <?php
