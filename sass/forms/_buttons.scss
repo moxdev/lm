@@ -4,11 +4,12 @@ input[type="reset"],
 input[type="submit"] {
 	background: $color__background-button;
 	color: $color__button;
+	font-family: $font__black;
 	text-transform: uppercase;
 	-webkit-appearance: none;
 	border: none;
 	border-radius: 25px;
-	font-size: .75em;
+	font-size: .8rem;
 	letter-spacing: .125em;
 	padding: 1em 3.5em;
 	transition:background-color .25s, box-shadow .25s;

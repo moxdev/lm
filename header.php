@@ -24,26 +24,40 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'leading_minds' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
-		<div class="site-branding">
-			<?php
-			if ( is_front_page() && is_home() ) : ?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<?php else : ?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-			<?php
-			endif;
+		<div class="header-wrapper">
+			<div class="site-branding">
 
-			$description = get_bloginfo( 'description', 'display' );
-			if ( $description || is_customize_preview() ) : ?>
-				<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
-			<?php
-			endif; ?>
-		</div><!-- .site-branding -->
+				<a class="logo" href="#"><?php echo file_get_contents('http://localhost:8888/leading-minds/wp-content/themes/leading_minds/imgs/logo-nav.svg'); ?></a>
 
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'leading_minds' ); ?></button>
-			<?php wp_nav_menu( array( 'theme_location' => 'desktop-nav', 'menu_id' => 'primary-menu' ) ); ?>
-		</nav><!-- #site-navigation -->
+				<!-- <a class="header-logo" href="#"><img src="http://localhost:8888/leading-minds/wp-content/themes/leading_minds/imgs/new-logo.png"></a> -->
+
+				<?php
+				if ( is_front_page() && is_home() ) : ?>
+					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+				<?php else : ?>
+					<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+				<?php
+				endif;
+
+				$description = get_bloginfo( 'description', 'display' );
+				if ( $description || is_customize_preview() ) : ?>
+					<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
+				<?php
+				endif; ?>
+			</div><!-- .site-branding -->
+
+			<nav id="site-navigation" class="main-navigation" role="navigation">
+
+				<button class="menu-toggle" aria-controls="mobile-menu" aria-expanded="false"><img class="mobile-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAsklEQVRoQ+2WMQ7EIAwE4/8/mijl6YopnFXAmrQOK5hBxnUd/tXh+788wNcGNaCBJgGvUBNge/k8A2ut1cYSDKiqH+h/BjxAkP4TPd9AGODr8fO60OuIwoEaCAPGeA0govAP8ww4SqSvjMNcmDDF4zBHAbvV53Wh3QjTfjRAhNJ1DaQJU/48A85C5LxZx5dYA03CtBwNUMBu9XldaDfCtB8NEKF0XQNpwpSvASKUrh9v4AbQsjAxOjNvzAAAAABJRU5ErkJggg==" width="48" height="48"></button>
+
+				<?php wp_nav_menu( array( 'theme_location' => 'desktop-nav', 'menu_id' => 'primary-menu' ) ); ?>
+
+				<div class="mobile-menu">
+					<?php wp_nav_menu( array( 'theme_location' => 'mobile-nav', 'menu_id' => 'mobile-menu' ) ); ?>
+				</div>
+
+			</nav><!-- #site-navigation -->
+		</div>
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">

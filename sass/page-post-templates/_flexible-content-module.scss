@@ -32,7 +32,6 @@
 --------------------------------------------------------------*/
 
 .advanced-content-section {
-    // color: $color__dark_gray;
     @include section-padding;
 
     .header-img {
@@ -42,6 +41,7 @@
     h2, h3 {
 
         text-align: center;
+        line-height: 1.5;
     }
 
     .skills-wrapper {
@@ -49,12 +49,11 @@
         text-align: center;
         font-family: $font__alt-bold;
         color: $color__dark-gray;
-        letter-spacing: 0.3px;
+        letter-spacing: 0.8px;
         text-transform: uppercase;
 
         .skill {
             margin: 1em 0;
-
         }
     }
 
@@ -64,13 +63,12 @@
         margin-right: auto;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
         text-align: center;
 
         a {
             flex: 1;
             text-decoration: none;
+            margin: 1.5em 0;
 
             button {
                 // width: 190px;
@@ -78,15 +76,14 @@
             }
         }
 
-        .footer-img {
-            flex: 1;
-            max-width: 80px;
+        img {
+            display: block;
             margin-left: auto;
             margin-right: auto;
         }
 
         @include respond-to(medium) {
-            flex-direction: row;
+            // flex-direction: row;
         }
     }
 
@@ -97,54 +94,84 @@
 --------------------------------------------------------------*/
 
 .mid-page-navigation-section {
+    background-color: $color__orange;
 
     .content-section-wrapper {
-        max-width: $width_max-content-width;
-        margin-left: auto;
-        margin-right: auto;
-        background-color: $color__orange;
-
+        @include container;
 
         .margin-wrapper {
             display: flex;
-            flex-wrap: wrap;
+            flex-direction: column;
             margin-right: -1px;
         }
 
         .nav-container {
             background-color: #fff;
-            flex: 1 1 50%;
 
             .nav-wrapper {
                 background-color: $color__orange;
-                min-height: 100px;
                 margin-bottom: 1px;
                 margin-right: 1px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-
             }
 
             .nav-content {
-                max-width: 50%;
                 text-align: center;
                 color: #fff;
+                padding: 2em;
             }
 
             h3 {
-                @include reset;
-                display: block;
-                color: #000;
+                color: $color__dark_gray;
+
+                font-family: $font__alt-bold;
                 text-transform: uppercase;
+                letter-spacing: .8px;
             }
 
             a {
-                display: block;
                 text-decoration: none;
+                font-family: $font__alt-bold;
                 text-transform: uppercase;
                 color: #fff;
+                letter-spacing: .8px;
             }
+        }
+
+        @include respond-to(mobile) {
+            .margin-wrapper {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                margin-right: -1px;
+            }
+
+            .nav-container {
+                flex: 1 1 50%;
+                display: flex;
+
+
+                .nav-wrapper {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .nav-content {
+
+                }
+
+                h3 {
+
+                }
+
+                a {
+
+                }
+            }
+
         }
     }
 }
@@ -456,11 +483,12 @@ lt-gray-green-btns
     .content-section-wrapper {
         @extend .wrapper;
         padding-top: 2em;
-        padding-bottom: 3em;
+        padding-bottom: 1em;
     }
 
     .microphone-section {
         padding-top: 2em;
+        padding-bottom: 2em;
         text-align: center;
 
         h5 {
@@ -472,8 +500,8 @@ lt-gray-green-btns
     }
 
     .testimonial-carousel {
-        padding: 3em 1em;
-        displ
+        padding-left: 1em;
+        padding-right: 1em;
 
         blockquote {
             @include reset;
@@ -495,30 +523,32 @@ lt-gray-green-btns
             }
         }
 
-        // My Styles
+        // Custom Flickity Styles
 
         /* big buttons, no circle */
         .flickity-prev-next-button {
-          width: 13px;
-          height: 24px;
-          background: transparent;
+            width: 13px;
+            height: 24px;
+            background: transparent;
         }
         .flickity-prev-next-button:hover {
-          background: transparent;
+            background: transparent;
         }
         /* arrow color */
         .flickity-prev-next-button .arrow {
-          fill: white;
+            fill: white;
         }
         .flickity-prev-next-button.no-svg {
-          color: white;
+            color: white;
         }
 
         .flickity-prev-next-button.previous {
-          left: -50px;
+            top: 30%;
+            left: -50px;
         }
         .flickity-prev-next-button.next {
-          right: -50px;
+            top: 30%;
+            right: -50px;
         }
     }
 }
@@ -583,14 +613,6 @@ lt-gray-green-btns
         }
     }
 }
-
-
-
-
-
-
-
-
 
 
 /*--------------------------------------------------------------

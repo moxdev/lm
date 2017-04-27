@@ -41,10 +41,12 @@ function leading_minds_setup() {
 	 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 	 */
 	add_theme_support( 'post-thumbnails' );
-    add_image_size( 'flexible-content-module-footer-image', 100, 99999, false );
+    add_image_size( 'advanced-content-module-footer-image', 130, 99999, false );
+
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'desktop-nav' => esc_html__( 'Primary', 'leading_minds' ),
+        'mobile-nav'  => esc_html__( 'Mobile', 'leading_minds' )
 	) );
 
 	/*
@@ -120,7 +122,9 @@ add_action('init', 'leading_minds_register_scripts');
 function leading_minds_scripts() {
     wp_enqueue_style( 'leading-minds-style', get_stylesheet_uri() );
 
-    wp_enqueue_script( 'leading-minds-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+    wp_enqueue_script( 'leading-minds-mobile-nav', get_template_directory_uri() . '/js/min/mobile-menu-min.js', array('jquery'), NULL, true );
+
+    // wp_enqueue_script( 'leading-minds-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
     wp_enqueue_script( 'leading-minds-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 

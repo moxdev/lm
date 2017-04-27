@@ -5,5 +5,5 @@ var flkty = new Flickity( elem, {
     pageDots: false,
     setGallerySize: true,
     groupCells: true,
-    autoPlay: true
+    autoPlay: false
 });

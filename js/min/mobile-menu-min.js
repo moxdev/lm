@@ -1,0 +1,1 @@
+var show_mobile_menu=function(){jQuery(".mobile-menu").hasClass("toggled")?jQuery(".mobile-menu").removeClass("toggled"):jQuery(".mobile-menu").addClass("toggled")};jQuery(".menu-toggle").on("click",show_mobile_menu);

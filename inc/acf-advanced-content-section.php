@@ -188,13 +188,14 @@ function leading_minds_advanced_content_section() {
 
                         if( have_rows('content_footer') ):
 
-                             // loop through the rows of data
-                            while ( have_rows('content_footer') ) : the_row();
+                            ?>
 
-                                ?>
-                                <div class="content-footer-wrapper">
+                            <div class="content-footer-wrapper">
 
-                                    <?php
+                                <?php
+
+                                 // loop through the rows of data
+                                while ( have_rows('content_footer') ) : the_row();
 
                                     if( get_row_layout() == 'footer_editor' ):
                                         $editor = the_sub_field('editor');
@@ -215,7 +216,7 @@ function leading_minds_advanced_content_section() {
 
                                         ?>
 
-                                        <img src="<?php echo $img['sizes']['thumbnail']; ?>" alt="<?php echo $img['alt']; ?>" description="<?php echo $img['description']; ?>">
+                                        <img src="<?php echo $img['sizes']['advanced-content-module-footer-image']; ?>" alt="<?php echo $img['alt']; ?>" description="<?php echo $img['description']; ?>">
 
                                         <?php
 
@@ -254,12 +255,13 @@ function leading_minds_advanced_content_section() {
 
                                     endif;
 
-                                    ?>
-                                </div>
+                                endwhile;
 
-                                <?php
+                                ?>
 
-                            endwhile;
+                            </div>
+
+                            <?php
 
                         else :
 
