@@ -370,8 +370,6 @@ h3 {
 /* line 25, sass/typography/_headings.scss */
 h1.section-title {
   text-align: center;
-  padding-left: .5em;
-  padding-right: .5em;
   letter-spacing: 1.6px;
   line-height: 1.1;
   text-shadow: 0px 3px 4.83px rgba(0, 0, 0, 0.35);
@@ -379,7 +377,7 @@ h1.section-title {
 
 /* line 1, sass/typography/_copy.scss */
 p {
-  margin-bottom: 1.5em;
+  margin-bottom: 1em;
 }
 
 /* line 5, sass/typography/_copy.scss */
@@ -492,32 +490,34 @@ hr {
 
 /* line 1, sass/elements/_lists.scss */
 ul, ol {
-  margin: 0 0 1.5em 0;
+  margin: 0;
+  padding: 0;
+  margin: 0 0 1.5em 1em;
 }
 
-/* line 5, sass/elements/_lists.scss */
+/* line 6, sass/elements/_lists.scss */
 ul {
   list-style: disc;
 }
 
-/* line 9, sass/elements/_lists.scss */
+/* line 10, sass/elements/_lists.scss */
 ol {
   list-style: decimal;
 }
 
-/* line 13, sass/elements/_lists.scss */
+/* line 14, sass/elements/_lists.scss */
 li > ul,
 li > ol {
   margin-bottom: 0;
   margin-left: 1.5em;
 }
 
-/* line 19, sass/elements/_lists.scss */
+/* line 20, sass/elements/_lists.scss */
 dt {
   font-weight: bold;
 }
 
-/* line 23, sass/elements/_lists.scss */
+/* line 24, sass/elements/_lists.scss */
 dd {
   margin: 0 1.5em 1.5em;
 }
@@ -1204,18 +1204,34 @@ http://flickity.metafizzy.co
 
 /* line 12, sass/site/_site.scss */
 .feature-img {
-  min-height: 200px;
+  padding-top: 1em;
+  padding-bottom: 1em;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   overflow: hidden;
 }
-/* line 20, sass/site/_site.scss */
-.feature-img .header-wrapper {
-  text-align: center;
+/* line 22, sass/site/_site.scss */
+.feature-img .section-header-wrapper {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+/* line 30, sass/site/_site.scss */
+.feature-img .section-header-wrapper .section-header {
+  margin: auto;
+}
+/* line 33, sass/site/_site.scss */
+.feature-img .section-header-wrapper .section-header .section-title {
+  padding-left: .5em;
+  padding-right: .5em;
+  width: 100%;
 }
 
-/* line 38, sass/site/_site.scss */
+/* line 53, sass/site/_site.scss */
 .error-404 .page-content {
   text-align: center;
   padding-bottom: 3em;
@@ -1524,6 +1540,40 @@ object {
 .home .home-header-button-wrapper a {
   text-decoration: none;
   letter-spacing: 1.3px;
+}
+
+/*--------------------------------------------------------------
+## Executive Page
+--------------------------------------------------------------*/
+/* line 3, sass/page-post-templates/_executive-coaching-page.scss */
+.page-id-86 .exec-img-brendel {
+  margin-left: 0;
+}
+/* line 7, sass/page-post-templates/_executive-coaching-page.scss */
+.page-id-86 .exec-img-pcc {
+  padding: 1em;
+  margin-right: 1.5;
+}
+/* line 14, sass/page-post-templates/_executive-coaching-page.scss */
+.page-id-86 .advanced-content-section .content-footer-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/* line 22, sass/page-post-templates/_executive-coaching-page.scss */
+.page-id-86 .advanced-content-section .content-footer-wrapper .img-flex-wrapper img {
+  display: inline-flex;
+  margin: 0;
+}
+/* line 27, sass/page-post-templates/_executive-coaching-page.scss */
+.page-id-86 .advanced-content-section .content-footer-wrapper .img-flex-wrapper:first-child, .page-id-86 .advanced-content-section .content-footer-wrapper .img-flex-wrapper:nth-child(2) {
+  flex: 0 0 50%;
+}
+/* line 32, sass/page-post-templates/_executive-coaching-page.scss */
+.page-id-86 .advanced-content-section .content-footer-wrapper .img-flex-wrapper:nth-child(3) {
+  flex: 0 0 100%;
+  margin-top: 1em;
 }
 
 /*--------------------------------------------------------------
@@ -2065,16 +2115,6 @@ lt-gray-green-btns
 /*--------------------------------------------------------------
 ### Custom Styles for various sections
 --------------------------------------------------------------*/
-/* line 661, sass/page-post-templates/_flexible-content-module.scss */
-.page-template-page-custom .exec-img-brendel {
-  margin-left: 0;
-}
-/* line 665, sass/page-post-templates/_flexible-content-module.scss */
-.page-template-page-custom .exec-img-pcc {
-  padding: 1em;
-  margin-right: 1.5 em;
-}
-
 /*--------------------------------------------------------------
 ## Contact Page
 --------------------------------------------------------------*/

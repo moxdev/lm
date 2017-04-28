@@ -10,18 +10,33 @@
 }
 
 .feature-img {
-    min-height: 200px;
+    // min-height: 200px;
+    padding-top: 1em;
+    padding-bottom: 1em;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     overflow: hidden;
     // position: relative;
 
-    .header-wrapper {
-        // position: absolute;
-        text-align: center;
-    }
+    .section-header-wrapper {
+        width: 90%;
+        margin:auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
 
+        .section-header {
+            margin:auto;
+
+            .section-title {
+                padding-left: .5em;
+                padding-right: .5em;
+                width: 100%;
+            }
+        }
+    }
 }
 
 // .wrapper-wide {

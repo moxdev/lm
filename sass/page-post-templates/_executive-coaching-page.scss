@@ -1,0 +1,39 @@
+.page-id-86 {
+
+    .exec-img-brendel {
+        margin-left: 0;
+    }
+
+    .exec-img-pcc {
+        padding: 1em;
+        margin-right: 1.5
+    }
+
+    .advanced-content-section {
+
+        .content-footer-wrapper {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .img-flex-wrapper {
+
+                img {
+                    display: inline-flex;
+                    margin:0;
+                }
+
+                &:first-child,
+                &:nth-child(2) {
+                    flex: 0 0 50%;
+                }
+
+                &:nth-child(3) {
+                    flex: 0 0 100%;
+                    margin-top: 1em;
+                }
+            }
+        }
+    }
+}
