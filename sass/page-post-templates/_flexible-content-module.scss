@@ -323,35 +323,32 @@ lt-gray-green-btns
     .green-brain-left {
         background-color: $color__bg-green;
 
-        .color-callout-img {
-            display: none;
-        }
-
-        .background-image {
-            padding:0;
+        .content-section-wrapper {
+            @include section-padding;
             background-repeat: no-repeat;
-            background-image:url(http://localhost:8888/leading-minds/wp-content/themes/leading_minds/imgs/brains.svg);
-            background-size: 50%;
-            background-position: -250px 80%;
-
-            .content-section-wrapper {
-                @include section-padding;
-                background-color: rgba(36,207,95, 0.7);
-            }
-
-            @include respond-to(mobile) {
-                background-size: contain;
-                background-position: -200px 70%;
-            }
-
-            @include respond-to(small) {
-                background-position: -20% 50%;
-
-                .editor-wrapper {
-                    margin-left: calc(50% - 100px);
-                }
+            background-image:url('http://localhost:8888/leading-minds/wp-content/themes/leading_minds/ims/Layer 3.svg');
+            background-size: contain;
+            // background-position: -250px 80%;
+            color: $color__text-alt;
+            //
+            h2 {
+                color:#fff;
             }
         }
+
+        // @include respond-to(mobile) {
+        //     background-size: contain;
+        //     background-position: -200px 70%;
+        // }
+
+        // @include respond-to(small) {
+        //     background-position: -20% 50%;
+
+        //     .editor-wrapper {
+        //         margin-left: calc(50% - 100px);
+        //     }
+        // }
+
     }
 
     .lt-gray-brain-left {

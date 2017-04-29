@@ -35,89 +35,87 @@ function leading_minds_color_content_section() {
 
                 <div class="<?php echo esc_html( $theme ); ?>">
 
-                    <div class="background-image wrapper">
+                    <div class="content-section-wrapper wrapper">
 
-                        <div class="content-section-wrapper">
+                        <?php if( $img ) : ?>
 
-                            <?php if( $img ) : ?>
+                            <figure class="color-callout-img">
+                                <img src="<?php echo $img['sizes']['thumbnail']; ?>" alt="<?php echo $img['alt']; ?>" description="<?php echo $img['description']; ?>">
+                            </figure>
 
-                                <figure class="color-callout-img">
-                                    <img src="<?php echo $img['sizes']['thumbnail']; ?>" alt="<?php echo $img['alt']; ?>" description="<?php echo $img['description']; ?>">
-                                </figure>
+                        <?php endif; ?>
+
+                        <div class="editor-wrapper">
+
+                            <?php if( $title ) : ?>
+
+                                <h2><?php echo esc_html( $title ); ?></h2>
 
                             <?php endif; ?>
 
-                            <div class="editor-wrapper">
+                            <?php if( $sub_title ) : ?>
 
-                                <?php if( $title ) : ?>
+                                <h3><?php echo esc_html( $sub_title ); ?></h3>
 
-                                    <h2><?php echo esc_html( $title ); ?></h2>
+                            <?php endif; ?>
+
+                            <?php if( $editor ) : ?>
+
+                                <?php echo $editor; ?>
+
+                            <?php endif; ?>
+
+                        </div>
+
+                        <div class="split-section-wrapper">
+
+                            <div class="left-section-wrapper">
+
+                                <?php if( $left_title ) : ?>
+
+                                    <h3><?php echo esc_html($left_title); ?></h3>
 
                                 <?php endif; ?>
 
-                                <?php if( $sub_title ) : ?>
+                                <?php if( $left_editor ) : ?>
 
-                                    <h3><?php echo esc_html( $sub_title ); ?></h3>
-
-                                <?php endif; ?>
-
-                                <?php if( $editor ) : ?>
-
-                                    <?php echo $editor; ?>
+                                    <?php echo $left_editor; ?>
 
                                 <?php endif; ?>
 
-                            </div>
+                                <?php if( $left_btn_label ) : ?>
 
-                            <div class="split-section-wrapper">
+                                    <a href="<?php echo esc_url( $left_link ); ?>"><button><?php echo esc_html( $left_btn_label ); ?></button></a>
 
-                                <div class="left-section-wrapper">
+                                <?php endif; ?>
 
-                                    <?php if( $left_title ) : ?>
+                            </div><!-- left-section-wrapper -->
 
-                                        <h3><?php echo esc_html($left_title); ?></h3>
+                            <div class="right-section-wrapper">
 
-                                    <?php endif; ?>
+                                <?php if( $right_title ) : ?>
 
-                                    <?php if( $left_editor ) : ?>
+                                    <h3><?php echo esc_html($right_title); ?></h3>
 
-                                        <?php echo $left_editor; ?>
+                                <?php endif; ?>
 
-                                    <?php endif; ?>
+                                <?php if( $right_editor ) : ?>
 
-                                    <?php if( $left_btn_label ) : ?>
+                                    <?php echo $right_editor; ?>
 
-                                        <a href="<?php echo esc_url( $left_link ); ?>"><button><?php echo esc_html( $left_btn_label ); ?></button></a>
+                                <?php endif; ?>
 
-                                    <?php endif; ?>
+                                <?php if( $right_btn_label ) : ?>
 
-                                </div><!-- left-section-wrapper -->
+                                    <a href="<?php echo esc_url( $right_link ); ?>"><button><?php echo esc_html( $right_btn_label ); ?></button></a>
 
-                                <div class="right-section-wrapper">
+                                <?php endif; ?>
 
-                                    <?php if( $right_title ) : ?>
+                            </div><!-- right-section-wrapper -->
 
-                                        <h3><?php echo esc_html($right_title); ?></h3>
-
-                                    <?php endif; ?>
-
-                                    <?php if( $right_editor ) : ?>
-
-                                        <?php echo $right_editor; ?>
-
-                                    <?php endif; ?>
-
-                                    <?php if( $right_btn_label ) : ?>
-
-                                        <a href="<?php echo esc_url( $right_link ); ?>"><button><?php echo esc_html( $right_btn_label ); ?></button></a>
-
-                                    <?php endif; ?>
-
-                                </div><!-- right-section-wrapper -->
-
-                            </div>
                         </div>
                     </div>
+
                 </div>
 
             </section>

@@ -278,88 +278,31 @@
 		"oAP": "\/header.php",
 		"oF": 0
 		},
-	"\/imgs\/bbb-logo.svg": {
+	"\/imgs\/brains\/large-green-brain.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/imgs\/bbb-logo.svg",
+		"oAP": "\/imgs\/brains\/large-green-brain.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/imgs\/big-brain.svg": {
+	"\/imgs\/brains\/small-white-brain.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/imgs\/big-brain.svg",
+		"oAP": "\/imgs\/brains\/small-white-brain.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/imgs\/blog-background-img.svg": {
+	"\/imgs\/large-green-brain.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/imgs\/blog-background-img.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/imgs\/brain-logo.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/imgs\/brain-logo.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/imgs\/brain.png": {
-		"ft": 32768,
-		"iS": 1943,
-		"oA": 0,
-		"oAP": "\/imgs\/brain.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/imgs\/brains.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/imgs\/brains.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/imgs\/footer-logo.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/imgs\/footer-logo.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/imgs\/ImageComps.pdf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/imgs\/ImageComps.pdf",
-		"oF": 0
-		},
-	"\/imgs\/Layer 3.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/imgs\/Layer 3.svg",
+		"oAP": "\/imgs\/large-green-brain.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -375,16 +318,6 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/imgs\/Logo copy.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/imgs\/Logo copy.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
 	"\/imgs\/logo-nav.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -395,22 +328,151 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/imgs\/new-logo.png": {
+	"\/imgs\/old\/bbb-logo.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/imgs\/old\/bbb-logo.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/imgs\/old\/big-brain.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/imgs\/old\/big-brain.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/imgs\/old\/blog-background-img.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/imgs\/old\/blog-background-img.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/imgs\/old\/brain-logo.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/imgs\/old\/brain-logo.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/imgs\/old\/brain.png": {
 		"ft": 32768,
-		"iS": 4738,
+		"iS": 1943,
 		"oA": 0,
-		"oAP": "\/imgs\/new-logo.png",
+		"oAP": "\/imgs\/old\/brain.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"\/imgs\/opti-brain.svg": {
+	"\/imgs\/old\/brains.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/imgs\/opti-brain.svg",
+		"oAP": "\/imgs\/old\/brains.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/imgs\/old\/footer-logo.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/imgs\/old\/footer-logo.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/imgs\/old\/ImageComps.pdf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/imgs\/old\/ImageComps.pdf",
+		"oF": 0
+		},
+	"\/imgs\/old\/Layer 3.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/imgs\/old\/Layer 3.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/imgs\/old\/Logo copy.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/imgs\/old\/Logo copy.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/imgs\/old\/new-logo.png": {
+		"ft": 32768,
+		"iS": 4738,
+		"oA": 0,
+		"oAP": "\/imgs\/old\/new-logo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/imgs\/old\/opti-brain.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/imgs\/old\/opti-brain.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/imgs\/old\/small-white-brain.png": {
+		"ft": 32768,
+		"iS": 7307,
+		"oA": 0,
+		"oAP": "\/imgs\/old\/small-white-brain.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/imgs\/old\/test.png": {
+		"ft": 32768,
+		"iS": 7744,
+		"oA": 0,
+		"oAP": "\/imgs\/old\/test.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/imgs\/old\/test.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/imgs\/old\/test.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -426,33 +488,11 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/imgs\/small-white-brain.png": {
-		"ft": 32768,
-		"iS": 7307,
-		"oA": 0,
-		"oAP": "\/imgs\/small-white-brain.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/imgs\/test.png": {
-		"ft": 32768,
-		"iS": 7744,
-		"oA": 0,
-		"oAP": "\/imgs\/test.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/imgs\/test.svg": {
+	"\/imgs\/small-white-brain.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/imgs\/test.svg",
+		"oAP": "\/imgs\/small-white-brain.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
