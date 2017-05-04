@@ -1,10 +1,15 @@
 .main-navigation {
 	clear: both;
 	display: flex;
-	// float: left;
+    justify-content: flex-end;
+    align-content: flex-end;
 	width: 100%;
 	height: auto;
 	color:#fff;
+
+    #primary-menu {
+
+    }
 
 	ul {
 		display: none;
@@ -52,19 +57,39 @@
 	}
 
 	li {
-		float: left;
+		display: inline-flex;
 		position: relative;
+        margin: 0 .5em;
 
 		&:hover > a,
 		&.focus > a {
 		}
 	}
 
+
 	a {
 		display: block;
+        font-family: $font__alt-semibold;
 		text-decoration: none;
 		color: #fff;
+        width: 70px;
+        text-align: center;
+        line-height: 1.2;
+        letter-spacing: 1px;
 	}
+
+    .current-menu-item {
+        a {
+            color: $color__green;
+        }
+    }
+
+    .long-name-nav-link {
+
+        a {
+            width: 100px;
+        }
+    }
 
 	.current_page_item > a,
 	.current-menu-item > a,
@@ -109,10 +134,12 @@
                 // position: relative;
 
                 a {
+                    width: 100%;
                     color:#fff;
                     display: block !important;
                     padding:0;
                     text-decoration:none;
+                    text-align: left;
                     font-size: 1rem;
                     text-transform: uppercase;
 
@@ -177,13 +204,20 @@
 	}
 }
 
-@media screen and (min-width: 37.5em) {
-	.menu-toggle {
-		display: none;
-	}
-	.main-navigation ul {
-		display: block;
-	}
+@include respond-to(large) {
+    .menu-toggle, #mobile-menu {
+        display: none;
+    }
+
+    .main-navigation ul {
+        display: inline-flex;
+        justify-content: flex-end;
+
+        li {
+            // float: right;
+            // text-align: right;
+        }
+    }
 }
 
 .comment-navigation,

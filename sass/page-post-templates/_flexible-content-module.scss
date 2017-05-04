@@ -520,7 +520,6 @@ lt-gray-green-btns
             }
         }
     }
-
 }
 
 
@@ -553,11 +552,12 @@ lt-gray-green-btns
     }
 
     .testimonial-carousel {
-        padding-left: 1em;
-        padding-right: 1em;
+        padding-left: 1.5em;
+        padding-right: 1.5em;
 
         blockquote {
             @include reset;
+            letter-spacing: .7px;
         }
 
         .cell {

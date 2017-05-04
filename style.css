@@ -647,15 +647,18 @@ textarea {
 /* line 8, sass/navigation/_masthead.scss */
 #masthead .header-wrapper {
   display: flex;
-  justify-content: space-between;
-  align-content: center;
   align-items: center;
 }
-/* line 19, sass/navigation/_masthead.scss */
+/* line 13, sass/navigation/_masthead.scss */
+#masthead .site-branding {
+  margin: 0;
+  padding: 0;
+}
+/* line 18, sass/navigation/_masthead.scss */
 #masthead .site-branding .logo svg {
   max-width: 150px;
 }
-/* line 27, sass/navigation/_masthead.scss */
+/* line 26, sass/navigation/_masthead.scss */
 #masthead nav button {
   margin-left: auto;
 }
@@ -691,18 +694,20 @@ a:hover, a:active {
 .main-navigation {
   clear: both;
   display: flex;
+  justify-content: flex-end;
+  align-content: flex-end;
   width: 100%;
   height: auto;
   color: #fff;
 }
-/* line 9, sass/navigation/_menus.scss */
+/* line 14, sass/navigation/_menus.scss */
 .main-navigation ul {
   display: none;
   list-style: none;
   margin: 0;
   padding-left: 0;
 }
-/* line 15, sass/navigation/_menus.scss */
+/* line 20, sass/navigation/_menus.scss */
 .main-navigation ul ul {
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   float: left;
@@ -711,37 +716,51 @@ a:hover, a:active {
   left: -999em;
   z-index: 99999;
 }
-/* line 23, sass/navigation/_menus.scss */
+/* line 28, sass/navigation/_menus.scss */
 .main-navigation ul ul ul {
   left: -999em;
   top: 0;
 }
-/* line 29, sass/navigation/_menus.scss */
+/* line 34, sass/navigation/_menus.scss */
 .main-navigation ul ul li:hover > ul, .main-navigation ul ul li.focus > ul {
   left: 100%;
 }
-/* line 35, sass/navigation/_menus.scss */
+/* line 40, sass/navigation/_menus.scss */
 .main-navigation ul ul a {
   width: 200px;
 }
-/* line 48, sass/navigation/_menus.scss */
+/* line 53, sass/navigation/_menus.scss */
 .main-navigation ul li:hover > ul,
 .main-navigation ul li.focus > ul {
   left: auto;
 }
-/* line 54, sass/navigation/_menus.scss */
+/* line 59, sass/navigation/_menus.scss */
 .main-navigation li {
-  float: left;
+  display: inline-flex;
   position: relative;
+  margin: 0 .5em;
 }
-/* line 63, sass/navigation/_menus.scss */
+/* line 70, sass/navigation/_menus.scss */
 .main-navigation a {
   display: block;
+  font-family: "SourceSansPro-Semibold", sans-serif;
   text-decoration: none;
   color: #fff;
+  width: 70px;
+  text-align: center;
+  line-height: 1.2;
+  letter-spacing: 1px;
+}
+/* line 82, sass/navigation/_menus.scss */
+.main-navigation .current-menu-item a {
+  color: #24cf5f;
+}
+/* line 89, sass/navigation/_menus.scss */
+.main-navigation .long-name-nav-link a {
+  width: 100px;
 }
 
-/* line 76, sass/navigation/_menus.scss */
+/* line 101, sass/navigation/_menus.scss */
 .toggled {
   display: block;
   position: absolute;
@@ -755,12 +774,12 @@ a:hover, a:active {
   overflow: hidden;
   z-index: 9999;
 }
-/* line 89, sass/navigation/_menus.scss */
+/* line 114, sass/navigation/_menus.scss */
 .toggled .menu-mobile-menu-container {
   display: block !important;
   padding-top: 1.5em;
 }
-/* line 93, sass/navigation/_menus.scss */
+/* line 118, sass/navigation/_menus.scss */
 .toggled .menu-mobile-menu-container ul {
   display: block !important;
   list-style: none;
@@ -771,68 +790,70 @@ a:hover, a:active {
   text-align: left;
 }
 @media screen and (min-width: 750px) {
-  /* line 93, sass/navigation/_menus.scss */
+  /* line 118, sass/navigation/_menus.scss */
   .toggled .menu-mobile-menu-container ul {
     padding-left: 2.75rem;
     padding-right: 2.75rem;
   }
 }
-/* line 101, sass/navigation/_menus.scss */
+/* line 126, sass/navigation/_menus.scss */
 .toggled .menu-mobile-menu-container ul .current-menu-item {
   color: #24cf5f;
 }
-/* line 105, sass/navigation/_menus.scss */
+/* line 130, sass/navigation/_menus.scss */
 .toggled .menu-mobile-menu-container ul li {
   display: block !important;
   margin: 0;
   padding-bottom: 1em;
 }
-/* line 111, sass/navigation/_menus.scss */
+/* line 136, sass/navigation/_menus.scss */
 .toggled .menu-mobile-menu-container ul li a {
+  width: 100%;
   color: #fff;
   display: block !important;
   padding: 0;
   text-decoration: none;
+  text-align: left;
   font-size: 1rem;
   text-transform: uppercase;
 }
 @media screen and (min-width: 575px) {
-  /* line 111, sass/navigation/_menus.scss */
+  /* line 136, sass/navigation/_menus.scss */
   .toggled .menu-mobile-menu-container ul li a {
     font-size: 1.5rem;
   }
 }
 @media screen and (min-width: 950px) {
-  /* line 111, sass/navigation/_menus.scss */
+  /* line 136, sass/navigation/_menus.scss */
   .toggled .menu-mobile-menu-container ul li a {
     font-size: 1.8rem;
   }
 }
-/* line 127, sass/navigation/_menus.scss */
+/* line 154, sass/navigation/_menus.scss */
 .toggled .menu-mobile-menu-container ul li a:hover, .toggled .menu-mobile-menu-container ul li a:visited, .toggled .menu-mobile-menu-container ul li a:active, .toggled .menu-mobile-menu-container ul li a :link {
   color: #fff;
 }
-/* line 133, sass/navigation/_menus.scss */
+/* line 160, sass/navigation/_menus.scss */
 .toggled .menu-mobile-menu-container ul li a ul li a {
   text-transform: capitalize;
   text-decoration: none;
   font-size: .9em;
 }
 @media screen and (min-width: 750px) {
-  /* line 76, sass/navigation/_menus.scss */
+  /* line 101, sass/navigation/_menus.scss */
   .toggled {
     top: 106px;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 76, sass/navigation/_menus.scss */
+  /* line 101, sass/navigation/_menus.scss */
   .toggled {
     display: none;
   }
 }
 
 /* Small menu. */
-/* line 155, sass/navigation/_menus.scss */
+/* line 182, sass/navigation/_menus.scss */
 .menu-toggle {
   display: block;
   background: none;
@@ -845,41 +866,42 @@ a:hover, a:active {
   padding: 0;
   transition: background-color .25s, box-shadow .25s;
 }
-/* line 168, sass/navigation/_menus.scss */
+/* line 195, sass/navigation/_menus.scss */
 .menu-toggle:hover {
   background-color: transparent;
 }
-/* line 173, sass/navigation/_menus.scss */
+/* line 200, sass/navigation/_menus.scss */
 .menu-toggle:active, .menu-toggle:focus {
   background-color: transparent;
 }
 
-@media screen and (min-width: 37.5em) {
-  /* line 181, sass/navigation/_menus.scss */
-  .menu-toggle {
+@media screen and (min-width: 1200px) {
+  /* line 208, sass/navigation/_menus.scss */
+  .menu-toggle, #mobile-menu {
     display: none;
   }
 
-  /* line 184, sass/navigation/_menus.scss */
+  /* line 212, sass/navigation/_menus.scss */
   .main-navigation ul {
-    display: block;
+    display: inline-flex;
+    justify-content: flex-end;
   }
 }
-/* line 193, sass/navigation/_menus.scss */
+/* line 227, sass/navigation/_menus.scss */
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
 .post-navigation {
   margin: 0 0 1.5em;
   overflow: hidden;
 }
-/* line 198, sass/navigation/_menus.scss */
+/* line 232, sass/navigation/_menus.scss */
 .comment-navigation .nav-previous,
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
   float: left;
   width: 50%;
 }
-/* line 203, sass/navigation/_menus.scss */
+/* line 237, sass/navigation/_menus.scss */
 .comment-navigation .nav-next,
 .posts-navigation .nav-next,
 .post-navigation .nav-next {
@@ -1966,39 +1988,40 @@ lt-gray-green-btns
 /*--------------------------------------------------------------
 ### Testimonial Section
 --------------------------------------------------------------*/
-/* line 532, sass/page-post-templates/_flexible-content-module.scss */
+/* line 531, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section {
   background-color: #282560;
 }
-/* line 536, sass/page-post-templates/_flexible-content-module.scss */
+/* line 535, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .content-section-wrapper {
   padding-top: 2em;
   padding-bottom: 1em;
 }
-/* line 542, sass/page-post-templates/_flexible-content-module.scss */
+/* line 541, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .microphone-section {
   padding-top: 2em;
   padding-bottom: 2em;
   text-align: center;
 }
-/* line 547, sass/page-post-templates/_flexible-content-module.scss */
+/* line 546, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .microphone-section h5 {
   text-transform: uppercase;
   margin-top: 1em;
   margin-bottom: .5em;
   color: #fff;
 }
-/* line 555, sass/page-post-templates/_flexible-content-module.scss */
+/* line 554, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .testimonial-carousel {
-  padding-left: 1em;
-  padding-right: 1em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
   /* big buttons, no circle */
   /* arrow color */
 }
-/* line 559, sass/page-post-templates/_flexible-content-module.scss */
+/* line 558, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .testimonial-carousel blockquote {
   margin: 0;
   padding: 0;
+  letter-spacing: .7px;
 }
 /* line 563, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .testimonial-carousel .cell {
