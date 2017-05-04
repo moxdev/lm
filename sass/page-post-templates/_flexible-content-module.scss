@@ -93,6 +93,16 @@
         }
     }
 
+    .split-column-wrapper {
+
+        .column-wrapper {
+
+            p {
+                margin: 0;
+            }
+        }
+    }
+
     .content-footer-wrapper {
         max-width: 800px;
         margin-left: auto;
@@ -313,7 +323,7 @@ lt-gray-green-btns
     .bg-default {
         background-color: #fff;
 
-        text-align: center;
+        // text-align: center;
 
         .color-callout-img {
             display: none;
@@ -368,13 +378,13 @@ lt-gray-green-btns
         .background-image {
             padding:0;
             background-repeat: no-repeat;
-            background-image:url(http://localhost:8888/leading-minds/wp-content/themes/leading_minds/imgs/brains.svg);
-            background-size: 50%;
+            background-image:url(http://leading-minds.dev/wp-content/themes/leading_minds/imgs/brains/large-green-brain.svg);
+            // background-size: 100px;
             background-position: -250px 80%;
 
             .content-section-wrapper {
+                @extend .wrapper;
                 @include section-padding;
-                background-color: rgba(232,232,232, 0.7);
             }
 
             @include respond-to(mobile) {
@@ -454,6 +464,9 @@ lt-gray-green-btns
 
         .content-section-wrapper {
             @include section-padding;
+            // color: $color__dark-gray;
+            color: #fff;
+            letter-spacing: .7px;
 
             .color-callout-img {
                 display: block;
@@ -493,17 +506,17 @@ lt-gray-green-btns
         .background-image {
             padding:0;
             background-repeat: no-repeat;
-            background-image:url(http://localhost:8888/leading-minds/wp-content/themes/leading_minds/imgs/brains.svg);
+            background-image:url(http://leading-minds.dev/wp-content/themes/leading_minds/imgs/brains/colored-section-white-brain-1.svg);
             background-size: 40%;
             background-position: 50%;
 
             .content-section-wrapper {
                 @include section-padding;
-                background-color: rgba(232,232,232, 0.7);
+                @extend .wrapper;
             }
 
-            h2 {
-                color: #fff;
+            h2, h3 {
+                color: $color__dark-gray;
             }
         }
     }

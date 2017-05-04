@@ -31,7 +31,7 @@ function leading_minds_advanced_content_section() {
                     <?php
 
                     if ($img) { ?>
-                        <img class="header-img" src="<?php echo $img['sizes']['thumbnail']; ?>" alt="<?php echo $img['alt']; ?>" description="<?php echo $img['description']; ?>">
+                        <img class="header-img" src="<?php echo $img['sizes']['advanced-content-module-header-image']; ?>" alt="<?php echo $img['alt']; ?>" description="<?php echo $img['description']; ?>">
                     <?php }
 
                     // Header

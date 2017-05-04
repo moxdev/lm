@@ -41,6 +41,7 @@ function leading_minds_setup() {
 	 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 	 */
 	add_theme_support( 'post-thumbnails' );
+    add_image_size( 'advanced-content-module-header-image', 150, 99999, false );
     add_image_size( 'advanced-content-module-footer-image', 130, 99999, false );
 
 	// This theme uses wp_nav_menu() in one location.
