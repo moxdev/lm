@@ -492,7 +492,7 @@ hr {
 ul, ol {
   margin: 0;
   padding: 0;
-  margin: 0 0 1.5em 1em;
+  margin: 0 0 0 1em;
 }
 
 /* line 6, sass/elements/_lists.scss */
@@ -1182,7 +1182,7 @@ http://flickity.metafizzy.co
 # Content
 --------------------------------------------------------------*/
 /* line 1, sass/site/_site.scss */
-.wrapper, .home .home-header-wrapper, .simple-content-section .content-section-wrapper, .testimonial-section .content-section-wrapper, .post-template-default .site-content {
+.wrapper, .home .home-header-wrapper, .simple-content-section .content-section-wrapper, .color-callout-section .green-brain-left .background-image .content-section-wrapper, .testimonial-section .content-section-wrapper, .post-template-default .site-content {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -1191,7 +1191,7 @@ http://flickity.metafizzy.co
 }
 @media screen and (min-width: 750px) {
   /* line 1, sass/site/_site.scss */
-  .wrapper, .home .home-header-wrapper, .simple-content-section .content-section-wrapper, .testimonial-section .content-section-wrapper, .post-template-default .site-content {
+  .wrapper, .home .home-header-wrapper, .simple-content-section .content-section-wrapper, .color-callout-section .green-brain-left .background-image .content-section-wrapper, .testimonial-section .content-section-wrapper, .post-template-default .site-content {
     padding-left: 2.75rem;
     padding-right: 2.75rem;
   }
@@ -1776,15 +1776,18 @@ lt-gray-green-btns
 .color-callout-section .green-brain-left .background-image {
   padding: 0;
   background-repeat: no-repeat;
-  background-image: url(http://localhost:8888/leading-minds/wp-content/themes/leading_minds/imgs/brains.svg);
-  background-size: 50%;
-  background-position: -250px 80%;
+  background-image: url(http://leading-minds.dev/wp-content/themes/leading_minds/imgs/brains/large-green-brain.svg);
+  background-position: -250px 50%;
 }
-/* line 337, sass/page-post-templates/_flexible-content-module.scss */
+/* line 336, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .green-brain-left .background-image .content-section-wrapper {
   padding-top: 3em;
   padding-bottom: 3em;
-  background-color: rgba(36, 207, 95, 0.7);
+  color: #3b3d40;
+}
+/* line 341, sass/page-post-templates/_flexible-content-module.scss */
+.color-callout-section .green-brain-left .background-image .content-section-wrapper h2 {
+  color: #fff;
 }
 @media screen and (min-width: 400px) {
   /* line 330, sass/page-post-templates/_flexible-content-module.scss */
@@ -1798,20 +1801,20 @@ lt-gray-green-btns
   .color-callout-section .green-brain-left .background-image {
     background-position: -20% 50%;
   }
-  /* line 350, sass/page-post-templates/_flexible-content-module.scss */
+  /* line 354, sass/page-post-templates/_flexible-content-module.scss */
   .color-callout-section .green-brain-left .background-image .editor-wrapper {
     margin-left: calc(50% - 100px);
   }
 }
-/* line 357, sass/page-post-templates/_flexible-content-module.scss */
+/* line 361, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .lt-gray-brain-left {
   background-color: #e8e8e8;
 }
-/* line 360, sass/page-post-templates/_flexible-content-module.scss */
+/* line 364, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .lt-gray-brain-left .color-callout-img {
   display: none;
 }
-/* line 364, sass/page-post-templates/_flexible-content-module.scss */
+/* line 368, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .lt-gray-brain-left .background-image {
   padding: 0;
   background-repeat: no-repeat;
@@ -1819,39 +1822,39 @@ lt-gray-green-btns
   background-size: 50%;
   background-position: -250px 80%;
 }
-/* line 371, sass/page-post-templates/_flexible-content-module.scss */
+/* line 375, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .lt-gray-brain-left .background-image .content-section-wrapper {
   padding-top: 3em;
   padding-bottom: 3em;
   background-color: rgba(232, 232, 232, 0.7);
 }
 @media screen and (min-width: 400px) {
-  /* line 364, sass/page-post-templates/_flexible-content-module.scss */
+  /* line 368, sass/page-post-templates/_flexible-content-module.scss */
   .color-callout-section .lt-gray-brain-left .background-image {
     background-size: contain;
     background-position: -200px 70%;
   }
 }
 @media screen and (min-width: 750px) {
-  /* line 364, sass/page-post-templates/_flexible-content-module.scss */
+  /* line 368, sass/page-post-templates/_flexible-content-module.scss */
   .color-callout-section .lt-gray-brain-left .background-image {
     background-position: -20% 50%;
   }
-  /* line 384, sass/page-post-templates/_flexible-content-module.scss */
+  /* line 388, sass/page-post-templates/_flexible-content-module.scss */
   .color-callout-section .lt-gray-brain-left .background-image .editor-wrapper {
     margin-left: calc(50% - 100px);
   }
 }
-/* line 391, sass/page-post-templates/_flexible-content-module.scss */
+/* line 395, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .green-brain-center {
   background-color: #24cf5f;
   text-align: center;
 }
-/* line 395, sass/page-post-templates/_flexible-content-module.scss */
+/* line 399, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .green-brain-center .color-callout-img {
   display: none;
 }
-/* line 399, sass/page-post-templates/_flexible-content-module.scss */
+/* line 403, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .green-brain-center .background-image {
   padding: 0;
   background-repeat: no-repeat;
@@ -1859,26 +1862,26 @@ lt-gray-green-btns
   background-size: 40%;
   background-position: 50%;
 }
-/* line 406, sass/page-post-templates/_flexible-content-module.scss */
+/* line 410, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .green-brain-center .background-image .content-section-wrapper {
   padding-top: 3em;
   padding-bottom: 3em;
   background-color: rgba(36, 207, 95, 0.7);
 }
-/* line 411, sass/page-post-templates/_flexible-content-module.scss */
+/* line 415, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .green-brain-center .background-image h2 {
   color: #fff;
 }
-/* line 417, sass/page-post-templates/_flexible-content-module.scss */
+/* line 421, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .lt-gray-brain-center {
   background-color: #e8e8e8;
   text-align: center;
 }
-/* line 421, sass/page-post-templates/_flexible-content-module.scss */
+/* line 425, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .lt-gray-brain-center .color-callout-img {
   display: none;
 }
-/* line 425, sass/page-post-templates/_flexible-content-module.scss */
+/* line 429, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .lt-gray-brain-center .background-image {
   padding: 0;
   background-repeat: no-repeat;
@@ -1886,60 +1889,60 @@ lt-gray-green-btns
   background-size: 40%;
   background-position: 50%;
 }
-/* line 432, sass/page-post-templates/_flexible-content-module.scss */
+/* line 436, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .lt-gray-brain-center .background-image .content-section-wrapper {
   padding-top: 3em;
   padding-bottom: 3em;
   background-color: rgba(232, 232, 232, 0.7);
 }
-/* line 437, sass/page-post-templates/_flexible-content-module.scss */
+/* line 441, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .lt-gray-brain-center .background-image h2 {
   color: #fff;
 }
-/* line 443, sass/page-post-templates/_flexible-content-module.scss */
+/* line 447, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .green-img-left {
   background-color: #24cf5f;
 }
-/* line 447, sass/page-post-templates/_flexible-content-module.scss */
+/* line 451, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .green-img-left h2 {
   color: #fff;
 }
-/* line 451, sass/page-post-templates/_flexible-content-module.scss */
+/* line 455, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .green-img-left .content-section-wrapper {
   padding-top: 3em;
   padding-bottom: 3em;
 }
-/* line 454, sass/page-post-templates/_flexible-content-module.scss */
+/* line 458, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .green-img-left .content-section-wrapper .color-callout-img {
   display: block;
   margin-bottom: 2em;
   text-align: center;
 }
 @media screen and (min-width: 750px) {
-  /* line 466, sass/page-post-templates/_flexible-content-module.scss */
+  /* line 470, sass/page-post-templates/_flexible-content-module.scss */
   .color-callout-section .green-img-left .content-section-wrapper {
     display: flex;
   }
-  /* line 469, sass/page-post-templates/_flexible-content-module.scss */
+  /* line 473, sass/page-post-templates/_flexible-content-module.scss */
   .color-callout-section .green-img-left .content-section-wrapper .color-callout-img {
     display: inline-flex;
     flex: 1 0 30%;
   }
-  /* line 474, sass/page-post-templates/_flexible-content-module.scss */
+  /* line 478, sass/page-post-templates/_flexible-content-module.scss */
   .color-callout-section .green-img-left .content-section-wrapper .editor-wrapper {
     flex: 1 1 auto;
   }
 }
-/* line 481, sass/page-post-templates/_flexible-content-module.scss */
+/* line 485, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .lt-gray-green-btns {
   background-color: #e8e8e8;
   text-align: center;
 }
-/* line 485, sass/page-post-templates/_flexible-content-module.scss */
+/* line 489, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .lt-gray-green-btns .color-callout-img {
   display: none;
 }
-/* line 489, sass/page-post-templates/_flexible-content-module.scss */
+/* line 493, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .lt-gray-green-btns .background-image {
   padding: 0;
   background-repeat: no-repeat;
@@ -1947,13 +1950,13 @@ lt-gray-green-btns
   background-size: 40%;
   background-position: 50%;
 }
-/* line 496, sass/page-post-templates/_flexible-content-module.scss */
+/* line 500, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .lt-gray-green-btns .background-image .content-section-wrapper {
   padding-top: 3em;
   padding-bottom: 3em;
   background-color: rgba(232, 232, 232, 0.7);
 }
-/* line 501, sass/page-post-templates/_flexible-content-module.scss */
+/* line 505, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .lt-gray-green-btns .background-image h2 {
   color: #fff;
 }
@@ -1961,41 +1964,41 @@ lt-gray-green-btns
 /*--------------------------------------------------------------
 ### Testimonial Section
 --------------------------------------------------------------*/
-/* line 515, sass/page-post-templates/_flexible-content-module.scss */
+/* line 519, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section {
   background-color: #282560;
 }
-/* line 519, sass/page-post-templates/_flexible-content-module.scss */
+/* line 523, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .content-section-wrapper {
   padding-top: 2em;
   padding-bottom: 1em;
 }
-/* line 525, sass/page-post-templates/_flexible-content-module.scss */
+/* line 529, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .microphone-section {
   padding-top: 2em;
   padding-bottom: 2em;
   text-align: center;
 }
-/* line 530, sass/page-post-templates/_flexible-content-module.scss */
+/* line 534, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .microphone-section h5 {
   text-transform: uppercase;
   margin-top: 1em;
   margin-bottom: .5em;
   color: #fff;
 }
-/* line 538, sass/page-post-templates/_flexible-content-module.scss */
+/* line 542, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .testimonial-carousel {
   padding-left: 1em;
   padding-right: 1em;
   /* big buttons, no circle */
   /* arrow color */
 }
-/* line 542, sass/page-post-templates/_flexible-content-module.scss */
+/* line 546, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .testimonial-carousel blockquote {
   margin: 0;
   padding: 0;
 }
-/* line 546, sass/page-post-templates/_flexible-content-module.scss */
+/* line 550, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .testimonial-carousel .cell {
   width: 100%;
   /* full width */
@@ -2003,42 +2006,42 @@ lt-gray-green-btns
   /* height of carousel */
   color: #fff;
 }
-/* line 551, sass/page-post-templates/_flexible-content-module.scss */
+/* line 555, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .testimonial-carousel .cell h4 {
   margin: 0;
   padding: 0;
   color: #fff;
 }
-/* line 556, sass/page-post-templates/_flexible-content-module.scss */
+/* line 560, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .testimonial-carousel .cell h5 {
   margin: 0;
   padding: 0;
   color: #fff;
 }
-/* line 565, sass/page-post-templates/_flexible-content-module.scss */
+/* line 569, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .testimonial-carousel .flickity-prev-next-button {
   width: 13px;
   height: 24px;
   background: transparent;
 }
-/* line 570, sass/page-post-templates/_flexible-content-module.scss */
+/* line 574, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .testimonial-carousel .flickity-prev-next-button:hover {
   background: transparent;
 }
-/* line 574, sass/page-post-templates/_flexible-content-module.scss */
+/* line 578, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .testimonial-carousel .flickity-prev-next-button .arrow {
   fill: white;
 }
-/* line 577, sass/page-post-templates/_flexible-content-module.scss */
+/* line 581, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .testimonial-carousel .flickity-prev-next-button.no-svg {
   color: white;
 }
-/* line 581, sass/page-post-templates/_flexible-content-module.scss */
+/* line 585, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .testimonial-carousel .flickity-prev-next-button.previous {
   top: 30%;
   left: -50px;
 }
-/* line 585, sass/page-post-templates/_flexible-content-module.scss */
+/* line 589, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .testimonial-carousel .flickity-prev-next-button.next {
   top: 30%;
   right: -50px;
@@ -2047,36 +2050,36 @@ lt-gray-green-btns
 /*--------------------------------------------------------------
 ### Associates Section
 --------------------------------------------------------------*/
-/* line 596, sass/page-post-templates/_flexible-content-module.scss */
+/* line 600, sass/page-post-templates/_flexible-content-module.scss */
 .associates-section {
   padding-top: 3em;
   padding-bottom: 3em;
 }
-/* line 599, sass/page-post-templates/_flexible-content-module.scss */
+/* line 603, sass/page-post-templates/_flexible-content-module.scss */
 .associates-section .content-section-wrapper {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
 }
-/* line 604, sass/page-post-templates/_flexible-content-module.scss */
+/* line 608, sass/page-post-templates/_flexible-content-module.scss */
 .associates-section a {
   text-decoration: none;
   color: #656b6f;
 }
-/* line 610, sass/page-post-templates/_flexible-content-module.scss */
+/* line 614, sass/page-post-templates/_flexible-content-module.scss */
 .associates-section img {
   display: block;
   margin-left: auto;
   margin-right: auto;
   border-radius: 50%;
 }
-/* line 615, sass/page-post-templates/_flexible-content-module.scss */
+/* line 619, sass/page-post-templates/_flexible-content-module.scss */
 .associates-section h4, .associates-section h5 {
   margin: 0;
   padding: 0;
 }
-/* line 619, sass/page-post-templates/_flexible-content-module.scss */
+/* line 623, sass/page-post-templates/_flexible-content-module.scss */
 .associates-section h4 {
   margin-top: 1em;
   color: #3b3d40;
@@ -2084,29 +2087,29 @@ lt-gray-green-btns
   text-transform: uppercase;
   letter-spacing: 1.6px;
 }
-/* line 627, sass/page-post-templates/_flexible-content-module.scss */
+/* line 631, sass/page-post-templates/_flexible-content-module.scss */
 .associates-section .h5 {
   color: #656b6f;
 }
-/* line 631, sass/page-post-templates/_flexible-content-module.scss */
+/* line 635, sass/page-post-templates/_flexible-content-module.scss */
 .associates-section .associate-block {
   padding-top: 2em;
   padding-bottom: 2em;
   transition: box-shadow .25s ease-out;
 }
-/* line 636, sass/page-post-templates/_flexible-content-module.scss */
+/* line 640, sass/page-post-templates/_flexible-content-module.scss */
 .associates-section .associate-block:hover {
   box-shadow: 0 0 7px rgba(0, 0, 0, 0.35);
   color: #656b6f;
 }
 @media screen and (min-width: 750px) {
-  /* line 644, sass/page-post-templates/_flexible-content-module.scss */
+  /* line 648, sass/page-post-templates/_flexible-content-module.scss */
   .associates-section .flex-wrapper {
     display: flex;
     justify-content: space-around;
     align-content: center;
   }
-  /* line 649, sass/page-post-templates/_flexible-content-module.scss */
+  /* line 653, sass/page-post-templates/_flexible-content-module.scss */
   .associates-section .associate-block {
     flex: 1 0 calc(100% / 3);
   }
@@ -2307,16 +2310,16 @@ lt-gray-green-btns
 }
 @media screen and (min-width: 950px) {
   /* line 44, sass/page-post-templates/_blog-posts.scss */
-  .blog .wrapper, .blog .home .home-header-wrapper, .home .blog .home-header-wrapper, .blog .simple-content-section .content-section-wrapper, .simple-content-section .blog .content-section-wrapper, .blog .testimonial-section .content-section-wrapper, .testimonial-section .blog .content-section-wrapper, .blog .post-template-default .site-content, .post-template-default .blog .site-content {
+  .blog .wrapper, .blog .home .home-header-wrapper, .home .blog .home-header-wrapper, .blog .simple-content-section .content-section-wrapper, .simple-content-section .blog .content-section-wrapper, .blog .color-callout-section .green-brain-left .background-image .content-section-wrapper, .color-callout-section .green-brain-left .background-image .blog .content-section-wrapper, .blog .testimonial-section .content-section-wrapper, .testimonial-section .blog .content-section-wrapper, .blog .post-template-default .site-content, .post-template-default .blog .site-content {
     display: flex;
   }
   /* line 47, sass/page-post-templates/_blog-posts.scss */
-  .blog .wrapper #primary, .blog .home .home-header-wrapper #primary, .home .blog .home-header-wrapper #primary, .blog .simple-content-section .content-section-wrapper #primary, .simple-content-section .blog .content-section-wrapper #primary, .blog .testimonial-section .content-section-wrapper #primary, .testimonial-section .blog .content-section-wrapper #primary, .blog .post-template-default .site-content #primary, .post-template-default .blog .site-content #primary {
+  .blog .wrapper #primary, .blog .home .home-header-wrapper #primary, .home .blog .home-header-wrapper #primary, .blog .simple-content-section .content-section-wrapper #primary, .simple-content-section .blog .content-section-wrapper #primary, .blog .color-callout-section .green-brain-left .background-image .content-section-wrapper #primary, .color-callout-section .green-brain-left .background-image .blog .content-section-wrapper #primary, .blog .testimonial-section .content-section-wrapper #primary, .testimonial-section .blog .content-section-wrapper #primary, .blog .post-template-default .site-content #primary, .post-template-default .blog .site-content #primary {
     flex: 2;
     order: 2;
   }
   /* line 53, sass/page-post-templates/_blog-posts.scss */
-  .blog .wrapper #secondary, .blog .home .home-header-wrapper #secondary, .home .blog .home-header-wrapper #secondary, .blog .simple-content-section .content-section-wrapper #secondary, .simple-content-section .blog .content-section-wrapper #secondary, .blog .testimonial-section .content-section-wrapper #secondary, .testimonial-section .blog .content-section-wrapper #secondary, .blog .post-template-default .site-content #secondary, .post-template-default .blog .site-content #secondary {
+  .blog .wrapper #secondary, .blog .home .home-header-wrapper #secondary, .home .blog .home-header-wrapper #secondary, .blog .simple-content-section .content-section-wrapper #secondary, .simple-content-section .blog .content-section-wrapper #secondary, .blog .color-callout-section .green-brain-left .background-image .content-section-wrapper #secondary, .color-callout-section .green-brain-left .background-image .blog .content-section-wrapper #secondary, .blog .testimonial-section .content-section-wrapper #secondary, .testimonial-section .blog .content-section-wrapper #secondary, .blog .post-template-default .site-content #secondary, .post-template-default .blog .site-content #secondary {
     flex: 1;
     order: 1;
     display: block;

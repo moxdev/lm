@@ -288,52 +288,21 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/imgs\/big-brain.svg": {
+	"\/imgs\/brains\/large-green-brain.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/imgs\/big-brain.svg",
+		"oAP": "\/imgs\/brains\/large-green-brain.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/imgs\/blog-background-img.svg": {
+	"\/imgs\/brains\/small-white-brain.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/imgs\/blog-background-img.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/imgs\/brain-logo.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/imgs\/brain-logo.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/imgs\/brain.png": {
-		"ft": 32768,
-		"iS": 1943,
-		"oA": 0,
-		"oAP": "\/imgs\/brain.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/imgs\/brains.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/imgs\/brains.svg",
+		"oAP": "\/imgs\/brains\/small-white-brain.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -349,17 +318,11 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/imgs\/ImageComps.pdf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/imgs\/ImageComps.pdf",
-		"oF": 0
-		},
-	"\/imgs\/Layer 3.svg": {
+	"\/imgs\/large-green-brain.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/imgs\/Layer 3.svg",
+		"oAP": "\/imgs\/large-green-brain.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -375,16 +338,6 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/imgs\/Logo copy.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/imgs\/Logo copy.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
 	"\/imgs\/logo-nav.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -395,22 +348,131 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/imgs\/new-logo.png": {
+	"\/imgs\/old\/big-brain.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/imgs\/old\/big-brain.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/imgs\/old\/blog-background-img.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/imgs\/old\/blog-background-img.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/imgs\/old\/brain-logo.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/imgs\/old\/brain-logo.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/imgs\/old\/brain.png": {
 		"ft": 32768,
-		"iS": 4738,
+		"iS": 1943,
 		"oA": 0,
-		"oAP": "\/imgs\/new-logo.png",
+		"oAP": "\/imgs\/old\/brain.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"\/imgs\/opti-brain.svg": {
+	"\/imgs\/old\/brains.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/imgs\/opti-brain.svg",
+		"oAP": "\/imgs\/old\/brains.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/imgs\/old\/ImageComps.pdf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/imgs\/old\/ImageComps.pdf",
+		"oF": 0
+		},
+	"\/imgs\/old\/Layer 3.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/imgs\/old\/Layer 3.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/imgs\/old\/Logo copy.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/imgs\/old\/Logo copy.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/imgs\/old\/new-logo.png": {
+		"ft": 32768,
+		"iS": 4738,
+		"oA": 0,
+		"oAP": "\/imgs\/old\/new-logo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/imgs\/old\/opti-brain.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/imgs\/old\/opti-brain.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/imgs\/old\/small-white-brain.png": {
+		"ft": 32768,
+		"iS": 7307,
+		"oA": 0,
+		"oAP": "\/imgs\/old\/small-white-brain.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/imgs\/old\/test.png": {
+		"ft": 32768,
+		"iS": 7744,
+		"oA": 0,
+		"oAP": "\/imgs\/old\/test.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/imgs\/old\/test.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/imgs\/old\/test.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -426,33 +488,11 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/imgs\/small-white-brain.png": {
-		"ft": 32768,
-		"iS": 7307,
-		"oA": 0,
-		"oAP": "\/imgs\/small-white-brain.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/imgs\/test.png": {
-		"ft": 32768,
-		"iS": 7744,
-		"oA": 0,
-		"oAP": "\/imgs\/test.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/imgs\/test.svg": {
+	"\/imgs\/small-white-brain.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/imgs\/test.svg",
+		"oAP": "\/imgs\/small-white-brain.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -767,258 +807,6 @@
 		"oAP": "\/rtl-min.css",
 		"oF": 0,
 		"oS": 0
-		},
-	"\/sass\/.sass-cache\/0094c59289b823a84395b28faf559c41dc1615c7\/_normalize.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/0094c59289b823a84395b28faf559c41dc1615c7\/_normalize.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/0094c59289b823a84395b28faf559c41dc1615c7\/style.scssc": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/sass\/.sass-cache\/0094c59289b823a84395b28faf559c41dc1615c7\/style.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/1fb591e83e4bb44cb7440cf3c088ca6f359a276b\/_links.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/1fb591e83e4bb44cb7440cf3c088ca6f359a276b\/_links.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/1fb591e83e4bb44cb7440cf3c088ca6f359a276b\/_masthead.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/1fb591e83e4bb44cb7440cf3c088ca6f359a276b\/_masthead.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/1fb591e83e4bb44cb7440cf3c088ca6f359a276b\/_menus.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/1fb591e83e4bb44cb7440cf3c088ca6f359a276b\/_menus.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/1fb591e83e4bb44cb7440cf3c088ca6f359a276b\/_navigation.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/1fb591e83e4bb44cb7440cf3c088ca6f359a276b\/_navigation.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/40a8e930d2c467943f757add12871257b4a85fef\/_breakpoints.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/40a8e930d2c467943f757add12871257b4a85fef\/_breakpoints.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/40a8e930d2c467943f757add12871257b4a85fef\/_colors.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/40a8e930d2c467943f757add12871257b4a85fef\/_colors.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/40a8e930d2c467943f757add12871257b4a85fef\/_structure.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/40a8e930d2c467943f757add12871257b4a85fef\/_structure.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/40a8e930d2c467943f757add12871257b4a85fef\/_typography.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/40a8e930d2c467943f757add12871257b4a85fef\/_typography.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/40a8e930d2c467943f757add12871257b4a85fef\/_variables-site.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/40a8e930d2c467943f757add12871257b4a85fef\/_variables-site.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/47d882ed8f04d917519d134b7609410d3ac89368\/_widgets.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/47d882ed8f04d917519d134b7609410d3ac89368\/_widgets.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/497d0b49e077bac08088facd43b48b7422404df3\/_buttons.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/497d0b49e077bac08088facd43b48b7422404df3\/_buttons.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/497d0b49e077bac08088facd43b48b7422404df3\/_fields.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/497d0b49e077bac08088facd43b48b7422404df3\/_fields.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/497d0b49e077bac08088facd43b48b7422404df3\/_forms.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/497d0b49e077bac08088facd43b48b7422404df3\/_forms.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/4fca3ddc257755ae347d250166bfdafd71264618\/_elements.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/4fca3ddc257755ae347d250166bfdafd71264618\/_elements.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/4fca3ddc257755ae347d250166bfdafd71264618\/_lists.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/4fca3ddc257755ae347d250166bfdafd71264618\/_lists.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/4fca3ddc257755ae347d250166bfdafd71264618\/_tables.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/4fca3ddc257755ae347d250166bfdafd71264618\/_tables.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/574975726577ece36e05e2729d148415a8b8f2ba\/_site.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/574975726577ece36e05e2729d148415a8b8f2ba\/_site.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/574975726577ece36e05e2729d148415a8b8f2ba\/_structure.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/574975726577ece36e05e2729d148415a8b8f2ba\/_structure.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/963225be365b5650b71b47e79072a91ff250af16\/_accessibility.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/963225be365b5650b71b47e79072a91ff250af16\/_accessibility.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/963225be365b5650b71b47e79072a91ff250af16\/_alignments.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/963225be365b5650b71b47e79072a91ff250af16\/_alignments.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/963225be365b5650b71b47e79072a91ff250af16\/_clearings.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/963225be365b5650b71b47e79072a91ff250af16\/_clearings.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/963225be365b5650b71b47e79072a91ff250af16\/_flickity.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/963225be365b5650b71b47e79072a91ff250af16\/_flickity.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/963225be365b5650b71b47e79072a91ff250af16\/_infinite-scroll.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/963225be365b5650b71b47e79072a91ff250af16\/_infinite-scroll.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/97798e29640eff8bd8889f9d3a3c4ed3e162f440\/_footer.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/97798e29640eff8bd8889f9d3a3c4ed3e162f440\/_footer.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/c06abfa7dd22345aeb970d7af91a7d7077203b5d\/_mixins-master.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/c06abfa7dd22345aeb970d7af91a7d7077203b5d\/_mixins-master.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/d5df55472ff2a571d44c0ae85a2b00f1c5a5d7dd\/_captions.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/d5df55472ff2a571d44c0ae85a2b00f1c5a5d7dd\/_captions.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/d5df55472ff2a571d44c0ae85a2b00f1c5a5d7dd\/_galleries.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/d5df55472ff2a571d44c0ae85a2b00f1c5a5d7dd\/_galleries.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/d5df55472ff2a571d44c0ae85a2b00f1c5a5d7dd\/_media.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/d5df55472ff2a571d44c0ae85a2b00f1c5a5d7dd\/_media.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/e3d13e55e8ddc5318bbbfb7171153050459940df\/_copy.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/e3d13e55e8ddc5318bbbfb7171153050459940df\/_copy.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/e3d13e55e8ddc5318bbbfb7171153050459940df\/_headings.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/e3d13e55e8ddc5318bbbfb7171153050459940df\/_headings.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/e3d13e55e8ddc5318bbbfb7171153050459940df\/_typography.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/e3d13e55e8ddc5318bbbfb7171153050459940df\/_typography.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/ef8cb757c84d7f9aa2f548478132cba68362dcf7\/_blog-posts.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/ef8cb757c84d7f9aa2f548478132cba68362dcf7\/_blog-posts.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/ef8cb757c84d7f9aa2f548478132cba68362dcf7\/_contact-page.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/ef8cb757c84d7f9aa2f548478132cba68362dcf7\/_contact-page.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/ef8cb757c84d7f9aa2f548478132cba68362dcf7\/_executive-coaching-page.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/ef8cb757c84d7f9aa2f548478132cba68362dcf7\/_executive-coaching-page.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/ef8cb757c84d7f9aa2f548478132cba68362dcf7\/_flexible-content-module.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/ef8cb757c84d7f9aa2f548478132cba68362dcf7\/_flexible-content-module.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/ef8cb757c84d7f9aa2f548478132cba68362dcf7\/_front-page.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/ef8cb757c84d7f9aa2f548478132cba68362dcf7\/_front-page.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/ef8cb757c84d7f9aa2f548478132cba68362dcf7\/_page-post-templates.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/ef8cb757c84d7f9aa2f548478132cba68362dcf7\/_page-post-templates.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/ef8cb757c84d7f9aa2f548478132cba68362dcf7\/_sidebar-widget.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/ef8cb757c84d7f9aa2f548478132cba68362dcf7\/_sidebar-widget.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/fb66b6af827c8779282a5c03df85df7dcc656a5a\/_comments.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/fb66b6af827c8779282a5c03df85df7dcc656a5a\/_comments.scssc",
-		"oF": 0
-		},
-	"\/sass\/.sass-cache\/fb66b6af827c8779282a5c03df85df7dcc656a5a\/_posts-and-pages.scssc": {
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/sass\/.sass-cache\/fb66b6af827c8779282a5c03df85df7dcc656a5a\/_posts-and-pages.scssc",
-		"oF": 0
 		},
 	"\/sass\/_normalize.scss": {
 		"aP": 0,
