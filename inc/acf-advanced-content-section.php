@@ -31,7 +31,7 @@ function leading_minds_advanced_content_section() {
                     <?php
 
                     if ($img) { ?>
-                        <img class="header-img" src="<?php echo $img['sizes']['advanced-content-module-header-image']; ?>" alt="<?php echo $img['alt']; ?>" description="<?php echo $img['description']; ?>">
+                        <img class="header-img" src="<?php echo $img['url']; ?>" alt="<?php echo $img['alt']; ?>" description="<?php echo $img['description']; ?>">
                     <?php }
 
                     // Header
@@ -217,9 +217,9 @@ function leading_minds_advanced_content_section() {
 
                                         ?>
 
-                                        <div class="img-flex-wrapper">
+                                        <div class="img-wrapper">
 
-                                            <img src="<?php echo $img['sizes']['advanced-content-module-footer-image']; ?>" alt="<?php echo $img['alt']; ?>" description="<?php echo $img['description']; ?>">
+                                            <img src="<?php echo $img['url']; ?>" alt="<?php echo $img['alt']; ?>" description="<?php echo $img['description']; ?>">
 
                                         </div>
 
@@ -232,7 +232,9 @@ function leading_minds_advanced_content_section() {
 
                                         ?>
 
-                                        <a href="<?php echo esc_url( $url ); ?>"><button><?php echo esc_html( $text ); ?></button></a>
+                                        <div class="btn-wrapper">
+                                            <a href="<?php echo esc_url( $url ); ?>"><button class="green-btn"><?php echo esc_html( $text ); ?></button></a>
+                                        </div>
 
                                         <?php
 
@@ -243,7 +245,9 @@ function leading_minds_advanced_content_section() {
 
                                         ?>
 
-                                        <a href="tel:<?php echo esc_html( $phone ); ?>"><button><?php echo esc_html( $text ); ?></button></a>
+                                        <div class="btn-wrapper">
+                                            <a href="tel:<?php echo esc_html( $phone ); ?>"><button class="green-btn"><?php echo esc_html( $text ); ?></button></a>
+                                        </div>
 
                                         <?php
 
@@ -254,7 +258,9 @@ function leading_minds_advanced_content_section() {
 
                                         ?>
 
-                                        <a href="mailto:<?php echo esc_html( $email ); ?>"><button><?php echo esc_html( $text ); ?></button></a>
+                                        <div class="btn-wrapper">
+                                            <a href="mailto:<?php echo esc_html( $email ); ?>"><button class="green-btn"><?php echo esc_html( $text ); ?></button></a>
+                                        </div>
 
                                         <?php
 

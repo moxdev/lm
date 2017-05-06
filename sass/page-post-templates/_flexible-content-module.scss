@@ -77,19 +77,48 @@
     h2, h3 {
 
         text-align: center;
-        line-height: 1.5;
+        line-height: 1.4;
+    }
+
+    h2 {
+        font-size: 2.1em;
+        margin-bottom: 0;
+    }
+
+    h3 {
+        font-size: 1.3em;
+        max-width: 400px;
+        @include margin-auto;
     }
 
     .skills-wrapper {
         display: block;
+        font-size: 1.067em;
         text-align: center;
         font-family: $font__alt-bold;
         color: $color__dark-gray;
         letter-spacing: 0.8px;
         text-transform: uppercase;
 
+        @include respond-to(small) {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
         .skill {
-            margin: 1em 0;
+            margin: .5em 0;
+
+            @include respond-to(small) {
+                padding-top: .5em;
+                padding-bottom: .5em;
+                flex: 0 1 calc(100% / 3);
+            }
+
+            @include respond-to(large) {
+                padding-top: 1em;
+                padding-bottom: 1em;
+            }
         }
     }
 
@@ -107,29 +136,20 @@
         max-width: 800px;
         margin-left: auto;
         margin-right: auto;
-        display: flex;
-        flex-direction: column;
         text-align: center;
+        padding-top: 1em;
 
-        a {
-            flex: 1;
-            text-decoration: none;
-            margin: 1.5em 0;
-
-            button {
-                // width: 190px;
-                // height: 45px;
-            }
+        .btn-wrapper {
+            margin: 1em 0;
         }
 
-        img {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
+        .img-wrapper {
+            margin: 1em 0;
         }
 
-        @include respond-to(medium) {
-            // flex-direction: row;
+        @include respond-to(small) {
+            display: flex;
+            justify-content: space-around;
         }
     }
 

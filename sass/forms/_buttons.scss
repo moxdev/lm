@@ -13,6 +13,7 @@ input[type="submit"] {
 	letter-spacing: .125em;
 	padding: 1em 3.5em;
 	transition:background-color .25s, box-shadow .25s;
+	@include font-smooth;
 
 
 	&:hover {
@@ -29,5 +30,11 @@ input[type="submit"] {
 .green-btn {
 	background-color: $color__btn-green;
 	color: #fff;
-	text-shadow: 1px 1px 1px rgba(0,0,0,0.55555);
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+	transition:background-color .50s;
+
+	&:hover {
+		background-color: lighten($color__btn-green, 20%);
+		// color: darken(#e8e8e8, 20%);
+	}
 }
