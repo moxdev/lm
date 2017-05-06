@@ -25,3 +25,9 @@ input[type="submit"] {
 
 	}
 }
+
+.green-btn {
+	background-color: $color__btn-green;
+	color: #fff;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.55555);
+}

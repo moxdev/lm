@@ -1,3 +1,11 @@
+# Breakpoint
+    'mobile'  : 400px,
+    'x-small' : 575px,
+    'small' : 750px,
+    'medium': 950px,
+    'large' : 1200px,
+    'x-large' : 1500px
+
 # Colors
 $color__purple: #282560;
 $color__green: #24cf5f;

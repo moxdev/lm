@@ -31,7 +31,7 @@ module.exports = {
     ],
     "watchOptions": {},
     "server": false,
-    "proxy": 'http://localhost:8888/leading-minds/',
+    "proxy": 'http://leading-minds.dev/',
     "port": 3000,
     "middleware": false,
     "serveStatic": [],

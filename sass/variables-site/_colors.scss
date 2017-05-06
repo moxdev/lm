@@ -38,8 +38,11 @@ $color__link: royalblue;
 $color__link-visited: purple;
 $color__link-hover: midnightblue;
 
-$color__background-button: $color__green;
-$color__button: #fff;
+$color__btn-green: $color__green;
+$color__btn-orange: $color__orange;
+
+$color__background-button: #fff;
+$color__button: #000;
 
 $color__border-button-hover: #ccc #bbb #aaa;
 $color__border-button-focus: #aaa #bbb #bbb;

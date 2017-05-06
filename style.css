@@ -550,8 +550,8 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  background: #24cf5f;
-  color: #fff;
+  background: #fff;
+  color: #000;
   font-family: "SourceSansPro-Black", sans-serif;
   text-transform: uppercase;
   -webkit-appearance: none;
@@ -567,7 +567,14 @@ button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-  background-color: #47df7b;
+  background-color: white;
+}
+
+/* line 29, sass/forms/_buttons.scss */
+.green-btn {
+  background-color: #24cf5f;
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.55555);
 }
 
 /* line 1, sass/forms/_fields.scss */
@@ -1493,16 +1500,17 @@ object {
 /*--------------------------------------------------------------
 ## Static Front Page
 --------------------------------------------------------------*/
-/* line 4, sass/page-post-templates/_front-page.scss */
+/* line 3, sass/page-post-templates/_front-page.scss */
 .home .home-feature-img {
   min-height: 200px;
+  height: auto;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   overflow: hidden;
   position: relative;
 }
-/* line 13, sass/page-post-templates/_front-page.scss */
+/* line 12, sass/page-post-templates/_front-page.scss */
 .home .home-feature-img:after {
   content: '';
   position: absolute;
@@ -1514,8 +1522,9 @@ object {
   opacity: .5;
   z-index: 1;
 }
-/* line 26, sass/page-post-templates/_front-page.scss */
+/* line 25, sass/page-post-templates/_front-page.scss */
 .home .home-header-wrapper {
+  max-width: 600px;
   text-align: center;
   padding-top: 3em;
   padding-bottom: 6em;
@@ -1525,17 +1534,20 @@ object {
 /* line 34, sass/page-post-templates/_front-page.scss */
 .home .home-header-wrapper iframe {
   border: 10px solid #2e71f2;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
 }
-@media only screen and (max-width: 400px) {
-  /* line 39, sass/page-post-templates/_front-page.scss */
+@media only screen and (max-width: 600px) {
+  /* line 42, sass/page-post-templates/_front-page.scss */
   .home .home-header-wrapper .home-header-video-wrapper {
     position: relative;
-    padding-bottom: 56.25%;
+    padding-bottom: 50.25%;
     /* 16:9 */
     padding-top: 25px;
     height: 0;
   }
-  /* line 45, sass/page-post-templates/_front-page.scss */
+  /* line 48, sass/page-post-templates/_front-page.scss */
   .home .home-header-wrapper .home-header-video-wrapper iframe {
     position: absolute;
     top: 0;
@@ -1544,24 +1556,31 @@ object {
     height: 100%;
   }
 }
-/* line 56, sass/page-post-templates/_front-page.scss */
+/* line 59, sass/page-post-templates/_front-page.scss */
 .home .home-title {
+  font-size: 3.2em;
   letter-spacing: 1.3px;
   line-height: 1.1;
-  font-size: 2.7rem;
+  text-shadow: 0px 3px 4.83px rgba(0, 0, 0, 0.75);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
-/* line 62, sass/page-post-templates/_front-page.scss */
+/* line 68, sass/page-post-templates/_front-page.scss */
 .home .home-header-content {
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 1.3rem;
+  color: #fff;
+  font-size: 1.3em;
   line-height: 26px;
   letter-spacing: 1px;
   text-shadow: 0px 3px 4.83px rgba(0, 0, 0, 0.75);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
-/* line 72, sass/page-post-templates/_front-page.scss */
+/* line 80, sass/page-post-templates/_front-page.scss */
 .home .home-header-button-wrapper a {
   text-decoration: none;
   letter-spacing: 1.3px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /*--------------------------------------------------------------

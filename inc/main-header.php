@@ -19,12 +19,12 @@ function leading_minds_custom_header() {
 
 			    <?php if(function_exists('get_field')) {
 
-			        $on_page_title = get_field('on_page_title');
-			        $video_url = get_field('video_link');
-			        $content = get_field('home_header_content_editor');
-			        $add_btn = get_field('home_add_button_link');
-			        $btn = get_field('home_click_through_button');
-			        $btn_text = get_field('home_button_text');
+					$on_page_title = get_field('on_page_title');
+					$video_url     = get_field('video_link');
+					$content       = get_field('home_header_content_editor');
+					$add_btn       = get_field('home_add_button_link');
+					$btn           = get_field('home_click_through_button');
+					$btn_text      = get_field('home_button_text');
 
 			        ?>
 
@@ -37,7 +37,7 @@ function leading_minds_custom_header() {
 			                <figure>
 			                    <div class="home-header-video-wrapper">
 
-			                        <iframe width="504" height="283" src="<?php echo esc_url( $video_url ); ?>" frameborder="0" allowfullscreen></iframe>
+			                        <iframe width="400" height="225" src="<?php echo esc_url( $video_url ); ?>" frameborder="0" allowfullscreen></iframe>
 
 			                    </div>
 			                </figure>
@@ -76,7 +76,7 @@ function leading_minds_custom_header() {
 			            if( $add_btn ) { ?>
 
 			                <div class="home-header-button-wrapper">
-			                    <a href="<?php echo esc_url( $btn ); ?>"><button><?php echo esc_html( $btn_text ); ?></button></a>
+			                    <a href="<?php echo esc_url( $btn ); ?>"><button class="green-btn"><?php echo esc_html( $btn_text ); ?></button></a>
 			                </div><!-- .home-button-wrapper -->
 
 			            <?php }

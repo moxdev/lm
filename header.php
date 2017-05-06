@@ -27,7 +27,7 @@
 		<div class="header-wrapper">
 			<div class="site-branding">
 
-				<a class="logo" href="#"><?php echo file_get_contents('http://leading-minds.dev/wp-content/themes/leading_minds/imgs/logo-nav.svg'); ?></a>
+				<a class="logo" href="<?php echo home_url(); ?>"><?php echo file_get_contents('http://leading-minds.dev/wp-content/themes/leading_minds/imgs/logo-nav.svg'); ?></a>
 
 				<!-- <a class="header-logo" href="#"><img src="http://localhost:8888/leading-minds/wp-content/themes/leading_minds/imgs/new-logo.png"></a> -->
 
