@@ -812,6 +812,12 @@
 		"oAP": "\/LICENSE",
 		"oF": 0
 		},
+	"\/page-associates.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/page-associates.php",
+		"oF": 0
+		},
 	"\/page-contact.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -1386,6 +1392,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/sass\/navigation\/_navigation.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/sass\/page-post-templates\/_associates-page.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/page-post-templates\/_associates-page.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

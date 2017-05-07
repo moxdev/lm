@@ -124,13 +124,6 @@
 
     .split-column-wrapper {
 
-        .column-wrapper {
-
-            p {
-                // margin: 0;
-            }
-        }
-
         @include respond-to(small) {
             display: flex;
             justify-content: space-around;
@@ -713,6 +706,11 @@ lt-gray-green-btns
     .content-section-wrapper {
         @include container;
         text-align: center;
+
+        p {
+            max-width: 600px;
+            @include margin-auto;
+        }
     }
 
     a {
@@ -724,6 +722,10 @@ lt-gray-green-btns
     img {
         @include center-block;
         border-radius: 50%;
+    }
+
+    h2 {
+        font-size: 2.1em;
     }
 
     h4, h5 {
