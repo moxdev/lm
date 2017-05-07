@@ -127,7 +127,37 @@
         .column-wrapper {
 
             p {
-                margin: 0;
+                // margin: 0;
+            }
+        }
+
+        @include respond-to(small) {
+            display: flex;
+            justify-content: space-around;
+
+            .left-column {
+                padding: 1em;
+                flex: 1 1 calc(100% / 2);
+            }
+
+            .right-column {
+                padding: 1em;
+                flex: 1 1 calc(100% / 2);
+            }
+        }
+
+        @include respond-to(large) {
+
+            .left-column {
+                max-width: 475px;
+                padding-left: 0;
+                padding-right: 0;
+            }
+
+            .right-column {
+                max-width: 475px;
+                padding-left: 0;
+                padding-right: 0;
             }
         }
     }

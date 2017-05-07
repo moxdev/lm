@@ -1,5 +1,9 @@
 p {
 	margin-bottom: 1em;
+
+	@include respond-to(medium) {
+	    margin-bottom: 1.5em;
+	}
 }
 
 dfn, cite, em, i {
