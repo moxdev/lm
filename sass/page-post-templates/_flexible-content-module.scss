@@ -163,12 +163,11 @@
     background-color: $color__orange;
 
     .content-section-wrapper {
-        @include container;
+        // @include container;
 
         .margin-wrapper {
             display: flex;
             flex-direction: column;
-            margin-right: -1px;
         }
 
         .nav-container {
@@ -184,6 +183,7 @@
                 text-align: center;
                 color: #fff;
                 padding: 2em;
+                @include font-smooth;
             }
 
             h3 {
@@ -200,6 +200,7 @@
                 text-transform: uppercase;
                 color: #fff;
                 letter-spacing: .8px;
+                text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
             }
         }
 
@@ -216,6 +217,24 @@
                 flex: 1 1 50%;
                 display: flex;
 
+                .nav-wrapper {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+
+        @include respond-to(small) {
+            .margin-wrapper {
+                flex-wrap: nowrap;
+                margin-bottom: 0;
+            }
+
+            .nav-container {
+                flex: 1 1 calc(100% / 4);
 
                 .nav-wrapper {
                     width: 100%;
@@ -224,20 +243,7 @@
                     justify-content: center;
                     align-items: center;
                 }
-
-                .nav-content {
-
-                }
-
-                h3 {
-
-                }
-
-                a {
-
-                }
             }
-
         }
     }
 }
@@ -581,15 +587,12 @@ lt-gray-green-btns
     }
 
     .testimonial-carousel {
-        // padding-left: 1.5em;
-        // padding-right: 1.5em;
         color: #fff;
         text-align: left;
-        max-width: 800px;
+        max-width: 1000px;
         @include margin-auto;
         padding-left: 20px;
         padding-right: 20px;
-
 
         blockquote {
             @include reset;
@@ -598,7 +601,7 @@ lt-gray-green-btns
         }
 
         .cell {
-            width: 100%; /* full width */
+            width: 100%;
             height: auto;
             margin-left: 10px;
 
@@ -661,6 +664,11 @@ lt-gray-green-btns
             .flickity-prev-next-button.next {
                 right: -25px;
             }
+        }
+
+        @include respond-to(medium) {
+            padding-left: 150px;
+            padding-right: 150px;
         }
     }
 }
