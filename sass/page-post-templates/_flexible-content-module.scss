@@ -550,44 +550,65 @@ lt-gray-green-btns
 
 .testimonial-section {
     background-color: $color__purple;
-    // min-height: 200px;
+    min-height: 200px;
 
     .content-section-wrapper {
         @extend .wrapper;
         padding-top: 2em;
-        padding-bottom: 1em;
+        padding-bottom: 3em;
+        @include font-smooth;
+
+        @include respond-to(small) {
+            padding-bottom: 4em;
+        }
     }
 
     .microphone-section {
         padding-top: 2em;
         padding-bottom: 2em;
         text-align: center;
+        font-size: 1.1em;
+
 
         h5 {
             text-transform: uppercase;
             margin-top: 1em;
             margin-bottom: .5em;
             color: #fff;
+            letter-spacing: 1.2px;
+            font-family: $font__alt-bold;
         }
     }
 
     .testimonial-carousel {
-        padding-left: 1.5em;
-        padding-right: 1.5em;
+        // padding-left: 1.5em;
+        // padding-right: 1.5em;
+        color: #fff;
+        text-align: left;
+        max-width: 800px;
+        @include margin-auto;
+        padding-left: 20px;
+        padding-right: 20px;
+
 
         blockquote {
             @include reset;
             letter-spacing: .7px;
+            font-size: 1.2em;
         }
 
         .cell {
             width: 100%; /* full width */
-            height: auto; /* height of carousel */
-            color: #fff;
+            height: auto;
+            margin-left: 10px;
 
             h4 {
                 @include reset;
                 color: #fff;
+                margin-top: .5em;
+                font-size: 1.1em;
+                font-family: $font__alt-bold;
+                letter-spacing: 1.2px;
             }
 
             h5 {
@@ -603,6 +624,7 @@ lt-gray-green-btns
             width: 13px;
             height: 24px;
             background: transparent;
+            overflow: hidden;
         }
         .flickity-prev-next-button:hover {
             background: transparent;
@@ -622,6 +644,23 @@ lt-gray-green-btns
         .flickity-prev-next-button.next {
             top: 30%;
             right: -50px;
+        }
+
+        @include respond-to(x-small) {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+
+        @include respond-to(small) {
+            padding-left: 75px;
+            padding-right: 75px;
+
+            .flickity-prev-next-button.previous {
+                left: -25px;
+            }
+            .flickity-prev-next-button.next {
+                right: -25px;
+            }
         }
     }
 }

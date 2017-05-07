@@ -26,11 +26,11 @@ function leading_minds_testimonial_section() {
                 if ($add_testimonial) {
                     // WP_Query arguments
                     $args = array(
-                        'post_type'              => array( 'testimonials' ),
-                        'post_status'            => array( 'publish' ),
-                        'nopaging'               => true,
-                        'order'                  => 'DESC',
-                        'orderby'                => 'date',
+                        'post_type'   => array( 'testimonials' ),
+                        'post_status' => array( 'publish' ),
+                        'nopaging'    => true,
+                        'order'       => 'DESC',
+                        'orderby'     => 'date',
                     );
                     // The Query
                     $testimonials = new WP_Query( $args );
@@ -42,7 +42,7 @@ function leading_minds_testimonial_section() {
 
                         <?php while ( $testimonials->have_posts() ) {
                             $testimonials->the_post();
-                            $job_title = get_field( 'persons_title' );
+                            $job_title = get_field( 'job_title', $post->ID );
                             ?>
 
                             <div class="cell">

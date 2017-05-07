@@ -367,7 +367,7 @@ h3 {
   margin-top: .5em;
 }
 
-/* line 25, sass/typography/_headings.scss */
+/* line 29, sass/typography/_headings.scss */
 h1.section-title {
   text-align: center;
   letter-spacing: 1.6px;
@@ -433,9 +433,10 @@ big {
 /* line 1, sass/elements/_elements.scss */
 html {
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
-/* line 5, sass/elements/_elements.scss */
+/* line 6, sass/elements/_elements.scss */
 *,
 *:before,
 *:after {
@@ -443,18 +444,18 @@ html {
   box-sizing: inherit;
 }
 
-/* line 11, sass/elements/_elements.scss */
+/* line 12, sass/elements/_elements.scss */
 body {
   background: #fff;
   /* Fallback for when there is no custom background color defined. */
 }
 
-/* line 15, sass/elements/_elements.scss */
+/* line 17, sass/elements/_elements.scss */
 blockquote {
   quotes: "“" "”" "‘" "’";
 }
 
-/* line 19, sass/elements/_elements.scss */
+/* line 21, sass/elements/_elements.scss */
 blockquote:before,
 blockquote:after {
   color: #24cf5f;
@@ -463,24 +464,24 @@ blockquote:after {
   vertical-align: -0.2em;
 }
 
-/* line 27, sass/elements/_elements.scss */
+/* line 29, sass/elements/_elements.scss */
 blockquote:before {
   content: open-quote;
   margin-right: 0.25em;
 }
 
-/* line 32, sass/elements/_elements.scss */
+/* line 34, sass/elements/_elements.scss */
 blockquote:after {
   content: close-quote;
   margin-left: 0.25em;
 }
 
-/* line 36, sass/elements/_elements.scss */
+/* line 38, sass/elements/_elements.scss */
 blockquote p {
   display: inline;
 }
 
-/* line 40, sass/elements/_elements.scss */
+/* line 42, sass/elements/_elements.scss */
 hr {
   background-color: #ccc;
   border: 0;
@@ -522,7 +523,7 @@ dd {
   margin: 0 1.5em 1.5em;
 }
 
-/* line 49, sass/elements/_elements.scss */
+/* line 51, sass/elements/_elements.scss */
 img {
   height: auto;
   /* Make sure images are scaled correctly. */
@@ -530,7 +531,7 @@ img {
   /* Adhere to container width. */
 }
 
-/* line 54, sass/elements/_elements.scss */
+/* line 56, sass/elements/_elements.scss */
 figure {
   margin: 1em 0;
   /* Extra wide images within figure tags don't overflow the content area. */
@@ -2056,120 +2057,165 @@ lt-gray-green-btns
 /* line 551, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section {
   background-color: #282560;
+  min-height: 200px;
 }
 /* line 555, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .content-section-wrapper {
   padding-top: 2em;
-  padding-bottom: 1em;
+  padding-bottom: 3em;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
-/* line 561, sass/page-post-templates/_flexible-content-module.scss */
+@media screen and (min-width: 750px) {
+  /* line 555, sass/page-post-templates/_flexible-content-module.scss */
+  .testimonial-section .content-section-wrapper {
+    padding-bottom: 4em;
+  }
+}
+/* line 566, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .microphone-section {
   padding-top: 2em;
   padding-bottom: 2em;
   text-align: center;
+  font-size: 1.1em;
 }
-/* line 566, sass/page-post-templates/_flexible-content-module.scss */
+/* line 573, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .microphone-section h5 {
   text-transform: uppercase;
   margin-top: 1em;
   margin-bottom: .5em;
   color: #fff;
+  letter-spacing: 1.2px;
+  font-family: "SourceSansPro-Bold", sans-serif;
 }
-/* line 574, sass/page-post-templates/_flexible-content-module.scss */
+/* line 583, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .testimonial-carousel {
-  padding-left: 1.5em;
-  padding-right: 1.5em;
+  color: #fff;
+  text-align: left;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
   /* big buttons, no circle */
   /* arrow color */
 }
-/* line 578, sass/page-post-templates/_flexible-content-module.scss */
+/* line 594, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .testimonial-carousel blockquote {
   margin: 0;
   padding: 0;
   letter-spacing: .7px;
+  font-size: 1.2em;
 }
-/* line 583, sass/page-post-templates/_flexible-content-module.scss */
+/* line 600, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .testimonial-carousel .cell {
   width: 100%;
   /* full width */
   height: auto;
-  /* height of carousel */
-  color: #fff;
+  margin-left: 10px;
 }
-/* line 588, sass/page-post-templates/_flexible-content-module.scss */
+/* line 605, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .testimonial-carousel .cell h4 {
   margin: 0;
   padding: 0;
   color: #fff;
+  margin-top: .5em;
+  font-size: 1.1em;
+  font-family: "SourceSansPro-Bold", sans-serif;
+  letter-spacing: 1.2px;
 }
-/* line 593, sass/page-post-templates/_flexible-content-module.scss */
+/* line 614, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .testimonial-carousel .cell h5 {
   margin: 0;
   padding: 0;
   color: #fff;
 }
-/* line 602, sass/page-post-templates/_flexible-content-module.scss */
+/* line 623, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .testimonial-carousel .flickity-prev-next-button {
   width: 13px;
   height: 24px;
   background: transparent;
+  overflow: hidden;
 }
-/* line 607, sass/page-post-templates/_flexible-content-module.scss */
+/* line 629, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .testimonial-carousel .flickity-prev-next-button:hover {
   background: transparent;
 }
-/* line 611, sass/page-post-templates/_flexible-content-module.scss */
+/* line 633, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .testimonial-carousel .flickity-prev-next-button .arrow {
   fill: white;
 }
-/* line 614, sass/page-post-templates/_flexible-content-module.scss */
+/* line 636, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .testimonial-carousel .flickity-prev-next-button.no-svg {
   color: white;
 }
-/* line 618, sass/page-post-templates/_flexible-content-module.scss */
+/* line 640, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .testimonial-carousel .flickity-prev-next-button.previous {
   top: 30%;
   left: -50px;
 }
-/* line 622, sass/page-post-templates/_flexible-content-module.scss */
+/* line 644, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .testimonial-carousel .flickity-prev-next-button.next {
   top: 30%;
   right: -50px;
+}
+@media screen and (min-width: 575px) {
+  /* line 583, sass/page-post-templates/_flexible-content-module.scss */
+  .testimonial-section .testimonial-carousel {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+@media screen and (min-width: 750px) {
+  /* line 583, sass/page-post-templates/_flexible-content-module.scss */
+  .testimonial-section .testimonial-carousel {
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+  /* line 658, sass/page-post-templates/_flexible-content-module.scss */
+  .testimonial-section .testimonial-carousel .flickity-prev-next-button.previous {
+    left: -25px;
+  }
+  /* line 661, sass/page-post-templates/_flexible-content-module.scss */
+  .testimonial-section .testimonial-carousel .flickity-prev-next-button.next {
+    right: -25px;
+  }
 }
 
 /*--------------------------------------------------------------
 ### Associates Section
 --------------------------------------------------------------*/
-/* line 633, sass/page-post-templates/_flexible-content-module.scss */
+/* line 672, sass/page-post-templates/_flexible-content-module.scss */
 .associates-section {
   padding-top: 3em;
   padding-bottom: 3em;
 }
-/* line 636, sass/page-post-templates/_flexible-content-module.scss */
+/* line 675, sass/page-post-templates/_flexible-content-module.scss */
 .associates-section .content-section-wrapper {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
 }
-/* line 641, sass/page-post-templates/_flexible-content-module.scss */
+/* line 680, sass/page-post-templates/_flexible-content-module.scss */
 .associates-section a {
   text-decoration: none;
   color: #656b6f;
 }
-/* line 647, sass/page-post-templates/_flexible-content-module.scss */
+/* line 686, sass/page-post-templates/_flexible-content-module.scss */
 .associates-section img {
   display: block;
   margin-left: auto;
   margin-right: auto;
   border-radius: 50%;
 }
-/* line 652, sass/page-post-templates/_flexible-content-module.scss */
+/* line 691, sass/page-post-templates/_flexible-content-module.scss */
 .associates-section h4, .associates-section h5 {
   margin: 0;
   padding: 0;
 }
-/* line 656, sass/page-post-templates/_flexible-content-module.scss */
+/* line 695, sass/page-post-templates/_flexible-content-module.scss */
 .associates-section h4 {
   margin-top: 1em;
   color: #3b3d40;
@@ -2177,29 +2223,29 @@ lt-gray-green-btns
   text-transform: uppercase;
   letter-spacing: 1.6px;
 }
-/* line 664, sass/page-post-templates/_flexible-content-module.scss */
+/* line 703, sass/page-post-templates/_flexible-content-module.scss */
 .associates-section .h5 {
   color: #656b6f;
 }
-/* line 668, sass/page-post-templates/_flexible-content-module.scss */
+/* line 707, sass/page-post-templates/_flexible-content-module.scss */
 .associates-section .associate-block {
   padding-top: 2em;
   padding-bottom: 2em;
   transition: box-shadow .25s ease-out;
 }
-/* line 673, sass/page-post-templates/_flexible-content-module.scss */
+/* line 712, sass/page-post-templates/_flexible-content-module.scss */
 .associates-section .associate-block:hover {
   box-shadow: 0 0 7px rgba(0, 0, 0, 0.35);
   color: #656b6f;
 }
 @media screen and (min-width: 750px) {
-  /* line 681, sass/page-post-templates/_flexible-content-module.scss */
+  /* line 720, sass/page-post-templates/_flexible-content-module.scss */
   .associates-section .flex-wrapper {
     display: flex;
     justify-content: space-around;
     align-content: center;
   }
-  /* line 686, sass/page-post-templates/_flexible-content-module.scss */
+  /* line 725, sass/page-post-templates/_flexible-content-module.scss */
   .associates-section .associate-block {
     flex: 1 0 calc(100% / 3);
   }
