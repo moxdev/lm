@@ -14,6 +14,10 @@
                 text-decoration: none;
                 color: inherit;
             }
+
+            @include respond-to(small) {
+
+            }
         }
 
         .social-wrapper {
@@ -34,6 +38,10 @@
                     width: 55px;
                 }
             }
+
+            @include respond-to(small) {
+
+            }
         }
 
         .privacy-wrapper {
@@ -43,6 +51,41 @@
                 color: inherit;
                 text-decoration: none;
             }
+
+            @include respond-to(small) {
+
+            }
+        }
+
+        @include respond-to(small) {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+
+            .flex-wrapper {
+                flex: 1;
+                text-align: left;
+
+                .contact-wrapper {
+                    display: flex;
+                    margin-bottom: .5em;
+
+                    .link-wrapper {
+                        padding-left: 2em;
+                    }
+                }
+
+                .social-wrapper {
+                    padding-left: 6em;
+                }
+            }
+
+            .privacy-wrapper {
+                flex: 1;
+                text-align: right;
+                margin-top: 0;
+            }
+
         }
 
     }

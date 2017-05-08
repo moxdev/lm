@@ -8,19 +8,27 @@
 // bg-green : Green
 
 .simple-content-section {
-    // // min-height: 400px;
-    // background-repeat: no-repeat;
-    // vertical-align: middle;
-    // background-size: 30%; // change responsive sizes
-    // background-position: 20% 50%; // change responsive sizes
 
-    h2 {
-        text-align: center;
+    img {
+        margin-top: 1em;
+        margin-bottom: 1em;
     }
 
     .content-section-wrapper {
         @extend .wrapper;
         @include section-padding;
+        @include font-smooth;
+        letter-spacing: .6px;
+
+        h2 {
+            text-align: center;
+            font-size: 2.1em;
+        }
+
+        p {
+            max-width: 600px;
+            @include margin-auto;
+        }
     }
 
     .bg-white {
@@ -28,21 +36,21 @@
         color: $color__text-main;
     }
 
-
     .bg-ltgray {
 
     }
 
     .bg-purple {
         background-color: $color__bg-purple;
-        color: rgba(255, 255, 255, 0.8);
+        color: #fff;
 
         h2 {
             color: #fff;
+            text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
         }
 
         p {
-            letter-spacing: .6px;
+            text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
         }
 
     }

@@ -17,40 +17,48 @@
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
 
-            <div class="contact-wrapper">
+            <div class="flex-wrapper">
 
-                <?php if ( function_exists( 'get_field' ) ) {
+                <div class="contact-wrapper">
 
-                    $phone = get_field( 'phone', 'option' );
-                    $email = get_field( 'email', 'option' );
+                    <?php if ( function_exists( 'get_field' ) ) {
 
-                    ?>
+                        $phone = get_field( 'phone', 'option' );
+                        $email = get_field( 'email', 'option' );
 
-                    <?php echo file_get_contents("http://leading-minds.dev/wp-content/themes/leading_minds/imgs/footer-logo.svg"); ?>
+                        ?>
 
-                    <a class="contact-link" href="<?php echo esc_html( $phone ); ?>"><?php echo esc_html( $phone ); ?></a>
-                    <a class="contact-link" href="<?php echo esc_html( $email ); ?>"><?php echo esc_html( $email ); ?></a>
+                        <?php echo file_get_contents("http://leading-minds.dev/wp-content/themes/leading_minds/imgs/footer-logo.svg"); ?>
 
-                    <?php
-                } ?>
+                        <div class="link-wrapper">
+                            <a class="contact-link" href="tel:<?php echo esc_html( $phone ); ?>"><?php echo esc_html( $phone ); ?></a>
+                            <a class="contact-link" href="mailto:<?php echo esc_html( $email ); ?>"><?php echo esc_html( $email ); ?></a>
 
-            </div><!-- contact-wrapper -->
-            <div class="social-wrapper">
+                        </div>
 
-                <a class="twitter" href="#"><?php echo file_get_contents('http://leading-minds.dev/wp-content/themes/leading_minds/imgs/twitter-logo.svg'); ?></a>
+                        <?php
+                    } ?>
 
-                <a class="linkedin" href="#"><?php echo file_get_contents('http://leading-minds.dev/wp-content/themes/leading_minds/imgs/linkedin-logo.svg'); ?></a>
+                </div><!-- contact-wrapper -->
+                <div class="social-wrapper">
 
-                <a class="bbb" href="#"><?php echo file_get_contents('http://leading-minds.dev/wp-content/themes/leading_minds/imgs/bbb-logo.svg'); ?></a>
+                    <a class="twitter" href="#"><?php echo file_get_contents('http://leading-minds.dev/wp-content/themes/leading_minds/imgs/twitter-logo.svg'); ?></a>
 
-                <a class="pcc" href="#"><?php echo file_get_contents('http://leading-minds.dev/wp-content/themes/leading_minds/imgs/pcc-logo.svg'); ?></a>
+                    <a class="linkedin" href="#"><?php echo file_get_contents('http://leading-minds.dev/wp-content/themes/leading_minds/imgs/linkedin-logo.svg'); ?></a>
+
+                    <a class="bbb" href="#"><?php echo file_get_contents('http://leading-minds.dev/wp-content/themes/leading_minds/imgs/bbb-logo.svg'); ?></a>
+
+                    <a class="pcc" href="#"><?php echo file_get_contents('http://leading-minds.dev/wp-content/themes/leading_minds/imgs/pcc-logo.svg'); ?></a>
+
+                </div>
 
             </div>
+
             <div class="privacy-wrapper">
 
-                <!-- <a href="<?php //echo //esc_url( get_page_link( get_page_by_title( 'Terms and Conditions' ) ) ); ?>">Terms and Conditions</a> -->
+                <a href="<?php echo esc_url( get_page_link( get_page_by_title( 'Terms and Conditions' ) ) ); ?>">Terms and Conditions</a>
 
-                <!-- <a href="<?php //echo ///esc_url( get_page_link( get_page_by_title( 'Privacy Policy' ) ) ); ?>">Privacy Policy</a> -->
+                <a href="<?php echo esc_url( get_page_link( get_page_by_title( 'Privacy Policy' ) ) ); ?>">Privacy Policy</a>
 
             </div>
 		</div><!-- .site-info -->
