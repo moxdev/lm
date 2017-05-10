@@ -12,4 +12,31 @@
         padding-bottom: 0;
         text-align: center;
     }
+
+    #associates-page {
+
+        .content-wrapper {
+            @include section-padding;
+            @extend .wrapper;
+
+            .about-section {
+                img {
+                    @include center-block;
+                }
+
+            }
+
+            .callout-section {
+                background-color: $color__green;
+                padding-top: 3em;
+                padding-bottom: 3em;
+                color: #fff;
+
+            }
+
+            .gallery-section {
+
+            }
+        }
+    }
 }

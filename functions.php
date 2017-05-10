@@ -43,6 +43,8 @@ function leading_minds_setup() {
 	add_theme_support( 'post-thumbnails' );
     // add_image_size( 'advanced-content-module-header-image', 150, 99999, false );
     add_image_size( 'advanced-content-module-footer-image', 130, 99999, false );
+    add_image_size( 'associates-page-headshot', 250, 250, true );
+    add_image_size( 'associates-page-gallery-image', 250, 250, true );
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
@@ -312,6 +314,11 @@ require get_template_directory() . '/inc/contact-page-content.php';
  * Displays flexible content.
  */
 require get_template_directory() . '/inc/flexible-content-module.php';
+
+/**
+ * Displays associate page content.
+ */
+require get_template_directory() . '/inc/associates-page-content.php';
 
 /**
  * Section Modules.

@@ -594,6 +594,12 @@
 		"oAP": "\/inc\/acf-testimonial-section.php",
 		"oF": 0
 		},
+	"\/inc\/associates-page-content.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/inc\/associates-page-content.php",
+		"oF": 0
+		},
 	"\/inc\/contact-page-content.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -1024,6 +1030,12 @@
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/sass\/.sass-cache\/d49011a5dde27958caa2f78570c8f9b5c160e9b5\/_media.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/d5714df7c7c94776afdd8ac17e403f4d03e76a05\/_associates-page.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/d5714df7c7c94776afdd8ac17e403f4d03e76a05\/_associates-page.scssc",
 		"oF": 0
 		},
 	"\/sass\/.sass-cache\/d5714df7c7c94776afdd8ac17e403f4d03e76a05\/_blog-posts.scssc": {

@@ -23,8 +23,8 @@ get_header();
                         } ?>
             </header><!-- .entry-header -->
 
-                <?php if ( function_exists( 'leading_minds_flexible_content_module' ) ) {
-                    leading_minds_flexible_content_module();
+                <?php if ( function_exists( 'leading_minds_associates_page_content' ) ) {
+                    leading_minds_associates_page_content();
                 } ?>
 
         </main><!-- #main -->
