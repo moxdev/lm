@@ -16,10 +16,13 @@
     #associates-page {
 
         .content-wrapper {
-            @include section-padding;
-            @extend .wrapper;
+            padding-top: 2em;
 
             .about-section {
+                @extend .wrapper;
+                max-width: 600px;
+                @include margin-auto;
+
                 img {
                     @include center-block;
                 }
@@ -28,14 +31,41 @@
 
             .callout-section {
                 background-color: $color__green;
+                background-image:url(http://leading-minds.dev/wp-content/themes/leading_minds/imgs/brains/colored-section-white-brain.svg);
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: 50%;
                 padding-top: 3em;
                 padding-bottom: 3em;
                 color: #fff;
+                @include padding-left-right;
 
             }
 
             .gallery-section {
+                // @extend .wrapper;
 
+                img {
+                    // @include center-block;
+                }
+
+                .gallery-wrapper {
+
+                    @include respond-to(small) {
+                        display: flex;
+                        flex-wrap: nowrap;
+                        align-items: center;
+
+                        .flex-image-wrapper {
+                            flex: 1 1 calc(100% / 4);
+
+                            img {
+                                width: 100%;
+                                display: block;
+                            }
+                        }
+                    }
+                }
             }
         }
     }

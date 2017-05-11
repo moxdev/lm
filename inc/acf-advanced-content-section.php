@@ -214,12 +214,18 @@ function leading_minds_advanced_content_section() {
                                     elseif( get_row_layout() == 'image' ):
 
                                         $img = get_sub_field('image');
+                                        $title = get_sub_field('title');
+                                        $sub = get_sub_field('sub_title');
 
                                         ?>
 
                                         <div class="img-wrapper">
 
                                             <img src="<?php echo $img['url']; ?>" alt="<?php echo $img['alt']; ?>" description="<?php echo $img['description']; ?>">
+                                            <div class="img-title">
+                                                <?php echo esc_html( $title ); ?>
+                                                <?php echo $sub; ?>
+                                            </div>
 
                                         </div>
 

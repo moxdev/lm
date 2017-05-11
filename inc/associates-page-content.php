@@ -40,7 +40,9 @@ function leading_minds_associates_page_content() {
 
                             if( !empty($image) ) : ?>
 
-                                <img src="<?php echo $image['sizes']['associates-page-gallery-image']; ?>" alt="<?php echo $image['alt']; ?>" description="<?php echo $image['description']; ?>">
+                                <div class="flex-image-wrapper">
+                                    <img src="<?php echo $image['sizes']['associates-page-gallery-image']; ?>" alt="<?php echo $image['alt']; ?>" description="<?php echo $image['description']; ?>">
+                                </div>
 
                             <?php endif; ?>
 

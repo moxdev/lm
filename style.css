@@ -1233,7 +1233,7 @@ http://flickity.metafizzy.co
 # Content
 --------------------------------------------------------------*/
 /* line 1, sass/site/_site.scss */
-.wrapper, .home .home-header-wrapper, .simple-content-section .content-section-wrapper, .color-callout-section .green-brain-left .background-image .content-section-wrapper, .color-callout-section .lt-gray-brain-left .background-image .content-section-wrapper, .color-callout-section .lt-gray-green-btns .background-image .content-section-wrapper, .testimonial-section .content-section-wrapper, .page-template-page-associates #associates-page .content-wrapper, .post-template-default .site-content {
+.wrapper, .home .home-header-wrapper, .simple-content-section .content-section-wrapper, .color-callout-section .green-brain-left .background-image .content-section-wrapper, .color-callout-section .lt-gray-brain-left .background-image .content-section-wrapper, .color-callout-section .lt-gray-green-btns .background-image .content-section-wrapper, .testimonial-section .content-section-wrapper, .page-template-page-associates #associates-page .content-wrapper .about-section, .post-template-default .site-content {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -1242,7 +1242,7 @@ http://flickity.metafizzy.co
 }
 @media screen and (min-width: 750px) {
   /* line 1, sass/site/_site.scss */
-  .wrapper, .home .home-header-wrapper, .simple-content-section .content-section-wrapper, .color-callout-section .green-brain-left .background-image .content-section-wrapper, .color-callout-section .lt-gray-brain-left .background-image .content-section-wrapper, .color-callout-section .lt-gray-green-btns .background-image .content-section-wrapper, .testimonial-section .content-section-wrapper, .page-template-page-associates #associates-page .content-wrapper, .post-template-default .site-content {
+  .wrapper, .home .home-header-wrapper, .simple-content-section .content-section-wrapper, .color-callout-section .green-brain-left .background-image .content-section-wrapper, .color-callout-section .lt-gray-brain-left .background-image .content-section-wrapper, .color-callout-section .lt-gray-green-btns .background-image .content-section-wrapper, .testimonial-section .content-section-wrapper, .page-template-page-associates #associates-page .content-wrapper .about-section, .post-template-default .site-content {
     padding-left: 2.75rem;
     padding-right: 2.75rem;
   }
@@ -2053,7 +2053,7 @@ lt-gray-green-btns
 .color-callout-section .green-brain-center .background-image {
   padding: 0;
   background-repeat: no-repeat;
-  background-image: url(http://localhost:8888/leading-minds/wp-content/themes/leading_minds/imgs/brains.svg);
+  background-image: url(http://leading-minds.dev/wp-content/themes/leading_minds/imgs/brains.svg);
   background-size: 40%;
   background-position: 50%;
 }
@@ -2080,7 +2080,7 @@ lt-gray-green-btns
 .color-callout-section .lt-gray-brain-center .background-image {
   padding: 0;
   background-repeat: no-repeat;
-  background-image: url(http://localhost:8888/leading-minds/wp-content/themes/leading_minds/imgs/brains.svg);
+  background-image: url(http://leading-minds.dev/wp-content/themes/leading_minds/imgs/brains.svg);
   background-size: 40%;
   background-position: 50%;
 }
@@ -2542,21 +2542,56 @@ lt-gray-green-btns
 }
 /* line 18, sass/page-post-templates/_associates-page.scss */
 .page-template-page-associates #associates-page .content-wrapper {
-  padding-top: 3em;
-  padding-bottom: 3em;
+  padding-top: 2em;
 }
-/* line 23, sass/page-post-templates/_associates-page.scss */
+/* line 21, sass/page-post-templates/_associates-page.scss */
+.page-template-page-associates #associates-page .content-wrapper .about-section {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 26, sass/page-post-templates/_associates-page.scss */
 .page-template-page-associates #associates-page .content-wrapper .about-section img {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 29, sass/page-post-templates/_associates-page.scss */
+/* line 32, sass/page-post-templates/_associates-page.scss */
 .page-template-page-associates #associates-page .content-wrapper .callout-section {
   background-color: #24cf5f;
+  background-image: url(http://leading-minds.dev/wp-content/themes/leading_minds/imgs/brains/colored-section-white-brain.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50%;
   padding-top: 3em;
   padding-bottom: 3em;
   color: #fff;
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}
+@media screen and (min-width: 750px) {
+  /* line 32, sass/page-post-templates/_associates-page.scss */
+  .page-template-page-associates #associates-page .content-wrapper .callout-section {
+    padding-left: 2.75rem;
+    padding-right: 2.75rem;
+  }
+}
+@media screen and (min-width: 750px) {
+  /* line 52, sass/page-post-templates/_associates-page.scss */
+  .page-template-page-associates #associates-page .content-wrapper .gallery-section .gallery-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  /* line 59, sass/page-post-templates/_associates-page.scss */
+  .page-template-page-associates #associates-page .content-wrapper .gallery-section .gallery-wrapper .flex-image-wrapper {
+    flex: 1 1 calc(100% / 4);
+  }
+  /* line 62, sass/page-post-templates/_associates-page.scss */
+  .page-template-page-associates #associates-page .content-wrapper .gallery-section .gallery-wrapper .flex-image-wrapper img {
+    width: 100%;
+    display: block;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -2612,16 +2647,16 @@ lt-gray-green-btns
 }
 @media screen and (min-width: 950px) {
   /* line 44, sass/page-post-templates/_blog-posts.scss */
-  .blog .wrapper, .blog .home .home-header-wrapper, .home .blog .home-header-wrapper, .blog .simple-content-section .content-section-wrapper, .simple-content-section .blog .content-section-wrapper, .blog .color-callout-section .green-brain-left .background-image .content-section-wrapper, .color-callout-section .green-brain-left .background-image .blog .content-section-wrapper, .blog .color-callout-section .lt-gray-brain-left .background-image .content-section-wrapper, .color-callout-section .lt-gray-brain-left .background-image .blog .content-section-wrapper, .blog .color-callout-section .lt-gray-green-btns .background-image .content-section-wrapper, .color-callout-section .lt-gray-green-btns .background-image .blog .content-section-wrapper, .blog .testimonial-section .content-section-wrapper, .testimonial-section .blog .content-section-wrapper, .blog .page-template-page-associates #associates-page .content-wrapper, .page-template-page-associates #associates-page .blog .content-wrapper, .blog .post-template-default .site-content, .post-template-default .blog .site-content {
+  .blog .wrapper, .blog .home .home-header-wrapper, .home .blog .home-header-wrapper, .blog .simple-content-section .content-section-wrapper, .simple-content-section .blog .content-section-wrapper, .blog .color-callout-section .green-brain-left .background-image .content-section-wrapper, .color-callout-section .green-brain-left .background-image .blog .content-section-wrapper, .blog .color-callout-section .lt-gray-brain-left .background-image .content-section-wrapper, .color-callout-section .lt-gray-brain-left .background-image .blog .content-section-wrapper, .blog .color-callout-section .lt-gray-green-btns .background-image .content-section-wrapper, .color-callout-section .lt-gray-green-btns .background-image .blog .content-section-wrapper, .blog .testimonial-section .content-section-wrapper, .testimonial-section .blog .content-section-wrapper, .blog .page-template-page-associates #associates-page .content-wrapper .about-section, .page-template-page-associates #associates-page .content-wrapper .blog .about-section, .blog .post-template-default .site-content, .post-template-default .blog .site-content {
     display: flex;
   }
   /* line 47, sass/page-post-templates/_blog-posts.scss */
-  .blog .wrapper #primary, .blog .home .home-header-wrapper #primary, .home .blog .home-header-wrapper #primary, .blog .simple-content-section .content-section-wrapper #primary, .simple-content-section .blog .content-section-wrapper #primary, .blog .color-callout-section .green-brain-left .background-image .content-section-wrapper #primary, .color-callout-section .green-brain-left .background-image .blog .content-section-wrapper #primary, .blog .color-callout-section .lt-gray-brain-left .background-image .content-section-wrapper #primary, .color-callout-section .lt-gray-brain-left .background-image .blog .content-section-wrapper #primary, .blog .color-callout-section .lt-gray-green-btns .background-image .content-section-wrapper #primary, .color-callout-section .lt-gray-green-btns .background-image .blog .content-section-wrapper #primary, .blog .testimonial-section .content-section-wrapper #primary, .testimonial-section .blog .content-section-wrapper #primary, .blog .page-template-page-associates #associates-page .content-wrapper #primary, .page-template-page-associates #associates-page .blog .content-wrapper #primary, .blog .post-template-default .site-content #primary, .post-template-default .blog .site-content #primary {
+  .blog .wrapper #primary, .blog .home .home-header-wrapper #primary, .home .blog .home-header-wrapper #primary, .blog .simple-content-section .content-section-wrapper #primary, .simple-content-section .blog .content-section-wrapper #primary, .blog .color-callout-section .green-brain-left .background-image .content-section-wrapper #primary, .color-callout-section .green-brain-left .background-image .blog .content-section-wrapper #primary, .blog .color-callout-section .lt-gray-brain-left .background-image .content-section-wrapper #primary, .color-callout-section .lt-gray-brain-left .background-image .blog .content-section-wrapper #primary, .blog .color-callout-section .lt-gray-green-btns .background-image .content-section-wrapper #primary, .color-callout-section .lt-gray-green-btns .background-image .blog .content-section-wrapper #primary, .blog .testimonial-section .content-section-wrapper #primary, .testimonial-section .blog .content-section-wrapper #primary, .blog .page-template-page-associates #associates-page .content-wrapper .about-section #primary, .page-template-page-associates #associates-page .content-wrapper .blog .about-section #primary, .blog .post-template-default .site-content #primary, .post-template-default .blog .site-content #primary {
     flex: 2;
     order: 2;
   }
   /* line 53, sass/page-post-templates/_blog-posts.scss */
-  .blog .wrapper #secondary, .blog .home .home-header-wrapper #secondary, .home .blog .home-header-wrapper #secondary, .blog .simple-content-section .content-section-wrapper #secondary, .simple-content-section .blog .content-section-wrapper #secondary, .blog .color-callout-section .green-brain-left .background-image .content-section-wrapper #secondary, .color-callout-section .green-brain-left .background-image .blog .content-section-wrapper #secondary, .blog .color-callout-section .lt-gray-brain-left .background-image .content-section-wrapper #secondary, .color-callout-section .lt-gray-brain-left .background-image .blog .content-section-wrapper #secondary, .blog .color-callout-section .lt-gray-green-btns .background-image .content-section-wrapper #secondary, .color-callout-section .lt-gray-green-btns .background-image .blog .content-section-wrapper #secondary, .blog .testimonial-section .content-section-wrapper #secondary, .testimonial-section .blog .content-section-wrapper #secondary, .blog .page-template-page-associates #associates-page .content-wrapper #secondary, .page-template-page-associates #associates-page .blog .content-wrapper #secondary, .blog .post-template-default .site-content #secondary, .post-template-default .blog .site-content #secondary {
+  .blog .wrapper #secondary, .blog .home .home-header-wrapper #secondary, .home .blog .home-header-wrapper #secondary, .blog .simple-content-section .content-section-wrapper #secondary, .simple-content-section .blog .content-section-wrapper #secondary, .blog .color-callout-section .green-brain-left .background-image .content-section-wrapper #secondary, .color-callout-section .green-brain-left .background-image .blog .content-section-wrapper #secondary, .blog .color-callout-section .lt-gray-brain-left .background-image .content-section-wrapper #secondary, .color-callout-section .lt-gray-brain-left .background-image .blog .content-section-wrapper #secondary, .blog .color-callout-section .lt-gray-green-btns .background-image .content-section-wrapper #secondary, .color-callout-section .lt-gray-green-btns .background-image .blog .content-section-wrapper #secondary, .blog .testimonial-section .content-section-wrapper #secondary, .testimonial-section .blog .content-section-wrapper #secondary, .blog .page-template-page-associates #associates-page .content-wrapper .about-section #secondary, .page-template-page-associates #associates-page .content-wrapper .blog .about-section #secondary, .blog .post-template-default .site-content #secondary, .post-template-default .blog .site-content #secondary {
     flex: 1;
     order: 1;
     display: block;
