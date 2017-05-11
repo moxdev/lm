@@ -5,5 +5,7 @@
             "path": "."
         }
     ],
-    "color_variables_files": "/Users/mox/Sites/htdocs/leading-minds/wp-content/themes/leading_minds/sass/variables-site/_colors.scss"
+    "color_variables_files": "/Users/sbiggs/Documents/Projects/dev-site/sass/variables-site/_colors.scss"
+
+    // "color_variables_files": "/Users/mox/Sites/htdocs/leading-minds/wp-content/themes/leading_minds/sass/variables-site/_colors.scss"
 }
