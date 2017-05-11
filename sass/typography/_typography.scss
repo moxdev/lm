@@ -1,3 +1,15 @@
+html {
+    @include font-size(.9375);
+
+    @include respond-to(small) {
+        @include font-size(1);
+    }
+
+    @include respond-to(large) {
+        @include font-size(1.125);
+    }
+}
+
 body,
 button,
 input,
@@ -5,10 +17,14 @@ select,
 textarea {
 	color: $color__text-main;
 	font-family: $font__main;
-	@include font-size(1);
 	line-height: $font__line-height-body;
+
+    @include respond-to(large) {
+        line-height: $font__line-height-body * 1.0625;
+    }
 }
 
 @import "headings";
 
 @import "copy";
+

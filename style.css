@@ -329,6 +329,26 @@ th {
 # Typography
 --------------------------------------------------------------*/
 /* line 1, sass/typography/_typography.scss */
+html {
+  font-size: 15px;
+  font-size: 0.9375rem;
+}
+@media screen and (min-width: 750px) {
+  /* line 1, sass/typography/_typography.scss */
+  html {
+    font-size: 16px;
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 1, sass/typography/_typography.scss */
+  html {
+    font-size: 18px;
+    font-size: 1.125rem;
+  }
+}
+
+/* line 13, sass/typography/_typography.scss */
 body,
 button,
 input,
@@ -336,9 +356,17 @@ select,
 textarea {
   color: #656b6f;
   font-family: "ACaslonPro-Semibold", sans-serif;
-  font-size: 15px;
-  font-size: 0.9375rem;
   line-height: 1.5;
+}
+@media screen and (min-width: 1200px) {
+  /* line 13, sass/typography/_typography.scss */
+  body,
+  button,
+  input,
+  select,
+  textarea {
+    line-height: 1.59375;
+  }
 }
 
 /* line 1, sass/typography/_headings.scss */
@@ -407,8 +435,8 @@ address {
 pre {
   background: #eee;
   font-family: "ACaslonPro-Semibold", sans-serif;
-  font-size: 14.0625px;
-  font-size: 0.87890625rem;
+  font-size: 15px;
+  font-size: 0.9375rem;
   line-height: 1.6;
   margin-bottom: 1.6em;
   max-width: 100%;
@@ -419,8 +447,8 @@ pre {
 /* line 28, sass/typography/_copy.scss */
 code, kbd, tt, var {
   font-family: "SourceSansPro-Semibold", sans-serif;
-  font-size: 14.0625px;
-  font-size: 0.87890625rem;
+  font-size: 15px;
+  font-size: 0.9375rem;
 }
 
 /* line 33, sass/typography/_copy.scss */
@@ -697,15 +725,15 @@ textarea {
 --------------------------------------------------------------*/
 /* line 1, sass/navigation/_links.scss */
 a {
-  color: royalblue;
+  color: #282560;
 }
 /* line 4, sass/navigation/_links.scss */
 a:visited {
-  color: purple;
+  color: #111;
 }
 /* line 7, sass/navigation/_links.scss */
 a:hover, a:focus, a:active {
-  color: midnightblue;
+  color: #24cf5f;
 }
 /* line 12, sass/navigation/_links.scss */
 a:focus {
@@ -959,8 +987,8 @@ a:hover, a:active {
   clip: auto !important;
   color: #21759b;
   display: block;
-  font-size: 13.125px;
-  font-size: 0.8203125rem;
+  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: bold;
   height: auto;
   left: 5px;
@@ -1636,6 +1664,16 @@ object {
   letter-spacing: 1.3px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+@media screen and (min-width: 750px) {
+  /* line 89, sass/page-post-templates/_front-page.scss */
+  .home .home-header-wrapper {
+    max-width: 800px;
+  }
+  /* line 93, sass/page-post-templates/_front-page.scss */
+  .home .home-title {
+    margin-bottom: 0;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -2546,7 +2584,7 @@ lt-gray-green-btns
 }
 /* line 21, sass/page-post-templates/_associates-page.scss */
 .page-template-page-associates #associates-page .content-wrapper .about-section {
-  max-width: 600px;
+  max-width: 800px;
   margin-left: auto;
   margin-right: auto;
 }

@@ -85,4 +85,15 @@
         }
     }
 
+    @include respond-to(small) {
+        .home-header-wrapper {
+            max-width:800px;
+        }
+
+        .home-title {
+            margin-bottom: 0;
+        }
+
+    }
+
 }
