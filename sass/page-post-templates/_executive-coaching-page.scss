@@ -2,6 +2,10 @@
 
     .exec-img-brendel {
         margin-left: 0;
+
+        @include respond-to(small) {
+            width:150px;
+        }
     }
 
     .exec-img-pcc {

@@ -329,13 +329,16 @@ lt-gray-green-btns
         }
 
         .background-image {
+            max-width: 1400px;
+            @include margin-auto;
             padding:0;
             background-repeat: no-repeat;
             background-image:url(http://leading-minds.dev/wp-content/themes/leading_minds/imgs/brains/large-green-brain.svg);
             background-position: -250px 50%;
+            background-size: 500px;
 
             .content-section-wrapper {
-                @extend .wrapper;
+                @include padding-left-right;
                 @include section-padding;
                 color: $color__dark-gray;
                 @include font-smooth;
@@ -347,15 +350,34 @@ lt-gray-green-btns
             }
 
             @include respond-to(mobile) {
-                background-size: contain;
                 background-position: -200px 70%;
+                background-size: 450px;
             }
 
             @include respond-to(small) {
                 background-position: -20% 50%;
 
+                .content-section-wrapper {
+                    // padding-top: 1em;
+                    // padding-bottom: 1em;
+                }
+
                 .editor-wrapper {
+                    max-width: 700px;
                     margin-left: calc(50% - 100px);
+                }
+            }
+
+            @include respond-to(medium) {
+                background-position: 0 50%;
+            }
+
+            @include respond-to(large) {
+                // background-position: -10% 50%;
+                background-size: 600px;
+
+                .editor-wrapper {
+                    max-width: 600px;
                 }
             }
         }

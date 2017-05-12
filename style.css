@@ -1278,7 +1278,7 @@ http://flickity.metafizzy.co
 # Content
 --------------------------------------------------------------*/
 /* line 1, sass/site/_site.scss */
-.wrapper, .home .home-header-wrapper, .simple-content-section .content-section-wrapper, .color-callout-section .green-brain-left .background-image .content-section-wrapper, .color-callout-section .lt-gray-brain-left .background-image .content-section-wrapper, .color-callout-section .lt-gray-green-btns .background-image .content-section-wrapper, .testimonial-section .content-section-wrapper, .page-template-page-associates #associates-page .content-wrapper .about-section, .post-template-default .site-content {
+.wrapper, .home .home-header-wrapper, .simple-content-section .content-section-wrapper, .color-callout-section .lt-gray-brain-left .background-image .content-section-wrapper, .color-callout-section .lt-gray-green-btns .background-image .content-section-wrapper, .testimonial-section .content-section-wrapper, .page-template-page-associates #associates-page .content-wrapper .about-section, .post-template-default .site-content {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -1287,7 +1287,7 @@ http://flickity.metafizzy.co
 }
 @media screen and (min-width: 750px) {
   /* line 1, sass/site/_site.scss */
-  .wrapper, .home .home-header-wrapper, .simple-content-section .content-section-wrapper, .color-callout-section .green-brain-left .background-image .content-section-wrapper, .color-callout-section .lt-gray-brain-left .background-image .content-section-wrapper, .color-callout-section .lt-gray-green-btns .background-image .content-section-wrapper, .testimonial-section .content-section-wrapper, .page-template-page-associates #associates-page .content-wrapper .about-section, .post-template-default .site-content {
+  .wrapper, .home .home-header-wrapper, .simple-content-section .content-section-wrapper, .color-callout-section .lt-gray-brain-left .background-image .content-section-wrapper, .color-callout-section .lt-gray-green-btns .background-image .content-section-wrapper, .testimonial-section .content-section-wrapper, .page-template-page-associates #associates-page .content-wrapper .about-section, .post-template-default .site-content {
     padding-left: 2.75rem;
     padding-right: 2.75rem;
   }
@@ -1698,12 +1698,18 @@ object {
 .page-id-86 .exec-img-brendel {
   margin-left: 0;
 }
-/* line 7, sass/page-post-templates/_executive-coaching-page.scss */
+@media screen and (min-width: 750px) {
+  /* line 3, sass/page-post-templates/_executive-coaching-page.scss */
+  .page-id-86 .exec-img-brendel {
+    width: 150px;
+  }
+}
+/* line 11, sass/page-post-templates/_executive-coaching-page.scss */
 .page-id-86 .exec-img-pcc {
   padding: 1em;
   margin-right: 1.5;
 }
-/* line 15, sass/page-post-templates/_executive-coaching-page.scss */
+/* line 19, sass/page-post-templates/_executive-coaching-page.scss */
 .page-id-86 .advanced-content-section:first-child .content-footer-wrapper {
   display: flex;
   flex-direction: row;
@@ -1711,16 +1717,16 @@ object {
   justify-content: center;
   max-width: 400px;
 }
-/* line 24, sass/page-post-templates/_executive-coaching-page.scss */
+/* line 28, sass/page-post-templates/_executive-coaching-page.scss */
 .page-id-86 .advanced-content-section:first-child .content-footer-wrapper .img-flex-wrapper img {
   display: inline-flex;
   margin: 0;
 }
-/* line 29, sass/page-post-templates/_executive-coaching-page.scss */
+/* line 33, sass/page-post-templates/_executive-coaching-page.scss */
 .page-id-86 .advanced-content-section:first-child .content-footer-wrapper .img-flex-wrapper:first-child, .page-id-86 .advanced-content-section:first-child .content-footer-wrapper .img-flex-wrapper:nth-child(2) {
   flex: 0 0 50%;
 }
-/* line 34, sass/page-post-templates/_executive-coaching-page.scss */
+/* line 38, sass/page-post-templates/_executive-coaching-page.scss */
 .page-id-86 .advanced-content-section:first-child .content-footer-wrapper .img-flex-wrapper:nth-child(3) {
   flex: 0 0 100%;
   margin-top: 1em;
@@ -2031,13 +2037,19 @@ lt-gray-green-btns
 }
 /* line 331, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .green-brain-left .background-image {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0;
   background-repeat: no-repeat;
   background-image: url(http://leading-minds.dev/wp-content/themes/leading_minds/imgs/brains/large-green-brain.svg);
   background-position: -250px 50%;
+  background-size: 500px;
 }
-/* line 337, sass/page-post-templates/_flexible-content-module.scss */
+/* line 340, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .green-brain-left .background-image .content-section-wrapper {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
   padding-top: 3em;
   padding-bottom: 3em;
   color: #3b3d40;
@@ -2045,15 +2057,22 @@ lt-gray-green-btns
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* line 344, sass/page-post-templates/_flexible-content-module.scss */
+@media screen and (min-width: 750px) {
+  /* line 340, sass/page-post-templates/_flexible-content-module.scss */
+  .color-callout-section .green-brain-left .background-image .content-section-wrapper {
+    padding-left: 2.75rem;
+    padding-right: 2.75rem;
+  }
+}
+/* line 347, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .green-brain-left .background-image .content-section-wrapper h2 {
   color: #fff;
 }
 @media screen and (min-width: 400px) {
   /* line 331, sass/page-post-templates/_flexible-content-module.scss */
   .color-callout-section .green-brain-left .background-image {
-    background-size: contain;
     background-position: -200px 70%;
+    background-size: 450px;
   }
 }
 @media screen and (min-width: 750px) {
@@ -2061,58 +2080,75 @@ lt-gray-green-btns
   .color-callout-section .green-brain-left .background-image {
     background-position: -20% 50%;
   }
-  /* line 357, sass/page-post-templates/_flexible-content-module.scss */
+  /* line 365, sass/page-post-templates/_flexible-content-module.scss */
   .color-callout-section .green-brain-left .background-image .editor-wrapper {
+    max-width: 700px;
     margin-left: calc(50% - 100px);
   }
 }
-/* line 364, sass/page-post-templates/_flexible-content-module.scss */
+@media screen and (min-width: 950px) {
+  /* line 331, sass/page-post-templates/_flexible-content-module.scss */
+  .color-callout-section .green-brain-left .background-image {
+    background-position: 0 50%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 331, sass/page-post-templates/_flexible-content-module.scss */
+  .color-callout-section .green-brain-left .background-image {
+    background-size: 600px;
+  }
+  /* line 379, sass/page-post-templates/_flexible-content-module.scss */
+  .color-callout-section .green-brain-left .background-image .editor-wrapper {
+    max-width: 600px;
+  }
+}
+/* line 386, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .lt-gray-brain-left {
   background-color: #e8e8e8;
 }
-/* line 367, sass/page-post-templates/_flexible-content-module.scss */
+/* line 389, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .lt-gray-brain-left .color-callout-img {
   display: none;
 }
-/* line 371, sass/page-post-templates/_flexible-content-module.scss */
+/* line 393, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .lt-gray-brain-left .background-image {
   padding: 0;
   background-repeat: no-repeat;
   background-image: url(http://leading-minds.dev/wp-content/themes/leading_minds/imgs/brains/large-green-brain.svg);
   background-position: -250px 80%;
 }
-/* line 378, sass/page-post-templates/_flexible-content-module.scss */
+/* line 400, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .lt-gray-brain-left .background-image .content-section-wrapper {
   padding-top: 3em;
   padding-bottom: 3em;
 }
 @media screen and (min-width: 400px) {
-  /* line 371, sass/page-post-templates/_flexible-content-module.scss */
+  /* line 393, sass/page-post-templates/_flexible-content-module.scss */
   .color-callout-section .lt-gray-brain-left .background-image {
     background-size: contain;
     background-position: -200px 70%;
   }
 }
 @media screen and (min-width: 750px) {
-  /* line 371, sass/page-post-templates/_flexible-content-module.scss */
+  /* line 393, sass/page-post-templates/_flexible-content-module.scss */
   .color-callout-section .lt-gray-brain-left .background-image {
     background-position: -20% 50%;
   }
-  /* line 391, sass/page-post-templates/_flexible-content-module.scss */
+  /* line 413, sass/page-post-templates/_flexible-content-module.scss */
   .color-callout-section .lt-gray-brain-left .background-image .editor-wrapper {
     margin-left: calc(50% - 100px);
   }
 }
-/* line 398, sass/page-post-templates/_flexible-content-module.scss */
+/* line 420, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .green-brain-center {
   background-color: #24cf5f;
   text-align: center;
 }
-/* line 402, sass/page-post-templates/_flexible-content-module.scss */
+/* line 424, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .green-brain-center .color-callout-img {
   display: none;
 }
-/* line 406, sass/page-post-templates/_flexible-content-module.scss */
+/* line 428, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .green-brain-center .background-image {
   padding: 0;
   background-repeat: no-repeat;
@@ -2120,26 +2156,26 @@ lt-gray-green-btns
   background-size: 40%;
   background-position: 50%;
 }
-/* line 413, sass/page-post-templates/_flexible-content-module.scss */
+/* line 435, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .green-brain-center .background-image .content-section-wrapper {
   padding-top: 3em;
   padding-bottom: 3em;
   background-color: rgba(36, 207, 95, 0.7);
 }
-/* line 418, sass/page-post-templates/_flexible-content-module.scss */
+/* line 440, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .green-brain-center .background-image h2 {
   color: #fff;
 }
-/* line 424, sass/page-post-templates/_flexible-content-module.scss */
+/* line 446, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .lt-gray-brain-center {
   background-color: #e8e8e8;
   text-align: center;
 }
-/* line 428, sass/page-post-templates/_flexible-content-module.scss */
+/* line 450, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .lt-gray-brain-center .color-callout-img {
   display: none;
 }
-/* line 432, sass/page-post-templates/_flexible-content-module.scss */
+/* line 454, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .lt-gray-brain-center .background-image {
   padding: 0;
   background-repeat: no-repeat;
@@ -2147,62 +2183,62 @@ lt-gray-green-btns
   background-size: 40%;
   background-position: 50%;
 }
-/* line 439, sass/page-post-templates/_flexible-content-module.scss */
+/* line 461, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .lt-gray-brain-center .background-image .content-section-wrapper {
   padding-top: 3em;
   padding-bottom: 3em;
   background-color: rgba(232, 232, 232, 0.7);
 }
-/* line 444, sass/page-post-templates/_flexible-content-module.scss */
+/* line 466, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .lt-gray-brain-center .background-image h2 {
   color: #fff;
 }
-/* line 450, sass/page-post-templates/_flexible-content-module.scss */
+/* line 472, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .green-img-left {
   background-color: #24cf5f;
 }
-/* line 454, sass/page-post-templates/_flexible-content-module.scss */
+/* line 476, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .green-img-left h2 {
   color: #fff;
 }
-/* line 458, sass/page-post-templates/_flexible-content-module.scss */
+/* line 480, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .green-img-left .content-section-wrapper {
   padding-top: 3em;
   padding-bottom: 3em;
   color: #fff;
   letter-spacing: .7px;
 }
-/* line 464, sass/page-post-templates/_flexible-content-module.scss */
+/* line 486, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .green-img-left .content-section-wrapper .color-callout-img {
   display: block;
   margin-bottom: 2em;
   text-align: center;
 }
 @media screen and (min-width: 750px) {
-  /* line 476, sass/page-post-templates/_flexible-content-module.scss */
+  /* line 498, sass/page-post-templates/_flexible-content-module.scss */
   .color-callout-section .green-img-left .content-section-wrapper {
     display: flex;
   }
-  /* line 479, sass/page-post-templates/_flexible-content-module.scss */
+  /* line 501, sass/page-post-templates/_flexible-content-module.scss */
   .color-callout-section .green-img-left .content-section-wrapper .color-callout-img {
     display: inline-flex;
     flex: 1 0 30%;
   }
-  /* line 484, sass/page-post-templates/_flexible-content-module.scss */
+  /* line 506, sass/page-post-templates/_flexible-content-module.scss */
   .color-callout-section .green-img-left .content-section-wrapper .editor-wrapper {
     flex: 1 1 auto;
   }
 }
-/* line 491, sass/page-post-templates/_flexible-content-module.scss */
+/* line 513, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .lt-gray-green-btns {
   background-color: #e8e8e8;
   text-align: center;
 }
-/* line 495, sass/page-post-templates/_flexible-content-module.scss */
+/* line 517, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .lt-gray-green-btns .color-callout-img {
   display: none;
 }
-/* line 499, sass/page-post-templates/_flexible-content-module.scss */
+/* line 521, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .lt-gray-green-btns .background-image {
   padding: 0;
   background-repeat: no-repeat;
@@ -2210,12 +2246,12 @@ lt-gray-green-btns
   background-size: 40%;
   background-position: 50%;
 }
-/* line 506, sass/page-post-templates/_flexible-content-module.scss */
+/* line 528, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .lt-gray-green-btns .background-image .content-section-wrapper {
   padding-top: 3em;
   padding-bottom: 3em;
 }
-/* line 511, sass/page-post-templates/_flexible-content-module.scss */
+/* line 533, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .lt-gray-green-btns .background-image h2, .color-callout-section .lt-gray-green-btns .background-image h3 {
   color: #3b3d40;
 }
@@ -2223,12 +2259,12 @@ lt-gray-green-btns
 /*--------------------------------------------------------------
 ### Testimonial Section
 --------------------------------------------------------------*/
-/* line 524, sass/page-post-templates/_flexible-content-module.scss */
+/* line 546, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section {
   background-color: #282560;
   min-height: 200px;
 }
-/* line 528, sass/page-post-templates/_flexible-content-module.scss */
+/* line 550, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .content-section-wrapper {
   padding-top: 2em;
   padding-bottom: 3em;
@@ -2237,19 +2273,19 @@ lt-gray-green-btns
   -moz-osx-font-smoothing: grayscale;
 }
 @media screen and (min-width: 750px) {
-  /* line 528, sass/page-post-templates/_flexible-content-module.scss */
+  /* line 550, sass/page-post-templates/_flexible-content-module.scss */
   .testimonial-section .content-section-wrapper {
     padding-bottom: 4em;
   }
 }
-/* line 539, sass/page-post-templates/_flexible-content-module.scss */
+/* line 561, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .microphone-section {
   padding-top: 2em;
   padding-bottom: 2em;
   text-align: center;
   font-size: 1.1em;
 }
-/* line 546, sass/page-post-templates/_flexible-content-module.scss */
+/* line 568, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .microphone-section h5 {
   text-transform: uppercase;
   margin-top: 1em;
@@ -2258,7 +2294,7 @@ lt-gray-green-btns
   letter-spacing: 1.2px;
   font-family: "SourceSansPro-Bold", sans-serif;
 }
-/* line 556, sass/page-post-templates/_flexible-content-module.scss */
+/* line 578, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .testimonial-carousel {
   color: #fff;
   text-align: left;
@@ -2270,20 +2306,20 @@ lt-gray-green-btns
   /* big buttons, no circle */
   /* arrow color */
 }
-/* line 564, sass/page-post-templates/_flexible-content-module.scss */
+/* line 586, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .testimonial-carousel blockquote {
   margin: 0;
   padding: 0;
   letter-spacing: .7px;
   font-size: 1.2em;
 }
-/* line 570, sass/page-post-templates/_flexible-content-module.scss */
+/* line 592, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .testimonial-carousel .cell {
   width: 100%;
   height: auto;
   margin-left: 10px;
 }
-/* line 575, sass/page-post-templates/_flexible-content-module.scss */
+/* line 597, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .testimonial-carousel .cell h4 {
   margin: 0;
   padding: 0;
@@ -2293,65 +2329,65 @@ lt-gray-green-btns
   font-family: "SourceSansPro-Bold", sans-serif;
   letter-spacing: 1.2px;
 }
-/* line 584, sass/page-post-templates/_flexible-content-module.scss */
+/* line 606, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .testimonial-carousel .cell h5 {
   margin: 0;
   padding: 0;
   color: #fff;
 }
-/* line 593, sass/page-post-templates/_flexible-content-module.scss */
+/* line 615, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .testimonial-carousel .flickity-prev-next-button {
   width: 13px;
   height: 24px;
   background: transparent;
   overflow: hidden;
 }
-/* line 599, sass/page-post-templates/_flexible-content-module.scss */
+/* line 621, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .testimonial-carousel .flickity-prev-next-button:hover {
   background: transparent;
 }
-/* line 603, sass/page-post-templates/_flexible-content-module.scss */
+/* line 625, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .testimonial-carousel .flickity-prev-next-button .arrow {
   fill: white;
 }
-/* line 606, sass/page-post-templates/_flexible-content-module.scss */
+/* line 628, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .testimonial-carousel .flickity-prev-next-button.no-svg {
   color: white;
 }
-/* line 610, sass/page-post-templates/_flexible-content-module.scss */
+/* line 632, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .testimonial-carousel .flickity-prev-next-button.previous {
   top: 30%;
   left: -50px;
 }
-/* line 614, sass/page-post-templates/_flexible-content-module.scss */
+/* line 636, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .testimonial-carousel .flickity-prev-next-button.next {
   top: 30%;
   right: -50px;
 }
 @media screen and (min-width: 575px) {
-  /* line 556, sass/page-post-templates/_flexible-content-module.scss */
+  /* line 578, sass/page-post-templates/_flexible-content-module.scss */
   .testimonial-section .testimonial-carousel {
     padding-left: 50px;
     padding-right: 50px;
   }
 }
 @media screen and (min-width: 750px) {
-  /* line 556, sass/page-post-templates/_flexible-content-module.scss */
+  /* line 578, sass/page-post-templates/_flexible-content-module.scss */
   .testimonial-section .testimonial-carousel {
     padding-left: 75px;
     padding-right: 75px;
   }
-  /* line 628, sass/page-post-templates/_flexible-content-module.scss */
+  /* line 650, sass/page-post-templates/_flexible-content-module.scss */
   .testimonial-section .testimonial-carousel .flickity-prev-next-button.previous {
     left: -25px;
   }
-  /* line 631, sass/page-post-templates/_flexible-content-module.scss */
+  /* line 653, sass/page-post-templates/_flexible-content-module.scss */
   .testimonial-section .testimonial-carousel .flickity-prev-next-button.next {
     right: -25px;
   }
 }
 @media screen and (min-width: 950px) {
-  /* line 556, sass/page-post-templates/_flexible-content-module.scss */
+  /* line 578, sass/page-post-templates/_flexible-content-module.scss */
   .testimonial-section .testimonial-carousel {
     padding-left: 150px;
     padding-right: 150px;
@@ -2361,46 +2397,46 @@ lt-gray-green-btns
 /*--------------------------------------------------------------
 ### Associates Section
 --------------------------------------------------------------*/
-/* line 647, sass/page-post-templates/_flexible-content-module.scss */
+/* line 669, sass/page-post-templates/_flexible-content-module.scss */
 .associates-section {
   padding-top: 3em;
   padding-bottom: 3em;
 }
-/* line 650, sass/page-post-templates/_flexible-content-module.scss */
+/* line 672, sass/page-post-templates/_flexible-content-module.scss */
 .associates-section .content-section-wrapper {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
 }
-/* line 654, sass/page-post-templates/_flexible-content-module.scss */
+/* line 676, sass/page-post-templates/_flexible-content-module.scss */
 .associates-section .content-section-wrapper p {
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 660, sass/page-post-templates/_flexible-content-module.scss */
+/* line 682, sass/page-post-templates/_flexible-content-module.scss */
 .associates-section a {
   text-decoration: none;
   color: #656b6f;
 }
-/* line 666, sass/page-post-templates/_flexible-content-module.scss */
+/* line 688, sass/page-post-templates/_flexible-content-module.scss */
 .associates-section img {
   display: block;
   margin-left: auto;
   margin-right: auto;
   border-radius: 50%;
 }
-/* line 671, sass/page-post-templates/_flexible-content-module.scss */
+/* line 693, sass/page-post-templates/_flexible-content-module.scss */
 .associates-section h2 {
   font-size: 2.1em;
 }
-/* line 675, sass/page-post-templates/_flexible-content-module.scss */
+/* line 697, sass/page-post-templates/_flexible-content-module.scss */
 .associates-section h4, .associates-section h5 {
   margin: 0;
   padding: 0;
 }
-/* line 679, sass/page-post-templates/_flexible-content-module.scss */
+/* line 701, sass/page-post-templates/_flexible-content-module.scss */
 .associates-section h4 {
   margin-top: 1em;
   color: #3b3d40;
@@ -2408,29 +2444,29 @@ lt-gray-green-btns
   text-transform: uppercase;
   letter-spacing: 1.6px;
 }
-/* line 687, sass/page-post-templates/_flexible-content-module.scss */
+/* line 709, sass/page-post-templates/_flexible-content-module.scss */
 .associates-section .h5 {
   color: #656b6f;
 }
-/* line 691, sass/page-post-templates/_flexible-content-module.scss */
+/* line 713, sass/page-post-templates/_flexible-content-module.scss */
 .associates-section .associate-block {
   padding-top: 2em;
   padding-bottom: 2em;
   transition: box-shadow .25s ease-out;
 }
-/* line 696, sass/page-post-templates/_flexible-content-module.scss */
+/* line 718, sass/page-post-templates/_flexible-content-module.scss */
 .associates-section .associate-block:hover {
   box-shadow: 0 0 7px rgba(0, 0, 0, 0.35);
   color: #656b6f;
 }
 @media screen and (min-width: 750px) {
-  /* line 704, sass/page-post-templates/_flexible-content-module.scss */
+  /* line 726, sass/page-post-templates/_flexible-content-module.scss */
   .associates-section .flex-wrapper {
     display: flex;
     justify-content: space-around;
     align-content: center;
   }
-  /* line 709, sass/page-post-templates/_flexible-content-module.scss */
+  /* line 731, sass/page-post-templates/_flexible-content-module.scss */
   .associates-section .associate-block {
     flex: 1 0 calc(100% / 3);
   }
@@ -2710,16 +2746,16 @@ lt-gray-green-btns
 }
 @media screen and (min-width: 950px) {
   /* line 44, sass/page-post-templates/_blog-posts.scss */
-  .blog .wrapper, .blog .home .home-header-wrapper, .home .blog .home-header-wrapper, .blog .simple-content-section .content-section-wrapper, .simple-content-section .blog .content-section-wrapper, .blog .color-callout-section .green-brain-left .background-image .content-section-wrapper, .color-callout-section .green-brain-left .background-image .blog .content-section-wrapper, .blog .color-callout-section .lt-gray-brain-left .background-image .content-section-wrapper, .color-callout-section .lt-gray-brain-left .background-image .blog .content-section-wrapper, .blog .color-callout-section .lt-gray-green-btns .background-image .content-section-wrapper, .color-callout-section .lt-gray-green-btns .background-image .blog .content-section-wrapper, .blog .testimonial-section .content-section-wrapper, .testimonial-section .blog .content-section-wrapper, .blog .page-template-page-associates #associates-page .content-wrapper .about-section, .page-template-page-associates #associates-page .content-wrapper .blog .about-section, .blog .post-template-default .site-content, .post-template-default .blog .site-content {
+  .blog .wrapper, .blog .home .home-header-wrapper, .home .blog .home-header-wrapper, .blog .simple-content-section .content-section-wrapper, .simple-content-section .blog .content-section-wrapper, .blog .color-callout-section .lt-gray-brain-left .background-image .content-section-wrapper, .color-callout-section .lt-gray-brain-left .background-image .blog .content-section-wrapper, .blog .color-callout-section .lt-gray-green-btns .background-image .content-section-wrapper, .color-callout-section .lt-gray-green-btns .background-image .blog .content-section-wrapper, .blog .testimonial-section .content-section-wrapper, .testimonial-section .blog .content-section-wrapper, .blog .page-template-page-associates #associates-page .content-wrapper .about-section, .page-template-page-associates #associates-page .content-wrapper .blog .about-section, .blog .post-template-default .site-content, .post-template-default .blog .site-content {
     display: flex;
   }
   /* line 47, sass/page-post-templates/_blog-posts.scss */
-  .blog .wrapper #primary, .blog .home .home-header-wrapper #primary, .home .blog .home-header-wrapper #primary, .blog .simple-content-section .content-section-wrapper #primary, .simple-content-section .blog .content-section-wrapper #primary, .blog .color-callout-section .green-brain-left .background-image .content-section-wrapper #primary, .color-callout-section .green-brain-left .background-image .blog .content-section-wrapper #primary, .blog .color-callout-section .lt-gray-brain-left .background-image .content-section-wrapper #primary, .color-callout-section .lt-gray-brain-left .background-image .blog .content-section-wrapper #primary, .blog .color-callout-section .lt-gray-green-btns .background-image .content-section-wrapper #primary, .color-callout-section .lt-gray-green-btns .background-image .blog .content-section-wrapper #primary, .blog .testimonial-section .content-section-wrapper #primary, .testimonial-section .blog .content-section-wrapper #primary, .blog .page-template-page-associates #associates-page .content-wrapper .about-section #primary, .page-template-page-associates #associates-page .content-wrapper .blog .about-section #primary, .blog .post-template-default .site-content #primary, .post-template-default .blog .site-content #primary {
+  .blog .wrapper #primary, .blog .home .home-header-wrapper #primary, .home .blog .home-header-wrapper #primary, .blog .simple-content-section .content-section-wrapper #primary, .simple-content-section .blog .content-section-wrapper #primary, .blog .color-callout-section .lt-gray-brain-left .background-image .content-section-wrapper #primary, .color-callout-section .lt-gray-brain-left .background-image .blog .content-section-wrapper #primary, .blog .color-callout-section .lt-gray-green-btns .background-image .content-section-wrapper #primary, .color-callout-section .lt-gray-green-btns .background-image .blog .content-section-wrapper #primary, .blog .testimonial-section .content-section-wrapper #primary, .testimonial-section .blog .content-section-wrapper #primary, .blog .page-template-page-associates #associates-page .content-wrapper .about-section #primary, .page-template-page-associates #associates-page .content-wrapper .blog .about-section #primary, .blog .post-template-default .site-content #primary, .post-template-default .blog .site-content #primary {
     flex: 2;
     order: 2;
   }
   /* line 53, sass/page-post-templates/_blog-posts.scss */
-  .blog .wrapper #secondary, .blog .home .home-header-wrapper #secondary, .home .blog .home-header-wrapper #secondary, .blog .simple-content-section .content-section-wrapper #secondary, .simple-content-section .blog .content-section-wrapper #secondary, .blog .color-callout-section .green-brain-left .background-image .content-section-wrapper #secondary, .color-callout-section .green-brain-left .background-image .blog .content-section-wrapper #secondary, .blog .color-callout-section .lt-gray-brain-left .background-image .content-section-wrapper #secondary, .color-callout-section .lt-gray-brain-left .background-image .blog .content-section-wrapper #secondary, .blog .color-callout-section .lt-gray-green-btns .background-image .content-section-wrapper #secondary, .color-callout-section .lt-gray-green-btns .background-image .blog .content-section-wrapper #secondary, .blog .testimonial-section .content-section-wrapper #secondary, .testimonial-section .blog .content-section-wrapper #secondary, .blog .page-template-page-associates #associates-page .content-wrapper .about-section #secondary, .page-template-page-associates #associates-page .content-wrapper .blog .about-section #secondary, .blog .post-template-default .site-content #secondary, .post-template-default .blog .site-content #secondary {
+  .blog .wrapper #secondary, .blog .home .home-header-wrapper #secondary, .home .blog .home-header-wrapper #secondary, .blog .simple-content-section .content-section-wrapper #secondary, .simple-content-section .blog .content-section-wrapper #secondary, .blog .color-callout-section .lt-gray-brain-left .background-image .content-section-wrapper #secondary, .color-callout-section .lt-gray-brain-left .background-image .blog .content-section-wrapper #secondary, .blog .color-callout-section .lt-gray-green-btns .background-image .content-section-wrapper #secondary, .color-callout-section .lt-gray-green-btns .background-image .blog .content-section-wrapper #secondary, .blog .testimonial-section .content-section-wrapper #secondary, .testimonial-section .blog .content-section-wrapper #secondary, .blog .page-template-page-associates #associates-page .content-wrapper .about-section #secondary, .page-template-page-associates #associates-page .content-wrapper .blog .about-section #secondary, .blog .post-template-default .site-content #secondary, .post-template-default .blog .site-content #secondary {
     flex: 1;
     order: 1;
     display: block;

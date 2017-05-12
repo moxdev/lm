@@ -35,7 +35,7 @@ function leading_minds_color_content_section() {
 
                 <div class="<?php echo esc_html( $theme ); ?>">
 
-                    <div class="background-image wrapper">
+                    <div class="background-image">
 
                         <div class="content-section-wrapper">
 
