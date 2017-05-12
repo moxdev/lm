@@ -6,13 +6,15 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
     color: $color__h1;
     font-family: $font__black;
+    font-size: 2.25em;
+    line-height: 1.125;
 }
 
 h2 {
     color: $color__h2;
     font-family: $font__semibold;
     margin-bottom: .5em;
-    // font-size: 1.6em;
+    font-size: 1.9em !important;
 }
 
 h3 {
@@ -29,8 +31,17 @@ h4 {
 h1.section-title {
     text-align: center;
     letter-spacing: 1.6px;
-    line-height: 1.1;
     text-shadow: 0px 3px 4.83px rgba(0, 0, 0, 0.35);
+    @include margin-auto;
+    max-width: 800px;
+
+    @include respond-to(small) {
+        font-size: 3em;
+    }
+
+    @include respond-to(large) {
+        font-size: 3.5em;
+    }
 }
 
 h1.associates-entry-title {

@@ -46,7 +46,10 @@ function leading_minds_advanced_content_section() {
 
                     // Editor
                     if ($editor) { ?>
-                        <?php echo $editor; ?>
+                        <div class="editor-wrapper">
+                            <?php echo $editor; ?>
+                        </div>
+
                     <?php }
 
                     // Split Column
