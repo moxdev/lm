@@ -17,17 +17,16 @@
     .content-section-wrapper {
         @extend .wrapper;
         @include section-padding;
-        @include font-smooth;
-        letter-spacing: .6px;
 
         h2 {
             text-align: center;
-            // font-size: 2.1em;
+            letter-spacing: .6px;
         }
 
         p {
             max-width: 600px;
             @include margin-auto;
+            // letter-spacing: .3px;
         }
     }
 
@@ -37,12 +36,15 @@
     }
 
     .bg-ltgray {
+        background-color: $color__bg-ltgray;
+        color: $color__text-main;
 
     }
 
     .bg-purple {
         background-color: $color__bg-purple;
         color: #fff;
+        @include font-smooth;
 
         h2 {
             color: #fff;
@@ -58,16 +60,6 @@
     .bg-green {
 
     }
-
-
-
-
-
-    // .editor-wrapper {
-    //     text-align: left;
-    //     width: 50%;
-    //     margin-left: auto;
-    // }
 }
 
 
@@ -340,12 +332,11 @@ lt-gray-green-btns
             .content-section-wrapper {
                 @include padding-left-right;
                 @include section-padding;
-                color: $color__dark-gray;
-                @include font-smooth;
-
+                color: $color__text-green-section;
 
                 h2 {
                     color: #fff;
+                    @include font-smooth;
                 }
             }
 

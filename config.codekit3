@@ -358,6 +358,17 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/imgs\/emmie-1.png": {
+		"ft": 32768,
+		"iS": 33354,
+		"oA": 0,
+		"oAP": "\/imgs\/emmie-1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/imgs\/footer-logo.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -1508,6 +1519,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/sass\/page-post-templates\/_sidebar-widget.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/sass\/page-post-templates\/career-coaching-page.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/sass\/page-post-templates\/career-coaching-page.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
