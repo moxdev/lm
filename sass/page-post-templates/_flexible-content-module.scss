@@ -9,10 +9,10 @@
 
 .simple-content-section {
 
-    img {
-        margin-top: 1em;
-        margin-bottom: 1em;
-    }
+    // img {
+    //     margin-top: 1em;
+    //     margin-bottom: 1em;
+    // }
 
     .content-section-wrapper {
         @extend .wrapper;
@@ -26,7 +26,11 @@
         p {
             max-width: 600px;
             @include margin-auto;
-            // letter-spacing: .3px;
+            letter-spacing: .2px;
+
+            @include respond-to(medium) {
+                max-width: 800px;
+            }
         }
     }
 
@@ -38,7 +42,6 @@
     .bg-ltgray {
         background-color: $color__bg-ltgray;
         color: $color__text-main;
-
     }
 
     .bg-purple {
@@ -68,8 +71,7 @@
 --------------------------------------------------------------*/
 
 .advanced-content-section {
-    // @include font-smooth;
-    //
+
     .content-section-wrapper {
         @include section-padding;
     }
@@ -99,11 +101,16 @@
     .bg-white {
         background-color: #fff;
         color: $color__text-main;
+
+        h2 {
+            @include font-smooth;
+        }
     }
 
     .bg-ltgray {
         background-color: $color__bg-ltgray;
         color: $color__text-main;
+
 
     }
 
@@ -130,6 +137,14 @@
     .editor-wrapper {
         max-width: 650px;
         @include margin-auto;
+
+        @include respond-to(small) {
+            text-align: center;
+        }
+
+        @include respond-to(medium) {
+            max-width: 800px;
+        }
     }
 
     .skills-wrapper {
@@ -341,8 +356,6 @@ lt-gray-green-btns
     .bg-default {
         background-color: #fff;
 
-        // text-align: center;
-
         .color-callout-img {
             display: none;
         }
@@ -356,55 +369,55 @@ lt-gray-green-btns
         }
 
         .background-image {
-            max-width: 1400px;
+            @include xl-container;
             @include margin-auto;
-            padding:0;
             background-repeat: no-repeat;
             background-image:url(http://leading-minds.dev/wp-content/themes/leading_minds/imgs/brains/large-green-brain.svg);
             background-position: -250px 50%;
-            background-size: 500px;
 
             .content-section-wrapper {
                 @include padding-left-right;
                 @include section-padding;
                 color: $color__text-green-section;
+                // color: $color__dark-gray;
 
                 h2 {
                     color: #fff;
                     @include font-smooth;
                 }
+
+                .editor-wrapper {
+                    letter-spacing: .2px;
+                    line-height: 1.4;
+                }
             }
 
             @include respond-to(mobile) {
                 background-position: -200px 70%;
-                background-size: 450px;
             }
 
             @include respond-to(small) {
-                background-position: -20% 50%;
-
-                .content-section-wrapper {
-                    // padding-top: 1em;
-                    // padding-bottom: 1em;
-                }
-
-                .editor-wrapper {
-                    max-width: 700px;
-                    margin-left: calc(50% - 100px);
-                }
+                background-position: -30% 50%;
             }
 
             @include respond-to(medium) {
-                background-position: 0 50%;
+                background-position: -40px 50%;
+
+                .editor-wrapper {
+                    margin-left: 35%;
+                }
             }
 
             @include respond-to(large) {
-                // background-position: -10% 50%;
-                background-size: 600px;
 
                 .editor-wrapper {
-                    max-width: 600px;
+                    line-height: 1.5;
+                    margin-left: 40%;
                 }
+            }
+
+            @include respond-to(larger) {
+               background-position: 0 50%;
             }
         }
     }

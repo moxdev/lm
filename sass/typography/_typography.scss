@@ -6,6 +6,10 @@ html {
     }
 
     @include respond-to(large) {
+        @include font-size(1.05);
+    }
+
+    @include respond-to(x-large) {
         @include font-size(1.125);
     }
 }

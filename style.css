@@ -343,12 +343,19 @@ html {
 @media screen and (min-width: 1200px) {
   /* line 1, sass/typography/_typography.scss */
   html {
+    font-size: 16.8px;
+    font-size: 1.05rem;
+  }
+}
+@media screen and (min-width: 1500px) {
+  /* line 1, sass/typography/_typography.scss */
+  html {
     font-size: 18px;
     font-size: 1.125rem;
   }
 }
 
-/* line 13, sass/typography/_typography.scss */
+/* line 17, sass/typography/_typography.scss */
 body,
 button,
 input,
@@ -359,7 +366,7 @@ textarea {
   line-height: 1.5;
 }
 @media screen and (min-width: 1200px) {
-  /* line 13, sass/typography/_typography.scss */
+  /* line 17, sass/typography/_typography.scss */
   body,
   button,
   input,
@@ -573,16 +580,15 @@ li > ol {
 
 /* line 20, sass/elements/_lists.scss */
 li {
-  padding-top: .5em;
-  padding-bottom: .5em;
+  line-height: 1.8;
 }
 
-/* line 25, sass/elements/_lists.scss */
+/* line 24, sass/elements/_lists.scss */
 dt {
   font-weight: bold;
 }
 
-/* line 29, sass/elements/_lists.scss */
+/* line 28, sass/elements/_lists.scss */
 dd {
   margin: 0 1.5em 1.5em;
 }
@@ -1748,17 +1754,31 @@ object {
 /*--------------------------------------------------------------
 ## Career Coaching Page
 --------------------------------------------------------------*/
+/* line 3, sass/page-post-templates/_career-coaching-page.scss */
+.page-id-88 .brendel-career-coaching-standing {
+  margin: 0 0 1em 0;
+  width: 145px;
+}
+@media screen and (min-width: 750px) {
+  /* line 3, sass/page-post-templates/_career-coaching-page.scss */
+  .page-id-88 .brendel-career-coaching-standing {
+    margin-left: 1em;
+    width: 175px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 3, sass/page-post-templates/_career-coaching-page.scss */
+  .page-id-88 .brendel-career-coaching-standing {
+    width: 230px;
+  }
+}
+
 /*--------------------------------------------------------------
 ## Flexible Content Module Sections
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 ### Simple Content Section
 --------------------------------------------------------------*/
-/* line 12, sass/page-post-templates/_flexible-content-module.scss */
-.simple-content-section img {
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
 /* line 17, sass/page-post-templates/_flexible-content-module.scss */
 .simple-content-section .content-section-wrapper {
   padding-top: 2em;
@@ -1781,18 +1801,25 @@ object {
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+  letter-spacing: .2px;
 }
-/* line 33, sass/page-post-templates/_flexible-content-module.scss */
+@media screen and (min-width: 950px) {
+  /* line 26, sass/page-post-templates/_flexible-content-module.scss */
+  .simple-content-section .content-section-wrapper p {
+    max-width: 800px;
+  }
+}
+/* line 37, sass/page-post-templates/_flexible-content-module.scss */
 .simple-content-section .bg-white {
   background-color: #fff;
   color: #656b6f;
 }
-/* line 38, sass/page-post-templates/_flexible-content-module.scss */
+/* line 42, sass/page-post-templates/_flexible-content-module.scss */
 .simple-content-section .bg-ltgray {
   background-color: #e8e8e8;
   color: #656b6f;
 }
-/* line 44, sass/page-post-templates/_flexible-content-module.scss */
+/* line 47, sass/page-post-templates/_flexible-content-module.scss */
 .simple-content-section .bg-purple {
   background-color: #282560;
   color: #fff;
@@ -1800,12 +1827,12 @@ object {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* line 49, sass/page-post-templates/_flexible-content-module.scss */
+/* line 52, sass/page-post-templates/_flexible-content-module.scss */
 .simple-content-section .bg-purple h2 {
   color: #fff;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
-/* line 54, sass/page-post-templates/_flexible-content-module.scss */
+/* line 57, sass/page-post-templates/_flexible-content-module.scss */
 .simple-content-section .bg-purple p {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
@@ -1813,52 +1840,58 @@ object {
 /*--------------------------------------------------------------
 ### Advanced Content Section
 --------------------------------------------------------------*/
-/* line 73, sass/page-post-templates/_flexible-content-module.scss */
+/* line 75, sass/page-post-templates/_flexible-content-module.scss */
 .advanced-content-section .content-section-wrapper {
   padding-top: 2em;
   padding-bottom: 1.5em;
 }
 @media screen and (min-width: 950px) {
-  /* line 73, sass/page-post-templates/_flexible-content-module.scss */
+  /* line 75, sass/page-post-templates/_flexible-content-module.scss */
   .advanced-content-section .content-section-wrapper {
     padding-top: 3em;
     padding-bottom: 3em;
   }
 }
-/* line 77, sass/page-post-templates/_flexible-content-module.scss */
+/* line 79, sass/page-post-templates/_flexible-content-module.scss */
 .advanced-content-section .header-img {
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-top: 1em;
 }
-/* line 82, sass/page-post-templates/_flexible-content-module.scss */
+/* line 84, sass/page-post-templates/_flexible-content-module.scss */
 .advanced-content-section h2, .advanced-content-section h3 {
   text-align: center;
   line-height: 1.4;
 }
-/* line 88, sass/page-post-templates/_flexible-content-module.scss */
+/* line 90, sass/page-post-templates/_flexible-content-module.scss */
 .advanced-content-section h2 {
   margin-bottom: 0;
 }
-/* line 93, sass/page-post-templates/_flexible-content-module.scss */
+/* line 95, sass/page-post-templates/_flexible-content-module.scss */
 .advanced-content-section h3 {
   font-size: 1.3em;
   max-width: 400px;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 99, sass/page-post-templates/_flexible-content-module.scss */
+/* line 101, sass/page-post-templates/_flexible-content-module.scss */
 .advanced-content-section .bg-white {
   background-color: #fff;
   color: #656b6f;
 }
-/* line 104, sass/page-post-templates/_flexible-content-module.scss */
+/* line 105, sass/page-post-templates/_flexible-content-module.scss */
+.advanced-content-section .bg-white h2 {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* line 110, sass/page-post-templates/_flexible-content-module.scss */
 .advanced-content-section .bg-ltgray {
   background-color: #e8e8e8;
   color: #656b6f;
 }
-/* line 110, sass/page-post-templates/_flexible-content-module.scss */
+/* line 117, sass/page-post-templates/_flexible-content-module.scss */
 .advanced-content-section .bg-purple {
   background-color: #282560;
   color: #fff;
@@ -1866,22 +1899,34 @@ object {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* line 115, sass/page-post-templates/_flexible-content-module.scss */
+/* line 122, sass/page-post-templates/_flexible-content-module.scss */
 .advanced-content-section .bg-purple h2 {
   color: #fff;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
-/* line 120, sass/page-post-templates/_flexible-content-module.scss */
+/* line 127, sass/page-post-templates/_flexible-content-module.scss */
 .advanced-content-section .bg-purple p {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
-/* line 130, sass/page-post-templates/_flexible-content-module.scss */
+/* line 137, sass/page-post-templates/_flexible-content-module.scss */
 .advanced-content-section .editor-wrapper {
   max-width: 650px;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 135, sass/page-post-templates/_flexible-content-module.scss */
+@media screen and (min-width: 750px) {
+  /* line 137, sass/page-post-templates/_flexible-content-module.scss */
+  .advanced-content-section .editor-wrapper {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 950px) {
+  /* line 137, sass/page-post-templates/_flexible-content-module.scss */
+  .advanced-content-section .editor-wrapper {
+    max-width: 800px;
+  }
+}
+/* line 150, sass/page-post-templates/_flexible-content-module.scss */
 .advanced-content-section .skills-wrapper {
   display: block;
   font-size: 1.067em;
@@ -1891,67 +1936,67 @@ object {
   letter-spacing: 0.8px;
   text-transform: uppercase;
 }
-/* line 144, sass/page-post-templates/_flexible-content-module.scss */
+/* line 159, sass/page-post-templates/_flexible-content-module.scss */
 .advanced-content-section .skills-wrapper .skill {
   margin: 1em 0;
 }
 @media screen and (min-width: 750px) {
-  /* line 135, sass/page-post-templates/_flexible-content-module.scss */
+  /* line 150, sass/page-post-templates/_flexible-content-module.scss */
   .advanced-content-section .skills-wrapper {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     font-size: .8em;
   }
-  /* line 154, sass/page-post-templates/_flexible-content-module.scss */
+  /* line 169, sass/page-post-templates/_flexible-content-module.scss */
   .advanced-content-section .skills-wrapper .skill {
     flex: 0 1 calc(100% / 3);
   }
 }
 @media screen and (min-width: 950px) {
-  /* line 135, sass/page-post-templates/_flexible-content-module.scss */
+  /* line 150, sass/page-post-templates/_flexible-content-module.scss */
   .advanced-content-section .skills-wrapper {
     font-size: 1em;
   }
 }
-/* line 166, sass/page-post-templates/_flexible-content-module.scss */
+/* line 181, sass/page-post-templates/_flexible-content-module.scss */
 .advanced-content-section .secondary-content p {
   max-width: 650px;
   margin-left: auto;
   margin-right: auto;
 }
 @media screen and (min-width: 750px) {
-  /* line 172, sass/page-post-templates/_flexible-content-module.scss */
+  /* line 187, sass/page-post-templates/_flexible-content-module.scss */
   .advanced-content-section .split-column-wrapper {
     display: flex;
     justify-content: space-around;
   }
-  /* line 178, sass/page-post-templates/_flexible-content-module.scss */
+  /* line 193, sass/page-post-templates/_flexible-content-module.scss */
   .advanced-content-section .split-column-wrapper .left-column {
     padding: 1em;
     flex: 1 1 calc(100% / 2);
   }
-  /* line 183, sass/page-post-templates/_flexible-content-module.scss */
+  /* line 198, sass/page-post-templates/_flexible-content-module.scss */
   .advanced-content-section .split-column-wrapper .right-column {
     padding: 1em;
     flex: 1 1 calc(100% / 2);
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 191, sass/page-post-templates/_flexible-content-module.scss */
+  /* line 206, sass/page-post-templates/_flexible-content-module.scss */
   .advanced-content-section .split-column-wrapper .left-column {
     max-width: 475px;
     padding-left: 0;
     padding-right: 0;
   }
-  /* line 197, sass/page-post-templates/_flexible-content-module.scss */
+  /* line 212, sass/page-post-templates/_flexible-content-module.scss */
   .advanced-content-section .split-column-wrapper .right-column {
     max-width: 475px;
     padding-left: 0;
     padding-right: 0;
   }
 }
-/* line 205, sass/page-post-templates/_flexible-content-module.scss */
+/* line 220, sass/page-post-templates/_flexible-content-module.scss */
 .advanced-content-section .content-footer-wrapper {
   max-width: 800px;
   margin-left: auto;
@@ -1959,16 +2004,16 @@ object {
   text-align: center;
   padding-top: 1em;
 }
-/* line 212, sass/page-post-templates/_flexible-content-module.scss */
+/* line 227, sass/page-post-templates/_flexible-content-module.scss */
 .advanced-content-section .content-footer-wrapper .btn-wrapper {
   margin: 1em 0;
 }
-/* line 216, sass/page-post-templates/_flexible-content-module.scss */
+/* line 231, sass/page-post-templates/_flexible-content-module.scss */
 .advanced-content-section .content-footer-wrapper .img-wrapper {
   margin: 1em 0;
 }
 @media screen and (min-width: 750px) {
-  /* line 205, sass/page-post-templates/_flexible-content-module.scss */
+  /* line 220, sass/page-post-templates/_flexible-content-module.scss */
   .advanced-content-section .content-footer-wrapper {
     display: flex;
     justify-content: space-around;
@@ -1978,26 +2023,26 @@ object {
 /*--------------------------------------------------------------
 ### Mid Page Navigation Section
 --------------------------------------------------------------*/
-/* line 232, sass/page-post-templates/_flexible-content-module.scss */
+/* line 247, sass/page-post-templates/_flexible-content-module.scss */
 .mid-page-navigation-section {
   background-color: #f53f00;
 }
-/* line 238, sass/page-post-templates/_flexible-content-module.scss */
+/* line 253, sass/page-post-templates/_flexible-content-module.scss */
 .mid-page-navigation-section .content-section-wrapper .margin-wrapper {
   display: flex;
   flex-direction: column;
 }
-/* line 243, sass/page-post-templates/_flexible-content-module.scss */
+/* line 258, sass/page-post-templates/_flexible-content-module.scss */
 .mid-page-navigation-section .content-section-wrapper .nav-container {
   background-color: #fff;
 }
-/* line 246, sass/page-post-templates/_flexible-content-module.scss */
+/* line 261, sass/page-post-templates/_flexible-content-module.scss */
 .mid-page-navigation-section .content-section-wrapper .nav-container .nav-wrapper {
   background-color: #f53f00;
   margin-bottom: 1px;
   margin-right: 1px;
 }
-/* line 252, sass/page-post-templates/_flexible-content-module.scss */
+/* line 267, sass/page-post-templates/_flexible-content-module.scss */
 .mid-page-navigation-section .content-section-wrapper .nav-container .nav-content {
   text-align: center;
   color: #fff;
@@ -2006,14 +2051,14 @@ object {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* line 259, sass/page-post-templates/_flexible-content-module.scss */
+/* line 274, sass/page-post-templates/_flexible-content-module.scss */
 .mid-page-navigation-section .content-section-wrapper .nav-container h3 {
   color: #3b3d40;
   font-family: "SourceSansPro-Bold", sans-serif;
   text-transform: uppercase;
   letter-spacing: .8px;
 }
-/* line 267, sass/page-post-templates/_flexible-content-module.scss */
+/* line 282, sass/page-post-templates/_flexible-content-module.scss */
 .mid-page-navigation-section .content-section-wrapper .nav-container a {
   text-decoration: none;
   font-family: "SourceSansPro-Bold", sans-serif;
@@ -2023,7 +2068,7 @@ object {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 @media screen and (min-width: 400px) {
-  /* line 278, sass/page-post-templates/_flexible-content-module.scss */
+  /* line 293, sass/page-post-templates/_flexible-content-module.scss */
   .mid-page-navigation-section .content-section-wrapper .margin-wrapper {
     display: flex;
     flex-direction: row;
@@ -2031,12 +2076,12 @@ object {
     justify-content: flex-start;
     margin-right: -1px;
   }
-  /* line 286, sass/page-post-templates/_flexible-content-module.scss */
+  /* line 301, sass/page-post-templates/_flexible-content-module.scss */
   .mid-page-navigation-section .content-section-wrapper .nav-container {
     flex: 1 1 50%;
     display: flex;
   }
-  /* line 290, sass/page-post-templates/_flexible-content-module.scss */
+  /* line 305, sass/page-post-templates/_flexible-content-module.scss */
   .mid-page-navigation-section .content-section-wrapper .nav-container .nav-wrapper {
     width: 100%;
     display: flex;
@@ -2046,16 +2091,16 @@ object {
   }
 }
 @media screen and (min-width: 750px) {
-  /* line 301, sass/page-post-templates/_flexible-content-module.scss */
+  /* line 316, sass/page-post-templates/_flexible-content-module.scss */
   .mid-page-navigation-section .content-section-wrapper .margin-wrapper {
     flex-wrap: nowrap;
     margin-bottom: 0;
   }
-  /* line 306, sass/page-post-templates/_flexible-content-module.scss */
+  /* line 321, sass/page-post-templates/_flexible-content-module.scss */
   .mid-page-navigation-section .content-section-wrapper .nav-container {
     flex: 1 1 calc(100% / 4);
   }
-  /* line 309, sass/page-post-templates/_flexible-content-module.scss */
+  /* line 324, sass/page-post-templates/_flexible-content-module.scss */
   .mid-page-navigation-section .content-section-wrapper .nav-container .nav-wrapper {
     width: 100%;
     display: flex;
@@ -2079,34 +2124,34 @@ green-img-left : Green Section (Image Left)
 lt-gray-green-btns
 
 */
-/* line 341, sass/page-post-templates/_flexible-content-module.scss */
+/* line 356, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .bg-default {
   background-color: #fff;
 }
-/* line 346, sass/page-post-templates/_flexible-content-module.scss */
+/* line 359, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .bg-default .color-callout-img {
   display: none;
 }
-/* line 351, sass/page-post-templates/_flexible-content-module.scss */
+/* line 364, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .green-brain-left {
   background-color: #24cf5f;
 }
-/* line 354, sass/page-post-templates/_flexible-content-module.scss */
+/* line 367, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .green-brain-left .color-callout-img {
   display: none;
 }
-/* line 358, sass/page-post-templates/_flexible-content-module.scss */
+/* line 371, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .green-brain-left .background-image {
-  max-width: 1400px;
+  max-width: 1300px;
   margin-left: auto;
   margin-right: auto;
-  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
   background-repeat: no-repeat;
   background-image: url(http://leading-minds.dev/wp-content/themes/leading_minds/imgs/brains/large-green-brain.svg);
   background-position: -250px 50%;
-  background-size: 500px;
 }
-/* line 367, sass/page-post-templates/_flexible-content-module.scss */
+/* line 378, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .green-brain-left .background-image .content-section-wrapper {
   padding-left: 1.75rem;
   padding-right: 1.75rem;
@@ -2115,114 +2160,120 @@ lt-gray-green-btns
   color: #161618;
 }
 @media screen and (min-width: 750px) {
-  /* line 367, sass/page-post-templates/_flexible-content-module.scss */
+  /* line 378, sass/page-post-templates/_flexible-content-module.scss */
   .color-callout-section .green-brain-left .background-image .content-section-wrapper {
     padding-left: 2.75rem;
     padding-right: 2.75rem;
   }
 }
 @media screen and (min-width: 950px) {
-  /* line 367, sass/page-post-templates/_flexible-content-module.scss */
+  /* line 378, sass/page-post-templates/_flexible-content-module.scss */
   .color-callout-section .green-brain-left .background-image .content-section-wrapper {
     padding-top: 3em;
     padding-bottom: 3em;
   }
 }
-/* line 372, sass/page-post-templates/_flexible-content-module.scss */
+/* line 384, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .green-brain-left .background-image .content-section-wrapper h2 {
   color: #fff;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+/* line 389, sass/page-post-templates/_flexible-content-module.scss */
+.color-callout-section .green-brain-left .background-image .content-section-wrapper .editor-wrapper {
+  letter-spacing: .2px;
+  line-height: 1.4;
+}
 @media screen and (min-width: 400px) {
-  /* line 358, sass/page-post-templates/_flexible-content-module.scss */
+  /* line 371, sass/page-post-templates/_flexible-content-module.scss */
   .color-callout-section .green-brain-left .background-image {
     background-position: -200px 70%;
-    background-size: 450px;
   }
 }
 @media screen and (min-width: 750px) {
-  /* line 358, sass/page-post-templates/_flexible-content-module.scss */
+  /* line 371, sass/page-post-templates/_flexible-content-module.scss */
   .color-callout-section .green-brain-left .background-image {
-    background-position: -20% 50%;
-  }
-  /* line 391, sass/page-post-templates/_flexible-content-module.scss */
-  .color-callout-section .green-brain-left .background-image .editor-wrapper {
-    max-width: 700px;
-    margin-left: calc(50% - 100px);
+    background-position: -30% 50%;
   }
 }
 @media screen and (min-width: 950px) {
-  /* line 358, sass/page-post-templates/_flexible-content-module.scss */
+  /* line 371, sass/page-post-templates/_flexible-content-module.scss */
+  .color-callout-section .green-brain-left .background-image {
+    background-position: -40px 50%;
+  }
+  /* line 406, sass/page-post-templates/_flexible-content-module.scss */
+  .color-callout-section .green-brain-left .background-image .editor-wrapper {
+    margin-left: 35%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 413, sass/page-post-templates/_flexible-content-module.scss */
+  .color-callout-section .green-brain-left .background-image .editor-wrapper {
+    line-height: 1.5;
+    margin-left: 40%;
+  }
+}
+@media screen and (min-width: 1300px) {
+  /* line 371, sass/page-post-templates/_flexible-content-module.scss */
   .color-callout-section .green-brain-left .background-image {
     background-position: 0 50%;
   }
 }
-@media screen and (min-width: 1200px) {
-  /* line 358, sass/page-post-templates/_flexible-content-module.scss */
-  .color-callout-section .green-brain-left .background-image {
-    background-size: 600px;
-  }
-  /* line 405, sass/page-post-templates/_flexible-content-module.scss */
-  .color-callout-section .green-brain-left .background-image .editor-wrapper {
-    max-width: 600px;
-  }
-}
-/* line 412, sass/page-post-templates/_flexible-content-module.scss */
+/* line 425, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .lt-gray-brain-left {
   background-color: #e8e8e8;
 }
-/* line 415, sass/page-post-templates/_flexible-content-module.scss */
+/* line 428, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .lt-gray-brain-left .color-callout-img {
   display: none;
 }
-/* line 419, sass/page-post-templates/_flexible-content-module.scss */
+/* line 432, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .lt-gray-brain-left .background-image {
   padding: 0;
   background-repeat: no-repeat;
   background-image: url(http://leading-minds.dev/wp-content/themes/leading_minds/imgs/brains/large-green-brain.svg);
   background-position: -250px 80%;
 }
-/* line 426, sass/page-post-templates/_flexible-content-module.scss */
+/* line 439, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .lt-gray-brain-left .background-image .content-section-wrapper {
   padding-top: 2em;
   padding-bottom: 1.5em;
 }
 @media screen and (min-width: 950px) {
-  /* line 426, sass/page-post-templates/_flexible-content-module.scss */
+  /* line 439, sass/page-post-templates/_flexible-content-module.scss */
   .color-callout-section .lt-gray-brain-left .background-image .content-section-wrapper {
     padding-top: 3em;
     padding-bottom: 3em;
   }
 }
 @media screen and (min-width: 400px) {
-  /* line 419, sass/page-post-templates/_flexible-content-module.scss */
+  /* line 432, sass/page-post-templates/_flexible-content-module.scss */
   .color-callout-section .lt-gray-brain-left .background-image {
     background-size: contain;
     background-position: -200px 70%;
   }
 }
 @media screen and (min-width: 750px) {
-  /* line 419, sass/page-post-templates/_flexible-content-module.scss */
+  /* line 432, sass/page-post-templates/_flexible-content-module.scss */
   .color-callout-section .lt-gray-brain-left .background-image {
     background-position: -20% 50%;
   }
-  /* line 439, sass/page-post-templates/_flexible-content-module.scss */
+  /* line 452, sass/page-post-templates/_flexible-content-module.scss */
   .color-callout-section .lt-gray-brain-left .background-image .editor-wrapper {
     margin-left: calc(50% - 100px);
   }
 }
-/* line 446, sass/page-post-templates/_flexible-content-module.scss */
+/* line 459, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .green-brain-center {
   background-color: #24cf5f;
   text-align: center;
 }
-/* line 450, sass/page-post-templates/_flexible-content-module.scss */
+/* line 463, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .green-brain-center .color-callout-img {
   display: none;
 }
-/* line 454, sass/page-post-templates/_flexible-content-module.scss */
+/* line 467, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .green-brain-center .background-image {
   padding: 0;
   background-repeat: no-repeat;
@@ -2230,33 +2281,33 @@ lt-gray-green-btns
   background-size: 40%;
   background-position: 50%;
 }
-/* line 461, sass/page-post-templates/_flexible-content-module.scss */
+/* line 474, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .green-brain-center .background-image .content-section-wrapper {
   padding-top: 2em;
   padding-bottom: 1.5em;
   background-color: rgba(36, 207, 95, 0.7);
 }
 @media screen and (min-width: 950px) {
-  /* line 461, sass/page-post-templates/_flexible-content-module.scss */
+  /* line 474, sass/page-post-templates/_flexible-content-module.scss */
   .color-callout-section .green-brain-center .background-image .content-section-wrapper {
     padding-top: 3em;
     padding-bottom: 3em;
   }
 }
-/* line 466, sass/page-post-templates/_flexible-content-module.scss */
+/* line 479, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .green-brain-center .background-image h2 {
   color: #fff;
 }
-/* line 472, sass/page-post-templates/_flexible-content-module.scss */
+/* line 485, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .lt-gray-brain-center {
   background-color: #e8e8e8;
   text-align: center;
 }
-/* line 476, sass/page-post-templates/_flexible-content-module.scss */
+/* line 489, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .lt-gray-brain-center .color-callout-img {
   display: none;
 }
-/* line 480, sass/page-post-templates/_flexible-content-module.scss */
+/* line 493, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .lt-gray-brain-center .background-image {
   padding: 0;
   background-repeat: no-repeat;
@@ -2264,32 +2315,32 @@ lt-gray-green-btns
   background-size: 40%;
   background-position: 50%;
 }
-/* line 487, sass/page-post-templates/_flexible-content-module.scss */
+/* line 500, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .lt-gray-brain-center .background-image .content-section-wrapper {
   padding-top: 2em;
   padding-bottom: 1.5em;
   background-color: rgba(232, 232, 232, 0.7);
 }
 @media screen and (min-width: 950px) {
-  /* line 487, sass/page-post-templates/_flexible-content-module.scss */
+  /* line 500, sass/page-post-templates/_flexible-content-module.scss */
   .color-callout-section .lt-gray-brain-center .background-image .content-section-wrapper {
     padding-top: 3em;
     padding-bottom: 3em;
   }
 }
-/* line 492, sass/page-post-templates/_flexible-content-module.scss */
+/* line 505, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .lt-gray-brain-center .background-image h2 {
   color: #fff;
 }
-/* line 498, sass/page-post-templates/_flexible-content-module.scss */
+/* line 511, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .green-img-left {
   background-color: #24cf5f;
 }
-/* line 502, sass/page-post-templates/_flexible-content-module.scss */
+/* line 515, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .green-img-left h2 {
   color: #fff;
 }
-/* line 506, sass/page-post-templates/_flexible-content-module.scss */
+/* line 519, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .green-img-left .content-section-wrapper {
   padding-top: 2em;
   padding-bottom: 1.5em;
@@ -2297,43 +2348,43 @@ lt-gray-green-btns
   letter-spacing: .7px;
 }
 @media screen and (min-width: 950px) {
-  /* line 506, sass/page-post-templates/_flexible-content-module.scss */
+  /* line 519, sass/page-post-templates/_flexible-content-module.scss */
   .color-callout-section .green-img-left .content-section-wrapper {
     padding-top: 3em;
     padding-bottom: 3em;
   }
 }
-/* line 512, sass/page-post-templates/_flexible-content-module.scss */
+/* line 525, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .green-img-left .content-section-wrapper .color-callout-img {
   display: block;
   margin-bottom: 2em;
   text-align: center;
 }
 @media screen and (min-width: 750px) {
-  /* line 524, sass/page-post-templates/_flexible-content-module.scss */
+  /* line 537, sass/page-post-templates/_flexible-content-module.scss */
   .color-callout-section .green-img-left .content-section-wrapper {
     display: flex;
   }
-  /* line 527, sass/page-post-templates/_flexible-content-module.scss */
+  /* line 540, sass/page-post-templates/_flexible-content-module.scss */
   .color-callout-section .green-img-left .content-section-wrapper .color-callout-img {
     display: inline-flex;
     flex: 1 0 30%;
   }
-  /* line 532, sass/page-post-templates/_flexible-content-module.scss */
+  /* line 545, sass/page-post-templates/_flexible-content-module.scss */
   .color-callout-section .green-img-left .content-section-wrapper .editor-wrapper {
     flex: 1 1 auto;
   }
 }
-/* line 539, sass/page-post-templates/_flexible-content-module.scss */
+/* line 552, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .lt-gray-green-btns {
   background-color: #e8e8e8;
   text-align: center;
 }
-/* line 543, sass/page-post-templates/_flexible-content-module.scss */
+/* line 556, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .lt-gray-green-btns .color-callout-img {
   display: none;
 }
-/* line 547, sass/page-post-templates/_flexible-content-module.scss */
+/* line 560, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .lt-gray-green-btns .background-image {
   padding: 0;
   background-repeat: no-repeat;
@@ -2341,19 +2392,19 @@ lt-gray-green-btns
   background-size: 40%;
   background-position: 50%;
 }
-/* line 554, sass/page-post-templates/_flexible-content-module.scss */
+/* line 567, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .lt-gray-green-btns .background-image .content-section-wrapper {
   padding-top: 2em;
   padding-bottom: 1.5em;
 }
 @media screen and (min-width: 950px) {
-  /* line 554, sass/page-post-templates/_flexible-content-module.scss */
+  /* line 567, sass/page-post-templates/_flexible-content-module.scss */
   .color-callout-section .lt-gray-green-btns .background-image .content-section-wrapper {
     padding-top: 3em;
     padding-bottom: 3em;
   }
 }
-/* line 559, sass/page-post-templates/_flexible-content-module.scss */
+/* line 572, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .lt-gray-green-btns .background-image h2, .color-callout-section .lt-gray-green-btns .background-image h3 {
   color: #3b3d40;
 }
@@ -2361,12 +2412,12 @@ lt-gray-green-btns
 /*--------------------------------------------------------------
 ### Testimonial Section
 --------------------------------------------------------------*/
-/* line 572, sass/page-post-templates/_flexible-content-module.scss */
+/* line 585, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section {
   background-color: #282560;
   min-height: 200px;
 }
-/* line 576, sass/page-post-templates/_flexible-content-module.scss */
+/* line 589, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .content-section-wrapper {
   padding-top: 2em;
   padding-bottom: 3em;
@@ -2375,19 +2426,19 @@ lt-gray-green-btns
   -moz-osx-font-smoothing: grayscale;
 }
 @media screen and (min-width: 750px) {
-  /* line 576, sass/page-post-templates/_flexible-content-module.scss */
+  /* line 589, sass/page-post-templates/_flexible-content-module.scss */
   .testimonial-section .content-section-wrapper {
     padding-bottom: 4em;
   }
 }
-/* line 587, sass/page-post-templates/_flexible-content-module.scss */
+/* line 600, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .microphone-section {
   padding-top: 2em;
   padding-bottom: 2em;
   text-align: center;
   font-size: 1.1em;
 }
-/* line 594, sass/page-post-templates/_flexible-content-module.scss */
+/* line 607, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .microphone-section h5 {
   text-transform: uppercase;
   margin-top: 1em;
@@ -2396,7 +2447,7 @@ lt-gray-green-btns
   letter-spacing: 1.2px;
   font-family: "SourceSansPro-Bold", sans-serif;
 }
-/* line 604, sass/page-post-templates/_flexible-content-module.scss */
+/* line 617, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .testimonial-carousel {
   color: #fff;
   text-align: left;
@@ -2408,20 +2459,20 @@ lt-gray-green-btns
   /* big buttons, no circle */
   /* arrow color */
 }
-/* line 612, sass/page-post-templates/_flexible-content-module.scss */
+/* line 625, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .testimonial-carousel blockquote {
   margin: 0;
   padding: 0;
   letter-spacing: .7px;
   font-size: 1.2em;
 }
-/* line 618, sass/page-post-templates/_flexible-content-module.scss */
+/* line 631, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .testimonial-carousel .cell {
   width: 100%;
   height: auto;
   margin-left: 10px;
 }
-/* line 623, sass/page-post-templates/_flexible-content-module.scss */
+/* line 636, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .testimonial-carousel .cell h4 {
   margin: 0;
   padding: 0;
@@ -2431,65 +2482,65 @@ lt-gray-green-btns
   font-family: "SourceSansPro-Bold", sans-serif;
   letter-spacing: 1.2px;
 }
-/* line 632, sass/page-post-templates/_flexible-content-module.scss */
+/* line 645, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .testimonial-carousel .cell h5 {
   margin: 0;
   padding: 0;
   color: #fff;
 }
-/* line 641, sass/page-post-templates/_flexible-content-module.scss */
+/* line 654, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .testimonial-carousel .flickity-prev-next-button {
   width: 13px;
   height: 24px;
   background: transparent;
   overflow: hidden;
 }
-/* line 647, sass/page-post-templates/_flexible-content-module.scss */
+/* line 660, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .testimonial-carousel .flickity-prev-next-button:hover {
   background: transparent;
 }
-/* line 651, sass/page-post-templates/_flexible-content-module.scss */
+/* line 664, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .testimonial-carousel .flickity-prev-next-button .arrow {
   fill: white;
 }
-/* line 654, sass/page-post-templates/_flexible-content-module.scss */
+/* line 667, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .testimonial-carousel .flickity-prev-next-button.no-svg {
   color: white;
 }
-/* line 658, sass/page-post-templates/_flexible-content-module.scss */
+/* line 671, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .testimonial-carousel .flickity-prev-next-button.previous {
   top: 30%;
   left: -50px;
 }
-/* line 662, sass/page-post-templates/_flexible-content-module.scss */
+/* line 675, sass/page-post-templates/_flexible-content-module.scss */
 .testimonial-section .testimonial-carousel .flickity-prev-next-button.next {
   top: 30%;
   right: -50px;
 }
 @media screen and (min-width: 575px) {
-  /* line 604, sass/page-post-templates/_flexible-content-module.scss */
+  /* line 617, sass/page-post-templates/_flexible-content-module.scss */
   .testimonial-section .testimonial-carousel {
     padding-left: 50px;
     padding-right: 50px;
   }
 }
 @media screen and (min-width: 750px) {
-  /* line 604, sass/page-post-templates/_flexible-content-module.scss */
+  /* line 617, sass/page-post-templates/_flexible-content-module.scss */
   .testimonial-section .testimonial-carousel {
     padding-left: 75px;
     padding-right: 75px;
   }
-  /* line 676, sass/page-post-templates/_flexible-content-module.scss */
+  /* line 689, sass/page-post-templates/_flexible-content-module.scss */
   .testimonial-section .testimonial-carousel .flickity-prev-next-button.previous {
     left: -25px;
   }
-  /* line 679, sass/page-post-templates/_flexible-content-module.scss */
+  /* line 692, sass/page-post-templates/_flexible-content-module.scss */
   .testimonial-section .testimonial-carousel .flickity-prev-next-button.next {
     right: -25px;
   }
 }
 @media screen and (min-width: 950px) {
-  /* line 604, sass/page-post-templates/_flexible-content-module.scss */
+  /* line 617, sass/page-post-templates/_flexible-content-module.scss */
   .testimonial-section .testimonial-carousel {
     padding-left: 150px;
     padding-right: 150px;
@@ -2499,53 +2550,53 @@ lt-gray-green-btns
 /*--------------------------------------------------------------
 ### Associates Section
 --------------------------------------------------------------*/
-/* line 695, sass/page-post-templates/_flexible-content-module.scss */
+/* line 708, sass/page-post-templates/_flexible-content-module.scss */
 .associates-section {
   padding-top: 2em;
   padding-bottom: 1.5em;
 }
 @media screen and (min-width: 950px) {
-  /* line 695, sass/page-post-templates/_flexible-content-module.scss */
+  /* line 708, sass/page-post-templates/_flexible-content-module.scss */
   .associates-section {
     padding-top: 3em;
     padding-bottom: 3em;
   }
 }
-/* line 698, sass/page-post-templates/_flexible-content-module.scss */
+/* line 711, sass/page-post-templates/_flexible-content-module.scss */
 .associates-section .content-section-wrapper {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
 }
-/* line 702, sass/page-post-templates/_flexible-content-module.scss */
+/* line 715, sass/page-post-templates/_flexible-content-module.scss */
 .associates-section .content-section-wrapper p {
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 708, sass/page-post-templates/_flexible-content-module.scss */
+/* line 721, sass/page-post-templates/_flexible-content-module.scss */
 .associates-section a {
   text-decoration: none;
   color: #656b6f;
 }
-/* line 714, sass/page-post-templates/_flexible-content-module.scss */
+/* line 727, sass/page-post-templates/_flexible-content-module.scss */
 .associates-section img {
   display: block;
   margin-left: auto;
   margin-right: auto;
   border-radius: 50%;
 }
-/* line 719, sass/page-post-templates/_flexible-content-module.scss */
+/* line 732, sass/page-post-templates/_flexible-content-module.scss */
 .associates-section h2 {
   font-size: 2.1em;
 }
-/* line 723, sass/page-post-templates/_flexible-content-module.scss */
+/* line 736, sass/page-post-templates/_flexible-content-module.scss */
 .associates-section h4, .associates-section h5 {
   margin: 0;
   padding: 0;
 }
-/* line 727, sass/page-post-templates/_flexible-content-module.scss */
+/* line 740, sass/page-post-templates/_flexible-content-module.scss */
 .associates-section h4 {
   margin-top: 1em;
   color: #3b3d40;
@@ -2553,29 +2604,29 @@ lt-gray-green-btns
   text-transform: uppercase;
   letter-spacing: 1.6px;
 }
-/* line 735, sass/page-post-templates/_flexible-content-module.scss */
+/* line 748, sass/page-post-templates/_flexible-content-module.scss */
 .associates-section .h5 {
   color: #656b6f;
 }
-/* line 739, sass/page-post-templates/_flexible-content-module.scss */
+/* line 752, sass/page-post-templates/_flexible-content-module.scss */
 .associates-section .associate-block {
   padding-top: 2em;
   padding-bottom: 2em;
   transition: box-shadow .25s ease-out;
 }
-/* line 744, sass/page-post-templates/_flexible-content-module.scss */
+/* line 757, sass/page-post-templates/_flexible-content-module.scss */
 .associates-section .associate-block:hover {
   box-shadow: 0 0 7px rgba(0, 0, 0, 0.35);
   color: #656b6f;
 }
 @media screen and (min-width: 750px) {
-  /* line 752, sass/page-post-templates/_flexible-content-module.scss */
+  /* line 765, sass/page-post-templates/_flexible-content-module.scss */
   .associates-section .flex-wrapper {
     display: flex;
     justify-content: space-around;
     align-content: center;
   }
-  /* line 757, sass/page-post-templates/_flexible-content-module.scss */
+  /* line 770, sass/page-post-templates/_flexible-content-module.scss */
   .associates-section .associate-block {
     flex: 1 0 calc(100% / 3);
   }

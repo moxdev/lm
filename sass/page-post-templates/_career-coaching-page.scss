@@ -1,4 +1,17 @@
 .page-id-88 {
 
+    .brendel-career-coaching-standing {
+        margin: 0 0 1em 0;
+        width: 145px;
 
+        @include respond-to(small) {
+            margin-left: 1em;
+            width: 175px;
+
+        }
+
+        @include respond-to(large) {
+            width: 230px;
+        }
+    }
 }

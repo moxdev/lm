@@ -4,6 +4,7 @@ $breakpoints: (
     'small' : 750px,
     'medium': 950px,
     'large' : 1200px,
+    'larger': 1300px,
     'x-large' : 1500px
 );
 
@@ -13,4 +14,4 @@ $breakpoints-vert: (
 );
 
 $width_max-content-width: 1200px;
-$width_max-content-width-lg: 1500px;
+$width_max-content-width-lg: 1300px;
