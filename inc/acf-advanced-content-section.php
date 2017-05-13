@@ -21,10 +21,10 @@ function leading_minds_advanced_content_section() {
         $add_secondary_editor = get_sub_field( 'add_secondary_editor_section' );
         $add_content_footer   = get_sub_field('add_a_content_footer_section');
 
-        if ( $bg_color ) {
+        ?>
+        <section class="advanced-content-section">
 
-            ?>
-            <section class="advanced-content-section" style="background-color:<?php echo esc_html( $bg_color ); ?>">
+            <div class="<?php echo esc_html( $bg_color ); ?>">
 
                 <div class="content-section-wrapper wrapper">
 
@@ -293,10 +293,9 @@ function leading_minds_advanced_content_section() {
                     ?>
 
                 </div><!-- content-section-wrapper -->
+            </div>
+        </section>
 
-            </section>
-
-            <?php
-        }
+        <?php
     }
 }

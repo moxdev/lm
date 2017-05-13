@@ -68,11 +68,15 @@
 --------------------------------------------------------------*/
 
 .advanced-content-section {
-    @include section-padding;
-    @include font-smooth;
+    // @include font-smooth;
+    //
+    .content-section-wrapper {
+        @include section-padding;
+    }
 
     .header-img {
         @include center-block;
+        margin-top: 1em;
     }
 
     h2, h3 {
@@ -90,6 +94,37 @@
         font-size: 1.3em;
         max-width: 400px;
         @include margin-auto;
+    }
+
+    .bg-white {
+        background-color: #fff;
+        color: $color__text-main;
+    }
+
+    .bg-ltgray {
+        background-color: $color__bg-ltgray;
+        color: $color__text-main;
+
+    }
+
+    .bg-purple {
+        background-color: $color__bg-purple;
+        color: #fff;
+        @include font-smooth;
+
+        h2 {
+            color: #fff;
+            text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+        }
+
+        p {
+            text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+        }
+
+    }
+
+    .bg-green {
+
     }
 
     .editor-wrapper {
