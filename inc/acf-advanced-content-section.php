@@ -229,7 +229,7 @@ function leading_minds_advanced_content_section() {
                                                 <?php if( $title ) { ?>
 
                                                     <div class="img-title">
-                                                        <?php echo esc_html( $title ); ?>
+                                                        <h3><?php echo esc_html( $title ); ?></h3>
                                                         <?php echo ( $sub ); ?>
                                                     </div>
 

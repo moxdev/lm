@@ -226,6 +226,7 @@
         margin-left: auto;
         margin-right: auto;
         padding-top: 1em;
+        padding-bottom: 1em;
         text-align: center;
 
         .btn-wrapper {
@@ -234,6 +235,24 @@
 
         .img-wrapper {
             margin: 1em 0;
+
+            img {
+
+            }
+
+            h3 {
+                font-family: $font__alt-bold;
+                color: $color__dark-gray;
+                letter-spacing: .8px;
+                font-size: 1.2em;
+                text-transform: uppercase;
+            }
+
+            p {
+                font-size: 1em;
+                margin:0;
+                line-height: 2;
+            }
         }
 
         .footer-editor-wrapper {
@@ -246,6 +265,12 @@
 
             .img-wrapper {
                 flex: 1;
+
+                p {
+                    font-size: .8em;
+                    line-height: 1.5;
+                    margin: 1em 0;
+                }
             }
 
             .footer-editor-wrapper {
@@ -255,6 +280,17 @@
             .btn-wrapper {
                 flex: 1;
             }
+        }
+
+        @include respond-to(large) {
+            .img-wrapper {
+
+                p {
+                    font-size: 1em;
+                    margin: .5em 0;
+                }
+            }
+
         }
     }
 
@@ -392,6 +428,8 @@ lt-gray-green-btns
             display: none;
         }
 
+        @include linx($color__purple, $color__purple, $color__orange, $color__orange);
+
         .background-image {
             @include xl-container;
             @include margin-auto;
@@ -488,6 +526,8 @@ lt-gray-green-btns
             display: none;
         }
 
+        @include linx($color__purple, $color__purple, $color__orange, $color__orange);
+
         .background-image {
             padding:0;
             background-repeat: no-repeat;
@@ -541,7 +581,7 @@ lt-gray-green-btns
             color: #fff;
         }
 
-        @include linx($color__purple, #000, $color__orange, $color__orange);
+        @include linx($color__purple, $color__purple, $color__orange, $color__orange);
 
         .content-section-wrapper {
             @include container;
