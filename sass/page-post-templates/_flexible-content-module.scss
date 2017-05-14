@@ -9,10 +9,35 @@
 
 .simple-content-section {
 
-    // img {
-    //     margin-top: 1em;
-    //     margin-bottom: 1em;
-    // }
+   .bg-white {
+       background-color: #fff;
+       color: $color__text-main;
+   }
+
+   .bg-ltgray {
+       background-color: $color__bg-ltgray;
+       color: $color__text-main;
+   }
+
+   .bg-purple {
+       background-color: $color__bg-purple;
+       color: #fff;
+       @include font-smooth;
+
+       h2 {
+           color: #fff;
+           text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+       }
+
+       p {
+           text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+       }
+
+   }
+
+   .bg-green {
+
+   }
 
     .content-section-wrapper {
         @extend .wrapper;
@@ -38,36 +63,12 @@
                 }
             }
         }
-    }
 
-    .bg-white {
-        background-color: #fff;
-        color: $color__text-main;
-    }
+        .secondary-content {
+            max-width: 900px;
+            @include margin-auto;
 
-    .bg-ltgray {
-        background-color: $color__bg-ltgray;
-        color: $color__text-main;
-    }
-
-    .bg-purple {
-        background-color: $color__bg-purple;
-        color: #fff;
-        @include font-smooth;
-
-        h2 {
-            color: #fff;
-            text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
         }
-
-        p {
-            text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
-        }
-
-    }
-
-    .bg-green {
-
     }
 }
 
@@ -221,11 +222,11 @@
     }
 
     .content-footer-wrapper {
-        max-width: 800px;
+        max-width: 900px;
         margin-left: auto;
         margin-right: auto;
-        text-align: center;
         padding-top: 1em;
+        text-align: center;
 
         .btn-wrapper {
             margin: 1em 0;
@@ -235,9 +236,25 @@
             margin: 1em 0;
         }
 
+        .footer-editor-wrapper {
+            text-align: left;
+        }
+
         @include respond-to(small) {
             display: flex;
             justify-content: space-around;
+
+            .img-wrapper {
+                flex: 1;
+            }
+
+            .footer-editor-wrapper {
+                flex: 1;
+            }
+
+            .btn-wrapper {
+                flex: 1;
+            }
         }
     }
 
@@ -355,6 +372,10 @@ lt-gray-green-btns
 */
 
 .color-callout-section {
+
+    .background-image {
+        min-height: 400px;
+    }
 
     .bg-default {
         background-color: #fff;

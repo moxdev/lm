@@ -1067,6 +1067,12 @@
 		"oAP": "\/sass\/.sass-cache\/d5714df7c7c94776afdd8ac17e403f4d03e76a05\/_career-coaching-page.scssc",
 		"oF": 0
 		},
+	"\/sass\/.sass-cache\/d5714df7c7c94776afdd8ac17e403f4d03e76a05\/_case-study-pages.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/d5714df7c7c94776afdd8ac17e403f4d03e76a05\/_case-study-pages.scssc",
+		"oF": 0
+		},
 	"\/sass\/.sass-cache\/d5714df7c7c94776afdd8ac17e403f4d03e76a05\/_coaching-faq-page.scssc": {
 		"ft": 8192,
 		"oA": 1,
@@ -1485,6 +1491,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/sass\/page-post-templates\/_case-study-pages.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/sass\/page-post-templates\/_coach-training-page.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/page-post-templates\/_coach-training-page.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

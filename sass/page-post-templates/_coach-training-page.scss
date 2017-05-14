@@ -1,0 +1,27 @@
+.page-id-92 {
+
+    .content-footer-wrapper {
+
+        .img-wrapper {
+            text-align: center;
+            margin-top: 0;
+        }
+
+        @include respond-to(small) {
+
+            .img-wrapper {
+                margin-right: 2em;
+            }
+
+            .footer-editor-wrapper {
+                flex:2;
+            }
+        }
+
+        @include respond-to(medium) {
+            .img-wrapper {
+                margin-right: 0;
+            }
+        }
+    }
+}

@@ -24,7 +24,7 @@ function leading_minds_simple_content_section() {
 
             <div class="<?php echo esc_html( $bg_color ); ?>">
 
-                <div class="content-section-wrapper wrapper">
+                <div class="content-section-wrapper">
                     <div class="editor-wrapper">
 
                     <?php

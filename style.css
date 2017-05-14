@@ -1292,7 +1292,7 @@ http://flickity.metafizzy.co
 # Content
 --------------------------------------------------------------*/
 /* line 1, sass/site/_site.scss */
-.wrapper, .home .home-header-wrapper, .simple-content-section .content-section-wrapper, .color-callout-section .lt-gray-brain-left .background-image .content-section-wrapper, .color-callout-section .lt-gray-green-btns .background-image .content-section-wrapper, .testimonial-section .content-section-wrapper, .page-template-page-associates #associates-page .content-wrapper .about-section, .post-template-default .site-content {
+.wrapper, .simple-content-section .content-section-wrapper, .color-callout-section .lt-gray-brain-left .background-image .content-section-wrapper, .color-callout-section .lt-gray-green-btns .background-image .content-section-wrapper, .testimonial-section .content-section-wrapper, .home .home-header-wrapper, .page-template-page-associates #associates-page .content-wrapper .about-section, .post-template-default .site-content {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -1301,7 +1301,7 @@ http://flickity.metafizzy.co
 }
 @media screen and (min-width: 750px) {
   /* line 1, sass/site/_site.scss */
-  .wrapper, .home .home-header-wrapper, .simple-content-section .content-section-wrapper, .color-callout-section .lt-gray-brain-left .background-image .content-section-wrapper, .color-callout-section .lt-gray-green-btns .background-image .content-section-wrapper, .testimonial-section .content-section-wrapper, .page-template-page-associates #associates-page .content-wrapper .about-section, .post-template-default .site-content {
+  .wrapper, .simple-content-section .content-section-wrapper, .color-callout-section .lt-gray-brain-left .background-image .content-section-wrapper, .color-callout-section .lt-gray-green-btns .background-image .content-section-wrapper, .testimonial-section .content-section-wrapper, .home .home-header-wrapper, .page-template-page-associates #associates-page .content-wrapper .about-section, .post-template-default .site-content {
     padding-left: 2.75rem;
     padding-right: 2.75rem;
   }
@@ -1617,6 +1617,977 @@ object {
 # Custom Page/Custom Post Templates
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
+## Flexible Content Module Sections
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+### Simple Content Section
+--------------------------------------------------------------*/
+/* line 12, sass/page-post-templates/_flexible-content-module.scss */
+.simple-content-section .bg-white {
+  background-color: #fff;
+  color: #656b6f;
+}
+/* line 17, sass/page-post-templates/_flexible-content-module.scss */
+.simple-content-section .bg-ltgray {
+  background-color: #e8e8e8;
+  color: #656b6f;
+}
+/* line 22, sass/page-post-templates/_flexible-content-module.scss */
+.simple-content-section .bg-purple {
+  background-color: #282560;
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* line 27, sass/page-post-templates/_flexible-content-module.scss */
+.simple-content-section .bg-purple h2 {
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+/* line 32, sass/page-post-templates/_flexible-content-module.scss */
+.simple-content-section .bg-purple p {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+/* line 42, sass/page-post-templates/_flexible-content-module.scss */
+.simple-content-section .content-section-wrapper {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+@media screen and (min-width: 950px) {
+  /* line 42, sass/page-post-templates/_flexible-content-module.scss */
+  .simple-content-section .content-section-wrapper {
+    padding-top: 3em;
+    padding-bottom: 3em;
+  }
+}
+/* line 46, sass/page-post-templates/_flexible-content-module.scss */
+.simple-content-section .content-section-wrapper h2 {
+  text-align: center;
+  letter-spacing: .6px;
+}
+/* line 51, sass/page-post-templates/_flexible-content-module.scss */
+.simple-content-section .content-section-wrapper .text-wrapper {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  letter-spacing: .2px;
+}
+@media screen and (min-width: 950px) {
+  /* line 51, sass/page-post-templates/_flexible-content-module.scss */
+  .simple-content-section .content-section-wrapper .text-wrapper {
+    max-width: 800px;
+  }
+}
+@media screen and (min-width: 750px) {
+  /* line 60, sass/page-post-templates/_flexible-content-module.scss */
+  .simple-content-section .content-section-wrapper .text-wrapper p {
+    text-align: center;
+  }
+}
+/* line 67, sass/page-post-templates/_flexible-content-module.scss */
+.simple-content-section .content-section-wrapper .secondary-content {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*--------------------------------------------------------------
+### Advanced Content Section
+--------------------------------------------------------------*/
+/* line 82, sass/page-post-templates/_flexible-content-module.scss */
+.advanced-content-section .content-section-wrapper {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+@media screen and (min-width: 950px) {
+  /* line 82, sass/page-post-templates/_flexible-content-module.scss */
+  .advanced-content-section .content-section-wrapper {
+    padding-top: 3em;
+    padding-bottom: 3em;
+  }
+}
+/* line 86, sass/page-post-templates/_flexible-content-module.scss */
+.advanced-content-section .header-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+}
+/* line 91, sass/page-post-templates/_flexible-content-module.scss */
+.advanced-content-section h2, .advanced-content-section h3 {
+  text-align: center;
+}
+/* line 96, sass/page-post-templates/_flexible-content-module.scss */
+.advanced-content-section h2 {
+  margin-bottom: 0;
+}
+/* line 100, sass/page-post-templates/_flexible-content-module.scss */
+.advanced-content-section h3 {
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 106, sass/page-post-templates/_flexible-content-module.scss */
+.advanced-content-section .bg-white {
+  background-color: #fff;
+  color: #656b6f;
+}
+/* line 110, sass/page-post-templates/_flexible-content-module.scss */
+.advanced-content-section .bg-white h2 {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* line 115, sass/page-post-templates/_flexible-content-module.scss */
+.advanced-content-section .bg-ltgray {
+  background-color: #e8e8e8;
+  color: #656b6f;
+}
+/* line 121, sass/page-post-templates/_flexible-content-module.scss */
+.advanced-content-section .bg-purple {
+  background-color: #282560;
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* line 126, sass/page-post-templates/_flexible-content-module.scss */
+.advanced-content-section .bg-purple h2 {
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+/* line 131, sass/page-post-templates/_flexible-content-module.scss */
+.advanced-content-section .bg-purple p {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+/* line 141, sass/page-post-templates/_flexible-content-module.scss */
+.advanced-content-section .editor-wrapper {
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 750px) {
+  /* line 141, sass/page-post-templates/_flexible-content-module.scss */
+  .advanced-content-section .editor-wrapper {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 950px) {
+  /* line 141, sass/page-post-templates/_flexible-content-module.scss */
+  .advanced-content-section .editor-wrapper {
+    max-width: 800px;
+  }
+}
+/* line 154, sass/page-post-templates/_flexible-content-module.scss */
+.advanced-content-section .skills-wrapper {
+  display: block;
+  font-size: 1.067em;
+  text-align: center;
+  font-family: "SourceSansPro-Bold", sans-serif;
+  color: #3b3d40;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+/* line 163, sass/page-post-templates/_flexible-content-module.scss */
+.advanced-content-section .skills-wrapper .skill {
+  margin: 1em 0;
+}
+@media screen and (min-width: 750px) {
+  /* line 154, sass/page-post-templates/_flexible-content-module.scss */
+  .advanced-content-section .skills-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: .8em;
+  }
+  /* line 173, sass/page-post-templates/_flexible-content-module.scss */
+  .advanced-content-section .skills-wrapper .skill {
+    flex: 0 1 calc(100% / 3);
+  }
+}
+@media screen and (min-width: 950px) {
+  /* line 154, sass/page-post-templates/_flexible-content-module.scss */
+  .advanced-content-section .skills-wrapper {
+    font-size: 1em;
+  }
+}
+/* line 185, sass/page-post-templates/_flexible-content-module.scss */
+.advanced-content-section .secondary-content p {
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 750px) {
+  /* line 191, sass/page-post-templates/_flexible-content-module.scss */
+  .advanced-content-section .split-column-wrapper {
+    display: flex;
+    justify-content: space-around;
+  }
+  /* line 197, sass/page-post-templates/_flexible-content-module.scss */
+  .advanced-content-section .split-column-wrapper .left-column {
+    padding: 1em;
+    flex: 1 1 calc(100% / 2);
+  }
+  /* line 202, sass/page-post-templates/_flexible-content-module.scss */
+  .advanced-content-section .split-column-wrapper .right-column {
+    padding: 1em;
+    flex: 1 1 calc(100% / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 210, sass/page-post-templates/_flexible-content-module.scss */
+  .advanced-content-section .split-column-wrapper .left-column {
+    max-width: 475px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* line 216, sass/page-post-templates/_flexible-content-module.scss */
+  .advanced-content-section .split-column-wrapper .right-column {
+    max-width: 475px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+/* line 224, sass/page-post-templates/_flexible-content-module.scss */
+.advanced-content-section .content-footer-wrapper {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1em;
+  text-align: center;
+}
+/* line 231, sass/page-post-templates/_flexible-content-module.scss */
+.advanced-content-section .content-footer-wrapper .btn-wrapper {
+  margin: 1em 0;
+}
+/* line 235, sass/page-post-templates/_flexible-content-module.scss */
+.advanced-content-section .content-footer-wrapper .img-wrapper {
+  margin: 1em 0;
+}
+/* line 239, sass/page-post-templates/_flexible-content-module.scss */
+.advanced-content-section .content-footer-wrapper .footer-editor-wrapper {
+  text-align: left;
+}
+@media screen and (min-width: 750px) {
+  /* line 224, sass/page-post-templates/_flexible-content-module.scss */
+  .advanced-content-section .content-footer-wrapper {
+    display: flex;
+    justify-content: space-around;
+  }
+  /* line 247, sass/page-post-templates/_flexible-content-module.scss */
+  .advanced-content-section .content-footer-wrapper .img-wrapper {
+    flex: 1;
+  }
+  /* line 251, sass/page-post-templates/_flexible-content-module.scss */
+  .advanced-content-section .content-footer-wrapper .footer-editor-wrapper {
+    flex: 1;
+  }
+  /* line 255, sass/page-post-templates/_flexible-content-module.scss */
+  .advanced-content-section .content-footer-wrapper .btn-wrapper {
+    flex: 1;
+  }
+}
+
+/*--------------------------------------------------------------
+### Mid Page Navigation Section
+--------------------------------------------------------------*/
+/* line 267, sass/page-post-templates/_flexible-content-module.scss */
+.mid-page-navigation-section {
+  background-color: #f53f00;
+}
+/* line 273, sass/page-post-templates/_flexible-content-module.scss */
+.mid-page-navigation-section .content-section-wrapper .margin-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+/* line 278, sass/page-post-templates/_flexible-content-module.scss */
+.mid-page-navigation-section .content-section-wrapper .nav-container {
+  background-color: #fff;
+}
+/* line 281, sass/page-post-templates/_flexible-content-module.scss */
+.mid-page-navigation-section .content-section-wrapper .nav-container .nav-wrapper {
+  background-color: #f53f00;
+  margin-bottom: 1px;
+  margin-right: 1px;
+}
+/* line 287, sass/page-post-templates/_flexible-content-module.scss */
+.mid-page-navigation-section .content-section-wrapper .nav-container .nav-content {
+  text-align: center;
+  color: #fff;
+  padding: 2em;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* line 294, sass/page-post-templates/_flexible-content-module.scss */
+.mid-page-navigation-section .content-section-wrapper .nav-container h3 {
+  color: #3b3d40;
+  font-family: "SourceSansPro-Bold", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .8px;
+}
+/* line 302, sass/page-post-templates/_flexible-content-module.scss */
+.mid-page-navigation-section .content-section-wrapper .nav-container a {
+  text-decoration: none;
+  font-family: "SourceSansPro-Bold", sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: .8px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+@media screen and (min-width: 400px) {
+  /* line 313, sass/page-post-templates/_flexible-content-module.scss */
+  .mid-page-navigation-section .content-section-wrapper .margin-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-right: -1px;
+  }
+  /* line 321, sass/page-post-templates/_flexible-content-module.scss */
+  .mid-page-navigation-section .content-section-wrapper .nav-container {
+    flex: 1 1 50%;
+    display: flex;
+  }
+  /* line 325, sass/page-post-templates/_flexible-content-module.scss */
+  .mid-page-navigation-section .content-section-wrapper .nav-container .nav-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 750px) {
+  /* line 336, sass/page-post-templates/_flexible-content-module.scss */
+  .mid-page-navigation-section .content-section-wrapper .margin-wrapper {
+    flex-wrap: nowrap;
+    margin-bottom: 0;
+  }
+  /* line 341, sass/page-post-templates/_flexible-content-module.scss */
+  .mid-page-navigation-section .content-section-wrapper .nav-container {
+    flex: 1 1 calc(100% / 4);
+  }
+  /* line 344, sass/page-post-templates/_flexible-content-module.scss */
+  .mid-page-navigation-section .content-section-wrapper .nav-container .nav-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/*--------------------------------------------------------------
+### Color Callout Section Copy
+--------------------------------------------------------------*/
+/*
+
+xbg-default : White (Default)
+xgreen-brain-left : Green Section (Brain Left)
+xlt-gray-brain-left : Light Gray Section (Brain Left)
+gxreen-brain-center : Green Section (Brain Center)
+lt-gray-brain-center : Light Gray (Brain Center)
+green-img-left : Green Section (Image Left)
+lt-gray-green-btns
+
+*/
+/* line 376, sass/page-post-templates/_flexible-content-module.scss */
+.color-callout-section .background-image {
+  min-height: 400px;
+}
+/* line 380, sass/page-post-templates/_flexible-content-module.scss */
+.color-callout-section .bg-default {
+  background-color: #fff;
+}
+/* line 383, sass/page-post-templates/_flexible-content-module.scss */
+.color-callout-section .bg-default .color-callout-img {
+  display: none;
+}
+/* line 388, sass/page-post-templates/_flexible-content-module.scss */
+.color-callout-section .green-brain-left {
+  background-color: #24cf5f;
+}
+/* line 391, sass/page-post-templates/_flexible-content-module.scss */
+.color-callout-section .green-brain-left .color-callout-img {
+  display: none;
+}
+/* line 395, sass/page-post-templates/_flexible-content-module.scss */
+.color-callout-section .green-brain-left .background-image {
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
+  background-repeat: no-repeat;
+  background-image: url(http://leading-minds.dev/wp-content/themes/leading_minds/imgs/brains/large-green-brain.svg);
+  background-position: -250px 50%;
+}
+/* line 402, sass/page-post-templates/_flexible-content-module.scss */
+.color-callout-section .green-brain-left .background-image .content-section-wrapper {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  color: #161618;
+}
+@media screen and (min-width: 750px) {
+  /* line 402, sass/page-post-templates/_flexible-content-module.scss */
+  .color-callout-section .green-brain-left .background-image .content-section-wrapper {
+    padding-left: 2.75rem;
+    padding-right: 2.75rem;
+  }
+}
+@media screen and (min-width: 950px) {
+  /* line 402, sass/page-post-templates/_flexible-content-module.scss */
+  .color-callout-section .green-brain-left .background-image .content-section-wrapper {
+    padding-top: 3em;
+    padding-bottom: 3em;
+  }
+}
+/* line 408, sass/page-post-templates/_flexible-content-module.scss */
+.color-callout-section .green-brain-left .background-image .content-section-wrapper h2 {
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* line 413, sass/page-post-templates/_flexible-content-module.scss */
+.color-callout-section .green-brain-left .background-image .content-section-wrapper .editor-wrapper {
+  letter-spacing: .2px;
+  line-height: 1.4;
+}
+@media screen and (min-width: 400px) {
+  /* line 395, sass/page-post-templates/_flexible-content-module.scss */
+  .color-callout-section .green-brain-left .background-image {
+    background-position: -200px 70%;
+  }
+}
+@media screen and (min-width: 750px) {
+  /* line 395, sass/page-post-templates/_flexible-content-module.scss */
+  .color-callout-section .green-brain-left .background-image {
+    background-position: -30% 50%;
+  }
+}
+@media screen and (min-width: 950px) {
+  /* line 395, sass/page-post-templates/_flexible-content-module.scss */
+  .color-callout-section .green-brain-left .background-image {
+    background-position: -40px 50%;
+  }
+  /* line 430, sass/page-post-templates/_flexible-content-module.scss */
+  .color-callout-section .green-brain-left .background-image .editor-wrapper {
+    margin-left: 35%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 437, sass/page-post-templates/_flexible-content-module.scss */
+  .color-callout-section .green-brain-left .background-image .editor-wrapper {
+    line-height: 1.5;
+    margin-left: 40%;
+  }
+}
+@media screen and (min-width: 1300px) {
+  /* line 395, sass/page-post-templates/_flexible-content-module.scss */
+  .color-callout-section .green-brain-left .background-image {
+    background-position: 0 50%;
+  }
+}
+/* line 449, sass/page-post-templates/_flexible-content-module.scss */
+.color-callout-section .lt-gray-brain-left {
+  background-color: #e8e8e8;
+}
+/* line 452, sass/page-post-templates/_flexible-content-module.scss */
+.color-callout-section .lt-gray-brain-left .color-callout-img {
+  display: none;
+}
+/* line 456, sass/page-post-templates/_flexible-content-module.scss */
+.color-callout-section .lt-gray-brain-left .background-image {
+  padding: 0;
+  background-repeat: no-repeat;
+  background-image: url(http://leading-minds.dev/wp-content/themes/leading_minds/imgs/brains/large-green-brain.svg);
+  background-position: -250px 80%;
+}
+/* line 463, sass/page-post-templates/_flexible-content-module.scss */
+.color-callout-section .lt-gray-brain-left .background-image .content-section-wrapper {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+@media screen and (min-width: 950px) {
+  /* line 463, sass/page-post-templates/_flexible-content-module.scss */
+  .color-callout-section .lt-gray-brain-left .background-image .content-section-wrapper {
+    padding-top: 3em;
+    padding-bottom: 3em;
+  }
+}
+@media screen and (min-width: 400px) {
+  /* line 456, sass/page-post-templates/_flexible-content-module.scss */
+  .color-callout-section .lt-gray-brain-left .background-image {
+    background-size: contain;
+    background-position: -200px 70%;
+  }
+}
+@media screen and (min-width: 750px) {
+  /* line 456, sass/page-post-templates/_flexible-content-module.scss */
+  .color-callout-section .lt-gray-brain-left .background-image {
+    background-position: -20% 50%;
+  }
+  /* line 476, sass/page-post-templates/_flexible-content-module.scss */
+  .color-callout-section .lt-gray-brain-left .background-image .editor-wrapper {
+    margin-left: calc(50% - 100px);
+  }
+}
+/* line 483, sass/page-post-templates/_flexible-content-module.scss */
+.color-callout-section .green-brain-center {
+  background-color: #24cf5f;
+  text-align: center;
+}
+/* line 487, sass/page-post-templates/_flexible-content-module.scss */
+.color-callout-section .green-brain-center .color-callout-img {
+  display: none;
+}
+/* line 491, sass/page-post-templates/_flexible-content-module.scss */
+.color-callout-section .green-brain-center .background-image {
+  padding: 0;
+  background-repeat: no-repeat;
+  background-image: url(http://leading-minds.dev/wp-content/themes/leading_minds/imgs/brains.svg);
+  background-size: 40%;
+  background-position: 50%;
+}
+/* line 498, sass/page-post-templates/_flexible-content-module.scss */
+.color-callout-section .green-brain-center .background-image .content-section-wrapper {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  background-color: rgba(36, 207, 95, 0.7);
+}
+@media screen and (min-width: 950px) {
+  /* line 498, sass/page-post-templates/_flexible-content-module.scss */
+  .color-callout-section .green-brain-center .background-image .content-section-wrapper {
+    padding-top: 3em;
+    padding-bottom: 3em;
+  }
+}
+/* line 503, sass/page-post-templates/_flexible-content-module.scss */
+.color-callout-section .green-brain-center .background-image h2 {
+  color: #fff;
+}
+/* line 509, sass/page-post-templates/_flexible-content-module.scss */
+.color-callout-section .lt-gray-brain-center {
+  background-color: #e8e8e8;
+  text-align: center;
+}
+/* line 513, sass/page-post-templates/_flexible-content-module.scss */
+.color-callout-section .lt-gray-brain-center .color-callout-img {
+  display: none;
+}
+/* line 517, sass/page-post-templates/_flexible-content-module.scss */
+.color-callout-section .lt-gray-brain-center .background-image {
+  padding: 0;
+  background-repeat: no-repeat;
+  background-image: url(http://leading-minds.dev/wp-content/themes/leading_minds/imgs/brains.svg);
+  background-size: 40%;
+  background-position: 50%;
+}
+/* line 524, sass/page-post-templates/_flexible-content-module.scss */
+.color-callout-section .lt-gray-brain-center .background-image .content-section-wrapper {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  background-color: rgba(232, 232, 232, 0.7);
+}
+@media screen and (min-width: 950px) {
+  /* line 524, sass/page-post-templates/_flexible-content-module.scss */
+  .color-callout-section .lt-gray-brain-center .background-image .content-section-wrapper {
+    padding-top: 3em;
+    padding-bottom: 3em;
+  }
+}
+/* line 529, sass/page-post-templates/_flexible-content-module.scss */
+.color-callout-section .lt-gray-brain-center .background-image h2 {
+  color: #fff;
+}
+/* line 535, sass/page-post-templates/_flexible-content-module.scss */
+.color-callout-section .green-img-left {
+  background-color: #24cf5f;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* line 540, sass/page-post-templates/_flexible-content-module.scss */
+.color-callout-section .green-img-left h2 {
+  color: #fff;
+}
+/* line 21, sass/mixins/_mixins-master.scss */
+.color-callout-section .green-img-left a {
+  color: #282560;
+}
+/* line 23, sass/mixins/_mixins-master.scss */
+.color-callout-section .green-img-left a:visited {
+  color: #000;
+}
+/* line 26, sass/mixins/_mixins-master.scss */
+.color-callout-section .green-img-left a:hover {
+  color: #f53f00;
+}
+/* line 29, sass/mixins/_mixins-master.scss */
+.color-callout-section .green-img-left a:active {
+  color: #f53f00;
+}
+/* line 546, sass/page-post-templates/_flexible-content-module.scss */
+.color-callout-section .green-img-left .content-section-wrapper {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  color: #fff;
+  letter-spacing: .8px;
+}
+@media screen and (min-width: 750px) {
+  /* line 546, sass/page-post-templates/_flexible-content-module.scss */
+  .color-callout-section .green-img-left .content-section-wrapper {
+    padding-left: 2.75rem;
+    padding-right: 2.75rem;
+  }
+}
+@media screen and (min-width: 950px) {
+  /* line 546, sass/page-post-templates/_flexible-content-module.scss */
+  .color-callout-section .green-img-left .content-section-wrapper {
+    padding-top: 3em;
+    padding-bottom: 3em;
+  }
+}
+/* line 553, sass/page-post-templates/_flexible-content-module.scss */
+.color-callout-section .green-img-left .content-section-wrapper .color-callout-img {
+  margin-bottom: 2em;
+}
+/* line 556, sass/page-post-templates/_flexible-content-module.scss */
+.color-callout-section .green-img-left .content-section-wrapper .color-callout-img img {
+  max-width: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 562, sass/page-post-templates/_flexible-content-module.scss */
+.color-callout-section .green-img-left .content-section-wrapper .editor-wrapper {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 750px) {
+  /* line 569, sass/page-post-templates/_flexible-content-module.scss */
+  .color-callout-section .green-img-left .content-section-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* line 574, sass/page-post-templates/_flexible-content-module.scss */
+  .color-callout-section .green-img-left .content-section-wrapper .color-callout-img {
+    flex: 1;
+    text-align: right;
+    margin-right: 1em;
+  }
+  /* line 579, sass/page-post-templates/_flexible-content-module.scss */
+  .color-callout-section .green-img-left .content-section-wrapper .color-callout-img img {
+    max-width: 200px;
+    display: inline-block;
+  }
+  /* line 585, sass/page-post-templates/_flexible-content-module.scss */
+  .color-callout-section .green-img-left .content-section-wrapper .editor-wrapper {
+    flex: 2;
+    text-align: left;
+    margin-left: 1em;
+  }
+  /* line 590, sass/page-post-templates/_flexible-content-module.scss */
+  .color-callout-section .green-img-left .content-section-wrapper .editor-wrapper p {
+    max-width: 500px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 607, sass/page-post-templates/_flexible-content-module.scss */
+  .color-callout-section .green-img-left .content-section-wrapper {
+    letter-spacing: normal;
+  }
+  /* line 610, sass/page-post-templates/_flexible-content-module.scss */
+  .color-callout-section .green-img-left .content-section-wrapper .color-callout-img {
+    margin-right: 2em;
+  }
+  /* line 613, sass/page-post-templates/_flexible-content-module.scss */
+  .color-callout-section .green-img-left .content-section-wrapper .color-callout-img img {
+    max-width: 100%;
+  }
+  /* line 619, sass/page-post-templates/_flexible-content-module.scss */
+  .color-callout-section .green-img-left .content-section-wrapper .editor-wrapper {
+    margin-left: 2em;
+    font-size: 1.2em;
+  }
+  /* line 623, sass/page-post-templates/_flexible-content-module.scss */
+  .color-callout-section .green-img-left .content-section-wrapper .editor-wrapper p {
+    max-width: 600px;
+  }
+}
+/* line 631, sass/page-post-templates/_flexible-content-module.scss */
+.color-callout-section .lt-gray-green-btns {
+  background-color: #e8e8e8;
+  text-align: center;
+}
+/* line 635, sass/page-post-templates/_flexible-content-module.scss */
+.color-callout-section .lt-gray-green-btns .color-callout-img {
+  display: none;
+}
+/* line 639, sass/page-post-templates/_flexible-content-module.scss */
+.color-callout-section .lt-gray-green-btns .background-image {
+  padding: 0;
+  background-repeat: no-repeat;
+  background-image: url(http://leading-minds.dev/wp-content/themes/leading_minds/imgs/brains/colored-section-white-brain-1.svg);
+  background-size: 40%;
+  background-position: 50%;
+}
+/* line 646, sass/page-post-templates/_flexible-content-module.scss */
+.color-callout-section .lt-gray-green-btns .background-image .content-section-wrapper {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+@media screen and (min-width: 950px) {
+  /* line 646, sass/page-post-templates/_flexible-content-module.scss */
+  .color-callout-section .lt-gray-green-btns .background-image .content-section-wrapper {
+    padding-top: 3em;
+    padding-bottom: 3em;
+  }
+}
+/* line 651, sass/page-post-templates/_flexible-content-module.scss */
+.color-callout-section .lt-gray-green-btns .background-image h2, .color-callout-section .lt-gray-green-btns .background-image h3 {
+  color: #3b3d40;
+}
+
+/*--------------------------------------------------------------
+### Testimonial Section
+--------------------------------------------------------------*/
+/* line 664, sass/page-post-templates/_flexible-content-module.scss */
+.testimonial-section {
+  background-color: #282560;
+  min-height: 200px;
+}
+/* line 668, sass/page-post-templates/_flexible-content-module.scss */
+.testimonial-section .content-section-wrapper {
+  padding-top: 2em;
+  padding-bottom: 3em;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@media screen and (min-width: 750px) {
+  /* line 668, sass/page-post-templates/_flexible-content-module.scss */
+  .testimonial-section .content-section-wrapper {
+    padding-bottom: 4em;
+  }
+}
+/* line 679, sass/page-post-templates/_flexible-content-module.scss */
+.testimonial-section .microphone-section {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  text-align: center;
+  font-size: 1.1em;
+}
+/* line 686, sass/page-post-templates/_flexible-content-module.scss */
+.testimonial-section .microphone-section h5 {
+  text-transform: uppercase;
+  margin-top: 1em;
+  margin-bottom: .5em;
+  color: #fff;
+  letter-spacing: 1.2px;
+  font-family: "SourceSansPro-Bold", sans-serif;
+}
+/* line 696, sass/page-post-templates/_flexible-content-module.scss */
+.testimonial-section .testimonial-carousel {
+  color: #fff;
+  text-align: left;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  /* big buttons, no circle */
+  /* arrow color */
+}
+/* line 704, sass/page-post-templates/_flexible-content-module.scss */
+.testimonial-section .testimonial-carousel blockquote {
+  margin: 0;
+  padding: 0;
+  letter-spacing: .7px;
+  font-size: 1.2em;
+}
+/* line 710, sass/page-post-templates/_flexible-content-module.scss */
+.testimonial-section .testimonial-carousel .cell {
+  width: 100%;
+  height: auto;
+  margin-left: 10px;
+}
+/* line 715, sass/page-post-templates/_flexible-content-module.scss */
+.testimonial-section .testimonial-carousel .cell h4 {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  margin-top: .5em;
+  font-size: 1.1em;
+  font-family: "SourceSansPro-Bold", sans-serif;
+  letter-spacing: 1.2px;
+}
+/* line 724, sass/page-post-templates/_flexible-content-module.scss */
+.testimonial-section .testimonial-carousel .cell h5 {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+/* line 733, sass/page-post-templates/_flexible-content-module.scss */
+.testimonial-section .testimonial-carousel .flickity-prev-next-button {
+  width: 13px;
+  height: 24px;
+  background: transparent;
+  overflow: hidden;
+}
+/* line 739, sass/page-post-templates/_flexible-content-module.scss */
+.testimonial-section .testimonial-carousel .flickity-prev-next-button:hover {
+  background: transparent;
+}
+/* line 743, sass/page-post-templates/_flexible-content-module.scss */
+.testimonial-section .testimonial-carousel .flickity-prev-next-button .arrow {
+  fill: white;
+}
+/* line 746, sass/page-post-templates/_flexible-content-module.scss */
+.testimonial-section .testimonial-carousel .flickity-prev-next-button.no-svg {
+  color: white;
+}
+/* line 750, sass/page-post-templates/_flexible-content-module.scss */
+.testimonial-section .testimonial-carousel .flickity-prev-next-button.previous {
+  top: 30%;
+  left: -50px;
+}
+/* line 754, sass/page-post-templates/_flexible-content-module.scss */
+.testimonial-section .testimonial-carousel .flickity-prev-next-button.next {
+  top: 30%;
+  right: -50px;
+}
+@media screen and (min-width: 575px) {
+  /* line 696, sass/page-post-templates/_flexible-content-module.scss */
+  .testimonial-section .testimonial-carousel {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+@media screen and (min-width: 750px) {
+  /* line 696, sass/page-post-templates/_flexible-content-module.scss */
+  .testimonial-section .testimonial-carousel {
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+  /* line 768, sass/page-post-templates/_flexible-content-module.scss */
+  .testimonial-section .testimonial-carousel .flickity-prev-next-button.previous {
+    left: -25px;
+  }
+  /* line 771, sass/page-post-templates/_flexible-content-module.scss */
+  .testimonial-section .testimonial-carousel .flickity-prev-next-button.next {
+    right: -25px;
+  }
+}
+@media screen and (min-width: 950px) {
+  /* line 696, sass/page-post-templates/_flexible-content-module.scss */
+  .testimonial-section .testimonial-carousel {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+}
+
+/*--------------------------------------------------------------
+### Associates Section
+--------------------------------------------------------------*/
+/* line 787, sass/page-post-templates/_flexible-content-module.scss */
+.associates-section {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+@media screen and (min-width: 950px) {
+  /* line 787, sass/page-post-templates/_flexible-content-module.scss */
+  .associates-section {
+    padding-top: 3em;
+    padding-bottom: 3em;
+  }
+}
+/* line 790, sass/page-post-templates/_flexible-content-module.scss */
+.associates-section .content-section-wrapper {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+/* line 794, sass/page-post-templates/_flexible-content-module.scss */
+.associates-section .content-section-wrapper p {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 800, sass/page-post-templates/_flexible-content-module.scss */
+.associates-section a {
+  text-decoration: none;
+  color: #656b6f;
+}
+/* line 806, sass/page-post-templates/_flexible-content-module.scss */
+.associates-section img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+}
+/* line 811, sass/page-post-templates/_flexible-content-module.scss */
+.associates-section h2 {
+  font-size: 2.1em;
+}
+/* line 815, sass/page-post-templates/_flexible-content-module.scss */
+.associates-section h4, .associates-section h5 {
+  margin: 0;
+  padding: 0;
+}
+/* line 819, sass/page-post-templates/_flexible-content-module.scss */
+.associates-section h4 {
+  margin-top: 1em;
+  color: #3b3d40;
+  font-family: "SourceSansPro-Bold", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1.6px;
+}
+/* line 827, sass/page-post-templates/_flexible-content-module.scss */
+.associates-section .h5 {
+  color: #656b6f;
+}
+/* line 831, sass/page-post-templates/_flexible-content-module.scss */
+.associates-section .associate-block {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  transition: box-shadow .25s ease-out;
+}
+/* line 836, sass/page-post-templates/_flexible-content-module.scss */
+.associates-section .associate-block:hover {
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.35);
+  color: #656b6f;
+}
+@media screen and (min-width: 750px) {
+  /* line 844, sass/page-post-templates/_flexible-content-module.scss */
+  .associates-section .flex-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+  }
+  /* line 849, sass/page-post-templates/_flexible-content-module.scss */
+  .associates-section .associate-block {
+    flex: 1 0 calc(100% / 3);
+  }
+}
+
+/*--------------------------------------------------------------
+### Custom Styles for various sections
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
 ## Static Front Page
 --------------------------------------------------------------*/
 /* line 3, sass/page-post-templates/_front-page.scss */
@@ -1828,950 +2799,30 @@ object {
 }
 
 /*--------------------------------------------------------------
-## Flexible Content Module Sections
+## Coaching Training Page
 --------------------------------------------------------------*/
-/*--------------------------------------------------------------
-### Simple Content Section
---------------------------------------------------------------*/
-/* line 17, sass/page-post-templates/_flexible-content-module.scss */
-.simple-content-section .content-section-wrapper {
-  padding-top: 1.5em;
-  padding-bottom: 1.5em;
-}
-@media screen and (min-width: 950px) {
-  /* line 17, sass/page-post-templates/_flexible-content-module.scss */
-  .simple-content-section .content-section-wrapper {
-    padding-top: 3em;
-    padding-bottom: 3em;
-  }
-}
-/* line 21, sass/page-post-templates/_flexible-content-module.scss */
-.simple-content-section .content-section-wrapper h2 {
+/* line 5, sass/page-post-templates/_coach-training-page.scss */
+.page-id-92 .content-footer-wrapper .img-wrapper {
   text-align: center;
-  letter-spacing: .6px;
-}
-/* line 26, sass/page-post-templates/_flexible-content-module.scss */
-.simple-content-section .content-section-wrapper .text-wrapper {
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  letter-spacing: .2px;
-}
-@media screen and (min-width: 950px) {
-  /* line 26, sass/page-post-templates/_flexible-content-module.scss */
-  .simple-content-section .content-section-wrapper .text-wrapper {
-    max-width: 800px;
-  }
+  margin-top: 0;
 }
 @media screen and (min-width: 750px) {
-  /* line 35, sass/page-post-templates/_flexible-content-module.scss */
-  .simple-content-section .content-section-wrapper .text-wrapper p {
-    text-align: center;
-  }
-}
-/* line 43, sass/page-post-templates/_flexible-content-module.scss */
-.simple-content-section .bg-white {
-  background-color: #fff;
-  color: #656b6f;
-}
-/* line 48, sass/page-post-templates/_flexible-content-module.scss */
-.simple-content-section .bg-ltgray {
-  background-color: #e8e8e8;
-  color: #656b6f;
-}
-/* line 53, sass/page-post-templates/_flexible-content-module.scss */
-.simple-content-section .bg-purple {
-  background-color: #282560;
-  color: #fff;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-/* line 58, sass/page-post-templates/_flexible-content-module.scss */
-.simple-content-section .bg-purple h2 {
-  color: #fff;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-}
-/* line 63, sass/page-post-templates/_flexible-content-module.scss */
-.simple-content-section .bg-purple p {
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-}
-
-/*--------------------------------------------------------------
-### Advanced Content Section
---------------------------------------------------------------*/
-/* line 81, sass/page-post-templates/_flexible-content-module.scss */
-.advanced-content-section .content-section-wrapper {
-  padding-top: 1.5em;
-  padding-bottom: 1.5em;
-}
-@media screen and (min-width: 950px) {
-  /* line 81, sass/page-post-templates/_flexible-content-module.scss */
-  .advanced-content-section .content-section-wrapper {
-    padding-top: 3em;
-    padding-bottom: 3em;
-  }
-}
-/* line 85, sass/page-post-templates/_flexible-content-module.scss */
-.advanced-content-section .header-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 1em;
-}
-/* line 90, sass/page-post-templates/_flexible-content-module.scss */
-.advanced-content-section h2, .advanced-content-section h3 {
-  text-align: center;
-}
-/* line 95, sass/page-post-templates/_flexible-content-module.scss */
-.advanced-content-section h2 {
-  margin-bottom: 0;
-}
-/* line 99, sass/page-post-templates/_flexible-content-module.scss */
-.advanced-content-section h3 {
-  max-width: 400px;
-  margin-left: auto;
-  margin-right: auto;
-}
-/* line 105, sass/page-post-templates/_flexible-content-module.scss */
-.advanced-content-section .bg-white {
-  background-color: #fff;
-  color: #656b6f;
-}
-/* line 109, sass/page-post-templates/_flexible-content-module.scss */
-.advanced-content-section .bg-white h2 {
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-/* line 114, sass/page-post-templates/_flexible-content-module.scss */
-.advanced-content-section .bg-ltgray {
-  background-color: #e8e8e8;
-  color: #656b6f;
-}
-/* line 120, sass/page-post-templates/_flexible-content-module.scss */
-.advanced-content-section .bg-purple {
-  background-color: #282560;
-  color: #fff;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-/* line 125, sass/page-post-templates/_flexible-content-module.scss */
-.advanced-content-section .bg-purple h2 {
-  color: #fff;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-}
-/* line 130, sass/page-post-templates/_flexible-content-module.scss */
-.advanced-content-section .bg-purple p {
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-}
-/* line 140, sass/page-post-templates/_flexible-content-module.scss */
-.advanced-content-section .editor-wrapper {
-  max-width: 650px;
-  margin-left: auto;
-  margin-right: auto;
-}
-@media screen and (min-width: 750px) {
-  /* line 140, sass/page-post-templates/_flexible-content-module.scss */
-  .advanced-content-section .editor-wrapper {
-    text-align: center;
-  }
-}
-@media screen and (min-width: 950px) {
-  /* line 140, sass/page-post-templates/_flexible-content-module.scss */
-  .advanced-content-section .editor-wrapper {
-    max-width: 800px;
-  }
-}
-/* line 153, sass/page-post-templates/_flexible-content-module.scss */
-.advanced-content-section .skills-wrapper {
-  display: block;
-  font-size: 1.067em;
-  text-align: center;
-  font-family: "SourceSansPro-Bold", sans-serif;
-  color: #3b3d40;
-  letter-spacing: 0.8px;
-  text-transform: uppercase;
-}
-/* line 162, sass/page-post-templates/_flexible-content-module.scss */
-.advanced-content-section .skills-wrapper .skill {
-  margin: 1em 0;
-}
-@media screen and (min-width: 750px) {
-  /* line 153, sass/page-post-templates/_flexible-content-module.scss */
-  .advanced-content-section .skills-wrapper {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    font-size: .8em;
-  }
-  /* line 172, sass/page-post-templates/_flexible-content-module.scss */
-  .advanced-content-section .skills-wrapper .skill {
-    flex: 0 1 calc(100% / 3);
-  }
-}
-@media screen and (min-width: 950px) {
-  /* line 153, sass/page-post-templates/_flexible-content-module.scss */
-  .advanced-content-section .skills-wrapper {
-    font-size: 1em;
-  }
-}
-/* line 184, sass/page-post-templates/_flexible-content-module.scss */
-.advanced-content-section .secondary-content p {
-  max-width: 650px;
-  margin-left: auto;
-  margin-right: auto;
-}
-@media screen and (min-width: 750px) {
-  /* line 190, sass/page-post-templates/_flexible-content-module.scss */
-  .advanced-content-section .split-column-wrapper {
-    display: flex;
-    justify-content: space-around;
-  }
-  /* line 196, sass/page-post-templates/_flexible-content-module.scss */
-  .advanced-content-section .split-column-wrapper .left-column {
-    padding: 1em;
-    flex: 1 1 calc(100% / 2);
-  }
-  /* line 201, sass/page-post-templates/_flexible-content-module.scss */
-  .advanced-content-section .split-column-wrapper .right-column {
-    padding: 1em;
-    flex: 1 1 calc(100% / 2);
-  }
-}
-@media screen and (min-width: 1200px) {
-  /* line 209, sass/page-post-templates/_flexible-content-module.scss */
-  .advanced-content-section .split-column-wrapper .left-column {
-    max-width: 475px;
-    padding-left: 0;
-    padding-right: 0;
-  }
-  /* line 215, sass/page-post-templates/_flexible-content-module.scss */
-  .advanced-content-section .split-column-wrapper .right-column {
-    max-width: 475px;
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-/* line 223, sass/page-post-templates/_flexible-content-module.scss */
-.advanced-content-section .content-footer-wrapper {
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  padding-top: 1em;
-}
-/* line 230, sass/page-post-templates/_flexible-content-module.scss */
-.advanced-content-section .content-footer-wrapper .btn-wrapper {
-  margin: 1em 0;
-}
-/* line 234, sass/page-post-templates/_flexible-content-module.scss */
-.advanced-content-section .content-footer-wrapper .img-wrapper {
-  margin: 1em 0;
-}
-@media screen and (min-width: 750px) {
-  /* line 223, sass/page-post-templates/_flexible-content-module.scss */
-  .advanced-content-section .content-footer-wrapper {
-    display: flex;
-    justify-content: space-around;
-  }
-}
-
-/*--------------------------------------------------------------
-### Mid Page Navigation Section
---------------------------------------------------------------*/
-/* line 250, sass/page-post-templates/_flexible-content-module.scss */
-.mid-page-navigation-section {
-  background-color: #f53f00;
-}
-/* line 256, sass/page-post-templates/_flexible-content-module.scss */
-.mid-page-navigation-section .content-section-wrapper .margin-wrapper {
-  display: flex;
-  flex-direction: column;
-}
-/* line 261, sass/page-post-templates/_flexible-content-module.scss */
-.mid-page-navigation-section .content-section-wrapper .nav-container {
-  background-color: #fff;
-}
-/* line 264, sass/page-post-templates/_flexible-content-module.scss */
-.mid-page-navigation-section .content-section-wrapper .nav-container .nav-wrapper {
-  background-color: #f53f00;
-  margin-bottom: 1px;
-  margin-right: 1px;
-}
-/* line 270, sass/page-post-templates/_flexible-content-module.scss */
-.mid-page-navigation-section .content-section-wrapper .nav-container .nav-content {
-  text-align: center;
-  color: #fff;
-  padding: 2em;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-/* line 277, sass/page-post-templates/_flexible-content-module.scss */
-.mid-page-navigation-section .content-section-wrapper .nav-container h3 {
-  color: #3b3d40;
-  font-family: "SourceSansPro-Bold", sans-serif;
-  text-transform: uppercase;
-  letter-spacing: .8px;
-}
-/* line 285, sass/page-post-templates/_flexible-content-module.scss */
-.mid-page-navigation-section .content-section-wrapper .nav-container a {
-  text-decoration: none;
-  font-family: "SourceSansPro-Bold", sans-serif;
-  text-transform: uppercase;
-  color: #fff;
-  letter-spacing: .8px;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-}
-@media screen and (min-width: 400px) {
-  /* line 296, sass/page-post-templates/_flexible-content-module.scss */
-  .mid-page-navigation-section .content-section-wrapper .margin-wrapper {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    margin-right: -1px;
-  }
-  /* line 304, sass/page-post-templates/_flexible-content-module.scss */
-  .mid-page-navigation-section .content-section-wrapper .nav-container {
-    flex: 1 1 50%;
-    display: flex;
-  }
-  /* line 308, sass/page-post-templates/_flexible-content-module.scss */
-  .mid-page-navigation-section .content-section-wrapper .nav-container .nav-wrapper {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
-@media screen and (min-width: 750px) {
-  /* line 319, sass/page-post-templates/_flexible-content-module.scss */
-  .mid-page-navigation-section .content-section-wrapper .margin-wrapper {
-    flex-wrap: nowrap;
-    margin-bottom: 0;
-  }
-  /* line 324, sass/page-post-templates/_flexible-content-module.scss */
-  .mid-page-navigation-section .content-section-wrapper .nav-container {
-    flex: 1 1 calc(100% / 4);
-  }
-  /* line 327, sass/page-post-templates/_flexible-content-module.scss */
-  .mid-page-navigation-section .content-section-wrapper .nav-container .nav-wrapper {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
-/*--------------------------------------------------------------
-### Color Callout Section Copy
---------------------------------------------------------------*/
-/*
-
-xbg-default : White (Default)
-xgreen-brain-left : Green Section (Brain Left)
-xlt-gray-brain-left : Light Gray Section (Brain Left)
-gxreen-brain-center : Green Section (Brain Center)
-lt-gray-brain-center : Light Gray (Brain Center)
-green-img-left : Green Section (Image Left)
-lt-gray-green-btns
-
-*/
-/* line 359, sass/page-post-templates/_flexible-content-module.scss */
-.color-callout-section .bg-default {
-  background-color: #fff;
-}
-/* line 362, sass/page-post-templates/_flexible-content-module.scss */
-.color-callout-section .bg-default .color-callout-img {
-  display: none;
-}
-/* line 367, sass/page-post-templates/_flexible-content-module.scss */
-.color-callout-section .green-brain-left {
-  background-color: #24cf5f;
-}
-/* line 370, sass/page-post-templates/_flexible-content-module.scss */
-.color-callout-section .green-brain-left .color-callout-img {
-  display: none;
-}
-/* line 374, sass/page-post-templates/_flexible-content-module.scss */
-.color-callout-section .green-brain-left .background-image {
-  max-width: 1300px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-left: auto;
-  margin-right: auto;
-  background-repeat: no-repeat;
-  background-image: url(http://leading-minds.dev/wp-content/themes/leading_minds/imgs/brains/large-green-brain.svg);
-  background-position: -250px 50%;
-}
-/* line 381, sass/page-post-templates/_flexible-content-module.scss */
-.color-callout-section .green-brain-left .background-image .content-section-wrapper {
-  padding-left: 1.75rem;
-  padding-right: 1.75rem;
-  padding-top: 1.5em;
-  padding-bottom: 1.5em;
-  color: #161618;
-}
-@media screen and (min-width: 750px) {
-  /* line 381, sass/page-post-templates/_flexible-content-module.scss */
-  .color-callout-section .green-brain-left .background-image .content-section-wrapper {
-    padding-left: 2.75rem;
-    padding-right: 2.75rem;
-  }
-}
-@media screen and (min-width: 950px) {
-  /* line 381, sass/page-post-templates/_flexible-content-module.scss */
-  .color-callout-section .green-brain-left .background-image .content-section-wrapper {
-    padding-top: 3em;
-    padding-bottom: 3em;
-  }
-}
-/* line 387, sass/page-post-templates/_flexible-content-module.scss */
-.color-callout-section .green-brain-left .background-image .content-section-wrapper h2 {
-  color: #fff;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-/* line 392, sass/page-post-templates/_flexible-content-module.scss */
-.color-callout-section .green-brain-left .background-image .content-section-wrapper .editor-wrapper {
-  letter-spacing: .2px;
-  line-height: 1.4;
-}
-@media screen and (min-width: 400px) {
-  /* line 374, sass/page-post-templates/_flexible-content-module.scss */
-  .color-callout-section .green-brain-left .background-image {
-    background-position: -200px 70%;
-  }
-}
-@media screen and (min-width: 750px) {
-  /* line 374, sass/page-post-templates/_flexible-content-module.scss */
-  .color-callout-section .green-brain-left .background-image {
-    background-position: -30% 50%;
-  }
-}
-@media screen and (min-width: 950px) {
-  /* line 374, sass/page-post-templates/_flexible-content-module.scss */
-  .color-callout-section .green-brain-left .background-image {
-    background-position: -40px 50%;
-  }
-  /* line 409, sass/page-post-templates/_flexible-content-module.scss */
-  .color-callout-section .green-brain-left .background-image .editor-wrapper {
-    margin-left: 35%;
-  }
-}
-@media screen and (min-width: 1200px) {
-  /* line 416, sass/page-post-templates/_flexible-content-module.scss */
-  .color-callout-section .green-brain-left .background-image .editor-wrapper {
-    line-height: 1.5;
-    margin-left: 40%;
-  }
-}
-@media screen and (min-width: 1300px) {
-  /* line 374, sass/page-post-templates/_flexible-content-module.scss */
-  .color-callout-section .green-brain-left .background-image {
-    background-position: 0 50%;
-  }
-}
-/* line 428, sass/page-post-templates/_flexible-content-module.scss */
-.color-callout-section .lt-gray-brain-left {
-  background-color: #e8e8e8;
-}
-/* line 431, sass/page-post-templates/_flexible-content-module.scss */
-.color-callout-section .lt-gray-brain-left .color-callout-img {
-  display: none;
-}
-/* line 435, sass/page-post-templates/_flexible-content-module.scss */
-.color-callout-section .lt-gray-brain-left .background-image {
-  padding: 0;
-  background-repeat: no-repeat;
-  background-image: url(http://leading-minds.dev/wp-content/themes/leading_minds/imgs/brains/large-green-brain.svg);
-  background-position: -250px 80%;
-}
-/* line 442, sass/page-post-templates/_flexible-content-module.scss */
-.color-callout-section .lt-gray-brain-left .background-image .content-section-wrapper {
-  padding-top: 1.5em;
-  padding-bottom: 1.5em;
-}
-@media screen and (min-width: 950px) {
-  /* line 442, sass/page-post-templates/_flexible-content-module.scss */
-  .color-callout-section .lt-gray-brain-left .background-image .content-section-wrapper {
-    padding-top: 3em;
-    padding-bottom: 3em;
-  }
-}
-@media screen and (min-width: 400px) {
-  /* line 435, sass/page-post-templates/_flexible-content-module.scss */
-  .color-callout-section .lt-gray-brain-left .background-image {
-    background-size: contain;
-    background-position: -200px 70%;
-  }
-}
-@media screen and (min-width: 750px) {
-  /* line 435, sass/page-post-templates/_flexible-content-module.scss */
-  .color-callout-section .lt-gray-brain-left .background-image {
-    background-position: -20% 50%;
-  }
-  /* line 455, sass/page-post-templates/_flexible-content-module.scss */
-  .color-callout-section .lt-gray-brain-left .background-image .editor-wrapper {
-    margin-left: calc(50% - 100px);
-  }
-}
-/* line 462, sass/page-post-templates/_flexible-content-module.scss */
-.color-callout-section .green-brain-center {
-  background-color: #24cf5f;
-  text-align: center;
-}
-/* line 466, sass/page-post-templates/_flexible-content-module.scss */
-.color-callout-section .green-brain-center .color-callout-img {
-  display: none;
-}
-/* line 470, sass/page-post-templates/_flexible-content-module.scss */
-.color-callout-section .green-brain-center .background-image {
-  padding: 0;
-  background-repeat: no-repeat;
-  background-image: url(http://leading-minds.dev/wp-content/themes/leading_minds/imgs/brains.svg);
-  background-size: 40%;
-  background-position: 50%;
-}
-/* line 477, sass/page-post-templates/_flexible-content-module.scss */
-.color-callout-section .green-brain-center .background-image .content-section-wrapper {
-  padding-top: 1.5em;
-  padding-bottom: 1.5em;
-  background-color: rgba(36, 207, 95, 0.7);
-}
-@media screen and (min-width: 950px) {
-  /* line 477, sass/page-post-templates/_flexible-content-module.scss */
-  .color-callout-section .green-brain-center .background-image .content-section-wrapper {
-    padding-top: 3em;
-    padding-bottom: 3em;
-  }
-}
-/* line 482, sass/page-post-templates/_flexible-content-module.scss */
-.color-callout-section .green-brain-center .background-image h2 {
-  color: #fff;
-}
-/* line 488, sass/page-post-templates/_flexible-content-module.scss */
-.color-callout-section .lt-gray-brain-center {
-  background-color: #e8e8e8;
-  text-align: center;
-}
-/* line 492, sass/page-post-templates/_flexible-content-module.scss */
-.color-callout-section .lt-gray-brain-center .color-callout-img {
-  display: none;
-}
-/* line 496, sass/page-post-templates/_flexible-content-module.scss */
-.color-callout-section .lt-gray-brain-center .background-image {
-  padding: 0;
-  background-repeat: no-repeat;
-  background-image: url(http://leading-minds.dev/wp-content/themes/leading_minds/imgs/brains.svg);
-  background-size: 40%;
-  background-position: 50%;
-}
-/* line 503, sass/page-post-templates/_flexible-content-module.scss */
-.color-callout-section .lt-gray-brain-center .background-image .content-section-wrapper {
-  padding-top: 1.5em;
-  padding-bottom: 1.5em;
-  background-color: rgba(232, 232, 232, 0.7);
-}
-@media screen and (min-width: 950px) {
-  /* line 503, sass/page-post-templates/_flexible-content-module.scss */
-  .color-callout-section .lt-gray-brain-center .background-image .content-section-wrapper {
-    padding-top: 3em;
-    padding-bottom: 3em;
-  }
-}
-/* line 508, sass/page-post-templates/_flexible-content-module.scss */
-.color-callout-section .lt-gray-brain-center .background-image h2 {
-  color: #fff;
-}
-/* line 514, sass/page-post-templates/_flexible-content-module.scss */
-.color-callout-section .green-img-left {
-  background-color: #24cf5f;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-/* line 519, sass/page-post-templates/_flexible-content-module.scss */
-.color-callout-section .green-img-left h2 {
-  color: #fff;
-}
-/* line 21, sass/mixins/_mixins-master.scss */
-.color-callout-section .green-img-left a {
-  color: #282560;
-}
-/* line 23, sass/mixins/_mixins-master.scss */
-.color-callout-section .green-img-left a:visited {
-  color: #000;
-}
-/* line 26, sass/mixins/_mixins-master.scss */
-.color-callout-section .green-img-left a:hover {
-  color: #f53f00;
-}
-/* line 29, sass/mixins/_mixins-master.scss */
-.color-callout-section .green-img-left a:active {
-  color: #f53f00;
-}
-/* line 525, sass/page-post-templates/_flexible-content-module.scss */
-.color-callout-section .green-img-left .content-section-wrapper {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1.75rem;
-  padding-right: 1.75rem;
-  padding-top: 1.5em;
-  padding-bottom: 1.5em;
-  color: #fff;
-  letter-spacing: .8px;
-}
-@media screen and (min-width: 750px) {
-  /* line 525, sass/page-post-templates/_flexible-content-module.scss */
-  .color-callout-section .green-img-left .content-section-wrapper {
-    padding-left: 2.75rem;
-    padding-right: 2.75rem;
-  }
-}
-@media screen and (min-width: 950px) {
-  /* line 525, sass/page-post-templates/_flexible-content-module.scss */
-  .color-callout-section .green-img-left .content-section-wrapper {
-    padding-top: 3em;
-    padding-bottom: 3em;
-  }
-}
-/* line 532, sass/page-post-templates/_flexible-content-module.scss */
-.color-callout-section .green-img-left .content-section-wrapper .color-callout-img {
-  margin-bottom: 2em;
-}
-/* line 535, sass/page-post-templates/_flexible-content-module.scss */
-.color-callout-section .green-img-left .content-section-wrapper .color-callout-img img {
-  max-width: 150px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-/* line 541, sass/page-post-templates/_flexible-content-module.scss */
-.color-callout-section .green-img-left .content-section-wrapper .editor-wrapper {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-@media screen and (min-width: 750px) {
-  /* line 548, sass/page-post-templates/_flexible-content-module.scss */
-  .color-callout-section .green-img-left .content-section-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  /* line 553, sass/page-post-templates/_flexible-content-module.scss */
-  .color-callout-section .green-img-left .content-section-wrapper .color-callout-img {
-    flex: 1;
-    text-align: right;
-    margin-right: 1em;
-  }
-  /* line 558, sass/page-post-templates/_flexible-content-module.scss */
-  .color-callout-section .green-img-left .content-section-wrapper .color-callout-img img {
-    max-width: 200px;
-    display: inline-block;
-  }
-  /* line 564, sass/page-post-templates/_flexible-content-module.scss */
-  .color-callout-section .green-img-left .content-section-wrapper .editor-wrapper {
-    flex: 2;
-    text-align: left;
-    margin-left: 1em;
-  }
-  /* line 569, sass/page-post-templates/_flexible-content-module.scss */
-  .color-callout-section .green-img-left .content-section-wrapper .editor-wrapper p {
-    max-width: 500px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  /* line 586, sass/page-post-templates/_flexible-content-module.scss */
-  .color-callout-section .green-img-left .content-section-wrapper {
-    letter-spacing: normal;
-  }
-  /* line 589, sass/page-post-templates/_flexible-content-module.scss */
-  .color-callout-section .green-img-left .content-section-wrapper .color-callout-img {
+  /* line 12, sass/page-post-templates/_coach-training-page.scss */
+  .page-id-92 .content-footer-wrapper .img-wrapper {
     margin-right: 2em;
   }
-  /* line 592, sass/page-post-templates/_flexible-content-module.scss */
-  .color-callout-section .green-img-left .content-section-wrapper .color-callout-img img {
-    max-width: 100%;
-  }
-  /* line 598, sass/page-post-templates/_flexible-content-module.scss */
-  .color-callout-section .green-img-left .content-section-wrapper .editor-wrapper {
-    margin-left: 2em;
-    font-size: 1.2em;
-  }
-  /* line 602, sass/page-post-templates/_flexible-content-module.scss */
-  .color-callout-section .green-img-left .content-section-wrapper .editor-wrapper p {
-    max-width: 600px;
-  }
-}
-/* line 610, sass/page-post-templates/_flexible-content-module.scss */
-.color-callout-section .lt-gray-green-btns {
-  background-color: #e8e8e8;
-  text-align: center;
-}
-/* line 614, sass/page-post-templates/_flexible-content-module.scss */
-.color-callout-section .lt-gray-green-btns .color-callout-img {
-  display: none;
-}
-/* line 618, sass/page-post-templates/_flexible-content-module.scss */
-.color-callout-section .lt-gray-green-btns .background-image {
-  padding: 0;
-  background-repeat: no-repeat;
-  background-image: url(http://leading-minds.dev/wp-content/themes/leading_minds/imgs/brains/colored-section-white-brain-1.svg);
-  background-size: 40%;
-  background-position: 50%;
-}
-/* line 625, sass/page-post-templates/_flexible-content-module.scss */
-.color-callout-section .lt-gray-green-btns .background-image .content-section-wrapper {
-  padding-top: 1.5em;
-  padding-bottom: 1.5em;
-}
-@media screen and (min-width: 950px) {
-  /* line 625, sass/page-post-templates/_flexible-content-module.scss */
-  .color-callout-section .lt-gray-green-btns .background-image .content-section-wrapper {
-    padding-top: 3em;
-    padding-bottom: 3em;
-  }
-}
-/* line 630, sass/page-post-templates/_flexible-content-module.scss */
-.color-callout-section .lt-gray-green-btns .background-image h2, .color-callout-section .lt-gray-green-btns .background-image h3 {
-  color: #3b3d40;
-}
-
-/*--------------------------------------------------------------
-### Testimonial Section
---------------------------------------------------------------*/
-/* line 643, sass/page-post-templates/_flexible-content-module.scss */
-.testimonial-section {
-  background-color: #282560;
-  min-height: 200px;
-}
-/* line 647, sass/page-post-templates/_flexible-content-module.scss */
-.testimonial-section .content-section-wrapper {
-  padding-top: 2em;
-  padding-bottom: 3em;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-@media screen and (min-width: 750px) {
-  /* line 647, sass/page-post-templates/_flexible-content-module.scss */
-  .testimonial-section .content-section-wrapper {
-    padding-bottom: 4em;
-  }
-}
-/* line 658, sass/page-post-templates/_flexible-content-module.scss */
-.testimonial-section .microphone-section {
-  padding-top: 2em;
-  padding-bottom: 2em;
-  text-align: center;
-  font-size: 1.1em;
-}
-/* line 665, sass/page-post-templates/_flexible-content-module.scss */
-.testimonial-section .microphone-section h5 {
-  text-transform: uppercase;
-  margin-top: 1em;
-  margin-bottom: .5em;
-  color: #fff;
-  letter-spacing: 1.2px;
-  font-family: "SourceSansPro-Bold", sans-serif;
-}
-/* line 675, sass/page-post-templates/_flexible-content-module.scss */
-.testimonial-section .testimonial-carousel {
-  color: #fff;
-  text-align: left;
-  max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
-  /* big buttons, no circle */
-  /* arrow color */
-}
-/* line 683, sass/page-post-templates/_flexible-content-module.scss */
-.testimonial-section .testimonial-carousel blockquote {
-  margin: 0;
-  padding: 0;
-  letter-spacing: .7px;
-  font-size: 1.2em;
-}
-/* line 689, sass/page-post-templates/_flexible-content-module.scss */
-.testimonial-section .testimonial-carousel .cell {
-  width: 100%;
-  height: auto;
-  margin-left: 10px;
-}
-/* line 694, sass/page-post-templates/_flexible-content-module.scss */
-.testimonial-section .testimonial-carousel .cell h4 {
-  margin: 0;
-  padding: 0;
-  color: #fff;
-  margin-top: .5em;
-  font-size: 1.1em;
-  font-family: "SourceSansPro-Bold", sans-serif;
-  letter-spacing: 1.2px;
-}
-/* line 703, sass/page-post-templates/_flexible-content-module.scss */
-.testimonial-section .testimonial-carousel .cell h5 {
-  margin: 0;
-  padding: 0;
-  color: #fff;
-}
-/* line 712, sass/page-post-templates/_flexible-content-module.scss */
-.testimonial-section .testimonial-carousel .flickity-prev-next-button {
-  width: 13px;
-  height: 24px;
-  background: transparent;
-  overflow: hidden;
-}
-/* line 718, sass/page-post-templates/_flexible-content-module.scss */
-.testimonial-section .testimonial-carousel .flickity-prev-next-button:hover {
-  background: transparent;
-}
-/* line 722, sass/page-post-templates/_flexible-content-module.scss */
-.testimonial-section .testimonial-carousel .flickity-prev-next-button .arrow {
-  fill: white;
-}
-/* line 725, sass/page-post-templates/_flexible-content-module.scss */
-.testimonial-section .testimonial-carousel .flickity-prev-next-button.no-svg {
-  color: white;
-}
-/* line 729, sass/page-post-templates/_flexible-content-module.scss */
-.testimonial-section .testimonial-carousel .flickity-prev-next-button.previous {
-  top: 30%;
-  left: -50px;
-}
-/* line 733, sass/page-post-templates/_flexible-content-module.scss */
-.testimonial-section .testimonial-carousel .flickity-prev-next-button.next {
-  top: 30%;
-  right: -50px;
-}
-@media screen and (min-width: 575px) {
-  /* line 675, sass/page-post-templates/_flexible-content-module.scss */
-  .testimonial-section .testimonial-carousel {
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-}
-@media screen and (min-width: 750px) {
-  /* line 675, sass/page-post-templates/_flexible-content-module.scss */
-  .testimonial-section .testimonial-carousel {
-    padding-left: 75px;
-    padding-right: 75px;
-  }
-  /* line 747, sass/page-post-templates/_flexible-content-module.scss */
-  .testimonial-section .testimonial-carousel .flickity-prev-next-button.previous {
-    left: -25px;
-  }
-  /* line 750, sass/page-post-templates/_flexible-content-module.scss */
-  .testimonial-section .testimonial-carousel .flickity-prev-next-button.next {
-    right: -25px;
+  /* line 16, sass/page-post-templates/_coach-training-page.scss */
+  .page-id-92 .content-footer-wrapper .footer-editor-wrapper {
+    flex: 2;
   }
 }
 @media screen and (min-width: 950px) {
-  /* line 675, sass/page-post-templates/_flexible-content-module.scss */
-  .testimonial-section .testimonial-carousel {
-    padding-left: 150px;
-    padding-right: 150px;
+  /* line 22, sass/page-post-templates/_coach-training-page.scss */
+  .page-id-92 .content-footer-wrapper .img-wrapper {
+    margin-right: 0;
   }
 }
 
-/*--------------------------------------------------------------
-### Associates Section
---------------------------------------------------------------*/
-/* line 766, sass/page-post-templates/_flexible-content-module.scss */
-.associates-section {
-  padding-top: 1.5em;
-  padding-bottom: 1.5em;
-}
-@media screen and (min-width: 950px) {
-  /* line 766, sass/page-post-templates/_flexible-content-module.scss */
-  .associates-section {
-    padding-top: 3em;
-    padding-bottom: 3em;
-  }
-}
-/* line 769, sass/page-post-templates/_flexible-content-module.scss */
-.associates-section .content-section-wrapper {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-/* line 773, sass/page-post-templates/_flexible-content-module.scss */
-.associates-section .content-section-wrapper p {
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-}
-/* line 779, sass/page-post-templates/_flexible-content-module.scss */
-.associates-section a {
-  text-decoration: none;
-  color: #656b6f;
-}
-/* line 785, sass/page-post-templates/_flexible-content-module.scss */
-.associates-section img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 50%;
-}
-/* line 790, sass/page-post-templates/_flexible-content-module.scss */
-.associates-section h2 {
-  font-size: 2.1em;
-}
-/* line 794, sass/page-post-templates/_flexible-content-module.scss */
-.associates-section h4, .associates-section h5 {
-  margin: 0;
-  padding: 0;
-}
-/* line 798, sass/page-post-templates/_flexible-content-module.scss */
-.associates-section h4 {
-  margin-top: 1em;
-  color: #3b3d40;
-  font-family: "SourceSansPro-Bold", sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 1.6px;
-}
-/* line 806, sass/page-post-templates/_flexible-content-module.scss */
-.associates-section .h5 {
-  color: #656b6f;
-}
-/* line 810, sass/page-post-templates/_flexible-content-module.scss */
-.associates-section .associate-block {
-  padding-top: 2em;
-  padding-bottom: 2em;
-  transition: box-shadow .25s ease-out;
-}
-/* line 815, sass/page-post-templates/_flexible-content-module.scss */
-.associates-section .associate-block:hover {
-  box-shadow: 0 0 7px rgba(0, 0, 0, 0.35);
-  color: #656b6f;
-}
-@media screen and (min-width: 750px) {
-  /* line 823, sass/page-post-templates/_flexible-content-module.scss */
-  .associates-section .flex-wrapper {
-    display: flex;
-    justify-content: space-around;
-    align-content: center;
-  }
-  /* line 828, sass/page-post-templates/_flexible-content-module.scss */
-  .associates-section .associate-block {
-    flex: 1 0 calc(100% / 3);
-  }
-}
-
-/*--------------------------------------------------------------
-### Custom Styles for various sections
---------------------------------------------------------------*/
 /*--------------------------------------------------------------
 ## Contact Page
 --------------------------------------------------------------*/
@@ -3071,16 +3122,16 @@ lt-gray-green-btns
 }
 @media screen and (min-width: 950px) {
   /* line 44, sass/page-post-templates/_blog-posts.scss */
-  .blog .wrapper, .blog .home .home-header-wrapper, .home .blog .home-header-wrapper, .blog .simple-content-section .content-section-wrapper, .simple-content-section .blog .content-section-wrapper, .blog .color-callout-section .lt-gray-brain-left .background-image .content-section-wrapper, .color-callout-section .lt-gray-brain-left .background-image .blog .content-section-wrapper, .blog .color-callout-section .lt-gray-green-btns .background-image .content-section-wrapper, .color-callout-section .lt-gray-green-btns .background-image .blog .content-section-wrapper, .blog .testimonial-section .content-section-wrapper, .testimonial-section .blog .content-section-wrapper, .blog .page-template-page-associates #associates-page .content-wrapper .about-section, .page-template-page-associates #associates-page .content-wrapper .blog .about-section, .blog .post-template-default .site-content, .post-template-default .blog .site-content {
+  .blog .wrapper, .blog .simple-content-section .content-section-wrapper, .simple-content-section .blog .content-section-wrapper, .blog .color-callout-section .lt-gray-brain-left .background-image .content-section-wrapper, .color-callout-section .lt-gray-brain-left .background-image .blog .content-section-wrapper, .blog .color-callout-section .lt-gray-green-btns .background-image .content-section-wrapper, .color-callout-section .lt-gray-green-btns .background-image .blog .content-section-wrapper, .blog .testimonial-section .content-section-wrapper, .testimonial-section .blog .content-section-wrapper, .blog .home .home-header-wrapper, .home .blog .home-header-wrapper, .blog .page-template-page-associates #associates-page .content-wrapper .about-section, .page-template-page-associates #associates-page .content-wrapper .blog .about-section, .blog .post-template-default .site-content, .post-template-default .blog .site-content {
     display: flex;
   }
   /* line 47, sass/page-post-templates/_blog-posts.scss */
-  .blog .wrapper #primary, .blog .home .home-header-wrapper #primary, .home .blog .home-header-wrapper #primary, .blog .simple-content-section .content-section-wrapper #primary, .simple-content-section .blog .content-section-wrapper #primary, .blog .color-callout-section .lt-gray-brain-left .background-image .content-section-wrapper #primary, .color-callout-section .lt-gray-brain-left .background-image .blog .content-section-wrapper #primary, .blog .color-callout-section .lt-gray-green-btns .background-image .content-section-wrapper #primary, .color-callout-section .lt-gray-green-btns .background-image .blog .content-section-wrapper #primary, .blog .testimonial-section .content-section-wrapper #primary, .testimonial-section .blog .content-section-wrapper #primary, .blog .page-template-page-associates #associates-page .content-wrapper .about-section #primary, .page-template-page-associates #associates-page .content-wrapper .blog .about-section #primary, .blog .post-template-default .site-content #primary, .post-template-default .blog .site-content #primary {
+  .blog .wrapper #primary, .blog .simple-content-section .content-section-wrapper #primary, .simple-content-section .blog .content-section-wrapper #primary, .blog .color-callout-section .lt-gray-brain-left .background-image .content-section-wrapper #primary, .color-callout-section .lt-gray-brain-left .background-image .blog .content-section-wrapper #primary, .blog .color-callout-section .lt-gray-green-btns .background-image .content-section-wrapper #primary, .color-callout-section .lt-gray-green-btns .background-image .blog .content-section-wrapper #primary, .blog .testimonial-section .content-section-wrapper #primary, .testimonial-section .blog .content-section-wrapper #primary, .blog .home .home-header-wrapper #primary, .home .blog .home-header-wrapper #primary, .blog .page-template-page-associates #associates-page .content-wrapper .about-section #primary, .page-template-page-associates #associates-page .content-wrapper .blog .about-section #primary, .blog .post-template-default .site-content #primary, .post-template-default .blog .site-content #primary {
     flex: 2;
     order: 2;
   }
   /* line 53, sass/page-post-templates/_blog-posts.scss */
-  .blog .wrapper #secondary, .blog .home .home-header-wrapper #secondary, .home .blog .home-header-wrapper #secondary, .blog .simple-content-section .content-section-wrapper #secondary, .simple-content-section .blog .content-section-wrapper #secondary, .blog .color-callout-section .lt-gray-brain-left .background-image .content-section-wrapper #secondary, .color-callout-section .lt-gray-brain-left .background-image .blog .content-section-wrapper #secondary, .blog .color-callout-section .lt-gray-green-btns .background-image .content-section-wrapper #secondary, .color-callout-section .lt-gray-green-btns .background-image .blog .content-section-wrapper #secondary, .blog .testimonial-section .content-section-wrapper #secondary, .testimonial-section .blog .content-section-wrapper #secondary, .blog .page-template-page-associates #associates-page .content-wrapper .about-section #secondary, .page-template-page-associates #associates-page .content-wrapper .blog .about-section #secondary, .blog .post-template-default .site-content #secondary, .post-template-default .blog .site-content #secondary {
+  .blog .wrapper #secondary, .blog .simple-content-section .content-section-wrapper #secondary, .simple-content-section .blog .content-section-wrapper #secondary, .blog .color-callout-section .lt-gray-brain-left .background-image .content-section-wrapper #secondary, .color-callout-section .lt-gray-brain-left .background-image .blog .content-section-wrapper #secondary, .blog .color-callout-section .lt-gray-green-btns .background-image .content-section-wrapper #secondary, .color-callout-section .lt-gray-green-btns .background-image .blog .content-section-wrapper #secondary, .blog .testimonial-section .content-section-wrapper #secondary, .testimonial-section .blog .content-section-wrapper #secondary, .blog .home .home-header-wrapper #secondary, .home .blog .home-header-wrapper #secondary, .blog .page-template-page-associates #associates-page .content-wrapper .about-section #secondary, .page-template-page-associates #associates-page .content-wrapper .blog .about-section #secondary, .blog .post-template-default .site-content #secondary, .post-template-default .blog .site-content #secondary {
     flex: 1;
     order: 1;
     display: block;

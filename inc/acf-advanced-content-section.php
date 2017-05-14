@@ -202,17 +202,17 @@ function leading_minds_advanced_content_section() {
 
                                     if( get_row_layout() == 'footer_editor' ):
 
-                                        $editor = the_sub_field('editor');
+                                        $editor = get_sub_field('editor');
 
-                                        if( $editor ) : ?>
+                                        ?>
 
-                                            <div class="editor-wrapper">
+                                        <div class="footer-editor-wrapper">
 
-                                                <?php echo $editor; ?>
+                                            <?php echo $editor; ?>
 
-                                            </div>
+                                        </div>
 
-                                        <?php endif;
+                                        <?php
 
                                     elseif( get_row_layout() == 'image' ):
 
@@ -220,19 +220,27 @@ function leading_minds_advanced_content_section() {
                                         $title = get_sub_field('title');
                                         $sub = get_sub_field('sub_title');
 
-                                        ?>
+                                        if( $img ) : ?>
 
-                                        <div class="img-wrapper">
+                                            <div class="img-wrapper">
 
-                                            <img src="<?php echo $img['url']; ?>" alt="<?php echo $img['alt']; ?>" description="<?php echo $img['description']; ?>">
-                                            <div class="img-title">
-                                                <?php echo esc_html( $title ); ?>
-                                                <?php echo $sub; ?>
+                                                <img src="<?php echo $img['url']; ?>" alt="<?php echo $img['alt']; ?>" description="<?php echo $img['description']; ?>">
+
+                                                <?php if( $title ) { ?>
+
+                                                    <div class="img-title">
+                                                        <?php echo esc_html( $title ); ?>
+                                                        <?php echo ( $sub ); ?>
+                                                    </div>
+
+                                                <?php
+
+                                                } ?>
+
+
                                             </div>
 
-                                        </div>
-
-                                        <?php
+                                        <?php endif;
 
                                     elseif( get_row_layout() == 'standard_button_link' ):
 
