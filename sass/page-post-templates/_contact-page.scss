@@ -93,33 +93,42 @@
     }
 
     .virtual-tour-wrapper {
-        background-color: $color__bg-green;
-        @include section-padding;
+        background-color: $color__bg-ltgray;
+        // @include section-padding;
 
         header {
             background-color: $color__bg-green;
-            text-align: center;
             background-repeat: no-repeat;
-            background-image:url(http://localhost:8888/leading-minds/wp-content/themes/leading_minds/imgs/small-white-brain.png);
-            background-size: contain;
+            background-image:url(http://leading-minds.dev/wp-content/themes/leading_minds/imgs/brains/colored-section-white-brain-1.svg);
+            background-size: 150px;
             background-position: 50%;
+
+            @include respond-to(medium) {
+                background-size: 200px;
+            }
 
             .title-wrapper {
                 @include padding-left-right;
+                text-align: center;
             }
 
             h2 {
-                padding: 4em 0;
+                padding: 1em 0;
                 @include container;
                 margin-top: 0;
                 margin-bottom: 0;
                 color: #fff;
+
+                @include respond-to(small) {
+                    padding: 2em 0;
+
+                }
             }
         }
 
         .iframe-container {
             @include container;
-            @include section-padding;
+            // @include section-padding;
 
             iframe {
                 display: block;
