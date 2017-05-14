@@ -87,7 +87,7 @@ function leading_minds_color_content_section() {
 
                                     <?php if( $left_btn_label ) : ?>
 
-                                        <a href="<?php echo esc_url( $left_link ); ?>"><button><?php echo esc_html( $left_btn_label ); ?></button></a>
+                                        <a href="<?php echo esc_url( $left_link ); ?>"><button class="green-btn"><?php echo esc_html( $left_btn_label ); ?></button></a>
 
                                     <?php endif; ?>
 
@@ -109,7 +109,7 @@ function leading_minds_color_content_section() {
 
                                     <?php if( $right_btn_label ) : ?>
 
-                                        <a href="<?php echo esc_url( $right_link ); ?>"><button><?php echo esc_html( $right_btn_label ); ?></button></a>
+                                        <a href="<?php echo esc_url( $right_link ); ?>"><button class="green-btn"><?php echo esc_html( $right_btn_label ); ?></button></a>
 
                                     <?php endif; ?>
 

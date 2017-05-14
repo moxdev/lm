@@ -691,6 +691,24 @@ lt-gray-green-btns
             h2, h3 {
                 color: $color__dark-gray;
             }
+
+            h3 {
+                font-family: $font__alt-bold;
+                text-transform: uppercase;
+                font-size: 1.2em;
+            }
+
+            @include respond-to(medium) {
+                background-size: 30%;
+            }
+
+            @include respond-to(large) {
+                background-size: 20%;
+            }
+
+            @include respond-to(x-large) {
+                background-size: 15%;
+            }
         }
     }
 }
