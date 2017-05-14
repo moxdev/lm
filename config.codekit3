@@ -835,6 +835,12 @@
 		"oAP": "\/page-associates.php",
 		"oF": 0
 		},
+	"\/page-case-study.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/page-case-study.php",
+		"oF": 0
+		},
 	"\/page-contact.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -1053,6 +1059,18 @@
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/sass\/.sass-cache\/d5714df7c7c94776afdd8ac17e403f4d03e76a05\/_blog-posts.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/d5714df7c7c94776afdd8ac17e403f4d03e76a05\/_career-coaching-page.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/d5714df7c7c94776afdd8ac17e403f4d03e76a05\/_career-coaching-page.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/d5714df7c7c94776afdd8ac17e403f4d03e76a05\/_coaching-faq-page.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/d5714df7c7c94776afdd8ac17e403f4d03e76a05\/_coaching-faq-page.scssc",
 		"oF": 0
 		},
 	"\/sass\/.sass-cache\/d5714df7c7c94776afdd8ac17e403f4d03e76a05\/_contact-page.scssc": {
@@ -1454,6 +1472,32 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/sass\/page-post-templates\/_career-coaching-page.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/sass\/page-post-templates\/_case-study-pages.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/page-post-templates\/_case-study-pages.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/sass\/page-post-templates\/_coaching-faq-page.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/page-post-templates\/_coaching-faq-page.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

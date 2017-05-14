@@ -42,7 +42,7 @@ function leading_minds_color_content_section() {
                             <?php if( $img ) : ?>
 
                                 <figure class="color-callout-img">
-                                    <img src="<?php echo $img['sizes']['thumbnail']; ?>" alt="<?php echo $img['alt']; ?>" description="<?php echo $img['description']; ?>">
+                                    <img src="<?php echo $img['url']; ?>" alt="<?php echo $img['alt']; ?>" description="<?php echo $img['description']; ?>">
                                 </figure>
 
                             <?php endif; ?>

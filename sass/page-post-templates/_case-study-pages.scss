@@ -1,0 +1,20 @@
+.page-template-page-case-study {
+
+    h1 {
+        color: $color__purple;
+        text-align: center;
+        letter-spacing: 1.6px;
+        @include margin-auto;
+        max-width: 800px;
+
+        @include respond-to(small) {
+            font-size: 3em;
+        }
+
+        @include respond-to(large) {
+            font-size: 3.5em;
+        }
+    }
+
+}
+

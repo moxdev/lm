@@ -1,0 +1,41 @@
+.page-id-90 {
+
+    .simple-content-section {
+
+        &:first-child {
+            .content-section-wrapper {
+                @include section-padding;
+            }
+        }
+
+        .content-section-wrapper {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+    }
+
+    .color-callout-section {
+        margin-top: 3em;
+
+        a {
+            text-decoration: none;
+            line-height: 2;
+
+            @include respond-to(small) {
+                font-size: 1.1em;
+            }
+
+            @include respond-to(medium) {
+                font-size: 1.2em;
+            }
+
+            @include respond-to(large) {
+                font-size: 1.4em;
+            }
+        }
+
+        .split-section-wrapper {
+            display: none;
+        }
+    }
+}

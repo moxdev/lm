@@ -16,6 +16,22 @@
     margin-right: auto;
 }
 
+// Link Styles
+@mixin linx ($link, $visit, $hover, $active) {
+  a {
+    color: $link;
+    &:visited {
+      color: $visit;
+    }
+    &:hover {
+      color: $hover;
+    }
+    &:active {
+      color: $active;
+    }
+  }
+}
+
 // Center block
 @mixin center-block {
     display: block;
@@ -36,7 +52,7 @@
 
 // Section padding
 @mixin section-padding {
-    padding-top: 2em;
+    padding-top: 1.5em;
     padding-bottom: 1.5em;
 
     @include respond-to(medium) {

@@ -14,14 +14,15 @@ h2 {
     color: $color__h2;
     font-family: $font__semibold;
     margin-bottom: .5em;
-    font-size: 1.9em !important;
+    font-size: 1.9em;
+    line-height: 1.2;
 }
 
 h3 {
     color: $color__h3;
     font-family: $font__semibold;
     margin-top: .5em;
-    // font-size: 1.1em;
+    font-size: 1.3em;
 }
 
 h4 {

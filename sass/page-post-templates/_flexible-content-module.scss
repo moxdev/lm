@@ -23,13 +23,19 @@
             letter-spacing: .6px;
         }
 
-        p {
+        .text-wrapper {
             max-width: 600px;
             @include margin-auto;
             letter-spacing: .2px;
 
             @include respond-to(medium) {
                 max-width: 800px;
+            }
+
+            p {
+                @include respond-to(small) {
+                    text-align: center;
+                }
             }
         }
     }
@@ -84,16 +90,14 @@
     h2, h3 {
 
         text-align: center;
-        line-height: 1.4;
     }
 
     h2 {
-        // font-size: 2.1em;
         margin-bottom: 0;
     }
 
     h3 {
-        font-size: 1.3em;
+
         max-width: 400px;
         @include margin-auto;
     }
@@ -110,7 +114,6 @@
     .bg-ltgray {
         background-color: $color__bg-ltgray;
         color: $color__text-main;
-
 
     }
 
@@ -511,42 +514,97 @@ lt-gray-green-btns
     .green-img-left {
 
         background-color: $color__bg-green;
+        @include font-smooth;
 
         h2 {
             color: #fff;
         }
 
+        @include linx($color__purple, #000, $color__orange, $color__orange);
+
         .content-section-wrapper {
+            @include container;
+            @include padding-left-right;
             @include section-padding;
-            // color: $color__dark-gray;
             color: #fff;
-            letter-spacing: .7px;
+            letter-spacing: .8px;
 
             .color-callout-img {
-                display: block;
                 margin-bottom: 2em;
+
+                img {
+                    max-width: 150px;
+                    @include center-block;
+                }
+            }
+
+            .editor-wrapper {
                 text-align: center;
+                @include margin-auto;
+            }
+        }
+
+        @include respond-to(small) {
+            .content-section-wrapper {
+                display: flex;
+                justify-content: center;
+                align-items:center;
+
+                .color-callout-img {
+                    flex: 1;
+                    text-align: right;
+                    margin-right: 1em;
+
+                    img {
+                        max-width: 200px;
+                        display: inline-block;
+                    }
+                }
+
+                .editor-wrapper {
+                    flex: 2;
+                    text-align: left;
+                    margin-left: 1em;
+
+                    p {
+                        max-width: 500px;
+                    }
                 }
             }
+        }
 
-            @include respond-to(mobile) {
+        @include respond-to(medium) {
 
+            .content-section-wrapper {
+                .editor-wrapper {
+                    // flex: 1;
+                }
             }
+        }
 
-            @include respond-to(small) {
-                .content-section-wrapper {
-                    display: flex;
+        @include respond-to(large) {
+            .content-section-wrapper {
+                letter-spacing: normal;
 
-                    .color-callout-img {
-                        display: inline-flex;
-                        flex: 1 0 30%;
+                .color-callout-img {
+                    margin-right: 2em;
+
+                    img {
+                        max-width: 100%;
+
                     }
+                }
 
-                    .editor-wrapper {
-                        flex: 1 1 auto;
+                .editor-wrapper {
+                    margin-left: 2em;
+                    font-size: 1.2em;
+
+                    p {
+                        max-width: 600px;
                     }
                 }
             }
+        }
     }
 
     .lt-gray-green-btns {

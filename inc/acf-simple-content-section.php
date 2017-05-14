@@ -38,7 +38,9 @@ function leading_minds_simple_content_section() {
                     <?php }
 
                     if ($editor) { ?>
-                        <?php echo $editor; ?>
+                        <div class="text-wrapper">
+                            <?php echo $editor; ?>
+                        </div>
                     <?php }
 
                     if ($add_skills) {
