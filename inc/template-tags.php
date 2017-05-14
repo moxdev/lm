@@ -34,7 +34,21 @@ function leading_minds_posted_on() {
 	// 	'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
 	// );
 
-	echo '<span class="posted-on">' . $posted_on . '</span><span class="byline"> ' . $byline . '</span>'; // WPCS: XSS OK.
+	echo '<div class="posted-on">' . $posted_on . '</span><span class="byline"> ' . $byline . '</div>'; // WPCS: XSS OK.
+
+	if ( 'post' === get_post_type() ) {
+		/* translators: used between list items, there is a space after the comma */
+		$categories_list = get_the_category_list( esc_html__( ', ', 'leading_minds' ) );
+		if ( $categories_list && leading_minds_categorized_blog() ) {
+			printf( '<div class="cat-links">' . esc_html__( 'Category: %1$s', 'leading_minds' ) . '</div>', $categories_list ); // WPCS: XSS OK.
+		}
+
+		/* translators: used between list items, there is a space after the comma */
+		$tags_list = get_the_tag_list( '', esc_html__( ', ', 'leading_minds' ) );
+		if ( $tags_list ) {
+			printf( '<span class="tags-links">' . esc_html__( 'Tagged %1$s', 'leading_minds' ) . '</span>', $tags_list ); // WPCS: XSS OK.
+		}
+	}
 
 }
 endif;
@@ -45,26 +59,13 @@ if ( ! function_exists( 'leading_minds_entry_footer' ) ) :
  */
 function leading_minds_entry_footer() {
 	// Hide category and tag text for pages.
-	// if ( 'post' === get_post_type() ) {
-	// 	/* translators: used between list items, there is a space after the comma */
-	// 	$categories_list = get_the_category_list( esc_html__( ', ', 'leading_minds' ) );
-	// 	if ( $categories_list && leading_minds_categorized_blog() ) {
-	// 		printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', 'leading_minds' ) . '</span>', $categories_list ); // WPCS: XSS OK.
-	// 	}
 
-	// 	/* translators: used between list items, there is a space after the comma */
-	// 	$tags_list = get_the_tag_list( '', esc_html__( ', ', 'leading_minds' ) );
-	// 	if ( $tags_list ) {
-	// 		printf( '<span class="tags-links">' . esc_html__( 'Tagged %1$s', 'leading_minds' ) . '</span>', $tags_list ); // WPCS: XSS OK.
-	// 	}
-	// }
-
-	// if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
-	// 	echo '<span class="comments-link">';
-	// 	/* translators: %s: post title */
-	// 	comments_popup_link( sprintf( wp_kses( __( 'Leave a Comment<span class="screen-reader-text"> on %s</span>', 'leading_minds' ), array( 'span' => array( 'class' => array() ) ) ), get_the_title() ) );
-	// 	echo '</span>';
-	// }
+	if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
+		echo '<span class="comments-link">';
+		/* translators: %s: post title */
+		comments_popup_link( sprintf( wp_kses( __( 'Leave a Comment<span class="screen-reader-text"> on %s</span>', 'leading_minds' ), array( 'span' => array( 'class' => array() ) ) ), get_the_title() ) );
+		echo '</span>';
+	}
 
 	edit_post_link(
 		sprintf(

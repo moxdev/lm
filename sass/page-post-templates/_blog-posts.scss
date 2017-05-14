@@ -1,25 +1,83 @@
+/*--------------------------------------------------------------
+## Blog Posts Page
+--------------------------------------------------------------*/
+.category,
+.archive {
+
+    .site-content-wrapper {
+        @include padding-left-right;
+        @include section-padding;
+        @extend .wrapper;
+
+        @include respond-to(medium) {
+            display: flex;
+
+            #primary {
+                flex: 2;
+                order: 2;
+                padding-top: 2em;
+                background-image:url(http://leading-minds.dev/wp-content/themes/leading_minds/imgs/brains/blog-biz.svg);
+                background-repeat: no-repeat;
+                background-position: 90% 37%;
+                background-size: 80%;
+            }
+
+            #secondary{
+                flex: 1;
+                order: 1;
+                display: block;
+                margin-top: 0;
+
+                .widget {
+                    max-width: 70%;
+                }
+            }
+        }
+    }
+}
 .blog {
 
     .featured-image-full-width {
-        width: 100%;
-        min-height: 200px;
+        min-height: 250px;
+        padding-top: 2.5em;
+        padding-bottom: 2.5em;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
         overflow: hidden;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 3em;
     }
 
     .featured-title {
-        color: #fff;
         text-align: center;
-        margin: auto;
-        @include padding-left-right;
-        @include padding-top-bottom;
-        text-shadow: 0px 3px 4.83px rgba(0, 0, 0, 0.75);
+        letter-spacing: 1.6px;
+        text-shadow: 0px 3px 4.83px rgba(0, 0, 0, 0.35);
+        @include margin-auto;
+        max-width: 800px;
+
+        @include respond-to(small) {
+            font-size: 3em;
+        }
+
+        @include respond-to(large) {
+            font-size: 3.5em;
+        }
+    }
+
+    .section-header-wrapper {
+        width: 90%;
+        margin:auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+
+        .section-header {
+            margin:auto;
+
+            .section-title {
+                width: 100%;
+            }
+        }
     }
 
     .entry-title {
@@ -38,6 +96,10 @@
         margin-top: 3em;
         clear: both;
 
+        .widget {
+            max-width: 70%;
+        }
+
     }
 
     @include respond-to(medium) {
@@ -47,6 +109,7 @@
             #primary {
                 flex: 2;
                 order: 2;
+                padding-top: 2em;
 
             }
 
@@ -117,13 +180,71 @@
     }
 }
 
-
-
+/*--------------------------------------------------------------
+## Single Posts
+--------------------------------------------------------------*/
 .post-template-default {
 
     .site-content {
-        @include padding-left-right;
-        @extend .wrapper;
+        background-color: #fff;
+
+        .site-content-wrapper {
+            @include padding-left-right;
+            @include section-padding;
+            @extend .wrapper;
+
+            @include respond-to(medium) {
+                display: flex;
+
+                #primary {
+                    flex: 2;
+                    order: 2;
+                    padding-top: 2em;
+                    background-image:url(http://leading-minds.dev/wp-content/themes/leading_minds/imgs/brains/blog-biz.svg);
+                    background-repeat: no-repeat;
+                    background-position: 90% 37%;
+                    background-size: 80%;
+                }
+
+                #secondary{
+                    flex: 1;
+                    order: 1;
+                    display: block;
+                    margin-top: 0;
+
+                    .widget {
+                        max-width: 70%;
+                    }
+                }
+            }
+        }
+
+        h1 {
+            color: $color__purple;
+        }
     }
 
+    .post-navigation {
+        .nav-previous {
+            float: none;
+        }
+
+        .nav-next {
+            float: none;
+        }
+    }
+
+    .post-navigation a {
+        display:block;
+        float: left;
+        font-size: 2em;
+        line-height: .5;
+        margin: 5px;
+        padding:7px 10px;
+        text-decoration:none;
+        width:auto;
+        color:#fff; /* Pagination text color */
+        background: $color__green; /* Pagination non-active background color */
+        transition: background .15s ease-in-out;
+    }
 }

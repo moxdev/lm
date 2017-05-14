@@ -14,7 +14,7 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 
 <aside id="secondary" class="widget-area wrapper" role="complementary">
 
-    <?php if(is_home()) {
+    <?php if( is_home() || is_single() || is_archive() || is_category() ) {
         $slug = get_page_by_path( 'blog-and-media' );
 
         if ( function_exists( 'get_field' ) ) {

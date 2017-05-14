@@ -27,18 +27,32 @@ get_header();
         		$on_page_title = get_field('on_page_title', $slug->ID);
 
         		if($on_page_title) { ?>
-            		<header class="featured-header">
-                		<h1 class="featured-title">
-                    		<?php echo wp_kses(
-                        		$on_page_title,
-                        			array(
-                        	    		'span' => array(),
-                        	    		'em' => array(),
-                        	    		'strong' => array()
-                        			)
-                    		); ?>
-                		</h1>
-            		</header><!-- .featured-header -->
+            		<div class="section-header-wrapper">
+
+                        <?php
+
+                        if( $on_page_title ) { ?>
+
+                            <header class="section-header">
+                                <h1 class="section-title">
+
+                                <?php echo wp_kses(
+                                    $on_page_title,
+                                    array(
+                                        'span' => array(),
+                                        'em' => array(),
+                                        'strong' => array()
+                                    )
+                                ); ?>
+
+                                </h1>
+                            </header><!-- .section-header -->
+
+                        <?php }
+
+                        ?>
+
+                    </div><!-- .section-header-wrapper -->
         		<?php } else { ?>
            			<header class="featured-header">
                 		<?php single_post_title( '<h1 class="page-title screen-reader-text">', '</h1>' ); ?>
