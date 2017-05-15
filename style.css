@@ -2107,7 +2107,7 @@ lt-gray-green-btns
   margin-left: auto;
   margin-right: auto;
   background-repeat: no-repeat;
-  background-image: url(http://leading-minds.dev/wp-content/themes/leading_minds/imgs/brains/large-green-brain.svg);
+  background-image: url(/dev/wp-content/themes/leading_minds/imgs/brains/large-green-brain.svg);
   background-position: -250px 50%;
 }
 /* line 440, sass/page-post-templates/_flexible-content-module.scss */
@@ -2202,7 +2202,7 @@ lt-gray-green-btns
   margin-left: auto;
   margin-right: auto;
   background-repeat: no-repeat;
-  background-image: url(http://leading-minds.dev/wp-content/themes/leading_minds/imgs/brains/large-green-brain.svg);
+  background-image: url(/dev/wp-content/themes/leading_minds/imgs/brains/large-green-brain.svg);
   background-position: -250px 50%;
 }
 /* line 501, sass/page-post-templates/_flexible-content-module.scss */
@@ -2288,7 +2288,7 @@ lt-gray-green-btns
 .color-callout-section .green-brain-center .background-image {
   padding: 0;
   background-repeat: no-repeat;
-  background-image: url(http://leading-minds.dev/wp-content/themes/leading_minds/imgs/brains.svg);
+  background-image: url(/dev/wp-content/themes/leading_minds/imgs/brains.svg);
   background-size: 40%;
   background-position: 50%;
 }
@@ -2329,7 +2329,7 @@ lt-gray-green-btns
 .color-callout-section .lt-gray-brain-center .background-image {
   padding: 0;
   background-repeat: no-repeat;
-  background-image: url(http://leading-minds.dev/wp-content/themes/leading_minds/imgs/brains.svg);
+  background-image: url(/dev/wp-content/themes/leading_minds/imgs/brains.svg);
   background-size: 40%;
   background-position: 50%;
 }
@@ -2499,7 +2499,7 @@ lt-gray-green-btns
 .color-callout-section .lt-gray-green-btns .background-image {
   padding: 0;
   background-repeat: no-repeat;
-  background-image: url(http://leading-minds.dev/wp-content/themes/leading_minds/imgs/brains/colored-section-white-brain-1.svg);
+  background-image: url(/dev/wp-content/themes/leading_minds/imgs/brains/colored-section-white-brain-1.svg);
   background-size: 40%;
   background-position: 50%;
 }
@@ -3121,8 +3121,8 @@ lt-gray-green-btns
   }
 }
 @media screen and (min-width: 950px) {
-  /* line 47, sass/page-post-templates/_philosophical-counseling.scss */
-  .page-id-96 .color-callout-section .content-section-wrapper {
+  /* line 50, sass/page-post-templates/_philosophical-counseling.scss */
+  .page-id-96 .color-callout-section .green-img-left .content-section-wrapper {
     font-size: .8em;
     line-height: 1;
   }

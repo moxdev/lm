@@ -44,9 +44,13 @@
 
     @include respond-to(medium) {
         .color-callout-section {
-            .content-section-wrapper {
-                font-size: .8em;
-                line-height: 1;
+
+            .green-img-left {
+
+                .content-section-wrapper {
+                    font-size: .8em;
+                    line-height: 1;
+                }
             }
         }
     }
