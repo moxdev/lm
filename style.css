@@ -676,11 +676,12 @@ input[type="datetime-local"],
 input[type="color"],
 textarea {
   color: #666;
-  border: 1px solid #ccc;
-  border-radius: 3px;
+  border: none;
+  border-radius: 0;
   padding: 3px;
+  font-family: "SourceSansPro-Semibold", sans-serif;
 }
-/* line 22, sass/forms/_fields.scss */
+/* line 23, sass/forms/_fields.scss */
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="url"]:focus,
@@ -700,12 +701,12 @@ textarea:focus {
   color: #111;
 }
 
-/* line 27, sass/forms/_fields.scss */
+/* line 28, sass/forms/_fields.scss */
 select {
   border: 1px solid #ccc;
 }
 
-/* line 31, sass/forms/_fields.scss */
+/* line 32, sass/forms/_fields.scss */
 textarea {
   width: 100%;
 }
@@ -794,8 +795,9 @@ a:hover, a:active {
   list-style: none;
   margin: 0;
   padding-left: 0;
+  width: 100%;
 }
-/* line 20, sass/navigation/_menus.scss */
+/* line 21, sass/navigation/_menus.scss */
 .main-navigation ul ul {
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   float: left;
@@ -804,51 +806,63 @@ a:hover, a:active {
   left: -999em;
   z-index: 99999;
 }
-/* line 28, sass/navigation/_menus.scss */
+/* line 29, sass/navigation/_menus.scss */
 .main-navigation ul ul ul {
   left: -999em;
   top: 0;
 }
-/* line 34, sass/navigation/_menus.scss */
+/* line 35, sass/navigation/_menus.scss */
 .main-navigation ul ul li:hover > ul, .main-navigation ul ul li.focus > ul {
   left: 100%;
 }
-/* line 40, sass/navigation/_menus.scss */
+/* line 41, sass/navigation/_menus.scss */
 .main-navigation ul ul a {
   width: 200px;
 }
-/* line 53, sass/navigation/_menus.scss */
+/* line 54, sass/navigation/_menus.scss */
 .main-navigation ul li:hover > ul,
 .main-navigation ul li.focus > ul {
   left: auto;
 }
-/* line 59, sass/navigation/_menus.scss */
+/* line 60, sass/navigation/_menus.scss */
 .main-navigation li {
   display: inline-flex;
+  flex: 1;
   position: relative;
   margin: 0 .5em;
 }
-/* line 70, sass/navigation/_menus.scss */
+/* line 72, sass/navigation/_menus.scss */
 .main-navigation a {
   display: block;
   font-family: "SourceSansPro-Semibold", sans-serif;
+  text-transform: uppercase;
   text-decoration: none;
   color: #fff;
-  width: 70px;
+  width: 80px;
   text-align: center;
   line-height: 1.2;
   letter-spacing: 1px;
+  font-size: .9em;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
-/* line 82, sass/navigation/_menus.scss */
+@media screen and (min-width: 1500px) {
+  /* line 72, sass/navigation/_menus.scss */
+  .main-navigation a {
+    width: 90px;
+  }
+}
+/* line 92, sass/navigation/_menus.scss */
 .main-navigation .current-menu-item a {
   color: #24cf5f;
 }
-/* line 89, sass/navigation/_menus.scss */
+/* line 99, sass/navigation/_menus.scss */
 .main-navigation .long-name-nav-link a {
-  width: 100px;
+  width: 130px;
 }
 
-/* line 101, sass/navigation/_menus.scss */
+/* line 111, sass/navigation/_menus.scss */
 .toggled {
   display: block;
   position: absolute;
@@ -862,12 +876,12 @@ a:hover, a:active {
   overflow: hidden;
   z-index: 9999;
 }
-/* line 114, sass/navigation/_menus.scss */
+/* line 124, sass/navigation/_menus.scss */
 .toggled .menu-mobile-menu-container {
   display: block !important;
   padding-top: 1.5em;
 }
-/* line 118, sass/navigation/_menus.scss */
+/* line 128, sass/navigation/_menus.scss */
 .toggled .menu-mobile-menu-container ul {
   display: block !important;
   list-style: none;
@@ -878,23 +892,23 @@ a:hover, a:active {
   text-align: left;
 }
 @media screen and (min-width: 750px) {
-  /* line 118, sass/navigation/_menus.scss */
+  /* line 128, sass/navigation/_menus.scss */
   .toggled .menu-mobile-menu-container ul {
     padding-left: 2.75rem;
     padding-right: 2.75rem;
   }
 }
-/* line 126, sass/navigation/_menus.scss */
+/* line 136, sass/navigation/_menus.scss */
 .toggled .menu-mobile-menu-container ul .current-menu-item {
   color: #24cf5f;
 }
-/* line 130, sass/navigation/_menus.scss */
+/* line 140, sass/navigation/_menus.scss */
 .toggled .menu-mobile-menu-container ul li {
   display: block !important;
   margin: 0;
   padding-bottom: 1em;
 }
-/* line 136, sass/navigation/_menus.scss */
+/* line 146, sass/navigation/_menus.scss */
 .toggled .menu-mobile-menu-container ul li a {
   width: 100%;
   color: #fff;
@@ -906,42 +920,42 @@ a:hover, a:active {
   text-transform: uppercase;
 }
 @media screen and (min-width: 575px) {
-  /* line 136, sass/navigation/_menus.scss */
+  /* line 146, sass/navigation/_menus.scss */
   .toggled .menu-mobile-menu-container ul li a {
     font-size: 1.5rem;
   }
 }
 @media screen and (min-width: 950px) {
-  /* line 136, sass/navigation/_menus.scss */
+  /* line 146, sass/navigation/_menus.scss */
   .toggled .menu-mobile-menu-container ul li a {
     font-size: 1.8rem;
   }
 }
-/* line 154, sass/navigation/_menus.scss */
+/* line 164, sass/navigation/_menus.scss */
 .toggled .menu-mobile-menu-container ul li a:hover, .toggled .menu-mobile-menu-container ul li a:visited, .toggled .menu-mobile-menu-container ul li a:active, .toggled .menu-mobile-menu-container ul li a :link {
   color: #fff;
 }
-/* line 160, sass/navigation/_menus.scss */
+/* line 170, sass/navigation/_menus.scss */
 .toggled .menu-mobile-menu-container ul li a ul li a {
   text-transform: capitalize;
   text-decoration: none;
   font-size: .9em;
 }
 @media screen and (min-width: 750px) {
-  /* line 101, sass/navigation/_menus.scss */
+  /* line 111, sass/navigation/_menus.scss */
   .toggled {
     top: 80px;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 101, sass/navigation/_menus.scss */
+  /* line 111, sass/navigation/_menus.scss */
   .toggled {
     display: none;
   }
 }
 
 /* Small menu. */
-/* line 182, sass/navigation/_menus.scss */
+/* line 192, sass/navigation/_menus.scss */
 .menu-toggle {
   display: block;
   background: none;
@@ -954,42 +968,42 @@ a:hover, a:active {
   padding: 0;
   transition: background-color .25s, box-shadow .25s;
 }
-/* line 195, sass/navigation/_menus.scss */
+/* line 205, sass/navigation/_menus.scss */
 .menu-toggle:hover {
   background-color: transparent;
 }
-/* line 200, sass/navigation/_menus.scss */
+/* line 210, sass/navigation/_menus.scss */
 .menu-toggle:active, .menu-toggle:focus {
   background-color: transparent;
 }
 
 @media screen and (min-width: 1200px) {
-  /* line 208, sass/navigation/_menus.scss */
+  /* line 218, sass/navigation/_menus.scss */
   .menu-toggle, #mobile-menu {
     display: none;
   }
 
-  /* line 212, sass/navigation/_menus.scss */
+  /* line 222, sass/navigation/_menus.scss */
   .main-navigation ul {
     display: inline-flex;
     justify-content: flex-end;
   }
 }
-/* line 227, sass/navigation/_menus.scss */
+/* line 241, sass/navigation/_menus.scss */
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
 .post-navigation {
   margin: 0 0 1.5em;
   overflow: hidden;
 }
-/* line 232, sass/navigation/_menus.scss */
+/* line 246, sass/navigation/_menus.scss */
 .comment-navigation .nav-previous,
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
   float: left;
   width: 50%;
 }
-/* line 237, sass/navigation/_menus.scss */
+/* line 251, sass/navigation/_menus.scss */
 .comment-navigation .nav-next,
 .posts-navigation .nav-next,
 .post-navigation .nav-next {
@@ -3438,6 +3452,131 @@ lt-gray-green-btns
 }
 
 /*--------------------------------------------------------------
+## Request Papers Page
+--------------------------------------------------------------*/
+/* line 3, sass/page-post-templates/_request-papers-page.scss */
+.page-template-page-request-papers h1 {
+  color: #282560;
+  text-align: center;
+  letter-spacing: 1.6px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+}
+@media screen and (min-width: 950px) {
+  /* line 3, sass/page-post-templates/_request-papers-page.scss */
+  .page-template-page-request-papers h1 {
+    font-size: 2.5em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 3, sass/page-post-templates/_request-papers-page.scss */
+  .page-template-page-request-papers h1 {
+    font-size: 3em;
+  }
+}
+/* line 19, sass/page-post-templates/_request-papers-page.scss */
+.page-template-page-request-papers h2 {
+  color: #666666;
+}
+/* line 23, sass/page-post-templates/_request-papers-page.scss */
+.page-template-page-request-papers .section-form {
+  padding-top: 4em;
+  padding-bottom: 4em;
+  background-color: #24cf5f;
+}
+/* line 28, sass/page-post-templates/_request-papers-page.scss */
+.page-template-page-request-papers .section-form .background-wrapper {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  max-width: 1600px;
+  background-repeat: no-repeat;
+  background-image: url(http://leading-minds.dev/wp-content/themes/leading_minds/imgs/brains/large-green-brain.svg);
+  background-position: -250px 50%;
+}
+@media screen and (min-width: 950px) {
+  /* line 28, sass/page-post-templates/_request-papers-page.scss */
+  .page-template-page-request-papers .section-form .background-wrapper {
+    padding-top: 3em;
+    padding-bottom: 3em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 28, sass/page-post-templates/_request-papers-page.scss */
+  .page-template-page-request-papers .section-form .background-wrapper {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+  }
+}
+@media screen and (min-width: 400px) {
+  /* line 28, sass/page-post-templates/_request-papers-page.scss */
+  .page-template-page-request-papers .section-form .background-wrapper {
+    background-position: -200px 70%;
+  }
+}
+@media screen and (min-width: 750px) {
+  /* line 28, sass/page-post-templates/_request-papers-page.scss */
+  .page-template-page-request-papers .section-form .background-wrapper {
+    background-position: -30% 50%;
+  }
+}
+@media screen and (min-width: 950px) {
+  /* line 28, sass/page-post-templates/_request-papers-page.scss */
+  .page-template-page-request-papers .section-form .background-wrapper {
+    background-position: -40px 50%;
+  }
+}
+@media screen and (min-width: 1300px) {
+  /* line 28, sass/page-post-templates/_request-papers-page.scss */
+  .page-template-page-request-papers .section-form .background-wrapper {
+    background-position: 0 50%;
+  }
+}
+/* line 51, sass/page-post-templates/_request-papers-page.scss */
+.page-template-page-request-papers .section-form .background-wrapper .form-wrapper {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}
+@media screen and (min-width: 750px) {
+  /* line 51, sass/page-post-templates/_request-papers-page.scss */
+  .page-template-page-request-papers .section-form .background-wrapper .form-wrapper {
+    padding-left: 2.75rem;
+    padding-right: 2.75rem;
+  }
+}
+/* line 54, sass/page-post-templates/_request-papers-page.scss */
+.page-template-page-request-papers .section-form .background-wrapper .form-wrapper form {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 500px;
+}
+/* line 58, sass/page-post-templates/_request-papers-page.scss */
+.page-template-page-request-papers .section-form .background-wrapper .form-wrapper form label {
+  display: block;
+  width: 100%;
+  margin: .5em 0;
+}
+/* line 63, sass/page-post-templates/_request-papers-page.scss */
+.page-template-page-request-papers .section-form .background-wrapper .form-wrapper form label input,
+.page-template-page-request-papers .section-form .background-wrapper .form-wrapper form label textarea {
+  width: 100%;
+  padding: 5px 10px;
+}
+/* line 70, sass/page-post-templates/_request-papers-page.scss */
+.page-template-page-request-papers .section-form .background-wrapper .form-wrapper form input[type="submit"] {
+  background-color: #282560;
+  color: #fff;
+  font-family: "SourceSansPro-Semibold", sans-serif;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  transition: background-color .50s;
+}
+/* line 77, sass/page-post-templates/_request-papers-page.scss */
+.page-template-page-request-papers .section-form .background-wrapper .form-wrapper form input[type="submit"]:hover {
+  background-color: #4741aa;
+}
+
+/*--------------------------------------------------------------
 ## Blog Posts
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
@@ -3758,16 +3897,16 @@ lt-gray-green-btns
   margin-right: auto;
   max-width: 800px;
 }
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 950px) {
   /* line 3, sass/page-post-templates/_case-study-pages.scss */
   .page-template-page-case-study h1 {
-    font-size: 3em;
+    font-size: 2.5em;
   }
 }
 @media screen and (min-width: 1200px) {
   /* line 3, sass/page-post-templates/_case-study-pages.scss */
   .page-template-page-case-study h1 {
-    font-size: 3.5em;
+    font-size: 3em;
   }
 }
 

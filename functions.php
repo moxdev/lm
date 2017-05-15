@@ -330,7 +330,10 @@ require get_template_directory() . '/inc/acf-mid-page-navigation-section.php';
 require get_template_directory() . '/inc/acf-testimonial-section.php';
 require get_template_directory() . '/inc/acf-associates-section.php';
 
-
+/**
+ * Contact Form Plugin.
+ */
+include_once( get_stylesheet_directory() . '/plugins/mm4-you-contact-form/mm4-you-cf.php' );
 
 /**
  * Blog page functions.

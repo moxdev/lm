@@ -853,11 +853,65 @@
 		"oAP": "\/page-custom.php",
 		"oF": 0
 		},
+	"\/page-request-papers.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/page-request-papers.php",
+		"oF": 0
+		},
 	"\/page.php": {
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/page.php",
 		"oF": 0
+		},
+	"\/plugins\/mm4-you-contact-form\/inc\/contact.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/plugins\/mm4-you-contact-form\/inc\/contact.php",
+		"oF": 0
+		},
+	"\/plugins\/mm4-you-contact-form\/js\/min\/mm4-you-validate-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/plugins\/mm4-you-contact-form\/js\/min\/mm4-you-validate-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/plugins\/mm4-you-contact-form\/js\/mm4-you-validate.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/plugins\/mm4-you-contact-form\/js\/mm4-you-validate-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/plugins\/mm4-you-contact-form\/mm4-you-cf.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/plugins\/mm4-you-contact-form\/mm4-you-cf.php",
+		"oF": 0
+		},
+	"\/plugins\/mm4-you-contact-form\/README.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 1,
+		"oAP": "\/plugins\/mm4-you-contact-form\/README.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
 		},
 	"\/README.md": {
 		"cS": 0,
@@ -1047,6 +1101,12 @@
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/sass\/.sass-cache\/d49011a5dde27958caa2f78570c8f9b5c160e9b5\/_media.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/d5714df7c7c94776afdd8ac17e403f4d03e76a05\/_about-page.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/d5714df7c7c94776afdd8ac17e403f4d03e76a05\/_about-page.scssc",
 		"oF": 0
 		},
 	"\/sass\/.sass-cache\/d5714df7c7c94776afdd8ac17e403f4d03e76a05\/_associates-page.scssc": {
@@ -1620,6 +1680,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/sass\/page-post-templates\/_philosophical-counseling.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/sass\/page-post-templates\/_request-papers-page.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/page-post-templates\/_request-papers-page.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
