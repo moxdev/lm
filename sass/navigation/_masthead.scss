@@ -4,6 +4,7 @@
     @include padding-left-right;
     padding-top: 10px;
     padding-bottom: 10px;
+    position: relative;
 
     .header-wrapper {
         display: flex;
@@ -17,6 +18,64 @@
 
             svg {
                 max-width: 150px;
+            }
+        }
+    }
+
+    .dropdown-menu {
+        display: block;
+        flex: none;
+        position: absolute;
+        top: 0;
+        right: 6em;
+        background-color: $color__bg-green;
+        color: #fff;
+
+        .menu-green-dropdown-menu-container {
+            padding:.5em 1em;
+
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+
+                &:hover {
+
+                    li {
+
+                        ul {
+                            display: block;
+
+                            li {
+
+                                a {
+                                    color: #fff;
+                                    text-decoration: none;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                li {
+                    margin: 0;
+                    padding: 0;
+
+                    a {
+                        color: #fff;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                    }
+
+                    ul {
+                        display: none;
+
+                        li {
+
+                        }
+                    }
+
+                }
             }
         }
     }

@@ -48,8 +48,9 @@ function leading_minds_setup() {
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
-		'desktop-nav' => esc_html__( 'Primary', 'leading_minds' ),
-        'mobile-nav'  => esc_html__( 'Mobile', 'leading_minds' )
+        'desktop-nav' => esc_html__( 'Primary', 'leading_minds' ),
+        'mobile-nav'  => esc_html__( 'Mobile', 'leading_minds' ),
+        'drop-menu'   => esc_html__( 'Green Drop Menu', 'leading_minds' )
 	) );
 
 	/*
@@ -156,8 +157,8 @@ if( function_exists('acf_add_options_page') ) {
     ));
 
     acf_add_options_page(array(
-            'page_title'    => 'Associates Settings',
-            'menu_title'    => 'Associates Settings',
+            'page_title'    => 'Associates',
+            'menu_title'    => 'Associates ',
             'menu_slug'     => 'associates-settings',
             'capability'    => 'edit_posts',
             'redirect'      => false,
@@ -165,48 +166,20 @@ if( function_exists('acf_add_options_page') ) {
             'icon_url'     => 'dashicons-universal-access-alt',
         ));
 
-    // Testimonial Section
-    // acf_add_options_page(array(
-    //     'page_title'    => 'Testimonial Settings',
-    //     'menu_title'    => 'Testimonials',
-    //     'menu_slug'     => 'testimonials',
-    //     'icon_url'      => 'dashicons-testimonial',
-    //     'capability'    => 'edit_posts',
-    //     'redirect'      => true,
-    //     'position'      => 20
-    // ));
+    acf_add_options_page(array(
+        'page_title'    => 'Theme General Settings',
+        'menu_title'    => 'Theme Settings',
+        'menu_slug'     => 'theme-general-settings',
+        'capability'    => 'edit_posts',
+        'redirect'      => false
+    ));
 
-    // Associates Section
-    // acf_add_options_page(array(
-    //     'page_title'    => 'Associates Settings',
-    //     'menu_title'    => 'Associates',
-    //     'menu_slug'     => 'associates',
-    //     'icon_url'      => 'dashicons-id-alt',
-    //     'capability'    => 'edit_posts',
-    //     'redirect'      => true,
-    //     'position'      => 21
-    // ));
+    acf_add_options_sub_page(array(
+        'page_title'    => 'Menu Settings',
+        'menu_title'    => 'Dropdown Menu',
+        'parent_slug'   => 'theme-general-settings',
+    ));
 
-//     	acf_add_options_sub_page(array(
-//     	    'page_title'    => 'One Bedroom Floorplans Section',
-//     	    'menu_title'    => 'One Bedroom',
-//     	    'menu_slug'     => 'one_bedroom_floorplan',
-//     	    'parent_slug'   => 'floorplans'
-//     	));
-
-//     	acf_add_options_sub_page(array(
-//     	    'page_title'    => 'Two Bedroom Floorplans Section',
-//     	    'menu_title'    => 'Two Bedroom',
-//     	    'menu_slug'     => 'two_bedroom_floorplan',
-//     	    'parent_slug'   => 'floorplans'
-//     	));
-
-//     	acf_add_options_sub_page(array(
-//     	    'page_title'    => 'Three Bedroom Floorplans Section',
-//     	    'menu_title'    => 'Three Bedroom',
-//     	    'menu_slug'     => 'three_bedroom_floorplan',
-//     	    'parent_slug'   => 'floorplans'
-//     	));
 }
 
 // Register Custom Post Type
