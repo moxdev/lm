@@ -723,9 +723,10 @@ textarea {
   color: #fff;
   padding-left: 1.75rem;
   padding-right: 1.75rem;
-  padding-top: 10px;
-  padding-bottom: 10px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  z-index: -1;
 }
 @media screen and (min-width: 750px) {
   /* line 1, sass/navigation/_masthead.scss */
@@ -734,66 +735,83 @@ textarea {
     padding-right: 2.75rem;
   }
 }
-/* line 9, sass/navigation/_masthead.scss */
-#masthead .header-wrapper {
-  display: flex;
-  align-items: center;
-}
-/* line 14, sass/navigation/_masthead.scss */
-#masthead .site-branding {
-  margin: 0;
-  padding: 0;
-}
-/* line 19, sass/navigation/_masthead.scss */
-#masthead .site-branding .logo svg {
-  max-width: 150px;
-}
-/* line 25, sass/navigation/_masthead.scss */
+/* line 12, sass/navigation/_masthead.scss */
 #masthead .dropdown-menu {
-  display: block;
-  flex: none;
   position: absolute;
+  z-index: 10;
   top: 0;
-  right: 6em;
+  right: 2em;
+  display: none;
+  max-width: 310px;
   background-color: #24cf5f;
   color: #fff;
-  margin: 1em 0;
+  margin-left: auto;
+  margin-right: 2em;
 }
-/* line 35, sass/navigation/_masthead.scss */
+/* line 24, sass/navigation/_masthead.scss */
 #masthead .dropdown-menu .menu-green-dropdown-menu-container {
-  padding: .5em 1em;
+  background-color: #24cf5f;
+  padding-left: .5em;
+  padding-right: .5em;
+  max-width: 100%;
 }
-/* line 38, sass/navigation/_masthead.scss */
+/* line 30, sass/navigation/_masthead.scss */
 #masthead .dropdown-menu .menu-green-dropdown-menu-container ul {
+  flex: none;
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-/* line 47, sass/navigation/_masthead.scss */
+/* line 40, sass/navigation/_masthead.scss */
 #masthead .dropdown-menu .menu-green-dropdown-menu-container ul:hover li ul {
+  background-color: #24cf5f;
   display: block;
+  width: 100%;
 }
-/* line 52, sass/navigation/_masthead.scss */
+/* line 47, sass/navigation/_masthead.scss */
 #masthead .dropdown-menu .menu-green-dropdown-menu-container ul:hover li ul li a {
   color: #fff;
   text-decoration: none;
 }
-/* line 61, sass/navigation/_masthead.scss */
+/* line 56, sass/navigation/_masthead.scss */
 #masthead .dropdown-menu .menu-green-dropdown-menu-container ul li {
   margin: 0;
   padding: 0;
 }
-/* line 65, sass/navigation/_masthead.scss */
+/* line 60, sass/navigation/_masthead.scss */
 #masthead .dropdown-menu .menu-green-dropdown-menu-container ul li a {
+  width: 100%;
   color: #fff;
+  font-size: .8em;
+  font-family: "SourceSansPro-Semibold", sans-serif;
   text-transform: uppercase;
   text-decoration: none;
 }
-/* line 71, sass/navigation/_masthead.scss */
+/* line 69, sass/navigation/_masthead.scss */
 #masthead .dropdown-menu .menu-green-dropdown-menu-container ul li ul {
   display: none;
 }
-/* line 86, sass/navigation/_masthead.scss */
+@media screen and (min-width: 1200px) {
+  /* line 12, sass/navigation/_masthead.scss */
+  #masthead .dropdown-menu {
+    display: block;
+  }
+}
+/* line 87, sass/navigation/_masthead.scss */
+#masthead .header-wrapper {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+/* line 93, sass/navigation/_masthead.scss */
+#masthead .site-branding {
+  margin-top: 1em;
+}
+/* line 96, sass/navigation/_masthead.scss */
+#masthead .site-branding svg {
+  max-width: 175px;
+}
+/* line 103, sass/navigation/_masthead.scss */
 #masthead nav button {
   margin-left: auto;
 }

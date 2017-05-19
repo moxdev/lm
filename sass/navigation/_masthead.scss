@@ -2,40 +2,33 @@
     background-color: $color__bg-purple;
     color: #fff;
     @include padding-left-right;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    // padding-top: 10px;
+    // padding-bottom: 10px;
     position: relative;
-
-    .header-wrapper {
-        display: flex;
-        align-items: center;
-    }
-
-    .site-branding {
-        @include reset;
-
-        .logo {
-
-            svg {
-                max-width: 150px;
-            }
-        }
-    }
+    display: flex;
+    flex-direction: column;
+    z-index: -1;
 
     .dropdown-menu {
-        display: block;
-        flex: none;
         position: absolute;
+        z-index: 10;
         top: 0;
-        right: 6em;
+        right: 2em;
+        display: none;
+        max-width: 310px;
         background-color: $color__bg-green;
         color: #fff;
-        margin: 1em 0;
+        margin-left: auto;
+        margin-right: 2em;
 
         .menu-green-dropdown-menu-container {
-            padding:.5em 1em;
+            background-color: $color__bg-green;
+            padding-left: .5em;
+            padding-right: .5em;
+            max-width: 100%;
 
             ul {
+                flex: none;
                 list-style-type: none;
                 margin: 0;
                 padding: 0;
@@ -45,7 +38,9 @@
                     li {
 
                         ul {
+                            background-color: $color__bg-green;
                             display: block;
+                            width: 100%;
 
                             li {
 
@@ -63,7 +58,10 @@
                     padding: 0;
 
                     a {
+                        width: 100%;
                         color: #fff;
+                        font-size: .8em;
+                        font-family: $font__alt-semibold;
                         text-transform: uppercase;
                         text-decoration: none;
                     }
@@ -78,6 +76,25 @@
 
                 }
             }
+        }
+
+        @include respond-to(large) {
+            display: block;
+
+        }
+    }
+
+    .header-wrapper {
+        display: flex;
+        align-items: center;
+        flex: 1;
+    }
+
+    .site-branding {
+        margin-top: 1em;
+
+        svg {
+            max-width: 175px;
         }
     }
 
