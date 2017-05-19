@@ -1,0 +1,23 @@
+.page-template-default {
+
+    h1 {
+        color: $color__purple;
+        text-align: center;
+        letter-spacing: 1.6px;
+        @include margin-auto;
+        max-width: 800px;
+
+        @include respond-to(medium) {
+            font-size: 2.5em;
+        }
+
+        @include respond-to(large) {
+            font-size: 3em;
+        }
+    }
+
+    h2 {
+        color: #666666;
+    }
+
+}
