@@ -1,5 +1,5 @@
 button,
-input[type="button"],
+// input[type="button"],
 input[type="reset"],
 input[type="submit"] {
 	background: $color__background-button;
@@ -12,19 +12,19 @@ input[type="submit"] {
 	font-size: .8rem;
 	letter-spacing: .125em;
 	padding: 1em 3.5em;
-	transition:background-color .25s, box-shadow .25s;
+	// transition:background-color .25s, box-shadow .25s;
 	@include font-smooth;
 
 
-	&:hover {
-		background-color: lighten($color__background-button, 10%);
-		// box-shadow: inset 0 0 2em darken($color__background-button, 20%);
-	}
+	// &:hover {
+	// 	background-color: lighten($color__background-button, 10%);
+	// 	// box-shadow: inset 0 0 2em darken($color__background-button, 20%);
+	// }
 
-	&:active,
-	&:focus {
+	// &:active,
+	// &:focus {
 
-	}
+	// }
 }
 
 .green-btn {
