@@ -29,6 +29,7 @@ function leading_minds_contact_page_content() {
                 if ($img) { ?>
 
                     <div class="contact-wrapper wrapper">
+                        <h1>Contact Information</h1>
 
                         <?php
 

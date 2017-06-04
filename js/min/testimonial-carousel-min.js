@@ -1,1 +1,1 @@
-var elem=document.querySelector(".testimonial-carousel"),flkty=new Flickity(elem,{contain:!0,pageDots:!1,setGallerySize:!0,groupCells:!0,autoPlay:!0,resize:!0});
+var elem=document.querySelector(".testimonial-carousel"),flkty=new Flickity(elem,{contain:!0,pageDots:!1,setGallerySize:!0,groupCells:!0,autoPlay:7e3,resize:!0,selectedAttraction:.01,friction:.2,wrapAround:!0});

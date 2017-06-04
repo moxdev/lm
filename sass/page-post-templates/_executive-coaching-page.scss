@@ -1,4 +1,5 @@
-.page-id-86 {
+.page-id-86,
+.page-id-1389 {
 
     .exec-img-brendel {
         margin-left: 0;
@@ -6,6 +7,10 @@
         @include respond-to(small) {
             width:150px;
         }
+    }
+
+    .one-hour-img-brendel {
+        margin-left: 0;
     }
 
     .exec-img-pcc {

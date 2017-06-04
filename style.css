@@ -2262,7 +2262,7 @@ lt-gray-green-btns
 */
 /* line 412, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .background-image {
-  min-height: 400px;
+  min-height: 200px;
 }
 /* line 416, sass/page-post-templates/_flexible-content-module.scss */
 .color-callout-section .bg-default {
@@ -3127,24 +3127,33 @@ lt-gray-green-btns
 /*--------------------------------------------------------------
 ## Executive Page
 --------------------------------------------------------------*/
-/* line 3, sass/page-post-templates/_executive-coaching-page.scss */
-.page-id-86 .exec-img-brendel {
+/* line 4, sass/page-post-templates/_executive-coaching-page.scss */
+.page-id-86 .exec-img-brendel,
+.page-id-1389 .exec-img-brendel {
   margin-left: 0;
 }
 @media screen and (min-width: 750px) {
-  /* line 3, sass/page-post-templates/_executive-coaching-page.scss */
-  .page-id-86 .exec-img-brendel {
+  /* line 4, sass/page-post-templates/_executive-coaching-page.scss */
+  .page-id-86 .exec-img-brendel,
+  .page-id-1389 .exec-img-brendel {
     width: 150px;
   }
 }
-/* line 11, sass/page-post-templates/_executive-coaching-page.scss */
-.page-id-86 .exec-img-pcc {
+/* line 12, sass/page-post-templates/_executive-coaching-page.scss */
+.page-id-86 .one-hour-img-brendel,
+.page-id-1389 .one-hour-img-brendel {
+  margin-left: 0;
+}
+/* line 16, sass/page-post-templates/_executive-coaching-page.scss */
+.page-id-86 .exec-img-pcc,
+.page-id-1389 .exec-img-pcc {
   padding: 1em;
   margin-right: 1.5;
 }
 @media screen and (min-width: 400px) {
-  /* line 20, sass/page-post-templates/_executive-coaching-page.scss */
-  .page-id-86 section:first-child .content-footer-wrapper {
+  /* line 25, sass/page-post-templates/_executive-coaching-page.scss */
+  .page-id-86 section:first-child .content-footer-wrapper,
+  .page-id-1389 section:first-child .content-footer-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3159,21 +3168,25 @@ lt-gray-green-btns
             justify-content: center;
     max-width: 400px;
   }
-  /* line 32, sass/page-post-templates/_executive-coaching-page.scss */
-  .page-id-86 section:first-child .content-footer-wrapper .img-wrapper img {
+  /* line 37, sass/page-post-templates/_executive-coaching-page.scss */
+  .page-id-86 section:first-child .content-footer-wrapper .img-wrapper img,
+  .page-id-1389 section:first-child .content-footer-wrapper .img-wrapper img {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
     margin: 0;
   }
-  /* line 37, sass/page-post-templates/_executive-coaching-page.scss */
-  .page-id-86 section:first-child .content-footer-wrapper .img-wrapper:first-child, .page-id-86 section:first-child .content-footer-wrapper .img-wrapper:nth-child(2) {
+  /* line 42, sass/page-post-templates/_executive-coaching-page.scss */
+  .page-id-86 section:first-child .content-footer-wrapper .img-wrapper:first-child, .page-id-86 section:first-child .content-footer-wrapper .img-wrapper:nth-child(2),
+  .page-id-1389 section:first-child .content-footer-wrapper .img-wrapper:first-child,
+  .page-id-1389 section:first-child .content-footer-wrapper .img-wrapper:nth-child(2) {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 50%;
             flex: 1 1 50%;
   }
-  /* line 42, sass/page-post-templates/_executive-coaching-page.scss */
-  .page-id-86 section:first-child .content-footer-wrapper .img-wrapper:nth-child(3) {
+  /* line 47, sass/page-post-templates/_executive-coaching-page.scss */
+  .page-id-86 section:first-child .content-footer-wrapper .img-wrapper:nth-child(3),
+  .page-id-1389 section:first-child .content-footer-wrapper .img-wrapper:nth-child(3) {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 100%;
             flex: 1 1 100%;
@@ -3481,40 +3494,61 @@ lt-gray-green-btns
 ## Contact Page
 --------------------------------------------------------------*/
 /* line 7, sass/page-post-templates/_contact-page.scss */
+.page-template-page-contact h1 {
+  color: #282560;
+  text-align: center;
+  letter-spacing: 1.6px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+}
+@media screen and (min-width: 950px) {
+  /* line 7, sass/page-post-templates/_contact-page.scss */
+  .page-template-page-contact h1 {
+    font-size: 2.5em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 7, sass/page-post-templates/_contact-page.scss */
+  .page-template-page-contact h1 {
+    font-size: 3em;
+  }
+}
+/* line 23, sass/page-post-templates/_contact-page.scss */
 .page-template-page-contact .contact-wrapper {
   text-align: center;
   padding-top: 1.5em;
   padding-bottom: 1.5em;
 }
 @media screen and (min-width: 950px) {
-  /* line 7, sass/page-post-templates/_contact-page.scss */
+  /* line 23, sass/page-post-templates/_contact-page.scss */
   .page-template-page-contact .contact-wrapper {
     padding-top: 3em;
     padding-bottom: 3em;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 7, sass/page-post-templates/_contact-page.scss */
+  /* line 23, sass/page-post-templates/_contact-page.scss */
   .page-template-page-contact .contact-wrapper {
     padding-top: 1.5em;
     padding-bottom: 1.5em;
   }
 }
-/* line 11, sass/page-post-templates/_contact-page.scss */
+/* line 27, sass/page-post-templates/_contact-page.scss */
 .page-template-page-contact .contact-wrapper img {
   display: block;
   margin: 0 auto;
 }
-/* line 16, sass/page-post-templates/_contact-page.scss */
+/* line 32, sass/page-post-templates/_contact-page.scss */
 .page-template-page-contact .contact-wrapper a {
   text-decoration: none;
   color: inherit;
 }
-/* line 21, sass/page-post-templates/_contact-page.scss */
+/* line 37, sass/page-post-templates/_contact-page.scss */
 .page-template-page-contact .contact-wrapper .call {
   color: #3b3d40;
 }
-/* line 25, sass/page-post-templates/_contact-page.scss */
+/* line 41, sass/page-post-templates/_contact-page.scss */
 .page-template-page-contact .contact-wrapper .social-icon-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3525,14 +3559,14 @@ lt-gray-green-btns
   -ms-flex-line-pack: center;
       align-content: center;
 }
-/* line 30, sass/page-post-templates/_contact-page.scss */
+/* line 46, sass/page-post-templates/_contact-page.scss */
 .page-template-page-contact .contact-wrapper .social-icon-wrapper a {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
   margin: 0 5px;
 }
-/* line 37, sass/page-post-templates/_contact-page.scss */
+/* line 53, sass/page-post-templates/_contact-page.scss */
 .page-template-page-contact .office-location-wrapper {
   padding-top: 1.5em;
   padding-bottom: 1.5em;
@@ -3540,25 +3574,25 @@ lt-gray-green-btns
   text-align: center;
 }
 @media screen and (min-width: 950px) {
-  /* line 37, sass/page-post-templates/_contact-page.scss */
+  /* line 53, sass/page-post-templates/_contact-page.scss */
   .page-template-page-contact .office-location-wrapper {
     padding-top: 3em;
     padding-bottom: 3em;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 37, sass/page-post-templates/_contact-page.scss */
+  /* line 53, sass/page-post-templates/_contact-page.scss */
   .page-template-page-contact .office-location-wrapper {
     padding-top: 1.5em;
     padding-bottom: 1.5em;
   }
 }
-/* line 42, sass/page-post-templates/_contact-page.scss */
+/* line 58, sass/page-post-templates/_contact-page.scss */
 .page-template-page-contact .office-location-wrapper .office-location-box {
   padding-top: 2em;
   padding-bottom: 2em;
 }
-/* line 47, sass/page-post-templates/_contact-page.scss */
+/* line 63, sass/page-post-templates/_contact-page.scss */
 .page-template-page-contact .office-location-wrapper .office-location-box .location h3 {
   margin: 0;
   padding: 0;
@@ -3568,13 +3602,13 @@ lt-gray-green-btns
   margin-top: 1em;
   margin-bottom: .5em;
 }
-/* line 55, sass/page-post-templates/_contact-page.scss */
+/* line 71, sass/page-post-templates/_contact-page.scss */
 .page-template-page-contact .office-location-wrapper .office-location-box .location p {
   margin: 0;
   padding: 0;
 }
 @media screen and (min-width: 950px) {
-  /* line 64, sass/page-post-templates/_contact-page.scss */
+  /* line 80, sass/page-post-templates/_contact-page.scss */
   .page-template-page-contact .office-location-wrapper .office-location-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3585,14 +3619,14 @@ lt-gray-green-btns
     -ms-flex-line-pack: center;
         align-content: center;
   }
-  /* line 71, sass/page-post-templates/_contact-page.scss */
+  /* line 87, sass/page-post-templates/_contact-page.scss */
   .page-template-page-contact .office-location-wrapper .office-location-box {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 calc(100% / 3);
             flex: 1 1 calc(100% / 3);
     padding: 2em;
   }
-  /* line 76, sass/page-post-templates/_contact-page.scss */
+  /* line 92, sass/page-post-templates/_contact-page.scss */
   .page-template-page-contact .office-location-wrapper .office-location-box .location h3 {
     margin: 0;
     padding: 0;
@@ -3602,17 +3636,17 @@ lt-gray-green-btns
     margin-top: 1em;
     margin-bottom: .5em;
   }
-  /* line 84, sass/page-post-templates/_contact-page.scss */
+  /* line 100, sass/page-post-templates/_contact-page.scss */
   .page-template-page-contact .office-location-wrapper .office-location-box .location p {
     margin: 0;
     padding: 0;
   }
 }
-/* line 95, sass/page-post-templates/_contact-page.scss */
+/* line 111, sass/page-post-templates/_contact-page.scss */
 .page-template-page-contact .virtual-tour-wrapper {
   background-color: #e8e8e8;
 }
-/* line 99, sass/page-post-templates/_contact-page.scss */
+/* line 115, sass/page-post-templates/_contact-page.scss */
 .page-template-page-contact .virtual-tour-wrapper header {
   background-color: #24cf5f;
   background-repeat: no-repeat;
@@ -3621,25 +3655,25 @@ lt-gray-green-btns
   background-position: 50%;
 }
 @media screen and (min-width: 950px) {
-  /* line 99, sass/page-post-templates/_contact-page.scss */
+  /* line 115, sass/page-post-templates/_contact-page.scss */
   .page-template-page-contact .virtual-tour-wrapper header {
     background-size: 200px;
   }
 }
-/* line 110, sass/page-post-templates/_contact-page.scss */
+/* line 126, sass/page-post-templates/_contact-page.scss */
 .page-template-page-contact .virtual-tour-wrapper header .title-wrapper {
   padding-left: 1.75rem;
   padding-right: 1.75rem;
   text-align: center;
 }
 @media screen and (min-width: 750px) {
-  /* line 110, sass/page-post-templates/_contact-page.scss */
+  /* line 126, sass/page-post-templates/_contact-page.scss */
   .page-template-page-contact .virtual-tour-wrapper header .title-wrapper {
     padding-left: 2.75rem;
     padding-right: 2.75rem;
   }
 }
-/* line 115, sass/page-post-templates/_contact-page.scss */
+/* line 131, sass/page-post-templates/_contact-page.scss */
 .page-template-page-contact .virtual-tour-wrapper header h2 {
   padding: 1em 0;
   max-width: 1200px;
@@ -3650,18 +3684,18 @@ lt-gray-green-btns
   color: #fff;
 }
 @media screen and (min-width: 750px) {
-  /* line 115, sass/page-post-templates/_contact-page.scss */
+  /* line 131, sass/page-post-templates/_contact-page.scss */
   .page-template-page-contact .virtual-tour-wrapper header h2 {
     padding: 2em 0;
   }
 }
-/* line 129, sass/page-post-templates/_contact-page.scss */
+/* line 145, sass/page-post-templates/_contact-page.scss */
 .page-template-page-contact .virtual-tour-wrapper .iframe-container {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 133, sass/page-post-templates/_contact-page.scss */
+/* line 149, sass/page-post-templates/_contact-page.scss */
 .page-template-page-contact .virtual-tour-wrapper .iframe-container iframe {
   display: block;
 }

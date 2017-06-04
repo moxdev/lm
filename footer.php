@@ -28,7 +28,7 @@
 
                         ?>
 
-                        <?php echo file_get_contents("/wp-content/themes/leading_minds/imgs/footer-logo.svg"); ?>
+                        <?php echo file_get_contents("wp-content/themes/leading_minds/imgs/footer-logo.svg"); ?>
 
                         <div class="link-wrapper">
                             <a class="contact-link" href="tel:<?php echo esc_html( $phone ); ?>"><?php echo esc_html( $phone ); ?></a>
@@ -42,13 +42,13 @@
                 </div><!-- contact-wrapper -->
                 <div class="social-wrapper">
 
-                    <a class="twitter" href="#"><?php echo file_get_contents('/wp-content/themes/leading_minds/imgs/twitter-logo.svg'); ?></a>
+                    <a class="twitter" href="#"><?php echo file_get_contents('wp-content/themes/leading_minds/imgs/twitter-logo.svg'); ?></a>
 
-                    <a class="linkedin" href="#"><?php echo file_get_contents('/wp-content/themes/leading_minds/imgs/linkedin-logo.svg'); ?></a>
+                    <a class="linkedin" href="#"><?php echo file_get_contents('wp-content/themes/leading_minds/imgs/linkedin-logo.svg'); ?></a>
 
-                    <a class="bbb" href="#"><?php echo file_get_contents('/wp-content/themes/leading_minds/imgs/bbb-logo.svg'); ?></a>
+                    <a class="bbb" href="#"><?php echo file_get_contents('wp-content/themes/leading_minds/imgs/bbb-logo.svg'); ?></a>
 
-                    <a class="pcc" href="#"><?php echo file_get_contents('/wp-content/themes/leading_minds/imgs/pcc-logo.svg'); ?></a>
+                    <a class="pcc" href="#"><?php echo file_get_contents('wp-content/themes/leading_minds/imgs/pcc-logo.svg'); ?></a>
 
                 </div>
 
