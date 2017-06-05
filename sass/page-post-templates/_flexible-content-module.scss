@@ -23,6 +23,7 @@
        background-color: $color__bg-purple;
        color: #fff;
        @include font-smooth;
+       @include linx(#fff, $color__green, #fff, #fff);
 
        h2 {
            color: #fff;
@@ -304,7 +305,7 @@
     background-color: $color__orange;
 
     .content-section-wrapper {
-        // @include container;
+        overflow: hidden;
 
         .margin-wrapper {
             display: flex;
@@ -317,7 +318,7 @@
             .nav-wrapper {
                 background-color: $color__orange;
                 margin-bottom: 1px;
-                margin-right: 1px;
+                // margin-right: 1px;
             }
 
             .nav-content {
@@ -364,6 +365,7 @@
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
+                    margin-right: 1px;
                 }
             }
         }
