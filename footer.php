@@ -25,6 +25,7 @@
 
                         $phone = get_field( 'phone', 'option' );
                         $email = get_field( 'email', 'option' );
+                        $hours = get_field( 'hours', 'option' );
 
                         ?>
 
@@ -33,7 +34,7 @@
                         <div class="link-wrapper">
                             <a class="contact-link" href="tel:<?php echo esc_html( $phone ); ?>"><?php echo esc_html( $phone ); ?></a>
                             <a class="contact-link" href="mailto:<?php echo esc_html( $email ); ?>"><?php echo esc_html( $email ); ?></a>
-
+                            <span><?php echo esc_html( $hours ); ?></span>
                         </div>
 
                         <?php

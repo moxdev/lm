@@ -1,4 +1,9 @@
-.page-id-98 {
+.page-template-page-about {
+
+    h1 {
+        color: $color__purple;
+        text-shadow:none;
+    }
 
     section {
         &:nth-child(5){

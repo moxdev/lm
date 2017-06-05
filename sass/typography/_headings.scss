@@ -52,3 +52,19 @@ h1.associates-entry-title {
     margin: 0 auto;
     line-height: 1.1;
 }
+
+h1.about-title {
+    text-align: center;
+    letter-spacing: 1.6px;
+    text-shadow: 0px 3px 4.83px rgba(0, 0, 0, 0.35);
+    @include margin-auto;
+    max-width: 800px;
+
+    @include respond-to(small) {
+        font-size: 3em;
+    }
+
+    @include respond-to(large) {
+        font-size: 3.5em;
+    }
+}

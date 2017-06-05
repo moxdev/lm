@@ -148,8 +148,8 @@ add_action( 'wp_enqueue_scripts', 'leading_minds_scripts' );
 if( function_exists('acf_add_options_page') ) {
 	// Company Information Section
     acf_add_options_page(array(
-        'page_title'    => 'Contact Information',
-        'menu_title'    => 'Contact Information',
+        'page_title'    => 'Company Information',
+        'menu_title'    => 'Company Information',
         'menu_slug'     => 'contact-info',
         'icon_url'   	=> 'dashicons-phone',
         'capability'    => 'edit_posts',
@@ -157,14 +157,14 @@ if( function_exists('acf_add_options_page') ) {
     ));
 
     acf_add_options_page(array(
-            'page_title'    => 'Associates',
-            'menu_title'    => 'Associates ',
-            'menu_slug'     => 'associates-settings',
-            'capability'    => 'edit_posts',
-            'redirect'      => false,
-            'position'      => '6.2',
-            'icon_url'     => 'dashicons-universal-access-alt',
-        ));
+        'page_title'    => 'Associates',
+        'menu_title'    => 'Associates ',
+        'menu_slug'     => 'associates-settings',
+        'capability'    => 'edit_posts',
+        'redirect'      => false,
+        'position'      => '6.2',
+        'icon_url'      => 'dashicons-universal-access-alt',
+    ));
 
     acf_add_options_page(array(
         'page_title'    => 'Theme General Settings',
@@ -179,7 +179,6 @@ if( function_exists('acf_add_options_page') ) {
         'menu_title'    => 'Dropdown Menu',
         'parent_slug'   => 'theme-general-settings',
     ));
-
 }
 
 // Register Custom Post Type

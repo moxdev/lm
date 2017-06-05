@@ -829,6 +829,12 @@
 		"oAP": "\/LICENSE",
 		"oF": 0
 		},
+	"\/page-about.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/page-about.php",
+		"oF": 0
+		},
 	"\/page-associates.php": {
 		"ft": 8192,
 		"oA": 2,
