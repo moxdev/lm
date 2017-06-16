@@ -412,7 +412,7 @@ lt-gray-green-btns
 .color-callout-section {
 
     .background-image {
-        min-height: 200px;
+        min-height: 400px;
     }
 
     .bg-default {
@@ -931,8 +931,13 @@ lt-gray-green-btns
 /*--------------------------------------------------------------
 ### Custom Styles for various sections
 --------------------------------------------------------------*/
-.page-template-page-custom {
 
+// Executive Coach Training Program Page
+.page-id-1367 {
+    .color-callout-section {
 
-
+        .background-image {
+            min-height: 200px;
+        }
+    }
 }
